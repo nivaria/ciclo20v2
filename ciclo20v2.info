@@ -1,7 +1,7 @@
 ; $Id: fusion_starter.info 7101 2010-04-08 06:51:41Z chris $
 
-name = Ciclo 2.0 
-description = Tema Ciclo 2.0. Basado en el tema Commons Connect v2
+name = Ciclo 2.0  V2
+description = Tema Ciclo 2.0 V2. Basado en el tema Commons Connect v2
 base theme = commons_connect
 core = 6.x
 engine = phptemplate
@@ -16,7 +16,7 @@ conditional-stylesheets[if lte IE 7][all][] = css/ie7-fixes.css
 conditional-stylesheets[if lte IE 6][all][] = css/ie6-fixes.css
 
 ; Optionally add some JavaScripts to your theme.
-scripts[] = scripts/ciclo20.js
+scripts[] = scripts/ciclo20v2.js
 
 plugins[panels][layouts] = panels
 api[panels][styles][version] = 2
