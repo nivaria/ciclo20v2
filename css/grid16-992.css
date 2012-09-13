@@ -1,0 +1,89 @@
+/*
+ * Grid 16 992px
+ */
+
+.grid-width-16 .grid16-1 {width: 62px;}
+.grid-width-16 .grid16-2 {width: 124px;}
+.grid-width-16 .grid16-3 {width: 186px;}
+.grid-width-16 .grid16-4 {width: 248px;}
+.grid-width-16 .grid16-5 {width: 310px;}
+.grid-width-16 .grid16-6 {width: 372px;}
+.grid-width-16 .grid16-7 {width: 434px;}
+.grid-width-16 .grid16-8 {width: 496px;}
+.grid-width-16 .grid16-9 {width: 558px;}
+.grid-width-16 .grid16-10 {width: 620px;}
+.grid-width-16 .grid16-11 {width: 682px;}
+.grid-width-16 .grid16-12 {width: 744px;}
+.grid-width-16 .grid16-13 {width: 806px;}
+.grid-width-16 .grid16-14 {width: 868px;}
+.grid-width-16 .grid16-15 {width: 930px;}
+.grid-width-16 .grid16-16 {width: 992px;}
+
+/*
+.grid-width-16 .grid16-1 {width: 42px;}
+.grid-width-16 .grid16-2 {width: 104px;}
+.grid-width-16 .grid16-3 {width: 166px;}
+.grid-width-16 .grid16-4 {width: 228px;}
+.grid-width-16 .grid16-5 {width: 290px;}
+.grid-width-16 .grid16-6 {width: 352px;}
+.grid-width-16 .grid16-7 {width: 414px;}
+.grid-width-16 .grid16-8 {width: 476px;}
+.grid-width-16 .grid16-9 {width: 538px;}
+.grid-width-16 .grid16-10 {width: 600px;}
+.grid-width-16 .grid16-11 {width: 662px;}
+.grid-width-16 .grid16-12 {width: 724px;}
+.grid-width-16 .grid16-13 {width: 786px;}
+.grid-width-16 .grid16-14 {width: 848px;}
+.grid-width-16 .grid16-15 {width: 910px;}
+.grid-width-16 .grid16-16 {width: 972px;}
+*/
+
+.grid-width-16 .section .grid16-1 {width: 42px;}
+.grid-width-16 .section .grid16-2 {width: 104px;}
+.grid-width-16 .section .grid16-3 {width: 166px;}
+.grid-width-16 .section .grid16-4 {width: 228px;}
+.grid-width-16 .section .grid16-5 {width: 290px;}
+.grid-width-16 .section .grid16-6 {width: 352px;}
+.grid-width-16 .section .grid16-7 {width: 414px;}
+.grid-width-16 .section .grid16-8 {width: 476px;}
+.grid-width-16 .section .grid16-9 {width: 538px;}
+.grid-width-16 .section .grid16-10 {width: 600px;}
+.grid-width-16 .section .grid16-11 {width: 662px;}
+.grid-width-16 .section .grid16-12 {width: 724px;}
+.grid-width-16 .section .grid16-13 {width: 786px;}
+.grid-width-16 .section .grid16-14 {width: 848px;}
+.grid-width-16 .section .grid16-15 {width: 910px;}
+.grid-width-16 .section .grid16-16 {width: 972px;}
+*/
+/* block indents */
+.grid-width-16 .grid16-indent-1 {margin-left: 42px;}
+.grid-width-16 .grid16-indent-2 {margin-left: 104px;}
+.grid-width-16 .grid16-indent-3 {margin-left: 166px;}
+.grid-width-16 .grid16-indent-4 {margin-left: 228px;}
+.grid-width-16 .grid16-indent-5 {margin-left: 290px;}
+.grid-width-16 .grid16-indent-6 {margin-left: 352px;}
+.grid-width-16 .grid16-indent-7 {margin-left: 414px;}
+.grid-width-16 .grid16-indent-8 {margin-left: 476px;}
+.grid-width-16 .grid16-indent-9 {margin-left: 538px;}
+.grid-width-16 .grid16-indent-10 {margin-left: 600px;}
+.grid-width-16 .grid16-indent-11 {margin-left: 662px;}
+.grid-width-16 .grid16-indent-12 {margin-left: 724px;}
+.grid-width-16 .grid16-indent-13 {margin-left: 786px;}
+.grid-width-16 .grid16-indent-14 {margin-left: 848px;}
+.grid-width-16 .grid16-indent-15 {margin-left: 910px;}
+
+/* gutters (2 x margin) */
+.grid-width-16 .block .inner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* hack to fix node-top & node-bottom being off-grid */
+.grid-width-16 #content-content .node .first .inner {
+  margin-right: 20px;
+}
+
+body,
+div.full-width {
+  min-width: 992px;
+}

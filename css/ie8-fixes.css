@@ -1,0 +1,42 @@
+/* IE8 */
+
+#edit-search-theme-form-1-wrapper input {
+	display: block;
+	padding-top: 6px;
+	height: 21px;
+}
+
+#edit-search-wrapper { width: 241px; }
+
+#edit-search-wrapper input {
+	height: 20px;
+	padding-top: 6px;
+	display: block;
+}
+
+#precontent .views-widget .form-item input { display: block; }
+
+.grid-type-1 .view-content .item-list li.views-row { border: 1px solid #D6D6D6; }
+
+.calendar-calendar td { width: 12%; }
+
+.views-exposed-widgets { width: 100%; }
+
+.views-exposed-widget { min-width: 100px; }
+
+#views-exposed-form-ciclo-task-user-page-1 .views-exposed-widgets { width: 85%; }
+
+.views-exposed-widget select { width: auto; }
+
+#block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-widgets { float: left; }
+
+#block-quicktabs-ciclo_catalog_tabs .view-filters #edit-title { width: 165px !important; }
+
+#block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-submit {
+	margin: 0 !important;
+	padding: 0 !important;
+	float: left !important;
+}
+
+.calendar-calendar { margin-bottom: 20px; }
+#block-views-user_meta-block_1, #block-user-0 { height: 99px; }
