@@ -4,7 +4,7 @@
 /**
  * Breadcrumb themeing
  */
-function ciclo20_breadcrumb($breadcrumb) {
+function ciclo20v2_breadcrumb($breadcrumb) {
   if (!empty($breadcrumb)) {
     $html .= '<div class="breadcrumb">'. implode(' &gt; ', $breadcrumb) .'</div>';
     return $html;
@@ -14,7 +14,7 @@ function ciclo20_breadcrumb($breadcrumb) {
 /**
  * Page preprocessing
  */
-function ciclo20_preprocess_page(&$vars)
+function ciclo20v2_preprocess_page(&$vars)
 {
     if (($_GET['q'] != 'user') && (strpos($_GET['q'], 'sites') !== 0) && (strpos($_GET['q'], 'JQUERY') !== 0)){
         if (user_is_anonymous()) {
@@ -71,12 +71,12 @@ function ciclo20_preprocess_page(&$vars)
   }
   
 }
-/*function ciclo20_preprocess_page(&$variables) {
+/*function ciclo20v2_preprocess_page(&$variables) {
   if ($variables['node']->type != "") {
     $variables['template_files'][] = "page-node-" . $variables['node']->type;
   }
 }*/
-/*function ciclo20_preprocess_page(&$vars, $hook) {
+/*function ciclo20v2_preprocess_page(&$vars, $hook) {
   if (isset($vars['node'])) {
    // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
    $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
@@ -87,7 +87,7 @@ function ciclo20_preprocess_page(&$vars)
 /**
  * Profile preprocessing
  */
-function ciclo20_preprocess_user_profile_item(&$vars) {
+function ciclo20v2_preprocess_user_profile_item(&$vars) {
   // Separate userpoints value from the edit links
   if ($vars['title'] == 'Points') { 
     $userpoints = explode(' - ', $vars['value']);
@@ -99,7 +99,7 @@ function ciclo20_preprocess_user_profile_item(&$vars) {
 /**
  * Implementation of theme_shoutbox_post()
  */
-function ciclo20_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE) {
+function ciclo20v2_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE) {
   global $user;
   
   // Gather moderation links
@@ -175,7 +175,7 @@ function ciclo20_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE) 
   return $post;
 }
 
-function ciclo20_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
+function ciclo20v2_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
   $output = '<div class="item-list">';
   if (isset($title)) {
     $output .= '<h3>'. $title .'</h3>';
@@ -242,12 +242,12 @@ function ciclo20_item_list($items = array(), $title = NULL, $type = 'ul', $attri
   return $output;
 }
 
-function ciclo20_preprocess_block($variables) {
+function ciclo20v2_preprocess_block($variables) {
   $variables['template_files'][] = 'block-'.$variables['block']->region.'-'.$variables['block']->module;
   $variables['template_files'][] = 'block-'.$variables['block']->region.'-'.$variables['block']->module.'-'.$variables['block']->delta;
 }
 
-function ciclo20_search_theme_form($form) {
+function ciclo20v2_search_theme_form($form) {
 	$form['search_theme_form']['#value']= t('Search...');
 	$form['submit']['#type'] = 'image_button';
 	$form['submit']['#src'] = drupal_get_path('theme', 'ciclo20') . '/images/search_icon.png';
@@ -255,7 +255,7 @@ function ciclo20_search_theme_form($form) {
 	return '<div id="search" class="container-inline">' . drupal_render($form) . '</div>';
 }
 
-function ciclo20_commons_core_info_block() {
+function ciclo20v2_commons_core_info_block() {
   $content = '';
   
   $content .= '<div id="acquia-footer-message">';
@@ -280,7 +280,7 @@ function ciclo20_commons_core_info_block() {
 }
 
 //hide links and change page title
-function ciclo20_taxonomy_term_page($tids, $result) {
+function ciclo20v2_taxonomy_term_page($tids, $result) {
   $str_tids = arg(2);
   $terms = taxonomy_terms_parse_string($str_tids);
   $title_result = db_query(db_rewrite_sql('SELECT t.tid, t.name FROM {term_data} t WHERE t.tid IN ('. db_placeholders($terms['tids']) .')', 't', 'tid'), $terms['tids']);
@@ -322,7 +322,7 @@ function ciclo20_taxonomy_term_page($tids, $result) {
   return $output;
 }
 
-function ciclo20_taxonomy_render_nodes($result) {
+function ciclo20v2_taxonomy_render_nodes($result) {
   $output = '';
   $has_rows = FALSE;
   while ($node = db_fetch_object($result)) {
@@ -346,7 +346,7 @@ drupal_add_js(path_to_theme() . '/scripts/clear_default_searchbox_text.js', 'the
  *
  * @ingroup themeable
  */
-function ciclo20_node_form($form) {
+function ciclo20v2_node_form($form) {
   $output = "\n<div class=\"node-form\">\n";
 
   // Admin form fields and submit buttons must be rendered first, because
@@ -391,12 +391,12 @@ function ciclo20_node_form($form) {
   return $output;
 }
 
-function ciclo20_preprocess_mimemail_message(&$variables) {
+function ciclo20v2_preprocess_mimemail_message(&$variables) {
   global $base_url;
   $variables['logo'] = $base_url . theme_get_setting('logo');
   $variables['front_page'] = url();
 }
-function ciclo20_username($user, $link = TRUE) {
+function ciclo20v2_username($user, $link = TRUE) {
   if ($user->uid && function_exists('profile_load_profile')) {
     profile_load_profile($user);
   }
@@ -440,7 +440,7 @@ function ciclo20_username($user, $link = TRUE) {
  *
  * @ingroup themeable
  */
-function ciclo20_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
+function ciclo20v2_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
   global $pager_page_array, $pager_total;
 
   // Calculate various markers within this pager piece:
@@ -556,7 +556,7 @@ function ciclo20_pager($tags = array(), $limit = 10, $element = 0, $parameters =
  *                          Properties used: title, value, options, description, name
  * @return HTML string representing the form element.
  */
-function ciclo20_select_as_links($element) {
+function ciclo20v2_select_as_links($element) {
   $output = '';
   $name = $element['#name'];
   $selected_options = (array) $element['#post'][$name];   // the selected keys from #options
@@ -600,7 +600,7 @@ function ciclo20_select_as_links($element) {
       . '</div></div>';
 }
 
-function ciclo20_preprocess_node(&$variables) {
+function ciclo20v2_preprocess_node(&$variables) {
   // For note nodes, disable comments in the node template.
   if ($variables['type'] == 'niv_task') {
     unset($variables['comment']);

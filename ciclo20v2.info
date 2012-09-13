@@ -7,7 +7,7 @@ core = 6.x
 engine = phptemplate
 
 stylesheets[all][] = css/grid16-992.css
-stylesheets[all][] = css/ciclo20.css
+stylesheets[all][] = css/ciclo20v2.css
 
 ; Set the conditional stylesheets that are processed by IE.
 conditional-stylesheets[if IE 9][all][]     = css/ie9-fixes.css
