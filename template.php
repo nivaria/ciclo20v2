@@ -340,6 +340,7 @@ function ciclo20v2_taxonomy_render_nodes($result) {
 
 // call scripts
 drupal_add_js(path_to_theme() . '/scripts/clear_default_searchbox_text.js', 'theme'); // call on every page since search box is displayed everywhere
+drupal_add_js(path_to_theme() . '/scripts/openlayers_popup_fix.js', 'theme'); // call on every page since search box is displayed everywhere
 
 /**
  * Present a node submission form.
