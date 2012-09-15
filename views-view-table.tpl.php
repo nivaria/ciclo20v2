@@ -39,16 +39,3 @@
     <?php endforeach; ?>
   </tbody>
 </table>
-<?php
-	global $language;
-	$lang = t('See');
-	$elements = $_GET["items"];
-        $itpp_options = array(5,10,20,30);
-        $combo = "<select id='items-per-page' onchange=\"changePagerElements('".$view->name."')\">";
-        foreach ($itpp_options as $value) {
-          $combo .= "<option".($elements==$value?" selected='selected'":"")." value='".$value."'>".$lang." ".$value."</option>";
-        }
-        $combo .= "</select>";
-        print $combo; 
-
-	?>
