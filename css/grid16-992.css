@@ -93,30 +93,43 @@ body.node-type-ciclo-installation #main-wrapper #main {
     background-color: none;
     border: none;
 }
-body.node-type-ciclo-installation #content-group .buildmode-full{
+body.node-type-ciclo-installation #content-group .buildmode-full,
+#pid-catalog-client-scar-mayer .buildmode-full,
+#pid-content-el-pozo  .buildmode-full,
+#pid-content-montesano #content-content .buildmode-full,
+#pid-catalog-model-ausvistick-3606000 .buildmode-full,
+#pid-catalog-model-agitador-brinmix-1000 .buildmode-full
+{
     background-color: #FFFFFF;
     border-bottom: 0;
-    border-color: -moz-use-text-color #E1E1E1 #E1E1E1;
+    border-color:  #E1E1E1;
     border-image: none;
     border-radius: 0 0 10px 10px;
     border-right: 2px solid #E1E1E1;
     border-style: none solid solid;
     border-width: 0 2px 2px;
-       padding: 20px;
-/*     width: 642px;*/
+    padding: 20px;
+    /*     width: 642px;*/
+    margin-bottom: 20px;
 }
-body.node-type-ciclo-installation #content-group #content-top{
+body.node-type-ciclo-installation #content-group #content-top,
+#pid-catalog-client-scar-mayer #content-top,
+#pid-content-el-pozo #content-top,
+#pid-content-montesano #content-top,
+#pid-catalog-model-ausvistick-3606000 #content-top ,
+#pid-catalog-model-agitador-brinmix-1000 #content-top{
+
     background: none repeat scroll 0 0 #FFFFFF;
-    border-color: #E1E1E1 #E1E1E1 -moz-use-text-color;
+    border-color: #E1E1E1;
     border-image: none;
     border-radius: 10px 10px 0 0;
     border-style: solid solid none;
     border-width: 2px 2px 0;
-    width: 99.6%;
+    width: 99.5%;
 }
 body.node-type-ciclo-installation #content-group, body.layout-first-main-last #content-group{
     /*  box-shadow: 8px 0 8px 0 #F3F3F3;*/
-/*    padding : 10px;*/
+    /*    padding : 10px;*/
 }
 
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle{
@@ -148,9 +161,9 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-re
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle{
     min-height: 0px;
 }
-body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-header{
+/*body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-header{
     width: 685px;
-}
+}*/
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer {
     /*width: 656px !important;*/
     background-image: url("../images/line_sep.png");
@@ -177,7 +190,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
     width: 100%;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content{
-/*    padding: 10px;*/
+    /*    padding: 10px;*/
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-installation-customer-logo{
     position: relative;
@@ -187,7 +200,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-address .field-label-inline-first{
     position: relative;
     top : -26px;
-    left: -50px;
+    left: -4px;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-field-ciclo-model-catalog a{
     position: absolute;
@@ -195,7 +208,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content .field-edit-content-link-widget a{
     position: absolute;
-    top:46px;
+    top:58px;
     right: 65px;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-install-customer{
@@ -289,8 +302,21 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
     background: none;
     padding:0px;
 }
-
-
+#pid-content-instalaci-n-agitadora-test #content-content .buildmode-full .nd-region-header.fgcClose,
+#pid-content-nueva #content-content .buildmode-full .nd-region-header.fgcClose{
+    background: none !important;
+}
+#pid-content-instalaci-n-agitadora-test #content-content .buildmode-full .nd-region-header.fgcClose h1,
+#pid-content-nueva #content-content .buildmode-full .nd-region-header.fgcClose h1{
+    background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -409px transparent;
+}
+#content-content .buildmode-full .nd-region-header.fgcClose{
+    background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -403px #FFFFFF !important;
+}
+#pid-content-el-pozo #content-inner h1.title.fgcClose,
+#pid-content-montesano #content-inner h1.title.fgcClose{
+    background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -409px #FFFFFF !important;
+}
 
 
 
