@@ -126,6 +126,8 @@ $(document).ready(function(){
         }
     })
     /*zoom product*/
-    $(".node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item").append("<span class='zoom-out'></span>");
-    $(".field-ciclo-model-image .field-items .field-item img" ).lightBox();
+             var lightbox_img= $(".node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item img").attr('src');
+        // alert(lightbox_img);
+        $(".field-ciclo-model-image .field-items .field-item ").html("<a href="+lightbox_img+"><img src="+lightbox_img+"/> <span class='zoom-out'></span></a>");
+         $('.field-ciclo-model-image .field-items .field-item a').lightBox();
 });

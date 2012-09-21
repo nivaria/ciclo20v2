@@ -2643,8 +2643,10 @@ div.poll .total { text-align:left;}
 .sidebar-last .block h2.block-title a{
     color: #fff!important;
 }
-.sidebar-last .block h2.block-title,
-.sidebar-first .block h2.block-title {
+/*.sidebar-first*/
+/*.sidebar-first .block h2.block-title {*/
+.sidebar-last .block h2.block-title{
+
     color: #666;
     margin: 0;
     background-image: linear-gradient(bottom, rgb(216,52,7) 23%, rgb(240,138,42) 62%);
@@ -5072,9 +5074,8 @@ body.page-node.node-type-group #sidebar-last{
 body.front #main,
 body.page-node.node-type-group #main,
 body#pid-catalog-installations #main,
-body#pid-content-inyectoras-de-marinado #main,
-body.page-kmhome #main,
-body.page-groups #main {
+body#pid-content-inyectoras-de-marinado #main
+ {
     background-color:transparent;
     border:0 none;
     border-radius:0;
@@ -5912,20 +5913,62 @@ body.no-sidebars #content-group-inner {
 }
 
 #nivaria-navigation-tree ins {
-    background-image: url(../images/tree_sprite.png);
-    background-repeat: no-repeat;
+    background: none repeat scroll 0 0 #ED751D;
+     border-radius: 2px 2px 2px 2px;
+    height: 10px;
+    width: 10px;
+       position: relative;
+    top: 3px;
+}
+#nivaria-navigation-tree  li{
+    padding:  5px 0;
+    margin: 0;
+}
+#nivaria-navigation-tree  li a{
+    padding-left: 8px;
+}
+#nivaria-navigation-tree  li a:hover{
+        background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+#nivaria-navigation-tree  li.jstree-leaf:hover
+{
+  margin-left: -10px;
+  padding-left: 10px;
+  background: url("../images/bg_tree_hover.png") no-repeat top left;
+   width: 288px;
+}
+#nivaria-navigation-tree li.jstree-leaf .jstree-clicked{
+        background: url("../images/bg_tree_hover.png") no-repeat scroll left top transparent;
+    height: 24px;
+    line-height: 26px;
+    margin-left: -21px;
+    padding-left: 27px;
+    width: 288px;
 }
 
+#nivaria-navigation-tree  li.jstree-leaf:hover >ins{
+    background: #fff
+}
+#nivaria-navigation-tree  li.jstree-open >ins{
+       background-image: url("../images/tree_sprite.png");
+    background-repeat: no-repeat;
+  background-position: -9px -31px;
+}
+#nivaria-navigation-tree  li.jstree-closed >ins{
+       background-image: url("../images/tree_sprite.png");
+    background-repeat: no-repeat;
+  background-position: -9px -54px;
+}
 #nivaria-navigation-tree a .jstree-icon {
     display: none;
 }
 
+
 #nivaria-navigation-tree .jstree-hovered,
 #nivaria-navigation-tree .jstree-clicked {
-    border: 0;
-    padding: 1px 2px;
-    background: #B11E91;
-    color: white;
+ background: none repeat scroll 0 0 transparent;
+    border: medium none;
 }
 
 /*
@@ -5957,29 +6000,21 @@ body.no-sidebars #content-group-inner {
     left: 10px;
 }
 
-#sidebar-first-wrapper .btn-collapse {
-    background-image: url(../images/arrow-right-small.png);
-    background-position: right top;
-    padding: 0 20px 0 0;
-}
 
-#sidebar-first-wrapper .btn-collapse.open {
-    background-image: url(../images/arrow-left-small.png);
-    background-position: left top;
-    padding: 0 0 0 20px;
-}
 
 #sidebar-last-wrapper .btn-collapse {
     right: 10px;
 }
 
-#sidebar-last-wrapper .btn-collapse {
+#sidebar-last-wrapper .btn-collapse,
+#sidebar-first-wrapper .btn-collapse{
     background-image: url("../images/circle_sprite.png");
     background-position: -8px -80px;
     padding: 0 0 0 20px;
 }
 
-#sidebar-last-wrapper .btn-collapse.open {
+#sidebar-last-wrapper .btn-collapse.open,
+#sidebar-first-wrapper .btn-collapse.open{
     background-image: url("../images/circle_sprite.png");
     background-position: 32px -57px;
     padding: 0 20px 0 0;
@@ -6157,6 +6192,10 @@ table tbody tr.selected td.active {
     height: 18px;
     text-indent: -9999em;
     padding: 0 5px;
+}
+.ciclo-catalog-navigation-table-element-summary-icon span.node-edit-in-view,
+.ciclo-catalog-navigation-table-element-summary-icon span.date-display-single{
+    display: none;
 }
 
 /*
@@ -6936,8 +6975,7 @@ html.js fieldset.collapsible {
 
 #block-quicktabs-ciclo_catalog_tabs .view-filters #edit-title {
     background-color: #FFFFFF;
-    border: 0 none;
-    color: #666666;
+     color: #666666;
     height: 26px;
     margin: 0;
     padding: 0 8px;
@@ -6945,7 +6983,7 @@ html.js fieldset.collapsible {
     line-height: 26px;
 }
 
-#block-quicktabs-ciclo_catalog_tabs .view-filters #edit-submit-ciclo-catalog-components {
+/*#block-quicktabs-ciclo_catalog_tabs .view-filters #edit-submit-ciclo-catalog-components {
     background-color: transparent;
     background-image: url("../images/search_icon.png");
     background-repeat: no-repeat;
@@ -6959,7 +6997,7 @@ html.js fieldset.collapsible {
     width: 36px;
     margin: 0;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-}
+}*/
 
 #block-quicktabs-ciclo_catalog_tabs .view-filters {
     background-color: #F3F3F3;
@@ -7469,28 +7507,269 @@ body.layout-first-main-last .sidebar-last #block-ciclokm_core-group_create_conte
 body.page-kmhome #sidebar-last-wrapper,
 body.page-groups #sidebar-last-wrapper,
 body.node-type-group #sidebar-last-wrapper {
-    width: 300px;
+    width: 280px;
     float: left;
 }
 
 body.page-kmhome #sidebar-last-wrapper #sidebar-last,
 body.page-groups #sidebar-last-wrapper #sidebar-last,
-body.node-type-group #sidebar-last-wrapper #sidebar-last { width: 300px; }
+body.node-type-group #sidebar-last-wrapper #sidebar-last { width: 280px; }
 
 body.page-kmhome #content-group,
 body.page-groups #content-group {
     background-color: #FFF;
     border-radius: 12px;
-    width: 692px;
+    width: 685px;
+    
 }
-
-body.page-km #sidebar-last-wrapper #sidebar-last-inner,
+#pid-node-717-catalog  #sidebar-last-wrapper #sidebar-last #edit-node-type-wrapper #edit-submit{
+       border: medium none;
+    width: auto;
+}
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb,
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb{
+    background: none repeat scroll 0 0 #000000;
+    margin-left: -10px;
+    width: 703px !important;
+      margin-bottom: 0;
+         padding: 10px 0;
+}
+#pid-node-717-catalog  .view .item-list ul.pager,
+#pid-node-972-catalog  .view .item-list ul.pager{
+        background: none repeat scroll 0 0 #F7F7F7;
+    border: medium none;
+    border-radius: 0 0 0 0;
+     margin-bottom: 0;
+}
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2)  a,
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2) a{
+       background: none repeat scroll 0 0 #B01D8F;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    height: 25px;
+    line-height: 25px;
+    padding: 4px;
+    text-transform: none;
+} 
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a{
+     background: none repeat scroll 0 0 #E9E9E9;
+    font-size: 13px;
+    font-weight: normal;
+    height: 25px;
+    line-height: 25px;
+    padding: 4px;
+} 
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) ,
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) {
+      background: url("../images/tree_sprite.png") no-repeat scroll right -89px transparent;
+    height: 25px;
+    padding-right: 16px;
+    
+}
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1){
+        background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
+}
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2) ,
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
+       background: url("../images/tree_sprite.png") no-repeat scroll right -129px transparent;
+    height: 25px;
+    padding-right: 10px;
+      padding-left: 0;
+       margin-left: -5px;
+}
+#pid-node-717-catalog   #content-region{
+    width: 682px;
+}
+#pid-node-717-catalog  #sidebar-last-wrapper #sidebar-last-inner,
 body.page-groups #sidebar-last-wrapper #sidebar-last-inner,
 body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     margin-left: 20px;
     margin-right: 0;
 }
+#pid-node-717-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset legend,
+#pid-node-972-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset label,
+#pid-node-972-catalog  .view-ciclo-catalog-components  form .views-exposed-widget label,
+#pid-node-717-catalog  .view-ciclo-catalog-components  form .views-exposed-widget label{
+       display: none;
+}
+#pid-node-717-catalog #block-quicktabs-ciclo_catalog_tabs,
+#pid-node-972-catalog #block-quicktabs-ciclo_catalog_tabs{
+/*      background: none repeat scroll 0 0 #F3F3F3;*/
+}
+#pid-node-717-catalog  .views-exposed-form .views-exposed-widget,
+#pid-node-972-catalog  .views-exposed-form .views-exposed-widget{
+  width: 182px;
+}
+#pid-node-717-catalog   #sidebar-first #block-nivaria_navigation-0,
+#pid-node-972-catalog   #sidebar-first #block-nivaria_navigation-0{
+    width: auto;
+    border: none;
+}
+#pid-node-717-catalog   #main,#pid-node-972-catalog  #main
+{
+       background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #E1E1E1;
+    border-radius: 10px 10px 10px 10px;
+}
+#pid-node-717-catalog  .block-quicktabs h2.title.block-title,
+#pid-node-972-catalog  .block-quicktabs h2.title.block-title{
+       background: none repeat scroll 0 0 transparent;
+    display: none;
+    height: auto;
+}
+    /*
+#pid-node-717-catalog 
+#pid-node-972-catalog
+    */
+#pid-node-717-catalog .sidebar-first .block h2.block-title
+#pid-node-972-catalog  .sidebar-first .block h2.block-title{
+        font-size: 25px;
+    padding-bottom: 10px;
+}
+#pid-node-717-catalog  #content-group-inner  h1,
+#pid-node-972-catalog    #content-group-inner h1{
+    background-image: url("../images/line_sep.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/*    background-image: url("../images/line_sep.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 30px;
+    height: auto;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    text-indent: 0;
+    width: 100%;*/
 
+
+
+#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs.quicktabs-style-arrows li.active a,
+#pid-node-972-catalog #quicktabs-ciclo_model_catalogue ul.quicktabs_tabs.quicktabs-style-arrows li a:hover{
+       background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px #ED751D;
+}
+
+#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a,
+#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a{
+        background: #999;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: calibri,arial;
+    font-size: 15px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 2px;
+    padding: 2px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active,
+#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active{
+    background: none repeat scroll 0 0 #EC6F19;
+  
+}
+
+
+#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active a.active,
+#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active a.active{
+        background: none repeat scroll 0 0 #0099FF;
+     border: medium none;
+       color: #FFFFFF;
+       
+} 
+#pid-node-717-catalog #content-content,
+#pid-node-972-catalog #content-content{
+        left: 0;
+    position: relative;
+    top: 0;
+}
+#pid-node-717-catalog #content-content a.edit-link,
+#pid-node-972-catalog #content-content a.edit-link{
+        background: none repeat scroll 0 0 #B01D8F;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    padding: 4px 14px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+}
+#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
+#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active {
+    background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
+}
+#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs,
+#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs {
+        background: none repeat scroll 0 0 #F3F3F3;
+    margin: 0;
+     padding: 17px 10px 10px !important;
+}
+#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li  a,
+#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li  a{
+     background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E1E1E1 ;
+    border-radius: 5px 5px 5px 5px ;
+    color: #000000 ;
+    text-transform: none;
+     padding: 0 20px;
+} 
+#pid-node-717-catalog  #quicktabs-ciclo_catalog_tabs .quicktabs_main,
+#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_main{
+        background: none repeat scroll 0 0 #F3F3F3;
+    border: medium none;
+    border-radius: 0 0 0 0;  
+    padding: 0;
+      overflow: visible;
+    
+}
+#pid-node-717-catalog  #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components,
+#pid-node-972-catalog  #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components{
+    background: url("../images/search_icon.png") no-repeat scroll 0 0 transparent;
+    border-radius: 0 0 0 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 97px;
+}
+#pid-node-717-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset.views-exposed-form ,
+#pid-node-972-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset.views-exposed-form {
+     background: none;
+    position: absolute;
+    right: 0;
+    top: -46px;
+}
+#pid-node-717-catalog .quicktabs_wrapper .quicktabs_main,
+#pid-node-972-catalog .quicktabs_wrapper .quicktabs_main
+{
+     border-radius: 0 0 0 0;
+}
+#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs  .quicktabs_main{
+     border: medium none;
+}
+#pid-node-717-catalog  #main-group,
+#pid-node-972-catalog #main-group{
+     border-left: 1px solid #E1E1E1;
+}
+#pid-node-717-catalog  #content-group-inner,
+#pid-node-972-catalog  #content-group-inner{
+     
+}
+#pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title,
+#pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title{
+    height: 24px;
+}
 #main #sidebar-last-wrapper .view-most-active-users-gerencia .views-field-field-number-posts-vname { margin-top: 0; }
 
 .view-most-active-users-gerencia li.views-row-odd { background-color: #F7F7F7; }
@@ -7594,6 +7873,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 .views-exposed-wrapper .views-exposed-widget label{
     font-weight: normal;
+}
+.view-ciclo-customers .view-header a.add-content-link{
+       position: relative;
+    top: -27px;
 }
 #sidebar-last-wrapper{
     float: left;
@@ -7803,9 +8086,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     width: 97%;
 }
 #pid-catalog-model-ausvistick-3606000 #content-content,
-#pid-catalog-model-agitador-brinmix-1000 #content-content{
+#pid-catalog-model-agitador-brinmix-1000 #content-content{}
 
-}
 #pid-catalog-model-ausvistick-3606000 .buildmode-full,
 #pid-catalog-model-agitador-brinmix-1000 .buildmode-full{
     padding: 0 10px;    
