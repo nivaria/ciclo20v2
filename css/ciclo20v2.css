@@ -2010,7 +2010,7 @@ tbody th {
 #sidebar-last-wrapper .block.block-views .view-content .item-list ul li.views-row-odd{
     margin-left: -10px;
     padding: 10px 0 10px 15px;
-    width: 280px;
+    width: 265px;
 
 }
 tr.views-row-last,
@@ -3629,7 +3629,7 @@ html.js fieldset.views-exposed-form.collapsed {
     margin: 0 4% 10px 0;
     padding: 0;
     /*    min-height: 65px;*/
-    width: 25%;
+    width: 28%;
 }
 
 .views-exposed-form .views-exposed-widget:last-child {
@@ -3787,7 +3787,12 @@ div#block-og_views-0 h2.title {
     padding: 15px;
     zoom: 1;
 }
-
+#views-exposed-form-ciclo-installations-og-page,
+#views-exposed-form-ciclo-machines-page-1{
+       position: absolute;
+    top: -40px;
+    width: 100%;
+}
 .view-homepage-group-showcase .views-row:after,
 .view-homepage-group-showcase .views-row .view-content:after {
     clear: both;
@@ -3796,7 +3801,9 @@ div#block-og_views-0 h2.title {
     height: 0;
     visibility: hidden;
 }
-
+.view-ciclo-installations-og .view-content .nd-region-right{
+       width: 50%;
+}
 .view-homepage-group-showcase .views-row .views-field-field-group-image-fid { float: left; width: 20%; margin-right: 2%; border:solid 1px #c5c5c5; line-height:0px;}
 .view-homepage-group-showcase .views-row .views-field-field-group-image-fid img { width: 100%; height: auto;}
 .view-homepage-group-showcase .views-row .view-homepage-group-showcase.view-display-id-block_2 { float: left; width: 77%}
@@ -5933,10 +5940,12 @@ body.no-sidebars #content-group-inner {
 }
 #nivaria-navigation-tree  li.jstree-leaf:hover
 {
-  margin-left: -10px;
-  padding-left: 10px;
   background: url("../images/bg_tree_hover.png") no-repeat top left;
-   width: 288px;
+     margin-left: -10px;
+    padding-left: 10px;
+    position: absolute;
+    width: 281px;
+    z-index: 8;
 }
 #nivaria-navigation-tree li.jstree-leaf .jstree-clicked{
         background: url("../images/bg_tree_hover.png") no-repeat scroll left top transparent;
@@ -5944,7 +5953,9 @@ body.no-sidebars #content-group-inner {
     line-height: 26px;
     margin-left: -21px;
     padding-left: 27px;
+       position: absolute;
     width: 288px;
+    z-index: 999;
 }
 
 #nivaria-navigation-tree  li.jstree-leaf:hover >ins{
@@ -6184,14 +6195,14 @@ table tbody tr.selected td.active {
 }
 
 .ciclo-catalog-navigation-table-element-summary-icon span {
-    background-image: url(../images/icon_info.png);
-    background-position: left top;
+   background-image: url("../images/tab_sprite.png");
+    background-position: -5px -267px;
     background-repeat: no-repeat;
     display: block;
-    width: 18px;
-    height: 18px;
-    text-indent: -9999em;
+    height: 20px;
     padding: 0 5px;
+    text-indent: -9999em;
+    width: 21px;
 }
 .ciclo-catalog-navigation-table-element-summary-icon span.node-edit-in-view,
 .ciclo-catalog-navigation-table-element-summary-icon span.date-display-single{
@@ -6626,7 +6637,7 @@ table tbody tr.selected td.active {
     height: 260px;
     width: 318px;
 }
-.field-ciclo-model-image .field-items .field-item .zoom-out{
+.node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item .zoom-out{
     background: url("../images/maximize.png") no-repeat scroll right bottom transparent;
     height: 38px;
     left: 281px;
@@ -7529,10 +7540,10 @@ body.page-groups #content-group {
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb,
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb{
     background: none repeat scroll 0 0 #000000;
-    margin-left: -10px;
-    width: 703px !important;
-      margin-bottom: 0;
-         padding: 10px 0;
+    margin-bottom: 0;
+    margin-left: -25px;
+    padding: 10px 0;
+    width: 710px !important;
 }
 #pid-node-717-catalog  .view .item-list ul.pager,
 #pid-node-972-catalog  .view .item-list ul.pager{
@@ -7563,17 +7574,17 @@ body.page-groups #content-group {
 } 
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) ,
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) {
-      background: url("../images/tree_sprite.png") no-repeat scroll right -89px transparent;
+      background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
     height: 25px;
     padding-right: 16px;
     
 }
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1){
+/*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1){
         background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
-}
+}*/
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2) ,
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
-       background: url("../images/tree_sprite.png") no-repeat scroll right -129px transparent;
+       background: url("../images/tree_sprite.png") no-repeat scroll right -126px transparent;
     height: 25px;
     padding-right: 10px;
       padding-left: 0;
@@ -7604,7 +7615,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-node-717-catalog   #sidebar-first #block-nivaria_navigation-0,
 #pid-node-972-catalog   #sidebar-first #block-nivaria_navigation-0{
-    width: auto;
+    width: 280px;
     border: none;
 }
 #pid-node-717-catalog   #main,#pid-node-972-catalog  #main
@@ -7620,10 +7631,14 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     height: auto;
 }
     /*
-#pid-node-717-catalog 
+#pid-node-717-catalog ,
 #pid-node-972-catalog
     */
-#pid-node-717-catalog .sidebar-first .block h2.block-title
+#pid-node-717-catalog #content-inner-inner,
+#pid-node-972-catalog   #content-inner-inner{
+            padding-left: 15px;
+    }
+#pid-node-717-catalog .sidebar-first .block h2.block-title,
 #pid-node-972-catalog  .sidebar-first .block h2.block-title{
         font-size: 25px;
     padding-bottom: 10px;
@@ -7636,6 +7651,34 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     margin-bottom: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+#pid-node-717-catalog #ciclo-catalog,
+#pid-node-972-catalog  #ciclo-catalog{
+    
+}
+
+#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-left,
+#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-left{
+        float: left;
+    width: 30%;
+}
+#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-middle,
+#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-middle{
+     float: left;
+    margin-left: 60px;
+    width: 30%;
+}
+#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-right,
+#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-right{
+      float: right;
+    font-weight: bold;
+    text-align: right;
+    width: 30%;
+}
+#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-right a,
+#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-right a{
+    background: url("../images/arrow_sprite.png") no-repeat scroll right -105px transparent;
+    padding-right: 10px;;
 }
 /*    background-image: url("../images/line_sep.png");
     background-position: left bottom;
@@ -7654,7 +7697,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 
 #pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs.quicktabs-style-arrows li.active a,
 #pid-node-972-catalog #quicktabs-ciclo_model_catalogue ul.quicktabs_tabs.quicktabs-style-arrows li a:hover{
-       background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px #ED751D;
+       background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
+/*       background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px #ED751D;*/
 }
 
 #pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a,
@@ -7670,22 +7714,98 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     height: 24px;
     line-height: 24px;
     margin: 0 2px;
-    padding: 2px 20px;
+    padding: 1px 20px;
     text-decoration: none;
     text-transform: uppercase;
 }
-#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active,
-#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active{
-    background: none repeat scroll 0 0 #EC6F19;
-  
+/**slideshowfgc**/
+#pid-node-717-catalog   #quicktabs_tabpage_ciclo_model_catalogue_2,
+#pid-node-972-catalog  #quicktabs_tabpage_ciclo_model_catalogue_2{
+      height: 525px;
+          margin-top: 25px;
 }
 
 
+#pid-node-717-catalog   #quicktabs_tabpage_ciclo_model_catalogue_3,
+#pid-node-972-catalog   #quicktabs_tabpage_ciclo_model_catalogue_3{
+      height: 525px;
+          margin-top: 25px;
+}
+#pid-node-717-catalog .views_slideshow_slide .views-field-field-ciclo-alias-value,
+#pid-node-972-catalog .views_slideshow_slide .views-field-field-ciclo-alias-value{
+      display: none;
+}
+#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
+#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid{
+        margin: 0 auto;
+    width: 318px;
+}
+#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
+#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
+#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1,
+#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1{
+      width: 426px;
+      margin: 0 auto;
+}
+#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img,
+#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img{
+   border: 1px solid #E1E1E1;
+}
+/**controll**/
+#pid-node-717-catalog .views-slideshow-controls-bottom,
+#pid-node-972-catalog .views-slideshow-controls-bottom{
+     height: 45px;
+    margin-left: -14px;
+    position: absolute;
+    top: 170px;
+    width: 659px;
+       z-index: 99999;
+}
+#pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_previous,
+#pid-node-972-catalog .views-slideshow-controls-bottom .views_slideshow_previous{
+      background: url("../images/tab_sprite.png") no-repeat scroll right -192px transparent;
+    display: block;
+    float: left;
+    height: 45px;
+    text-indent: -999px;
+    width: 51px;
+}
+#pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_next,
+#pid-node-972-catalog .views-slideshow-controls-bottom .views_slideshow_next{
+    background: url("../images/tab_sprite.png") repeat scroll right -254px transparent;
+    display: block;
+    float: right;
+    height: 45px;
+    text-indent: -9999px;
+    width: 52px;
+}
+#pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_pause,
+#pid-node-972-catalog .views-slideshow-controls-bottom .views_slideshow_pause{
+ display: none;
+}
+#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active,
+#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active{
+     background: url("../images/tab_sprite.png") repeat scroll -3px -140px transparent;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    width: 77px;
+    z-index: 999;
+  
+}
+#pid-node-717-catalog table.views-table thead th.active,
+#pid-node-972-catalog table.views-table thead th.active{
+   background-color: #000000;
+}
+
 #pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active a.active,
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active a.active{
-        background: none repeat scroll 0 0 #0099FF;
-     border: medium none;
-       color: #FFFFFF;
+    background: url("../images/tab_sprite.png") repeat scroll -3px -99px transparent;
+    border: medium none;
+    color: #FFFFFF;
+    padding-bottom: 11px;
+    text-align: center;
+    width: 66px;
        
 } 
 #pid-node-717-catalog #content-content,
@@ -7703,8 +7823,9 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     position: absolute;
     right: 0;
     top: 12px;
+     text-transform: uppercase;
 }
-}
+
 #pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active {
     background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
@@ -7754,6 +7875,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-972-catalog .quicktabs_wrapper .quicktabs_main
 {
      border-radius: 0 0 0 0;
+        margin-top: -9px;
+         padding: 0;
 }
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs  .quicktabs_main{
      border: medium none;
@@ -7770,8 +7893,23 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title{
     height: 24px;
 }
+#pid-node-972-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a,
+#pid-node-717-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a{
+    background: url("../images/tab_sprite.png") no-repeat scroll left -229px transparent !important;
+    font-size: 0;
+    padding: 14px 30px;
+}
+#pid-node-972-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view ,
+#pid-node-717-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view {
+  float: right;
+}
 #main #sidebar-last-wrapper .view-most-active-users-gerencia .views-field-field-number-posts-vname { margin-top: 0; }
-
+/**cart**/
+.ajax-cart-submit-form-button{
+       background: url("../images/tab_sprite.png") no-repeat scroll left -186px transparent !important;
+    text-indent: -99999px;
+    width: 82px;
+}
 .view-most-active-users-gerencia li.views-row-odd { background-color: #F7F7F7; }
 
 .view-most-active-users-gerencia li.views-row-even { background-color: #FFF; }
