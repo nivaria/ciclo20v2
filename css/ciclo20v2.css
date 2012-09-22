@@ -5950,7 +5950,7 @@ body.no-sidebars #content-group-inner {
 #nivaria-navigation-tree li.jstree-leaf .jstree-clicked{
         background: url("../images/bg_tree_hover.png") no-repeat scroll left top transparent;
     height: 24px;
-    line-height: 26px;
+    line-height: 24px;
     margin-left: -21px;
     padding-left: 27px;
        position: absolute;
@@ -7572,7 +7572,11 @@ body.page-groups #content-group {
     line-height: 25px;
     padding: 4px;
 } 
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) ,
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) {
+          background: url("../images/tree_sprite.png") no-repeat scroll right -87px transparent;
+    height: 24px;
+    padding-right: 16px;
+}
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) {
       background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
     height: 25px;
@@ -7582,7 +7586,13 @@ body.page-groups #content-group {
 /*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1){
         background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
 }*/
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2) ,
+#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
+          background: url("../images/tree_sprite.png") no-repeat scroll right -127px transparent;
+    height: 24px;
+    padding-right: 10px;
+      padding-left: 0;
+       margin-left: -5px;
+}
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
        background: url("../images/tree_sprite.png") no-repeat scroll right -126px transparent;
     height: 25px;
