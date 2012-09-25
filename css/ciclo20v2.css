@@ -3848,9 +3848,16 @@ div#block-og_views-0 h2.title {
 }
 #views-exposed-form-ciclo-installations-og-page,
 #views-exposed-form-ciclo-machines-page-1{
-       position: absolute;
+/*       position: absolute;
     top: -40px;
-    width: 100%;
+    width: 100%;*/
+/*padding-top: 15px;*/
+
+}
+#precontent .block-views{
+        float: left;
+    padding-top: 30px;
+    width: 700px;
 }
 .view-homepage-group-showcase .views-row:after,
 .view-homepage-group-showcase .views-row .view-content:after {
@@ -6441,7 +6448,7 @@ table tbody tr.selected td.active {
 
 #precontent .views-exposed-form .views-exposed-widgets {
     margin: 0;
-    width: 50%;
+/*    width: 50%;*/
 }
 
 #precontent .views-exposed-form .views-exposed-widgets .views-widget {
@@ -7182,7 +7189,7 @@ fieldset fieldset {
 
 /*#precontent fieldset .fieldset-wrapper { padding: 0 !important; }*/
 
-#precontent .views-exposed-form .views-exposed-widget { min-height: none !important; }
+#precontent .views-exposed-form .views-exposed-widget { min-height: none !important; width: auto }
 
 #continue-shopping-button { margin-right: 0; }
 
@@ -7888,7 +7895,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
       display: none;
 }
 #pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
-#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid{
+#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
+#pid-node-972-catalog .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1,
+#pid-node-717-catalog .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1
+{
         margin: 0 auto;
     width: 318px;
 }
@@ -7902,6 +7912,16 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img,
 #pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img{
    border: 1px solid #E1E1E1;
+/*   display: none;*/
+}
+#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid-1 img,
+#pid-node-972-catalog .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1 img{
+    border: 1px solid #E1E1E1;display: none;
+    
+}
+#pid-node-717-catalog .views_slideshow_singleframe_main  .views-field-field-ciclo-install-model-nid,
+#pid-node-972-catalog .views_slideshow_singleframe_main  .views-field-field-ciclo-install-model-nid{
+    display: none;
 }
 /**controll**/
 #pid-node-717-catalog .views-slideshow-controls-bottom,
