@@ -5788,15 +5788,20 @@ a.user-is-member:hover{
 }
 body.node-type-faq-question .main,
 .node-type-blog .main,
-.node-type-manual .main
+.node-type-manual .main,
+#pid-admin-settings-ciclo-bmecat-import #content-group 
 {
        background: none repeat scroll 0 0 #FFFFFF;
     border: 2px solid #E1E1E1;
     border-radius: 10px 10px 10px 10px;
 }
+#pid-admin-settings-ciclo-bmecat-import .content-inner-inner{
+    padding: 15px;
+}
 body.node-type-faq-question .main .main-inner,
 .node-type-blog .main .main-inner,
-.node-type-manual .main .main-inner{
+.node-type-manual .main .main-inner
+{
         padding: 10px!important
 }
 body.node-type-faq-question .main .main-inner .content-region,
@@ -5811,6 +5816,23 @@ body.node-type-faq-question .main .main-inner .content-region,
 }
 body.page-node #content-inner-inner{
     position:static;
+}
+/*cart*/
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset {
+        background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    padding: 0;
+}
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset #edit-installation-wrapper,
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset   ul:nth-child(1){
+        float: left;
+    width: 50%;
+}
+                                                                                                                                                                                                                              
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset #edit-update-existing-components-wrapper,
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset   ul:nth-child(2){
+          float: right;
+    width: 50%;
 }
 .page-groups #block-views-groups_featured_groups-block_1 .content .views-row .views-field-description,
 .page-groups #block-views-groups_featured_groups-block_2 .content .views-row .views-field-description{
@@ -7930,7 +7952,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     margin-left: -14px;
     position: absolute;
     top: 170px;
-    width: 659px;
+    width: 669px;
        z-index: 99999;
 }
 #pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_previous,
