@@ -131,4 +131,14 @@ $(document).ready(function(){
 //        // alert(lightbox_img);
 //        $(".field-ciclo-model-image .field-items .field-item ").html("<a href="+lightbox_img+"><img src="+lightbox_img+"/> <span class='zoom-out'></span></a>");
 //         $('.field-ciclo-model-image .field-items .field-item a').lightBox();
+$("#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row").each(function(i){
+   
+   var content=$(this).find(".nd-region-middle-wrapper").html();
+
+var images=$(this).find(".nd-region-left").html();
+
+                  $(this).find(".nd-region-middle-wrapper").html(images);
+                 $(this).find(".nd-region-left").html(content); 
+})
+
 });
