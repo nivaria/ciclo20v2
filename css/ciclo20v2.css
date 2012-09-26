@@ -2064,7 +2064,7 @@ tbody th {
 #sidebar-last-wrapper .block.block-views .view-content .item-list ul li.views-row-odd{
     margin-left: -10px;
     padding: 10px 0 10px 15px;
-    width: 265px;
+    width: 260px;
 
 }
 tr.views-row-last,
@@ -5994,7 +5994,8 @@ body.page-node #content-inner-inner{
         color: #999999;
     display: block;
 }
-#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset .ubcart_select_0  li{
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset .ubcart_select_0  li,
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset .ubcart_select_1  li{
     padding-left: 20px;
 }
 .page-groups #block-views-groups_featured_groups-block_1 .content .views-row .views-field-description,
@@ -8343,7 +8344,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 .views-exposed-form .collapse-processed a
 {
-    background: url("../images/circle_sprite.png") no-repeat scroll 39px -346px transparent !important;
+    background: url("../images/circle_sprite.png") no-repeat scroll 47px -345px transparent !important;
     color: #000000;
 }
 .views-exposed-form .collapse-processed a:hover{
@@ -8636,7 +8637,7 @@ background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../i
 }
 #pid-catalog-model-ausvistick-3606000 .nd-region-left,
 #pid-catalog-model-agitador-brinmix-1000 .nd-region-left{
-
+ padding-top: 15px;
 }
 #pid-catalog-model-ausvistick-3606000 .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left,
 #pid-catalog-model-agitador-brinmix-1000 .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
