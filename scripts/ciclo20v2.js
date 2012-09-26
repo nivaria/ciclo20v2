@@ -151,9 +151,10 @@ $(document).ready(function(){
 //    'top': 93+'px',
 //    'width': '45%'
 //   })
-
-    $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input').after("<span class='checked'></span>");
-     $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input').after("<span class='checked'></span>");
+//
+//    $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input').after("<span class='checked'></span>");
+//     $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input').after("<span class='checked'></span>");
+     $("#pid-admin-settings-ciclo-bmecat-import .form-checkboxes .form-checkbox,#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input, #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input").after("<span class='checked'></span>");
     /*attach*/
     $("#edit-upload-wrapper label").click(function(){
         $("#edit-upload").click();

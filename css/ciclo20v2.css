@@ -5927,13 +5927,15 @@ body.page-node #content-inner-inner{
     position: relative;
 }
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper .option,
-#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper .option{
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper .option,
+ #pid-admin-settings-ciclo-bmecat-import .form-checkboxes .option{
      font-weight: bold;
          position: relative;
          padding-left: 25px;
 }
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper .option  input#edit-installation,
-#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper .option input#edit-update-existing-components
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper .option input#edit-update-existing-components,
+#pid-admin-settings-ciclo-bmecat-import .form-checkboxes .option .form-checkbox
 {
          left: 0;
     opacity: 0;
@@ -5946,12 +5948,15 @@ body.page-node #content-inner-inner{
 
 
  #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input[type="checkbox"]:checked +span,
- #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input[type="checkbox"]:checked +span{
+ #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input[type="checkbox"]:checked +span,
+ #pid-admin-settings-ciclo-bmecat-import .form-checkboxes #edit-models-0-wrapper .option input[type="checkbox"]:checked +span ,
+  #pid-admin-settings-ciclo-bmecat-import .form-checkboxes #edit-components-0-wrapper .option input[type="checkbox"]:checked +span{
       background-position: 0 -50px;
   }
   
   #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option span,
-   #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option span{
+   #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option span,
+   #pid-admin-settings-ciclo-bmecat-import .form-checkboxes  span{
     background: url("../images/checkbox.png") no-repeat scroll 0 0 transparent;
     height: 19px;
     left: 0;
@@ -5960,18 +5965,11 @@ body.page-node #content-inner-inner{
     width: 19px;
     z-index: 9;
   }
-  label{
-      padding-left: 20px;
-  }
+
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper  .description,
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper  .description{
    padding-left: 23px;
 }
-
-
-#ciclo-bmecat-import  ul:nth-child(1){
-    background: activeborder;
-}                                                                                                                                                                                                                       
 
 
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import  fieldset  .ubcart_select_0,
@@ -5992,8 +5990,12 @@ body.page-node #content-inner-inner{
     top: 93px;
     width: 45%;
 }
-.ubcart_select_0{
-    
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset .ubcart_select_0 li span {
+        color: #999999;
+    display: block;
+}
+#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset .ubcart_select_0  li{
+    padding-left: 20px;
 }
 .page-groups #block-views-groups_featured_groups-block_1 .content .views-row .views-field-description,
 .page-groups #block-views-groups_featured_groups-block_2 .content .views-row .views-field-description{
