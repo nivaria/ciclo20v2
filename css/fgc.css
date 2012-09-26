@@ -5,5 +5,25 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
-
+#edit-upload-wrapper{
+    padding: 10px 0;
+    position: relative;
+}
+#edit-upload-wrapper label{
+    background: url("../images/bgupload.png") no-repeat scroll 0 0 transparent;
+    height: 62px;
+    text-indent: -999px;
+    width: 200px;
+    cursor: pointer;
+}
+#edit-upload{
+    height: 75px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 9999999;
+}
+fieldset #edit-import{
+    display: none;
+}

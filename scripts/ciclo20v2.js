@@ -127,18 +127,38 @@ $(document).ready(function(){
     })
     /*zoom product*/
     $(".node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item").append("<span class='zoom-out'></span>")
-//             var lightbox_img= $(".node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item img").attr('src');
-//        // alert(lightbox_img);
-//        $(".field-ciclo-model-image .field-items .field-item ").html("<a href="+lightbox_img+"><img src="+lightbox_img+"/> <span class='zoom-out'></span></a>");
-//         $('.field-ciclo-model-image .field-items .field-item a').lightBox();
-$("#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row").each(function(i){
+    //             var lightbox_img= $(".node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item img").attr('src');
+    //        // alert(lightbox_img);
+    //        $(".field-ciclo-model-image .field-items .field-item ").html("<a href="+lightbox_img+"><img src="+lightbox_img+"/> <span class='zoom-out'></span></a>");
+    //         $('.field-ciclo-model-image .field-items .field-item a').lightBox();
+    $("#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row").each(function(i){
    
-   var content=$(this).find(".nd-region-middle-wrapper").html();
+        var content=$(this).find(".nd-region-middle-wrapper").html();
 
-var images=$(this).find(".nd-region-left").html();
+        var images=$(this).find(".nd-region-left").html();
 
-                  $(this).find(".nd-region-middle-wrapper").html(images);
-                 $(this).find(".nd-region-left").html(content); 
-})
+        $(this).find(".nd-region-middle-wrapper").html(images);
+        $(this).find(".nd-region-left").html(content); 
+    })
+    
+    /**checkbox**/
+   $("#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset ul").each(function(i){
+       $(this).addClass('ubcart_select_'+i);
+   })
+//   $(".ubcart_select1")().css({
+//     'left': '55%',
+//    'position': 'absolute',
+//    'top': 93+'px',
+//    'width': '45%'
+//   })
 
+    $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input').after("<span class='checked'></span>");
+     $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input').after("<span class='checked'></span>");
+    /*attach*/
+    $("#edit-upload-wrapper label").click(function(){
+        $("#edit-upload").click();
+    })
+    $("#edit-upload").change(function(){
+        $("#ciclo-bmecat-import").submit();
+    })
 });
