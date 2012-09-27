@@ -86,6 +86,9 @@ body,
 div.full-width {
     min-width: 992px;
 }
+th,td{
+    border: none;
+}
 /*
     Style FGC
 */
@@ -100,6 +103,7 @@ body.node-type-ciclo-installation #content-group .buildmode-full,
 #pid-catalog-model-ausvistick-3606000 .buildmode-full,
 #pid-catalog-model-agitador-brinmix-1000 .buildmode-full,
 #pid-users-montesano #block-views-user_ciclokm-block_2
+
 {
     background-color: #FFFFFF;
     border-bottom: 0;
@@ -120,7 +124,8 @@ body.node-type-ciclo-installation #content-group #content-top,
 #pid-content-montesano #content-top,
 #pid-catalog-model-ausvistick-3606000 #content-top ,
 #pid-catalog-model-agitador-brinmix-1000 #content-top,
-#pid-users-montesano #content-top{
+#pid-users-montesano #content-top
+{
 
     background: none repeat scroll 0 0 #FFFFFF;
     border-color: #E1E1E1;
@@ -281,6 +286,10 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content #block-quicktabs-ciclo_installation_detail .content #quicktabs-ciclo_installation_detail #quicktabs_container_ciclo_installation_detail .view-content .item-list li.views-row{
     display: inline-block;
     width: 45%;
+       margin-left: 27px;
+}
+body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content #block-quicktabs-ciclo_installation_detail .content #quicktabs-ciclo_installation_detail #quicktabs_container_ciclo_installation_detail .view-content .item-list ul{
+    margin-left: -12px;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content #block-quicktabs-ciclo_installation_detail .content #quicktabs-ciclo_installation_detail #quicktabs_container_ciclo_installation_detail .view-content .item-list .status span.user-Yes{
     width:98%;
