@@ -473,12 +473,12 @@ Works well with inline login or inline menu block style */
     color: #666666;
     display: inline-block;
     font-family: calibri,arial;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     height: 35px;
     line-height: 35px;
     padding: 0 14px;
-    padding:0 25px!important;
+    padding:0 30px!important;
     text-transform:uppercase;
 }
 
@@ -492,7 +492,7 @@ Works well with inline login or inline menu block style */
 }
 
 .om-maximenu ul.om-menu li.om-leaf {
-    margin-right: 7px;
+    margin-right: 4px;
 }
 
 .om-maximenu ul.om-menu li .om-maximenu-content {
@@ -724,7 +724,7 @@ Works well with inline login or inline menu block style */
     margin: 0 auto;
     float: left;
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 18px;
 }
 #ciclo-catalog-breadcrumb {
@@ -737,7 +737,8 @@ Works well with inline login or inline menu block style */
     width:70px;
     padding: 0px 0px 6px 0px;
 }
-.breadcrumb { padding: 0px 0px 8px 0px;}
+.breadcrumb { padding: 0px 0px 15px 0px;
+color: #999}
 
 .breadcrumbs.block .breadcrumbs-inner {	margin: 0;}
 
@@ -751,7 +752,7 @@ Works well with inline login or inline menu block style */
     line-height: 1.4em;
     margin: 0;
     padding: 0 2px;
-    color:#666;
+    color:#999;
 }
 
 .breadcrumbs a:last-child,
@@ -1975,11 +1976,11 @@ fieldset legend{
     color: #666666;
     float: left;
     font-weight: bold;
-    padding: 10px 0;
+       padding: 0 0 20px;
     width: 100%;
     font-family: calibri,arial;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 19px;
     color: #666;
     background-image: url(../images/line_sep.png);
     background-position: left bottom;
@@ -2839,7 +2840,7 @@ dl.search-results .search-result p.search-info {
     background:none;
 }
 .view .view-content .item-list li.views-row:last-child {
-    /*    border:0 none;*/
+  border:0 none;
 }
 .view .view-content .item-list li.views-row:after {
     clear: both;
@@ -3656,7 +3657,7 @@ fieldset.views-exposed-form {
     border: 1px solid #ccc;
     clear: both;
     overflow: visible;
-    padding: 10px 5px;
+    padding: 10px;
 }
 
 fieldset.views-exposed-form:after {
@@ -3672,7 +3673,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
 }
 
 html.js fieldset.views-exposed-form {
-    margin: 18px 0px;
+    margin: 0px;
 }
 
 html.js fieldset.views-exposed-form.collapsed {
@@ -3683,7 +3684,7 @@ html.js fieldset.views-exposed-form.collapsed {
 
 .views-exposed-widgets {
     float: left;
-    margin: 2px 0px 8px 8px;
+    margin: 0;
     max-width: 100%;
     width: auto;
 }
@@ -5398,7 +5399,7 @@ thead + tbody {
     padding: 0
 }
 #pid-users-montesano #block-views-user_ciclokm-block_2 .inner{
-     padding: 20px;
+      padding: 0 20px 20px;
 }
 #pid-users-montesano .buildmode-full{
     display: none;
@@ -5407,8 +5408,9 @@ thead + tbody {
     width: 100%
 }
 .view-user-ciclokm  .field-content h2.title{
-        color: #000000;
-    font-size: 22px;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
     padding-bottom: 30px;
 }
 .view-user-ciclokm  .view-content .views-field-picture{
@@ -5487,12 +5489,17 @@ background-repeat: no-repeat;
 #quicktabs-ciclo_user_detail .nd-region-left,
 #quicktabs_container_ciclo_user_detail  .view-ciclo-customer-models  .nd-region-left{
         float: left;
-    width: 40%;
+    width: 25%;
+}
+#quicktabs-ciclo_user_detail .nd-region-left .field-ciclo-model-image-fid  img,
+#quicktabs_container_ciclo_user_detail .view-ciclo-customer-models .nd-region-left .field-ciclo-model-image-fid img{
+       height: 58px;
+    width: 65px; 
 }
 #quicktabs-ciclo_user_detail .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_user_detail  .view-ciclo-customer-models .nd-region-middle-wrapper{
         float: right;
-    width: 60%;
+    width: 72%;
 }
 #quicktabs_container_ciclo_user_detail .view-ciclo-customers  .view-content .item-list li.views-row{
     border: medium none;
@@ -6428,7 +6435,17 @@ body.no-sidebars #content-group-inner {
     padding: 0 8px;
     width: 165px;
 }
-
+#search-nivaria-navigation-tree  #input-search-nivaria-navigation-tree{
+        border: 1px solid #999999;
+    height: 24px;
+    width: 188px;
+}
+#search-nivaria-navigation-tree {
+        background: none repeat scroll 0 0 #F3F3F3;
+    margin-left: -10px;
+    padding: 10px 19px;
+    width: 242px;
+}
 #bt-search-nivaria-navigation-tree,
 #om-maximenu-ciclo .block-ciclo_solr_search .form-submit {
     background-image: url(../images/search_icon.png);
@@ -6588,14 +6605,16 @@ table tbody tr.selected td.active {
 }
 
 .quicktabs_wrapper ul.quicktabs_tabs {
-    margin: 10px 0 0;
+      margin: 15px 0 0 -8px;
     border: 0;
+        position: relative;
+    z-index: 5;
 }
 
 .quicktabs_wrapper ul.quicktabs_tabs li {
     background: none;
     padding: 0;
-    margin: 0 2px;
+    margin: 0 8px;
 }
 
 .quicktabs_wrapper ul.quicktabs_tabs li a {
@@ -6610,7 +6629,7 @@ table tbody tr.selected td.active {
     color: #666666;
     display: inline-block;
     font-family: calibri,arial;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     height: 24px;
     line-height: 24px;
@@ -6633,6 +6652,7 @@ table tbody tr.selected td.active {
     overflow: hidden;
     padding: 10px;
     position: relative;
+     margin-top: -5px;
 }
 
 .quicktabs_wrapper .views-exposed-form {
@@ -7560,16 +7580,14 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
 }
 
 .block-nivaria_ubercart a {
-    background-color: #878787;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+    background-color: #A7A7A7;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
     display: block;
     height: 43px;
     padding: 5px 10px;
-    width: 110px;
-    color: #FFF;
     text-align: center;
+    width: 70px;
 }
 
 .block-nivaria_ubercart a:hover { text-decoration: none; }
@@ -7588,19 +7606,19 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
     display: block;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 11px;
     clear: both;
 }
 
 .block-nivaria_ubercart .cart-block-number {
     display: block;
     float: left;
+    font-size: 22px;
     font-weight: bold;
     line-height: 28px;
-    font-size: 22px;
-    text-align: right;
     margin-right: 6px;
-    width: 45px;
+    text-align: right;
+    width: 20px;
 }
 
 .block-nivaria_ubercart .cart-number-wrapper {
@@ -7917,7 +7935,7 @@ body.page-groups #content-group {
     background: none repeat scroll 0 0 #000000;
     margin-bottom: 0;
     margin-left: -25px;
-    padding: 10px 0;
+    padding: 3px 0;
     width: 710px !important;
 }
 #pid-node-717-catalog  .view .item-list ul.pager,
@@ -8063,6 +8081,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-972-catalog  .sidebar-first .block h2.block-title{
         font-size: 25px;
     padding-bottom: 10px;
+       margin: 0 8px;
 }
 #pid-node-717-catalog  #content-group-inner  h1,
 #pid-node-972-catalog    #content-group-inner h1{
@@ -8138,6 +8157,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     padding: 1px 20px;
     text-decoration: none;
     text-transform: uppercase;
+}
+#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs ,
+#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs{
+  margin-left: -4px;
 }
 /**slideshowfgc**/
 #pid-node-717-catalog   #quicktabs_tabpage_ciclo_model_catalogue_2,
@@ -8419,8 +8442,9 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 .views-exposed-form .collapse-processed a
 {
-    background: url("../images/circle_sprite.png") no-repeat scroll 47px -345px transparent !important;
+ background: url("../images/circle_sprite.png") no-repeat scroll 42px -345px transparent !important;
     color: #000000;
+    padding-left: 0 !important;
 }
 .views-exposed-form .collapse-processed a:hover{
     text-decoration: none;
@@ -8513,8 +8537,14 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-admin-settings-ciclo-bmecat-import  #sidebar-last-wrapper .block-ciclo_bmecat .content ul li
 {
     background: url("../images/circle_sprite.png") no-repeat scroll 0 -632px transparent;
-    padding: 2px 0 4px 35px;
+    padding: 2px 0 4px 20px;
      list-style: none;
+}
+
+#pid-content-nueva #sidebar-last-wrapper #block-og-0 .item-list ul,
+#pid-content-el-pozo #sidebar-last-wrapper #block-og-0 .item-list ul,
+#pid-catalog-client-scar-mayer #sidebar-last-wrapper #block-og-0 .item-list ul {
+      padding-left: 10px;
 }
 #pid-admin-settings-ciclo-bmecat-import  #sidebar-last-wrapper .block-ciclo_bmecat .content ul li{
     padding-left: 20px;
@@ -8792,10 +8822,10 @@ quicktabs-ciclo_model_detail .inner{
 #quicktabs-ciclo_customer_detail .quicktabs_tabs li a,
 #quicktabs-ciclo_user_detail .quicktabs_tabs li a{
     border: medium none;
-    height: 40px;
+    height: 35px;
     padding-top: 3px;
     text-align: center;
-    width: 125px;
+    width: 128px;
     color: #fff;
 }
 #quicktabs-ciclo_model_detail .quicktabs_tabs li.active a,

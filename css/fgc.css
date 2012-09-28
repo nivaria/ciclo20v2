@@ -8,6 +8,7 @@
 #edit-upload-wrapper{
     padding: 0;
     position: relative;
+    margin: 0;
 }
 #edit-upload-wrapper label{
     background: url("../images/bgupload.png") no-repeat scroll 0 0 transparent;
