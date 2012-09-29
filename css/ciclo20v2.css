@@ -240,7 +240,7 @@ body {
 
 }
 .view-id-ciclo_installations_og .view-header{
-    top: -50px;
+   top: -68px;
 }
 .content-content .view-header a{
     background: none repeat scroll 0 0 #EE7B20;
@@ -257,7 +257,7 @@ body {
     margin-left: 10px;}
 #skip{
     background: none repeat scroll 0 0 #333333;
-    height: 30px;
+    height: 26px;
     overflow: hidden;
     width: 100%;
 }
@@ -737,9 +737,12 @@ Works well with inline login or inline menu block style */
     width:70px;
     padding: 0px 0px 6px 0px;
 }
-.breadcrumb { padding: 0px 0px 15px 0px;
+.breadcrumb{
 color: #999}
+#pid-users-montesano .breadcrumb {
 
+    padding: 0px 0px 15px 0px;
+}
 .breadcrumbs.block .breadcrumbs-inner {	margin: 0;}
 
 .breadcrumbs a,
@@ -1976,7 +1979,7 @@ fieldset legend{
     color: #666666;
     float: left;
     font-weight: bold;
-       padding: 0 0 20px;
+       padding:20px 0;
     width: 100%;
     font-family: calibri,arial;
     font-weight: bold;
@@ -2765,6 +2768,7 @@ body.node-type-group .page-group .sidebar-last .block h2.block-title a {
 #content-group .block .inner {
     margin-left: 0px;
     margin-right: 0px;
+    position: relative;
 }
 
 
@@ -3724,7 +3728,7 @@ html.js fieldset.views-exposed-form.collapsed {
 }
 
 .views-exposed-wrapper .views-exposed-widget.views-exposed-submit {
-    float: left;
+    float: right;
     margin-right: 8px;
     max-width: 14%;
     width: auto;
@@ -4210,21 +4214,24 @@ a.feed-icon img {
 .view-user-meta .views-field-nothing a,
 .view-user-meta .views-field-nothing-1 a {
     color: #FFFFFF;
-    font-size: 13px;
+    display: block;
+    font-family: calibri,arial;
+    font-size: 14px;
     font-weight: bold;
+    margin-top: 8px;
+    padding-top: 9px;
     text-transform: uppercase;
-    font-family:calibri,arial;
 }
 
 .view-user-meta .views-field-nothing {
     background-color: #666666;
     background-image: url("../images/bullet-white.png");
-    background-position: 18px center;
+    background-position: 10px center;
     background-repeat: no-repeat;
     height: 30px;
     line-height: 27px;
     margin: 0;
-    padding: 0 0 0 26px;
+    padding: 0 0 0 19px;
     width: auto;
 }
 .view-user-meta .views-field-nothing-1 { 
@@ -4238,7 +4245,7 @@ a.feed-icon img {
     padding: 0 0 0 26px;
 
     position: absolute;
-    right: 14px;
+    right: 10px;
     top: 0;
 }
 #header-group{
@@ -5188,7 +5195,7 @@ input.tagging-widget-input,
     border: 1px solid #ccc;
     line-height: 1em;
     margin:0;
-    padding:2px 4px;
+    padding:4px;
 }
 #tagging-widget-container .tagging-widget-input,
 input.tagging-widget-input{
@@ -5487,12 +5494,15 @@ background-repeat: no-repeat;
      background-position: 0 0;
 }
 #quicktabs-ciclo_user_detail .nd-region-left,
-#quicktabs_container_ciclo_user_detail  .view-ciclo-customer-models  .nd-region-left{
+#quicktabs_container_ciclo_user_detail  .view-ciclo-customer-models  .nd-region-left,
+#quicktabs_container_ciclo_model_detail   .nd-region-left{
         float: left;
     width: 25%;
 }
 #quicktabs-ciclo_user_detail .nd-region-left .field-ciclo-model-image-fid  img,
-#quicktabs_container_ciclo_user_detail .view-ciclo-customer-models .nd-region-left .field-ciclo-model-image-fid img{
+#quicktabs_container_ciclo_user_detail .view-ciclo-customer-models .nd-region-left .field-ciclo-model-image-fid img,
+#quicktabs_container_ciclo_model_detail  .field-ciclo-model-image-fid img{
+    
        height: 58px;
     width: 65px; 
 }
@@ -5575,7 +5585,7 @@ body.page-node .edit-content-link{
 }
 .node-type-ciclo_customer .field-edit-content-link-widget .edit-content-link{
     right: 57px;
-    top: 40px;
+    top: 0px;
 }
 body.page-ogdetails .edit-content-link {
     position: absolute;
@@ -6057,13 +6067,13 @@ body.page-node #content-inner-inner{
 {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 64px;
     width: 45%;
 }
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset .ubcart_select_1{
         left: 55%;
     position: absolute;
-    top: 93px;
+    top: 116px;
     width: 45%;
     padding-left: 30px;
 }
@@ -6410,6 +6420,7 @@ body.no-sidebars #content-group-inner {
 #precontent {
     margin: 10px auto;
     min-height: 22px;
+       overflow: hidden;
 }
 
 #content-group.clean-left #content-group-inner {
@@ -6748,7 +6759,7 @@ table tbody tr.selected td.active {
     float: left;
     font-size: 14px;
     font-weight: bold;
-    padding-left: 6px;
+    padding-left: 10px;
     position: absolute;
     top: -13px;
 }
@@ -6957,16 +6968,16 @@ table tbody tr.selected td.active {
     /*    margin-left: 156px;*/
     margin-left: 10px;
 }
-
-.grid-type-1 .view-content .item-list li.views-row .nd-region-footer,
-#main-content  .view-footer{
+/*#main-content  .view-footer*/
+.grid-type-1 .view-content .item-list li.views-row .nd-region-footer
+{
     background-color: transparent;
     background-image: url(../images/line_sep.png);
     background-position: left top;
     background-repeat: repeat-x;
     margin-top: 2px;
     border: 0;
-    padding: 5px 0 0;
+     padding: 10px 0 5px;
 }
 
 .grid-type-1 .view-content .item-list li.views-row .nd-region-footer a {
@@ -7026,12 +7037,12 @@ table tbody tr.selected td.active {
 .field-ciclo-model-image img {
     border: 1px solid #999;
     height: 260px;
-    width: 318px;
+    width: 300px;
 }
 .node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item .zoom-out{
     background: url("../images/maximize.png") no-repeat scroll right bottom transparent;
     height: 38px;
-    left: 281px;
+    left: 263px;
     position: absolute;
     top: 223px;
     width: 38px;
@@ -7083,7 +7094,7 @@ body.page-catalog .node-type-ciclo_installation .nd-region-right {
 .node-type-ciclo-installation .nd-region-left,
 .node-type-ciclo_installation .nd-region-left {
     padding: 0 10px 0 0;
-    width: 320px;
+    width: 300px;
 }
 
 .node-type-ciclo-model-machine .nd-region-footer,
@@ -7134,6 +7145,7 @@ body.page-catalog .node-type-ciclo_installation .nd-region-right {
     background-repeat: no-repeat;
     padding-left: 20px;
     line-height: 20px;*/
+background: none;
 }
 
 .node-type-ciclo-model-machine #content-group #content-content .nd-region-right ul li,
@@ -8075,7 +8087,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
      }
 #pid-node-717-catalog #content-inner-inner,
 #pid-node-972-catalog   #content-inner-inner{
-            padding-left: 15px;
+            padding-left: 8px;
     }
 #pid-node-717-catalog .sidebar-first .block h2.block-title,
 #pid-node-972-catalog  .sidebar-first .block h2.block-title{
@@ -8154,13 +8166,13 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     height: 24px;
     line-height: 24px;
     margin: 0 2px;
-    padding: 1px 20px;
+    padding: 1px 30px;
     text-decoration: none;
     text-transform: uppercase;
 }
 #pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs ,
 #pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs{
-  margin-left: -4px;
+  margin-left: -1px;
 }
 /**slideshowfgc**/
 #pid-node-717-catalog   #quicktabs_tabpage_ciclo_model_catalogue_2,
@@ -8242,13 +8254,18 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active,
 #pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active{
-     background: url("../images/tab_sprite.png") repeat scroll -3px -140px transparent;
+     background: url("../images/tab_sprite.png") repeat scroll -3px -141px transparent;
     padding-bottom: 10px;
     position: relative;
     text-align: center;
-    width: 77px;
+    width: 56px;
     z-index: 999;
   
+}
+
+#pid-node-972-catalog .quicktabs_wrapper ul.quicktabs_tabs li,
+#pid-node-717-catalog .quicktabs_wrapper ul.quicktabs_tabs li{
+    margin: 0;
 }
 #pid-node-717-catalog table.views-table thead th.active,
 #pid-node-972-catalog table.views-table thead th.active{
@@ -8332,7 +8349,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-972-catalog .quicktabs_wrapper .quicktabs_main
 {
      border-radius: 0 0 0 0;
-        margin-top: -9px;
+        margin-top: -10px;
          padding: 0;
 }
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs  .quicktabs_main{
@@ -8442,8 +8459,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 .views-exposed-form .collapse-processed a
 {
- background: url("../images/circle_sprite.png") no-repeat scroll 42px -345px transparent !important;
-    color: #000000;
+    background: url("../images/circle_sprite.png") no-repeat scroll 34px -345px transparent !important;
+    color: #333333;
+    font-size: 17px;
+    font-weight: normal;
     padding-left: 0 !important;
 }
 .views-exposed-form .collapse-processed a:hover{
@@ -8472,11 +8491,11 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 .view-ciclo-customers .view-header a.add-content-link{
        position: relative;
-    top: -27px;
+   top: -20px;
 }
 #sidebar-last-wrapper{
     float: left;
-    padding: 30px 0 10px 20px;
+    padding: 40px 0 10px 20px;
     width: 280px;
 }
 #sidebar-last-wrapper #block-views-public_group_content-block_1{
@@ -8540,7 +8559,12 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     padding: 2px 0 4px 20px;
      list-style: none;
 }
-
+#pid-content-nueva .buildmode-full{
+  padding: 0 20px 10px!important;
+}
+#pid-content-instalaci-n-agitadora-test .buildmode-full{
+    padding: 0 20px
+}
 #pid-content-nueva #sidebar-last-wrapper #block-og-0 .item-list ul,
 #pid-content-el-pozo #sidebar-last-wrapper #block-og-0 .item-list ul,
 #pid-catalog-client-scar-mayer #sidebar-last-wrapper #block-og-0 .item-list ul {
@@ -8634,6 +8658,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     background: url("../images/arrow_sprite.png") no-repeat scroll 0 -228px transparent;
     padding-left: 12px;
     font-weight: normal;
+    font-size: 12px;
 }
 /*border-top dot  */
 /*more*/
@@ -8657,7 +8682,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
  }
 #sidebar-last-wrapper .view-footer,
 #sidebar-last-wrapper .more-link{
-    padding: 10px;
+    padding: 10px 10px 5px;
 }
 #main-content #content-region .view-footer a.add-content-link{
     background: none repeat scroll 0 0 #EE7F23;
@@ -8683,6 +8708,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     padding-top: 15px;
 }
 .grid-type-1 .view-content .item-list li.views-row .nd-region-footer .field-ciclo-customer-logo-fid{float:left}
+.grid-type-1 .view-content .item-list li.views-row .nd-region-footer .field-ciclo-customer-logo-fid img{
+  height: 40px;
+    width: 40px;
+}
 .grid-type-1 .view-content .item-list li.views-row .nd-region-footer .field-ciclo-install-customer-nid{
     float: left;
     padding-left: 12px;
@@ -8698,7 +8727,6 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-catalog-model-ausvistick-3606000 #content-top #content-top-inner,
 #pid-catalog-model-agitador-brinmix-1000 #content-top #content-top-inner{
-    padding: 0 10px;
 }
 #pid-catalog-model-ausvistick-3606000 .breadcrumbs-wrapper,
 #pid-catalog-model-agitador-brinmix-1000 .breadcrumbs-wrapper{
@@ -8709,7 +8737,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 
 #pid-catalog-model-ausvistick-3606000 .buildmode-full,
 #pid-catalog-model-agitador-brinmix-1000 .buildmode-full{
-    padding: 0 10px;    
+    padding: 0 20px;    
     
 }
 .node-type-ciclo_model_machine .nd-region-footer{
@@ -8731,7 +8759,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -470px;
     color: #000000;
     font-weight: bold;
-    padding: 15px 0 12px;
+    padding: 10px 0 12px;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -8746,7 +8774,7 @@ background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../i
 #pid-catalog-model-ausvistick-3606000 .edit-content-link,
 #pid-catalog-model-agitador-brinmix-1000 .edit-content-link{
     right: 50px;
-    top: 45px;
+    top: 9px;
 }
 #pid-catalog-model-ausvistick-3606000 .edit-content-link:hover,
 #pid-catalog-model-agitador-brinmix-1000 .edit-content-link:hover{
@@ -8789,7 +8817,7 @@ background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../i
 }
 #quicktabs_container_ciclo_model_detail li .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_customer_detail li .nd-region-middle-wrapper{
-    width: 62% !important;
+    width: 71% !important;
       float: right;
 }
 #quicktabs_container_ciclo_model_detail .nd-region-middle,
@@ -8800,7 +8828,7 @@ background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../i
 #quicktabs_container_ciclo_model_detail .nd-region-left,
 #quicktabs_container_ciclo_customer_detail .nd-region-left
 {
-    width: 32%;
+    width: 25%;
       float: left;
 }
 quicktabs-ciclo_model_detail .inner{
@@ -8814,7 +8842,7 @@ quicktabs-ciclo_model_detail .inner{
 #quicktabs-ciclo_customer_detail .quicktabs_tabs,
 #quicktabs-ciclo_user_detai .quicktabs_tabs{
     position: absolute;
-    top: -44px;
+    top: -47px;
     z-index: 9999;
 }
 #quicktabs-ciclo_model_detail .quicktabs_tabs li a,
@@ -8862,9 +8890,7 @@ quicktabs-ciclo_model_detail .inner{
     overflow: hidden;
     width: 80px;
 }
-#quicktabs-ciclo_installation_detail ul.quicktabs_tabs{
-    top: -42px;
-}
+
  
 #quicktabs_container_ciclo_installation_detail{
     margin-top: 40px;
@@ -8872,7 +8898,8 @@ quicktabs-ciclo_model_detail .inner{
 /*pid-content-el-pozo*/
 #pid-catalog-client-scar-mayer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper,
 #pid-content-el-pozo #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper,
-#pid-content-nueva #block-quicktabs-ciclo_installation_detail  .view-ciclo-customer-users .ud-region-middle-wrapper{
+#pid-content-nueva #block-quicktabs-ciclo_installation_detail  .view-ciclo-customer-users .ud-region-middle-wrapper,
+#pid-content-instalaci-n-agitadora-test    #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper{
     
      float: right;
     margin: 0;
@@ -8880,13 +8907,16 @@ quicktabs-ciclo_model_detail .inner{
 }
 #pid-catalog-client-scar-mayer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle,
 #pid-content-el-pozo #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle,
-#pid-content-nueva #block-quicktabs-ciclo_installation_detail  .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle
+#pid-content-nueva #block-quicktabs-ciclo_installation_detail  .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle,
+#pid-content-instalaci-n-agitadora-test    #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle
 {
         margin-left: 20px;
 }
 #pid-catalog-client-scar-mayer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle ul,
  #pid-content-el-pozo #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle ul,
- #pid-content-nueva #block-quicktabs-ciclo_installation_detail  .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle .field ul{
+ #pid-content-nueva #block-quicktabs-ciclo_installation_detail  .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle .field ul,
+ #pid-content-instalaci-n-agitadora-test    #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle ul
+ {
     margin-left: 0!important;
 }
 #pid-catalog-client-scar-mayer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle ul li,
@@ -8927,10 +8957,21 @@ quicktabs-ciclo_model_detail .inner{
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -538px #FFFFFF;
 
 }
+#pid-content-el-pozo #content-inner-inner h1.title{
+    padding-left: 25px;
+     padding-bottom: 15px;
+}
 .node-type-ciclo_installation .nd-region-header  .field-title h1{
-    border: none;
-    margin-bottom: 10px;
+     border: medium none;
+    color: #000000;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -476px;
+}
+#pid-content-nueva .breadcrumb,
+#pid-content-el-pozo .breadcrumb{
+     padding: 0 0 3px;
 }
 #pid-catalog-client-scar-mayer #content-inner-inner h1.close,
 #pid-content-el-pozo #content-inner-inner h1.close,
@@ -8961,6 +9002,47 @@ quicktabs-ciclo_model_detail .inner{
     padding: 0 10px;
 }
 /*customer*/
+#pid-catalog-installations  #content-group #content-content{
+     padding-top: 20px;
+}
+#pid-catalog-customers  #content-group #content-top,
+#pid-catalog-installations   #content-group #content-top{
+    display: none;
+    padding: 0;
+}
+#pid-catalog-installations #view-id-ciclo_installations_og-page .view-content .item-list{
+        background: none;
+    border: none;
+}
+#pid-catalog-installations #view-id-ciclo_installations_og-page  .item-list{
+        background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #E1E1E1;
+    border-radius: 10px 10px 10px 10px;
+    clear: both;
+}
+#pid-catalog-installations #view-id-ciclo_installations_og-page .item-list ul.pager{
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    display: block;
+    float: none;
+    height: 26px;
+    line-height: 24px;
+    margin: 12px 0;
+    padding: 10px;
+    text-align: center;
+}
+#pid-catalog-customers  .view-ciclo-customers .view-filters{
+     margin: 15px 0;
+}
+#pid-catalog-customers  .view-ciclo-customers .view-filters .views-exposed-form .collapse-processed{
+        background: none;
+    margin: 0;
+    padding: 0;
+}
+#pid-catalog-customers  .view-ciclo-customers .view-filters .views-exposed-form  .fieldset-wrapper{
+    padding: 10px 0 0 10px;
+}
 #pid-catalog-customers  .view-ciclo-customers .view-content li.views-row .nd-region-left{
 
        float: none;
@@ -9041,4 +9123,8 @@ quicktabs-ciclo_model_detail .inner{
 }
 .title.block-title.close{
     background: url("../images/circle_sprite.png") no-repeat scroll 227px -367px transparent !important;
+}
+/*catalog*/
+#pid-catalog #content-group .view-ciclo-machines .view-content .item-list li .nd-region-left .field-ciclo-model-image-fid img{
+    border: none;
 }
