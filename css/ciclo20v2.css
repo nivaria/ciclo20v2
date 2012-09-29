@@ -738,7 +738,8 @@ Works well with inline login or inline menu block style */
     padding: 0px 0px 6px 0px;
 }
 .breadcrumb{
-color: #999}
+color: #999;
+padding: 0;}
 #pid-users-montesano .breadcrumb {
 
     padding: 0px 0px 15px 0px;
@@ -8104,8 +8105,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     padding-bottom: 15px;
 
 }
-#pid-node-717-catalog .breadcrumbs-inner ,
-#pid-node-717-catalog .breadcrumbs-inner{
+#pid-node-717-catalog #breadcrumbs-inner ,
+#pid-node-972-catalog #breadcrumbs-inner{
     padding-left: 10px;
 }
 #pid-node-717-catalog #ciclo-catalog,
