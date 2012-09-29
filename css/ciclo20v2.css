@@ -8101,8 +8101,12 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     background-position: left bottom;
     background-repeat: repeat-x;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+#pid-node-717-catalog .breadcrumbs-inner ,
+#pid-node-717-catalog .breadcrumbs-inner{
+    padding-left: 10px;
 }
 #pid-node-717-catalog #ciclo-catalog,
 #pid-node-972-catalog  #ciclo-catalog{
