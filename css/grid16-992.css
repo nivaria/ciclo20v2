@@ -100,9 +100,9 @@ body.node-type-ciclo-installation #content-group .buildmode-full,
 #pid-catalog-client-scar-mayer .buildmode-full,
 #pid-content-el-pozo  .buildmode-full,
 #pid-content-montesano #content-content .buildmode-full,
-#pid-catalog-model-ausvistick-3606000 .buildmode-full,
+.node-type-ciclo-model-machine .buildmode-full,
 #pid-catalog-model-agitador-brinmix-1000 .buildmode-full,
-#pid-users-montesano #block-views-user_ciclokm-block_2
+.page-user-1 #block-views-user_ciclokm-block_2
 
 {
     background-color: #FFFFFF;
@@ -122,9 +122,9 @@ body.node-type-ciclo-installation #content-group #content-top,
 #pid-catalog-client-scar-mayer #content-top,
 #pid-content-el-pozo #content-top,
 #pid-content-montesano #content-top,
-#pid-catalog-model-ausvistick-3606000 #content-top ,
+.node-type-ciclo-model-machine #content-top ,
 #pid-catalog-model-agitador-brinmix-1000 #content-top,
-#pid-users-montesano #content-top
+.page-user-1 #content-top
 {
 
     background: none repeat scroll 0 0 #FFFFFF;
