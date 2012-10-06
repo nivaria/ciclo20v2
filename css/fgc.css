@@ -5,6 +5,9 @@
     Description:
         Purpose of the stylesheet follows.
 */
+a{
+    outline: none;
+}
 #edit-upload-wrapper{
     padding: 0;
     position: relative;
@@ -27,4 +30,45 @@
 }
 fieldset #edit-import{
     display: none;
+}
+#pid-catalog-client-scar-mayer .buildmode-full .full-node,
+#pid-content-el-pozo .buildmode-full .full-node{
+    background: url("../images/line_sep.png") repeat-x scroll left top transparent;
+    padding-top: 10px !important;
+}
+.views-exposed-form.collapsible.collapsed{
+    margin-bottom: 20px;
+}
+#pid-catalog-client-scar-mayer #content-inner-inner h1.title,
+#pid-content-el-pozo #content-inner-inner h1.title{
+    background: url("../images/circle_sprite.png") no-repeat scroll right -538px #FFFFFF;
+}
+#pid-content-el-pozo #content-inner-inner h1.title {
+    padding-bottom: 0;
+}
+#quicktabs_container_ciclo_model_detail li.views-row, #quicktabs_container_ciclo_customer_detail li.views-row {
+    padding: 15px 0 0;
+}
+body.node-type-ciclo-installation #content-group .buildmode-full, 
+.node-type-ciclo-customer #content-content .buildmode-full,
+.node-type-ciclo-model-machine .buildmode-full,
+#pid-catalog-model-agitador-brinmix-1000 .buildmode-full
+/*.page-user-1 #block-views-user_ciclokm-block_2 {*/
+   { padding: 10px 20px 20px;
+}
+select.form-select{
+    padding: 3px;
+}
+.node-type-ciclo-model-machine .edit-content-link, #pid-catalog-model-agitador-brinmix-1000 .edit-content-link {
+    right: 50px;
+    top: 18px;
+}
+.node-type-ciclo-model-machine #bt-catalog, .node-type-ciclo_installation #bt-catalog {
+    top: 55px;
+}
+body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-install-customer{
+    width: 88%;
+}
+.view-ciclo-model-installations .nd-region-left{
+    padding-top: 5px !important;
 }
