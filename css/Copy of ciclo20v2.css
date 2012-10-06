@@ -6360,19 +6360,7 @@ body.no-sidebars #content-group-inner {
     padding-left: 8px;
 }
 
-#nivaria-navigation-tree li.jstree-open  li.jstree-leaf a:hover{
-      background: url("../images/bg_tree_a_hover1.png") no-repeat   left center;
-    margin-left: -20px;
-    position: absolute;
-    width: 275px;
-    z-index: 9998;
-   padding: 5px 0 5px 28px;
-     border: none;
-     height: 18px;
-        color: #FFFFFF;
-}
 #nivaria-navigation-tree  li.jstree-leaf a:hover
-/*#nivaria-navigation-tree  li.jstree-leaf:hover*/
 {
   background: url("../images/bg_tree_a_hover.png") no-repeat   left center;
     margin-left: -20px;
@@ -6395,17 +6383,6 @@ body.no-sidebars #content-group-inner {
     line-height: 24px;*/
     border: none;
     background: none;
-}
-#nivaria-navigation-tree li.jstree-open li.jstree-leaf .jstree-clicked{
-        background: url("../images/bg_tree_a_hover1.png") no-repeat scroll left center transparent;
-    height: 18px;
-     margin-left: -20px;
- padding: 5px 0 5px 28px;
-    position: absolute;
-    width: 293px;
-    z-index: 999;
-    color: #FFFFFF;
-    border: none;
 }
 #nivaria-navigation-tree li.jstree-leaf .jstree-clicked{
     background: url("../images/bg_tree_a_hover.png") no-repeat scroll left center transparent;
@@ -8066,10 +8043,7 @@ body.page-groups #content-group {
  text-transform: uppercase;
 } 
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3) a,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3) a
-{
+#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a{
     font-size: 13px;
     font-weight: normal;
     line-height: 25px;
@@ -8090,9 +8064,9 @@ body.page-groups #content-group {
      background: url("../images/tree_sprite.png") no-repeat scroll right -92px transparent;
     height: 25px;
     padding: 0;
-   margin-left: -6px;
+    margin: 0;
     position: relative;
-    z-index: 2;
+    z-index: 8;
 }
 /*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) {
       background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
@@ -8111,7 +8085,7 @@ body.page-groups #content-group {
 
        margin-left: -6px;
            position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 /*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
        background: url("../images/tree_sprite.png") no-repeat scroll right -126px transparent;
@@ -8428,7 +8402,6 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     color: #000000 ;
     text-transform: none;
      padding: 0 20px;
-     margin-right: 15px;
 } 
 #pid-node-717-catalog  #quicktabs-ciclo_catalog_tabs .quicktabs_main,
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_main{
@@ -8441,7 +8414,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-node-717-catalog  #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components,
 #pid-node-972-catalog  #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components{
-    background: url("../images/search_icon.png") no-repeat scroll right top transparent;
+    background: url("../images/search_icon.png") no-repeat scroll 0 0 transparent;
     border-radius: 0 0 0 0;
     display: block;
     margin: 0;
@@ -8455,8 +8428,6 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     position: absolute;
     right: 0;
     top: -46px;
-     width: 212px;
-     z-index: 99999;
 }
 #pid-node-717-catalog .quicktabs_wrapper .quicktabs_main,
 #pid-node-972-catalog .quicktabs_wrapper .quicktabs_main
