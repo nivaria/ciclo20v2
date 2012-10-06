@@ -3906,6 +3906,9 @@ div#block-og_views-0 h2.title {
 .view-ciclo-installations-og .view-content .nd-region-left{
     width: 45%;
 }
+#sidebar-last-wrapper .view-id-ciclo_installations_og .view-content li.views-row img.imagecache {
+    width: auto;
+}
 .view-id-ciclo_installations_og .view-content li.views-row img.imagecache {
     width: 130px;
 }
@@ -6027,6 +6030,7 @@ body.node-type-faq-question .main,
        background: none repeat scroll 0 0 #FFFFFF;
     border: 2px solid #E1E1E1;
     border-radius: 10px 10px 10px 10px;
+    width: 686px;
 }
 #pid-admin-settings-ciclo-bmecat-import .content-inner-inner{
     padding: 15px;
@@ -6044,7 +6048,7 @@ body.node-type-faq-question .main .main-inner .content-region,
 }
 .node-type-blog  .main .main-inner .content-region .field-edit-content-link-widget a.edit-content-link{
       right: 40px;
-    top: 40px;
+    top: 2px;
 
 }
 body.page-node #content-inner-inner{
@@ -8089,8 +8093,8 @@ body.page-groups #content-group {
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3){
      background: url("../images/tree_sprite.png") no-repeat scroll right -92px transparent;
     height: 25px;
+     margin-left: -6px;
     padding: 0;
-   margin-left: -6px;
     position: relative;
     z-index: 2;
 }
