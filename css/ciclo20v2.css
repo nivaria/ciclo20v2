@@ -5471,10 +5471,18 @@ thead + tbody {
 
 }
 .view-user-ciclokm   .view-content .views-row-first .views-field-phpcode{
+    bottom: 10px;
     float: left;
+    left: 0;
     margin-top: 7px;
+    position: absolute;
+    width: 60%;
 }
+.view-user-ciclokm   .view-content .views-row-first{
 
+    position: relative;
+ 
+}
 .view-user-ciclokm   .view-content .views-row-first .views-field-value-3 a,
 .view-user-ciclokm   .view-content .views-row-first .views-field-value-4 a,
 .view-user-ciclokm   .view-content .views-row-first .views-field-value-5 a
@@ -5518,7 +5526,7 @@ background-repeat: no-repeat;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     font-weight: bold;
-    padding: 6px 30px;
+    padding: 6px 32px;
     text-transform: uppercase;
 }
 .view-user-ciclokm .view-content .views-row-first  .views-field-value-6{
@@ -5564,7 +5572,7 @@ background-repeat: no-repeat;
 }
 .page-user-1 #quicktabs-ciclo_user_detail .nd-region-left .field-ciclo-model-image-fid img{
          height: auto;
-    width: 65px;
+    width: 80px;
 }
 #quicktabs-ciclo_user_detail .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_user_detail  .view-ciclo-customer-models .nd-region-middle-wrapper{
@@ -8939,7 +8947,8 @@ background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../i
 }
 .node-type-ciclo-model-machine .nd-region-left,
 #pid-catalog-model-agitador-brinmix-1000 .nd-region-left{
- padding-top: 15px;
+    padding-right: 0;
+    padding-top: 15px;
 }
 .node-type-ciclo-model-machine .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left,
 #pid-catalog-model-agitador-brinmix-1000 .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
