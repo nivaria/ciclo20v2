@@ -230,9 +230,7 @@ body {
 /* Header Regions-------------------------------------------------------------- */
 
 /* Header Top region to the bottom of Header region */
-.block-ciclo_notifications{
-  display: none;
-}.nd-region-middle-wrapper{
+.nd-region-middle-wrapper{
     margin-right: 0!important;
 }
 .content-content .view-header{
@@ -744,7 +742,8 @@ Works well with inline login or inline menu block style */
 }
 .breadcrumb{
 color: #999;
-padding: 0;}
+padding-bottom: 8px;
+}
 .page-user-1 .breadcrumb {
 
     padding: 0px 0px 15px 0px;
@@ -6372,7 +6371,7 @@ body.no-sidebars #content-group-inner {
     padding-left: 8px;
 }
 
-#nivaria-navigation-tree li.jstree-open  li.jstree-leaf a:hover{
+/*#nivaria-navigation-tree li.jstree-open  ul li.jstree-leaf a:hover{
       background: url("../images/bg_tree_a_hover1.png") no-repeat   left center;
     margin-left: -20px;
     position: absolute;
@@ -6382,7 +6381,7 @@ body.no-sidebars #content-group-inner {
      border: none;
      height: 18px;
         color: #FFFFFF;
-}
+}*/
 #nivaria-navigation-tree  li.jstree-leaf a:hover
 /*#nivaria-navigation-tree  li.jstree-leaf:hover*/
 {
@@ -6408,7 +6407,7 @@ body.no-sidebars #content-group-inner {
     border: none;
     background: none;
 }
-#nivaria-navigation-tree li.jstree-open li.jstree-leaf .jstree-clicked{
+/*#nivaria-navigation-tree li.jstree-open ul li.jstree-leaf .jstree-clicked{
         background: url("../images/bg_tree_a_hover1.png") no-repeat scroll left center transparent;
     height: 18px;
      margin-left: -20px;
@@ -6418,7 +6417,7 @@ body.no-sidebars #content-group-inner {
     z-index: 999;
     color: #FFFFFF;
     border: none;
-}
+}*/
 #nivaria-navigation-tree li.jstree-leaf .jstree-clicked{
     background: url("../images/bg_tree_a_hover.png") no-repeat scroll left center transparent;
     height: 18px;
@@ -7689,16 +7688,36 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
     margin: 0;
     float: none;
 }
-
+.block-ciclo_notifications h2.block-title {
+    display: none;
+}
+.block-ciclo_notifications{
+    width: 100px;
+    float: right;
+    margin-right: 178px !important;
+}
 .block-nivaria_ubercart {
     float: right;
-    width: 130px;
+    width: 100px;
     display: block;
     margin-bottom: 10px !important;
-    margin-right: 150px !important;
+  margin-right: -200px !important;
 }
-
-.block-nivaria_ubercart a {
+.block-ciclo_notifications .messages_block_number{
+    background-image: url("../images/message.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 0;
+    margin-top: 3px;
+    padding-right: 17px;
+    width: 47px;  
+}
+.block-nivaria_ubercart a,
+.block-ciclo_notifications a{
     background-color: #A7A7A7;
     border-radius: 4px 4px 4px 4px;
     color: #FFFFFF;
@@ -7721,15 +7740,21 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
 
 }
 
-.block-nivaria_ubercart .cart_block_summary_text {
+.block-nivaria_ubercart .cart_block_summary_text ,
+.block-ciclo_notifications  .messages_block_summary_text{
     display: block;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 11px;
     clear: both;
 }
-
-.block-nivaria_ubercart .cart-block-number {
+.block-ciclo_notifications  .messages_block_summary_text{
+       margin-left: -4px;
+    margin-top: 8px;
+    width: 79px;
+}
+.block-nivaria_ubercart .cart-block-number
+{
     display: block;
     float: left;
     font-size: 22px;
@@ -8092,7 +8117,7 @@ body.page-groups #content-group {
 {
           background: url("../images/tree_sprite.png") no-repeat scroll right -92px transparent;
     height: 25px;
-    padding: 0;
+ padding: 0 5px 0 0;
     margin: 0;
     position: relative;
     z-index: 4;
@@ -8101,8 +8126,8 @@ body.page-groups #content-group {
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3){
      background: url("../images/tree_sprite.png") no-repeat scroll right -92px transparent;
     height: 25px;
-     margin-left: -6px;
-    padding: 0;
+     margin-left: -23px;
+    padding: 0 5px 0 0;
     position: relative;
     z-index: 2;
 }
@@ -8119,9 +8144,9 @@ body.page-groups #content-group {
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
    background: url("../images/tree_sprite.png") no-repeat scroll right -127px transparent;
     height: 25px;
-    padding: 0;
+   padding: 0 5px 0 0;
 
-       margin-left: -6px;
+       margin-left: -20px;
            position: relative;
     z-index: 3;
 }
@@ -8491,6 +8516,15 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title,
 #pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title{
     height: 24px;
+}
+#pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-widgets,
+#pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-widgets{
+    width: 180px;
+}
+#pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters  .views-exposed-form .fieldset-wrapper,
+#pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters  .views-exposed-form .fieldset-wrapper
+{
+    padding-top: 0;
 }
 #pid-node-972-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a,
 #pid-node-717-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a{
@@ -9371,6 +9405,8 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
     
 }
 .page-user-1 #quicktabs_container_ciclo_user_detail .view-ciclo-customers .view-content .item-list li{
+    border-radius: 0 0 0 0;
+    box-shadow: none;
     clear: none;
     float: left;
     margin-bottom: 3px;

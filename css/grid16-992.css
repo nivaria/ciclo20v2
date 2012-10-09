@@ -214,8 +214,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
     /*    padding: 10px;*/
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-installation-customer-logo{
-   position: relative;
-    top: 23px;
+   position: absolute;
     width: 20%;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-install-customer a{
@@ -239,7 +238,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
     background-repeat: repeat-x;
     padding-bottom: 5px;
     padding-top: 10px;
-     margin-top: -44px;    padding-left: 73px;
+   padding-left: 73px;
      
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content #block-quicktabs-ciclo_installation_detail .content #quicktabs-ciclo_installation_detail ul.quicktabs_tabs{
