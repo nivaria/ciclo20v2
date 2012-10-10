@@ -742,7 +742,7 @@ Works well with inline login or inline menu block style */
 }
 .breadcrumb{
 color: #999;
-padding-bottom: 8px;
+padding-bottom: 0;
 }
 .page-user-1 .breadcrumb {
 
@@ -1499,7 +1499,7 @@ body.node-type-ciclo-customer .nd-region-header .field-title h1{
 .node-type-ciclo-customer .buildmode-full .nd-region-middle-wrapper {
     border-bottom: 1px dashed #E9E9E9;
     float: right;
-    height: 95px;
+    height: 105px;
     width: 80%;
 }
  .node-type-ciclo-customer .buildmode-full .nd-region-middle-wrapper .nd-region-middle{
@@ -1513,7 +1513,7 @@ body.node-type-ciclo-customer .nd-region-header .field-title h1{
 .node-type-ciclo-customer .buildmode-full .nd-region-left{
     border-bottom: 1px dashed #E9E9E9;
     float: left;
-    height: 95px;
+    height: 105px;
     width: 20%;
 }
  .node-type-ciclo-customer .buildmode-full  .nd-region-right{
@@ -5648,8 +5648,9 @@ body.page-node .edit-content-link{
 
 }
 .node-type-ciclo_customer .field-edit-content-link-widget .edit-content-link{
-    right: 57px;
-    top: 0px;
+    position: absolute;
+    right: 42px;
+    top: 4px;
 }
 body.page-ogdetails .edit-content-link {
     position: absolute;
@@ -6579,8 +6580,12 @@ body.no-sidebars #content-group-inner {
 #content-group {
     margin-bottom: 0;
 }
+.page-user-1 .breadcrumbs-inner{
+    padding: 0 20px;
+}
+
 .breadcrumbs-inner{
-    padding: 0 5px;
+    padding: 0 20px;
 }
 /*
  * Tables
@@ -7279,7 +7284,8 @@ padding: 0
 }
 
 .node-type-ciclo_model_machine .field-terms-21 {
-    padding: 0;
+      font-weight: normal;
+    padding: 3px 0 0;
 }
 
 /*.node-type-ciclo_model_machine .nd-region-header,
@@ -8090,7 +8096,7 @@ body.page-groups #content-group {
     margin-bottom: 0;
     margin-left: -18px;
     padding: 3px 0;
-    width: 710px !important;
+    width: 710px;
 }
 #pid-node-717-catalog  .view .item-list ul.pager,
 #pid-node-972-catalog  .view .item-list ul.pager{
@@ -8465,7 +8471,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-node-717-catalog.grid-width-16 .grid16-12,#pid-node-972-catalog.grid-width-16 .grid16-12
 {
-    width: 692px!important;
+/*    width: 692px!important;*/
 
 }
 #pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
@@ -8977,9 +8983,10 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -470px;
     color: #000000;
     font-weight: bold;
-    padding: 10px 0 12px;
+    
     cursor: pointer;
-    margin-bottom: 20px;
+        margin-bottom: 15px;
+    padding: 10px 0 7px;
 }
 .node-type-ciclo-model-machine  .nd-region-header .field-ciclo-alias .field-items .field-item,
 #pid-catalog-model-agitador-brinmix-1000 .nd-region-header .field-ciclo-alias .field-items .field-item{
@@ -9205,6 +9212,9 @@ body.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail .view-ciclo-cust
 body.node-type-ciclo-customer .breadcrumb{
      padding: 0;
 }
+body.node-type-ciclo-customer #breadcrumbs-inner{
+       padding: 0 14px;
+}
 body.node-type-ciclo-customer #content-inner-inner h1.close{
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -369px;  
 }
@@ -9223,12 +9233,11 @@ body.node-type-ciclo-customer #content-inner-inner #content-tabs{
 
 body.node-type-ciclo-customer #content-content .buildmode-full .nd-region-right
  {
-    width: 45%; 
+    width: 40%; 
 }
 body.node-type-ciclo-customer #content-content .buildmode-full .nd-region-right .field-ciclo-address,
 body.node-type-ciclo-installation #content-content .buildmode-full  .field-ciclo-address {
     background: url(../images/map_catalog.png) no-repeat left center;
-       margin-top: 28px;
     padding: 5px 0 18px 80px;
     position: relative;
 }
@@ -9237,9 +9246,9 @@ body.node-type-ciclo-installation #content-content .buildmode-full  .field-ciclo
 }
 body.node-type-ciclo-customer #content-content .buildmode-full .nd-region-right .field-ciclo-address .field-label,
 body.node-type-ciclo-installation #content-content .buildmode-full  .field-ciclo-address .field-label-inline-first{
-        left: 0;
+/*        left: 0;
     position: absolute;
-    top: -26px;
+    top: -26px;*/
 }
 #quicktabs_container_ciclo_customer_detail .view-content,
 #quicktabs-ciclo_model_detail .view-content,

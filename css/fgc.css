@@ -34,7 +34,8 @@ fieldset #edit-import{
 #pid-catalog-client-scar-mayer .buildmode-full .full-node,
 #pid-content-el-pozo .buildmode-full .full-node{
     background: url("../images/line_sep.png") repeat-x scroll left top transparent;
-    padding-top: 10px !important;
+     margin-top: 6px;
+    padding-top: 15px !important;
 }
 .views-exposed-form.collapsible.collapsed{
     margin-bottom: 20px;
@@ -71,4 +72,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
 }
 .view-ciclo-model-installations .nd-region-left{
     padding-top: 5px !important;
+}
+.view-public-group-content .views-field-created{
+  font-size: 12px;  
 }

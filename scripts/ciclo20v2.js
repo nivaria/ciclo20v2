@@ -29,12 +29,16 @@ $(document).ready(function(){
             $("#sidebar-first").toggle("slow", function() {
                 $("#main-group").width($("#main-group").width() + firstSize);   	
                 $("#content-group").width($("#content-group").width() + firstSize);
+//             $("#content-group").width($("#main-group").width() + firstSize);
+//             $("#pid-node-717-catalog .block-ciclo_catalog_breadcrumb,#pid-node-972-catalog .block-ciclo_catalog_breadcrumb").css({'width':710+'px'})
             });
         } else {
             $(this).addClass("open");
             $("#main-group").width($("#main-group").width() - firstSize);
             $("#content-group").width($("#content-group").width() - firstSize);
+//            $("#content-group").width($("#main-group").width() + firstSize);
             $("#sidebar-first").toggle("slow");
+//            $("#pid-node-717-catalog .block-ciclo_catalog_breadcrumb,#pid-node-972-catalog .block-ciclo_catalog_breadcrumb").css({'width':990+'px'})
         };
         $("#content-group").toggleClass("clean-left");
     });
