@@ -3682,7 +3682,7 @@ fieldset.views-exposed-form {
     border: 1px solid #ccc;
     clear: both;
     overflow: visible;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
 }
 
 fieldset.views-exposed-form:after {
@@ -3888,7 +3888,7 @@ div#block-og_views-0 h2.title {
 }
 #precontent .block-views{
         float: left;
-    padding-top: 30px;
+    padding-top: 20px;
     width: 700px;
 }
 .view-homepage-group-showcase .views-row:after,
@@ -6383,6 +6383,7 @@ body.no-sidebars #content-group-inner {
         color: #FFFFFF;
 }*/
 #nivaria-navigation-tree  li.jstree-leaf a:hover
+
 /*#nivaria-navigation-tree  li.jstree-leaf:hover*/
 {
   background: url("../images/bg_tree_a_hover.png") no-repeat   left center;
@@ -6418,7 +6419,8 @@ body.no-sidebars #content-group-inner {
     color: #FFFFFF;
     border: none;
 }*/
-#nivaria-navigation-tree li.jstree-leaf .jstree-clicked{
+#nivaria-navigation-tree li.jstree-leaf .jstree-clicked,
+#nivaria-navigation-tree  li.jstree-leaf a.jstree-hovered{
     background: url("../images/bg_tree_a_hover.png") no-repeat scroll left center transparent;
     height: 18px;
      margin-left: -20px;
@@ -6452,11 +6454,6 @@ body.no-sidebars #content-group-inner {
      text-transform: uppercase;
 }
 
-#nivaria-navigation-tree .jstree-hovered,
-#nivaria-navigation-tree .jstree-clicked {
-/* background: none repeat scroll 0 0 transparent;
-    border: medium none;*/
-}
 
 /*
  * Secciones colapsables
@@ -6496,18 +6493,24 @@ body.no-sidebars #content-group-inner {
 #sidebar-last-wrapper .btn-collapse,
 #sidebar-first-wrapper .btn-collapse{
     background-image: url("../images/circle_sprite.png");
-    background-position: -8px -80px;
-    padding: 0 0 0 20px;
+    background-position: -6px -80px;
+    height: 20px;
+    padding: 0 0 0 25px;
 }
 
-#sidebar-last-wrapper .btn-collapse.open,
+#sidebar-last-wrapper .btn-collapse.open
+{
+   background-image: url("../images/circle_sprite.png");
+    background-position: 36px -57px;
+    height: 20px;
+    padding: 0 27px 0 0;
+}
 #sidebar-first-wrapper .btn-collapse.open{
     background-image: url("../images/circle_sprite.png");
-    background-position: 32px -57px;
-    padding: 0 20px 0 0;
-
+    background-position: -7px -76px;
+    height: 20px;
+    padding: 5px 0 0 25px;
 }
-
 #precontent {
     margin: 10px auto;
     min-height: 22px;
@@ -6538,15 +6541,15 @@ body.no-sidebars #content-group-inner {
     width: 165px;
 }
 #search-nivaria-navigation-tree  #input-search-nivaria-navigation-tree{
-        border: 1px solid #999999;
+    border: 1px solid #999999;
     height: 24px;
-    width: 187px;
+    width: 197px;
 }
 #search-nivaria-navigation-tree {
-        background: none repeat scroll 0 0 #F3F3F3;
+    background: none repeat scroll 0 0 #F3F3F3;
     margin-left: -10px;
-    padding: 5px 19px;
-    width: 242px;
+    padding: 5px 11px;
+    width: 254px;
 }
 #bt-search-nivaria-navigation-tree,
 #om-maximenu-ciclo .block-ciclo_solr_search .form-submit {
@@ -6570,7 +6573,7 @@ body.no-sidebars #content-group-inner {
     margin-bottom: 0;
 }
 .breadcrumbs-inner{
-    padding: 0 20px;
+    padding: 0 5px;
 }
 /*
  * Tables
@@ -7058,7 +7061,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 
 .grid-type-1 .view-content .item-list li.views-row .title a,
 .grid-type-1 .view-content .item-list li.views-row .field-ciclo-alias-value a {
-    color: #000000;
+    color: #333;
     display: block;
     font-family: calibri,arial;
     font-size: 20px;
@@ -7691,7 +7694,7 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
 .block-ciclo_notifications h2.block-title {
     display: none;
 }
-.block-ciclo_notifications{
+#precontent .block-ciclo_notifications{
     width: 100px;
     float: right;
     margin-right: 178px !important;
@@ -8144,7 +8147,7 @@ body.page-groups #content-group {
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
    background: url("../images/tree_sprite.png") no-repeat scroll right -127px transparent;
     height: 25px;
-   padding: 0 5px 0 0;
+   padding: 0 10px 0 0;
 
        margin-left: -20px;
            position: relative;
@@ -8192,7 +8195,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 #pid-node-972-catalog   #sidebar-first #block-nivaria_navigation-0{
     width: 280px;
     border: none;
-        padding-top: 40px;
+        padding-top: 60px;
 }
 #pid-node-717-catalog   #main,#pid-node-972-catalog  #main
 {
@@ -8236,6 +8239,11 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
         font-size: 18px;
     padding-bottom: 10px;
        margin: 0 8px;
+       padding-left: 0;
+}
+#pid-node-717-catalog  .breadcrumbs-wrapper,
+#pid-node-972-catalog  .breadcrumbs-wrapper{
+     padding: 20px 0 0;
 }
 #pid-node-717-catalog  #content-group-inner  h1,
 #pid-node-972-catalog    #content-group-inner h1{
@@ -8437,16 +8445,20 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-node-717-catalog #content-content a.edit-link,
 #pid-node-972-catalog #content-content a.edit-link{
-        background: none repeat scroll 0 0 #B01D8F;
+     background: none repeat scroll 0 0 #B01D8F;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
     padding: 4px 14px;
     position: absolute;
     right: 0;
+    text-transform: uppercase;
     top: 12px;
-     text-transform: uppercase;
 }
-
+#pid-node-717-catalog.grid-width-16 .grid16-12{
+    width: 692px;
+}
 #pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active {
     background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
@@ -8614,15 +8626,17 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 /*page-catalog*/
 .front #content-group{
-    padding: 0 !important;
+/*    padding: 0 !important;*/
+padding: 40px 0 0 !important;
 }
 .views-exposed-form .collapse-processed a
 {
-    background: url("../images/circle_sprite.png") no-repeat scroll 34px -345px transparent !important;
+    background: url("../images/circle_sprite.png") no-repeat scroll 37px -729px transparent !important;
     color: #333333;
     font-size: 17px;
     font-weight: normal;
     padding-left: 0 !important;
+    height: 20px;
 }
 .views-exposed-form .collapse-processed a:hover{
     text-decoration: none;
@@ -8653,7 +8667,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
        position: relative;
    top: -20px;
 }
-#sidebar-last-wrapper{
+.page-catalog #sidebar-last-wrapper{
+    padding: 74px 0 10px 20px
+}
+.not-front #sidebar-last-wrapper{
     float: left;
     padding: 40px 0 10px 20px;
     width: 280px;
@@ -8865,13 +8882,6 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 }
 #main-content #content-region .view-footer a.add-content-link{
  background: none repeat scroll 0 0 #EA6311;
-/*background-image: linear-gradient(bottom, rgb(234,100,17) 26%, rgb(241,138,42) 63%);
-background-image: -o-linear-gradient(bottom, rgb(234,100,17) 26%, rgb(241,138,42) 63%);
-background-image: -moz-linear-gradient(bottom, rgb(234,100,17) 26%, rgb(241,138,42) 63%);
-background-image: -webkit-linear-gradient(bottom, rgb(234,100,17) 26%, rgb(241,138,42) 63%);
-background-image: -ms-linear-gradient(bottom, rgb(234,100,17) 26%, rgb(241,138,42) 63%);
-
-background-image: -webkit-gradient(linear,left bottom,left topcolor-stop(0.26, rgb(234,100,17)),color-stop(0.63, rgb(241,138,42)));*/
     border-radius: 8px 8px 8px 8px;
     color: #FFFFFF;
     display: block;
@@ -8879,7 +8889,7 @@ background-image: -webkit-gradient(linear,left bottom,left topcolor-stop(0.26, r
     font-size: 12px;
     font-weight: bold;
 
-    padding: 8px 15px;
+    padding: 6px 15px;
     text-transform: uppercase;
 }
 .not-logged-in #main-content input.form-submit{
@@ -9184,7 +9194,7 @@ body.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail .view-ciclo-cust
 }
 
 body.node-type-ciclo-customer .breadcrumb{
-     padding: 0 0 3px;
+     padding: 0;
 }
 body.node-type-ciclo-customer #content-inner-inner h1.close{
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -369px;  
@@ -9435,3 +9445,11 @@ body.node-type-ciclo-type-machine #content-region .field-type-machine-models .co
 body.node-type-ciclo-type-machine #content-region .view-ciclo-machines .view-content {
      padding-top: 40px;
 }
+
+/*.page-user-1 #main-content #content-region{
+       background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #E1E1E1;
+    border-radius: 0 0 10px 10px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}*/
