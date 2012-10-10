@@ -8463,8 +8463,10 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     text-transform: uppercase;
     top: 12px;
 }
-#pid-node-717-catalog.grid-width-16 .grid16-12{
+#pid-node-717-catalog.grid-width-16 .grid16-12,#pid-node-972-catalog.grid-width-16 .grid16-12
+{
     width: 692px!important;
+
 }
 #pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
 #pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active {
