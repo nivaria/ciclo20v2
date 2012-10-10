@@ -16,7 +16,17 @@
 
 #precontent .views-widget .form-item input { display: block; }
 
-.grid-type-1 .view-content .item-list li.views-row { border: 1px solid #D6D6D6; }
+.grid-type-1 .view-content .item-list li.views-row {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    border: 2px solid #E1E1E1;
+    border-radius: 12px 12px 12px 12px;
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 10px !important;
+    width: 45.5%;
+}
 
 .calendar-calendar td { width: 12%; }
 
@@ -40,3 +50,5 @@
 
 .calendar-calendar { margin-bottom: 20px; }
 #block-views-user_meta-block_1, #block-user-0 { height: 99px; }
+.sidebar-last .block h2.block-title {
+    background: none repeat scroll 0 0 #F08A2A;}
