@@ -607,34 +607,3 @@ function ciclo20v2_preprocess_node(&$variables) {
     unset($variables['comment']);
   }
 }
-
-/**
- * Return a themed image.
- *
- * @param $path
- *   Either the path of the image file (relative to base_path()) or a full URL.
- *   If this is a full URL, $getsize must be set to FALSE or nothing will be returned.
- * @param $alt
- *   The alternative text for text-based browsers.
- * @param $title
- *   The title text is displayed when the image is hovered in some popular browsers.
- * @param $attributes
- *   Associative array of attributes to be placed in the img tag.
- * @param $getsize
- *   If set to TRUE, the image's dimension are fetched and added as width/height attributes.
- *   Defaults to TRUE. Must be set to FALSE if $path is a full URL.
- * 
- * @return
- *   A string containing the image tag.
- */
-function ciclo20v2_image($path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
-  if (!$getsize || (is_file($path) && (list($width, $height, $type, $image_attributes) = @getimagesize($path)))) {
-    $attributes = drupal_attributes($attributes);
-    if (variable_get('file_downloads', FILE_DOWNLOADS_PUBLIC) == FILE_DOWNLOADS_PRIVATE){
-      $url = (url($path) == $path) ? $path : (file_create_url($path));
-    } else {
-      $url = (url($path) == $path) ? $path : (base_path() . $path);
-    }
-    return '<img src="'. check_url($url) .'" alt="'. check_plain($alt) .'" title="'. check_plain($title) .'" '. (isset($image_attributes) ? $image_attributes : '') . $attributes .' />';
-  }
-}

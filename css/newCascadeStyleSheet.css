@@ -6473,7 +6473,7 @@ position: relative;
 #nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
        background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;  
 }
-#nivaria-navigation-tree  li.jstree-open  .jstree-open  a.jstree-hovered{
+#nivaria-navigation-tree  li.jstree-open  .jstree-open a.jstree-hovered{
    background: url("../images/bg_tree_hover1.png") no-repeat scroll left center transparent;  
 }
 #nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{

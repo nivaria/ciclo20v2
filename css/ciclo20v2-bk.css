@@ -6,10 +6,8 @@
 
 body {
     color: #666;
-  font-family: Arial, Helvetica, sans-serif;
-/*font-family: 'Cabin', Arial;*/
-/*font-family: 'Carrois Gothic', sans-serif;*/
-    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75%;
     padding: 0;
     margin: 0;
 }
@@ -77,7 +75,7 @@ blockquote p:last-child { margin-bottom: 0px;}
 .sidebar-first .block .content,
 .sidebar-last .block .content {
     padding: 0px;
-    overflow: inherit;
+    overflow: hidden;
     /*    padding:12px 0;*/
     padding: 10px !important;
 }
@@ -6330,7 +6328,7 @@ body.no-sidebars #content-group-inner {
 
 .layout-first-main-last #content-group-inner,
 .layout-first-main #content-group-inner {
-/*    border-left: 1px solid #E4E4E4;*/
+    border-left: 1px solid #E4E4E4;
     margin-left: 0;
     padding-left: 10px;
 }
@@ -6361,51 +6359,37 @@ body.no-sidebars #content-group-inner {
     width: 10px;
     position: relative;
     top: 2px;
-    z-index: 5
 }
 
 #nivaria-navigation-tree  li ul ul{
     margin-left: 20px;
 }
 #nivaria-navigation-tree  li a{
-    height: 28px;
+        height: 28px;
     line-height: 28px;
-    padding: 0 0 0 8px;
-    background: none;
-    border: none;
+    padding-left: 8px;
 }
 
 #nivaria-navigation-tree li.jstree-open a:hover {
-          background: url("../images/bg_tree_hover.png") no-repeat   left center!important;
-   margin: 0 0 0 -20px; 
-position: relative;
+          background: url("../images/bg_tree_close_hover.png") no-repeat   left center!important;
+   margin: -5px 0 0 -20px; 
+    position: absolute;
     width: 275px;
-
+    z-index: 9998;
    padding: 0 0 0 30px;
      border: none!important;
-     height: 28px;
-        color: #FFFFFF;
-}
-#nivaria-navigation-tree li.jstree-open  .jstree-open  a:hover {
-          background: url("../images/bg_tree_hover1.png") no-repeat   left center!important;
-   margin: 0 0 0 -20px; 
-position: relative;
-    width: 275px;
-
-   padding: 0 0 0 30px;
-     border: none!important;
-     height: 28px;
+     height: 18px;
         color: #FFFFFF;
 }
 #nivaria-navigation-tree li.jstree-closed a:hover{
-      background: url("../images/bg_tree_hover.png") no-repeat   left center!important;
-   margin: 0 0 0 -20px; 
- position: relative;
+      background: url("../images/bg_tree_close1_hover.png") no-repeat   left center!important;
+   margin: -5px 0 0 -20px; 
+    position: absolute;
     width: 275px;
-
+    z-index: 9998;
    padding: 0 0 0 30px;
      border: none!important;
-     height: 28px;
+     height: 18px;
         color: #FFFFFF;
 }
 #nivaria-navigation-tree li.jstree-open a:hover{
@@ -6416,14 +6400,17 @@ position: relative;
 }
 #nivaria-navigation-tree  li.jstree-leaf a:hover
 
+/*#nivaria-navigation-tree  li.jstree-leaf:hover*/
 {
-    background: url("../images/bg_tree_hover.png") no-repeat   left center!important;
-    border: medium none;
-    color: #FFFFFF;
-    height: 28px;
-    margin: 0 0 0 -20px;
-    padding: 0 0 0 30px;
+    background: url("../images/bg_tree_a_hover.png") no-repeat   left center!important;
+    position: absolute;
     width: 293px;
+    z-index: 9998;
+    padding:0  0 0 30px;
+    border: none;
+    height: 28px;
+    color: #FFFFFF;
+    margin: -5px 0 0 -20px; 
 }
 #nivaria-navigation-tree  li.jstree-closed a:hover{
     /*     background: url("../images/bg_tree_a_hover.png") no-repeat   left center;
@@ -6448,41 +6435,22 @@ position: relative;
     color: #FFFFFF;
     border: none;
 }*/
-
-#nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked ,
-#nivaria-navigation-tree  li.jstree-open  .jstree-open a.jstree-hovered,
-#nivaria-navigation-tree  li.jstree-open   a.jstree-hovered,
-#nivaria-navigation-tree li.jstree-open    .jstree-clicked
-
-{
-    background: url("../images/bg_tree_hover.png") no-repeat scroll left center transparent;
+#nivaria-navigation-tree li.jstree-leaf .jstree-clicked,
+#nivaria-navigation-tree  li.jstree-leaf a.jstree-hovered{
+    background: url("../images/bg_tree_a_hover.png") no-repeat scroll left center transparent;
     height: 28px;
     margin-left: -20px;
     padding: 0 0 0 30px;
+    position: absolute;
     width: 293px;
+    z-index: 999;
     color: #FFFFFF;
     border: none;
-    position: relative;
-    
 }
-#nivaria-navigation-tree li.jstree-open    .jstree-clicked{
-        background: url("../images/bg_tree_a_hover.png") no-repeat scroll left center transparent;
 
-    z-index: 9;
-}
-#nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
-       background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;  
-}
-#nivaria-navigation-tree  li.jstree-open  .jstree-open  a.jstree-hovered{
-   background: url("../images/bg_tree_hover1.png") no-repeat scroll left center transparent;  
-}
-#nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
-    position: relative;
-    z-index: 9;   
-}
 #nivaria-navigation-tree  li.jstree-leaf:hover >ins
  {
-    background: #fff;
+    background: #fff
 }
 #nivaria-navigation-tree  li.jstree-open >ins{
     background-image: url("../images/tree_sprite.png");
@@ -8137,12 +8105,6 @@ body.page-groups #content-group {
     border: medium none;
     width: auto;
 }
-#pid-node-717-catalog #sidebar-first-wrapper,
-#pid-node-972-catalog #sidebar-first-wrapper{
-
-    float: left;
-    width: 280px;
-}
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb,
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb{
     background: none repeat scroll 0 0 #000000;
@@ -8171,8 +8133,7 @@ body.page-groups #content-group {
     background:#B01D8F;
     margin-right: 17px;
      display: block;
-    height: 25px;
-    font-family: 'Cabin', sans-serif;
+    height: 25px
 } 
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
 #pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
@@ -8181,16 +8142,13 @@ body.page-groups #content-group {
 {
     background: none repeat scroll 0 0 #E9E9E9;
     font-size: 13px;
-    color: #333;
     font-weight: normal;
     line-height: 25px;
     margin-right: 17px;
     display: block;
     height: 25px;
-    padding: 0 5px 0 15px;
-    text-shadow: 1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, 1px 0 #FFFFFF, 0 0 #FFFFFF;
-    font-family: 'Cabin', sans-serif;
-       text-transform: uppercase;
+    padding: 0 5px 0 10px;
+     text-shadow: 0 0 1px #FFFFFF, 0 0 0 #FFFFFF, 1px 0 0 #CCCCCC;
 
 } 
 #pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) ,
@@ -8603,7 +8561,7 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 }
 #pid-node-717-catalog  #main-group,
 #pid-node-972-catalog #main-group{
-   border-left: 2px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
 }
 #pid-node-717-catalog  #content-group-inner,
 #pid-node-972-catalog  #content-group-inner{

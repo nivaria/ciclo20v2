@@ -19,6 +19,9 @@
   <![endif]-->
   <?php print $local_styles; ?>
   <?php print $scripts; ?>
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic|Archivo+Narrow' rel='stylesheet' type='text/css'/>
+  
 </head>
 
 <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
