@@ -231,7 +231,7 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner #content-content .field-edit-content-link-widget a{
     position: absolute;
-    top:2px;
+    top:-3px;
     right: 65px;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-install-customer{

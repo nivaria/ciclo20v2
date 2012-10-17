@@ -27,16 +27,16 @@ $(document).ready(function(){
         if ($(this).hasClass("open")) {
             $(this).removeClass("open");
             $("#sidebar-first").toggle("slow", function() {
-				$("#main-group").width($("#main-group").width() + firstSize);   	
-				$("#content-group").width($("#content-group").width() + firstSize);
-				$(".block-ciclo_catalog_breadcrumb").css({'width':990+'px'})
+                $("#main-group").width($("#main-group").width() + firstSize);   	
+                $("#content-group").width($("#content-group").width() + firstSize);
+           $(".block-ciclo_catalog_breadcrumb").css({'width':990+'px'})
             });
         } else {
-			$(this).addClass("open");
-			$("#content-group").width($("#content-group").width() + firstSize);
-			$("#main-group").width($("#main-group").width() - firstSize);            
-			$("#sidebar-first").toggle("slow");
-			$(".block-ciclo_catalog_breadcrumb").css({'width':710+'px'})
+            $(this).addClass("open");
+            $("#main-group").width($("#main-group").width() - firstSize);
+            $("#content-group").width($("#content-group").width() + firstSize);
+            $("#sidebar-first").toggle("slow");
+            $(".block-ciclo_catalog_breadcrumb").css({'width':710+'px'})
         };
         $("#content-group").toggleClass("clean-left");
     });

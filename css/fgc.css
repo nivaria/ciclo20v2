@@ -31,8 +31,8 @@ a{
 fieldset #edit-import{
     display: none;
 }
-#pid-catalog-client-scar-mayer .buildmode-full .full-node,
-#pid-content-el-pozo .buildmode-full .full-node{
+ body.node-type-ciclo-customer .buildmode-full .full-node
+{
     background: url("../images/line_sep.png") repeat-x scroll left top transparent;
      margin-top: 6px;
     padding-top: 15px !important;
@@ -40,13 +40,11 @@ fieldset #edit-import{
 .views-exposed-form.collapsible.collapsed{
     margin-bottom: 20px;
 }
-#pid-catalog-client-scar-mayer #content-inner-inner h1.title,
-#pid-content-el-pozo #content-inner-inner h1.title{
-    background: url("../images/circle_sprite.png") no-repeat scroll right -538px #FFFFFF;
+body.node-type-ciclo-customer #content-inner-inner h1.title{
+    background: url("../images/circle_sprite.png") no-repeat scroll right -543px #FFFFFF;
+      padding-bottom: 0;
 }
-#pid-content-el-pozo #content-inner-inner h1.title {
-    padding-bottom: 0;
-}
+
 #quicktabs_container_ciclo_model_detail li.views-row, #quicktabs_container_ciclo_customer_detail li.views-row {
     padding: 15px 0 0;
 }

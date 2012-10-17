@@ -255,7 +255,7 @@ body {
 
 
 .front #main-content .nd-region-middle-wrapper .nd-region-middle,
-#pid-catalog-installations #main-content .nd-region-middle-wrapper .nd-region-middle{
+.page-catalog-installations #main-content .nd-region-middle-wrapper .nd-region-middle{
     margin-left: 10px;}
 #skip{
     background: none repeat scroll 0 0 #333333;
@@ -754,10 +754,10 @@ Works well with inline login or inline menu block style */
 
 .breadcrumbs a,
 .breadcrumbs a:link,
-.breadcrumbs a:visited,
-#ciclo-catalog-breadcrumb a,
+.breadcrumbs a:visited
+/*#ciclo-catalog-breadcrumb a,
 #ciclo-catalog-breadcrumb a:link,
-#ciclo-catalog-breadcrumb a:visited {
+#ciclo-catalog-breadcrumb a:visited {*/{
     font-size: 1em;
     line-height: 1.4em;
     margin: 0;
@@ -5177,18 +5177,18 @@ body.layout-first-main-last #content-group {
     border-radius: 5px;
 }
 
-body.page-node.node-type-group #content-group #content-group-inner{
+body.page-node   .node-type-group #content-group #content-group-inner{
     padding:0;
     margin: 0;
 
 }
 
-body.page-node.node-type-group #sidebar-last{
+body.page-node   .node-type-group #sidebar-last{
     padding: 0;
 }
 
 body.front #main,
-body.page-node.node-type-group #main,
+body.page-node   .node-type-group #main,
 body#pid-catalog-installations #main,
 body#pid-content-inyectoras-de-marinado #main
 {
@@ -5200,14 +5200,14 @@ body#pid-content-inyectoras-de-marinado #main
     padding:0;
 }
 
-body.page-node.node-type-group #content-group{
+body.page-node   .node-type-group #content-group{
     box-shadow:none;
     padding:0;
     width: 692px;
 }
 
 body h1.title,
-body.page-node h1.title{
+body.page-node    h1.title{
     padding: 0 0 10px;
 }
 body .page-group h1.title{
@@ -5621,10 +5621,10 @@ thead + tbody {
     height: 16px;
     width: 16px;
 }
-body.page-node .relations legend{
+body.page-node    .relations legend{
     display:none;
 }
-body.page-node .relations th{
+body.page-node    .relations th{
     border-bottom: 1px dashed #D9D9D9;
     color: #666666;
     font-family: calibri,arial;
@@ -5633,26 +5633,26 @@ body.page-node .relations th{
     padding: 0 0 10px;
 }
 h1,
-body.page-node h1{
+body.page-node    h1{
     font-size:30px;
     font-family:calibri,arial;
     font-weight:bold;
     margin: 0;
 }
-body.page-node h1 a{
+body.page-node    h1 a{
     color:#333;
 }
-body.page-node .node-edit #content-tabs{
+body.page-node    .node-edit #content-tabs{
     display:block;
 }
-body.page-node .edit-content-link{
+body.page-node    .edit-content-link{
     position: absolute;
 
 }
 .node-type-ciclo_customer .field-edit-content-link-widget .edit-content-link{
     position: absolute;
     right: 42px;
-    top: 4px;
+    top: -46px;
 }
 body.page-ogdetails .edit-content-link {
     position: absolute;
@@ -5660,10 +5660,10 @@ body.page-ogdetails .edit-content-link {
     right:0;
 }
 
-body.page-node.no-sidebars #edit-unpublish,
+body.page-node   .no-sidebars #edit-unpublish,
 #edit-publish,
 #search-form #edit-submit,
-body.page-node .edit-content-link,
+body.page-node    .edit-content-link,
 body.page-ogdetails .edit-content-link,
 .view-user-ciclokm .views-field-edit-node span a{
     /*background-color: #9F167D;*/
@@ -5694,7 +5694,7 @@ body.page-ogdetails .edit-content-link,
         color-stop(rgb(177,30,145))
         );
 }
-body.page-node .edit-content-link:hover{
+body.page-node    .edit-content-link:hover{
     text-decoration:none;
 }
 .view-user-ciclokm .views-field-edit-node span a{
@@ -5703,14 +5703,14 @@ body.page-node .edit-content-link:hover{
     top: -12px;
 }
 body.not-front .sidebar-last .block h2.block-title a,
-body.page-node .sidebar-last .block h2.block-title a{
+body.page-node    .sidebar-last .block h2.block-title a{
     color: #666666;
     font-family: calibri,arial;
     font-size: 18px;
     padding: 12px 0;
 }
 body.not-front .sidebar-last .block .content,
-body.page-node .sidebar-last .block .content{
+body.page-node    .sidebar-last .block .content{
     background-color: transparent;
     /*    border-bottom: 1px dashed #D9D9D9;*/
     border-radius: 0 0 0 0;
@@ -5720,14 +5720,14 @@ body.page-node .sidebar-last .block .content{
 }
 body.not-front .sidebar-last .block .view-content .item-list ul li.views-row-even,
 body.not-front .sidebar-last .block .view-content .item-list ul li.views-row-odd,
-body.page-node .sidebar-last .block .view-content .item-list ul li.views-row-even,
-body.page-node .sidebar-last .block .view-content .item-list ul li.views-row-odd {
+body.page-node    .sidebar-last .block .view-content .item-list ul li.views-row-even,
+body.page-node    .sidebar-last .block .view-content .item-list ul li.views-row-odd {
 
     padding-left: 0;
     padding-right: 0;
 }
 body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a,
-body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a {
+body.page-node    .sidebar-last .block .view-content .item-list ul li .views-field-title a {
     color: #000;
     font-size: 14px;
     font-weight: bold;
@@ -5889,29 +5889,29 @@ form.fivestar-widget div.description {
 
 
 
-body.page-node.no-sidebars .node-form .standard{
+body.page-node   .no-sidebars .node-form .standard{
     float: none !important;
     width: 100% !important;
 }
-body.page-node.no-sidebars #edit-unpublish{
+body.page-node   .no-sidebars #edit-unpublish{
 }
-body.page-node.no-sidebars #edit-submit{
+body.page-node   .no-sidebars #edit-submit{
     /*  background-color: #F4F4F4;
       background-image: none;
       border: 1px solid #E1E1E1;
       color: #666666;
       font-size: 14px;*/
 }
-body.page-node.no-sidebars #edit-delete{
+body.page-node   .no-sidebars #edit-delete{
     /*    background: none repeat scroll 0 0 transparent;
         color: #0099FF;*/
     font-family: arial;
     text-transform: lowercase;
 }
-body.page-node.no-sidebars #edit-delete:first-letter{
+body.page-node   .no-sidebars #edit-delete:first-letter{
     text-transform:capitalize;
 }
-body.page-node.no-sidebars .node-form-cols{
+body.page-node   .no-sidebars .node-form-cols{
     float: none;
     width: 100%;
 
@@ -5920,12 +5920,12 @@ body.page-node.no-sidebars .node-form-cols{
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-body.page-node.no-sidebars .block{
+body.page-node   .no-sidebars .block{
     overflow:visible; 
 }
-body.page-node.no-sidebars .row,
-body.page-node.no-sidebars .nested,
-body.page-node.no-sidebars .block {
+body.page-node   .no-sidebars .row,
+body.page-node   .no-sidebars .nested,
+body.page-node   .no-sidebars .block {
     overflow: visible;
 }
 fieldset legend a{
@@ -6061,7 +6061,7 @@ body.node-type-faq-question .main .main-inner .content-region,
     top: 2px;
 
 }
-body.page-node #content-inner-inner{
+body.page-node    #content-inner-inner{
     position:static;
 }
 /*cart*/
@@ -6192,7 +6192,7 @@ body.page-node #content-inner-inner{
     height: auto;
 }
 
-.page-node .page-group .og-terms-container a {
+.page-node    .page-group .og-terms-container a {
     color: #333;
     font-family: calibri,arial;
     font-size: 13px;
@@ -6200,11 +6200,11 @@ body.page-node #content-inner-inner{
     text-align: center;
 }
 
-.page-node .page-group .og-terms-container a:hover{
+.page-node    .page-group .og-terms-container a:hover{
     text-decoration: none;
 }
 
-.page-node .page-group .og-terms-container .view .view-content .item-list li.views-row,
+.page-node    .page-group .og-terms-container .view .view-content .item-list li.views-row,
 .page-ogdetails .page .view-group-selected-categories .view-content .item-list li.views-row {
     border: 1px solid #E1E1E1;
     padding: 0 4px;
@@ -6218,7 +6218,7 @@ body.page-node #content-inner-inner{
     font-size: 14px;
 }
 
-.page-node .page-group .group-image {
+.page-node    .page-group .group-image {
     float: left;
     width: 120px;
 }
@@ -6364,13 +6364,14 @@ body.no-sidebars #content-group-inner {
     z-index: 5
 }
 
-#nivaria-navigation-tree  li ul ul{
+#nivaria-navigation-tree  li ul ul,
+#nivaria-navigation-tree  li ul{
     margin-left: 20px;
 }
 #nivaria-navigation-tree  li a{
     height: 28px;
     line-height: 28px;
-    padding: 0 0 0 8px;
+    padding: 0 0 0 10px;
     background: none;
     border: none;
 }
@@ -6387,22 +6388,20 @@ position: relative;
         color: #FFFFFF;
 }
 #nivaria-navigation-tree li.jstree-open  .jstree-open  a:hover {
-          background: url("../images/bg_tree_hover1.png") no-repeat   left center!important;
+          background: url("../images/bg_tree_hover1a.png") no-repeat   left center!important;
    margin: 0 0 0 -20px; 
 position: relative;
     width: 275px;
-
    padding: 0 0 0 30px;
      border: none!important;
      height: 28px;
         color: #FFFFFF;
 }
 #nivaria-navigation-tree li.jstree-closed a:hover{
-      background: url("../images/bg_tree_hover.png") no-repeat   left center!important;
+      background: url("../images/bg_tree_hover1.png") no-repeat   left center!important;
    margin: 0 0 0 -20px; 
  position: relative;
     width: 275px;
-
    padding: 0 0 0 30px;
      border: none!important;
      height: 28px;
@@ -6411,13 +6410,11 @@ position: relative;
 #nivaria-navigation-tree li.jstree-open a:hover{
  margin-left: -20px;
 }
-#nivaria-navigation-tree li.jstree-closed a:hover{
-     margin-left: -20px;
-}
+
 #nivaria-navigation-tree  li.jstree-leaf a:hover
 
 {
-    background: url("../images/bg_tree_hover.png") no-repeat   left center!important;
+    background: url("../images/bg_tree_hover1.png") no-repeat   left center!important;
     border: medium none;
     color: #FFFFFF;
     height: 28px;
@@ -6425,29 +6422,8 @@ position: relative;
     padding: 0 0 0 30px;
     width: 293px;
 }
-#nivaria-navigation-tree  li.jstree-closed a:hover{
-    /*     background: url("../images/bg_tree_a_hover.png") no-repeat   left center;
-        margin-left: -20px;
-        padding: 5px 0 5px 28px;
-        position: absolute;
-        width: 293px;
-        z-index: 9998;
-            height: 18px;
-        line-height: 24px;*/
-    border: none;
 
-}
-/*#nivaria-navigation-tree li.jstree-open ul li.jstree-leaf .jstree-clicked{
-        background: url("../images/bg_tree_a_hover1.png") no-repeat scroll left center transparent;
-    height: 18px;
-     margin-left: -20px;
- padding: 5px 0 5px 28px;
-    position: absolute;
-    width: 293px;
-    z-index: 999;
-    color: #FFFFFF;
-    border: none;
-}*/
+
 
 #nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked ,
 #nivaria-navigation-tree  li.jstree-open  .jstree-open a.jstree-hovered,
@@ -6455,7 +6431,7 @@ position: relative;
 #nivaria-navigation-tree li.jstree-open    .jstree-clicked
 
 {
-    background: url("../images/bg_tree_hover.png") no-repeat scroll left center transparent;
+    background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;
     height: 28px;
     margin-left: -20px;
     padding: 0 0 0 30px;
@@ -6466,15 +6442,15 @@ position: relative;
     
 }
 #nivaria-navigation-tree li.jstree-open    .jstree-clicked{
-        background: url("../images/bg_tree_a_hover.png") no-repeat scroll left center transparent;
+        background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;
 
     z-index: 9;
 }
 #nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
-       background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;  
+       background: url("../images/bg_tree_click.png") no-repeat scroll left center transparent;  
 }
 #nivaria-navigation-tree  li.jstree-open  .jstree-open  a.jstree-hovered{
-   background: url("../images/bg_tree_hover1.png") no-repeat scroll left center transparent;  
+   background: url("../images/bg_tree_hover1a.png") no-repeat scroll left center transparent;  
 }
 #nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
     position: relative;
@@ -7616,9 +7592,9 @@ html.js fieldset.collapsible {
 }
 
 #ciclo-catalog-breadcrumb li {
-    background-image: url(../images/submenu_bullet.png);
+/*    background-image: url(../images/submenu_bullet.png);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left center;*/
     float: left;
 }
 
@@ -7629,7 +7605,6 @@ html.js fieldset.collapsible {
 #ciclo-catalog-breadcrumb li a {
     color: #333333;
     font-size: 13px;
-    font-weight: bold;
 }
 
 .emvideo-thumbnail-replacement span {
@@ -8133,51 +8108,50 @@ body.page-groups #content-group {
     width: 685px;
 
 }
-#pid-node-717-catalog  #sidebar-last-wrapper #sidebar-last #edit-node-type-wrapper #edit-submit{
+.page-node     #sidebar-last-wrapper #sidebar-last #edit-node-type-wrapper #edit-submit{
     border: medium none;
     width: auto;
 }
-#pid-node-717-catalog #sidebar-first-wrapper,
-#pid-node-972-catalog #sidebar-first-wrapper{
+.page-node    #sidebar-first-wrapper,
+.page-node      #sidebar-first-wrapper{
 
     float: left;
     width: 280px;
 }
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb{
+
+.page-node    .block-ciclo_catalog_breadcrumb{
     background: none repeat scroll 0 0 #000000;
     margin-bottom: 0;
     margin-left: -18px;
     padding: 3px 0;
     width: 710px;
 }
-#pid-node-717-catalog  .view .item-list ul.pager,
-#pid-node-972-catalog  .view .item-list ul.pager{
+
+.page-node     .view .item-list ul.pager{
     background: none repeat scroll 0 0 #F7F7F7;
     border: medium none;
     border-radius: 0 0 0 0;
     margin-bottom: 0;
 }
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb ul,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb ul{
+
+.page-node    .block-ciclo_catalog_breadcrumb ul{
     margin-left: 25px;
 }
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2)  a,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2) a{
-    color: #FFFFFF;
+
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2) a{
+    color: #FFFFFF!important;
     font-size: 13px;
     font-weight: normal;
-    line-height: 25px;    text-transform: uppercase;
+    line-height: 25px;    
+    text-transform: uppercase;
     background:#B01D8F;
     margin-right: 17px;
      display: block;
     height: 25px;
     font-family: 'Cabin', sans-serif;
 } 
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3) a,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3) a
+.page-node  .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3) a
 {
     background: none repeat scroll 0 0 #E9E9E9;
     font-size: 13px;
@@ -8193,8 +8167,8 @@ body.page-groups #content-group {
        text-transform: uppercase;
 
 } 
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) ,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) 
+
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(1) 
 {
     background:url("../images/tree_sprite.png") no-repeat scroll right -91px;
     height: 25px;
@@ -8203,8 +8177,7 @@ body.page-groups #content-group {
     position: relative;
     z-index: 4;
 }
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3) ,
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(3){
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3){
     background: url("../images/tree_sprite.png") no-repeat scroll right -91px;
     height: 25px;
     margin-left: -23px;
@@ -8214,17 +8187,9 @@ body.page-groups #content-group {
         display: block;
     height: 25px
 }
-/*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1) {
-      background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
-    height: 25px;
-    padding-right: 16px;
-    
-}*/
-/*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(1){
-        background: url("../images/tree_sprite.png") no-repeat scroll right -86px transparent;
-}*/
-#pid-node-717-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2),
-#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2)
+
+
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2)
 {
     background:url('../images/tree_sprite.png') no-repeat scroll right -126px;
     /* background:#B01D8F  url("../images/tree_sprite.png") no-repeat scroll right -127px;*/
@@ -8235,70 +8200,65 @@ body.page-groups #content-group {
     z-index: 3;
     padding: 0 10px 0 15px;
 }
-/*#pid-node-972-catalog .block-ciclo_catalog_breadcrumb li:nth-child(2){
-       background: url("../images/tree_sprite.png") no-repeat scroll right -126px transparent;
-    height: 25px;
-    padding-right: 10px;
-      padding-left: 0;
-       margin-left: -15px;
-           position: relative;
-    z-index: 4;
-}*/
-#pid-node-717-catalog   #content-region{
-    /*    width: 682px;*/
-}
-#pid-node-717-catalog  #sidebar-last-wrapper #sidebar-last-inner,
+
+.page-node     #sidebar-last-wrapper #sidebar-last-inner,
 body.page-groups #sidebar-last-wrapper #sidebar-last-inner,
 body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     margin-left: 20px;
     margin-right: 0;
 }
-#pid-node-717-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset legend,
-#pid-node-972-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset label,
-#pid-node-972-catalog  .view-ciclo-catalog-components  form .views-exposed-widget label,
-#pid-node-717-catalog  .view-ciclo-catalog-components  form .views-exposed-widget label{
+.node-type-ciclo-customer #sidebar-last-wrapper #sidebar-last-inner,
+body.node-type-ciclo-model-machine  #sidebar-last-wrapper #sidebar-last-inner,
+body.node-type-ciclo-installation #sidebar-last-wrapper #sidebar-last-inner{
+     margin: 0;
+}
+.page-node    #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset legend,
+.page-node    #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset label,
+.page-node     .view-ciclo-catalog-components  form .views-exposed-widget label{
     display: none;
 }
-.view-ciclo-catalog-components table thead th, .view-ciclo-catalog-components table tbody tr.odd td, .view-ciclo-catalog-components table tbody tr.even td{
+.view-ciclo-catalog-components table thead th, 
+.view-ciclo-catalog-components table tbody tr.odd td, .view-ciclo-catalog-components table tbody tr.even td{
 
     border: 1px solid #FFFFFF;
 
 }
 
-#pid-node-717-catalog #block-quicktabs-ciclo_catalog_tabs,
-#pid-node-972-catalog #block-quicktabs-ciclo_catalog_tabs{
-    /*      background: none repeat scroll 0 0 #F3F3F3;*/
-}
-#pid-node-717-catalog  .views-exposed-form .views-exposed-widget,
-#pid-node-972-catalog  .views-exposed-form .views-exposed-widget{
+
+.page-node     .views-exposed-form .views-exposed-widget{
     width: 182px;
 }
-#pid-node-717-catalog   #sidebar-first #block-nivaria_navigation-0,
-#pid-node-972-catalog   #sidebar-first #block-nivaria_navigation-0{
+
+.page-node      #sidebar-first #block-nivaria_navigation-0{
     width: 280px;
     border: none;
     padding-top: 60px;
 }
-#pid-node-717-catalog   #main,#pid-node-972-catalog  #main
+
+.page-node     #main
 {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 2px solid #E1E1E1;
     border-radius: 10px 10px 10px 10px;
 }
-#pid-node-717-catalog  .block-quicktabs h2.title.block-title,
-#pid-node-972-catalog  .block-quicktabs h2.title.block-title{
+.node-type-ciclo-customer #main,
+body.node-type-ciclo-model-machine #main,
+body.node-type-ciclo-installation #main{
+        background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+.page-node     .block-quicktabs h2.title.block-title{
     background: none repeat scroll 0 0 transparent;
     display: none;
     height: auto;
 }
 /*
-#pid-node-717-catalog ,
-#pid-node-972-catalog
+
+.page-node   
 */
-#pid-node-717-catalog .view-navigation-quicktabs .views-field-field-ciclo-install-model-nid .field-content a,
-#pid-node-972-catalog .view-navigation-quicktabs .views-field-field-ciclo-install-model-nid .field-content a,
-#pid-node-972-catalog .view-navigation-quicktabs .views-field-field-ciclo-alias-value .field-content a,
-#pid-node-717-catalog .view-navigation-quicktabs .views-field-field-ciclo-alias-value .field-content a{
+
+.page-node    .view-navigation-quicktabs .views-field-field-ciclo-install-model-nid .field-content a,
+.page-node    .view-navigation-quicktabs .views-field-field-ciclo-alias-value .field-content a{
     color: #000000;
     display: block;
     font-weight: bold;
@@ -8306,29 +8266,34 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 
 }
 
-#pid-node-717-catalog .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
-#pid-node-717-catalog .views-field-field-ciclo-model-docs-fid .sticky-header thead th,
-#pid-node-972-catalog .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
-#pid-node-972-catalog .views-field-field-ciclo-model-docs-fid .sticky-header thead th{
+.page-node    .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
+.page-node    .views-field-field-ciclo-model-docs-fid .sticky-header thead th,
+.page-node    .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
+.page-node    .views-field-field-ciclo-model-docs-fid .sticky-header thead th{
     width: 68%;
 }
-#pid-node-717-catalog #content-inner-inner,
-#pid-node-972-catalog   #content-inner-inner{
+.page-node    #content-inner-inner
+{
     padding-left: 8px;
 }
-#pid-node-717-catalog .sidebar-first .block h2.block-title,
-#pid-node-972-catalog  .sidebar-first .block h2.block-title{
+.node-type-ciclo-customer      #content-inner-inner,
+body.node-type-ciclo-model-machine  #content-inner-inner,
+body.node-type-ciclo-installation #content-inner-inner{
+    padding-left: 0px;
+}
+
+.page-node     .sidebar-first .block h2.block-title{
     font-size: 18px;
     padding-bottom: 10px;
     margin: 0 8px;
     padding-left: 0;
 }
-#pid-node-717-catalog  .breadcrumbs-wrapper,
-#pid-node-972-catalog  .breadcrumbs-wrapper{
+.page-node     .breadcrumbs-wrapper,
+.page-node     .breadcrumbs-wrapper{
     padding: 20px 0 0;
 }
-#pid-node-717-catalog  #content-group-inner  h1,
-#pid-node-972-catalog    #content-group-inner h1{
+.page-node     #content-group-inner  h1,
+.page-node       #content-group-inner h1{
     background-image: url("../images/line_sep.png");
     background-position: left bottom;
     background-repeat: repeat-x;
@@ -8337,61 +8302,49 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     color: #000000;
     text-transform: uppercase;
 }
-#pid-node-717-catalog #breadcrumbs-inner ,
-#pid-node-972-catalog #breadcrumbs-inner{
+
+.page-node    #breadcrumbs-inner{
     padding-left: 8px;
 }
-#pid-node-717-catalog #ciclo-catalog,
-#pid-node-972-catalog  #ciclo-catalog{
-
+body.node-type-ciclo-installation  #breadcrumbs-inner,
+body.node-type-ciclo-model-machine #breadcrumbs-inner{
+   padding-left: 19px; 
 }
 
-#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-left,
-#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-left{
+
+.page-node     #ciclo-catalog .ciclo-catalog-left{
     float: left;
     width: 30%;
 }
-#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-middle,
-#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-middle{
+
+.page-node     #ciclo-catalog .ciclo-catalog-middle{
     float: left;
     margin-left: 60px;
     width: 30%;
 }
-#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-right,
-#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-right{
+
+.page-node     #ciclo-catalog .ciclo-catalog-right{
     float: right;
     font-weight: bold;
     text-align: right;
     width: 30%;
 }
-#pid-node-717-catalog #ciclo-catalog .ciclo-catalog-right a,
-#pid-node-972-catalog  #ciclo-catalog .ciclo-catalog-right a{
+
+.page-node     #ciclo-catalog .ciclo-catalog-right a{
     background: url("../images/arrow_sprite.png") no-repeat scroll right -105px transparent;
     padding-right: 10px;;
 }
-/*    background-image: url("../images/line_sep.png");
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    color: #000000;
-    display: block;
-    float: left;
-    font-size: 30px;
-    height: auto;
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    text-indent: 0;
-    width: 100%;*/
 
 
 
-#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs.quicktabs-style-arrows li.active a,
-#pid-node-972-catalog #quicktabs-ciclo_model_catalogue ul.quicktabs_tabs.quicktabs-style-arrows li a:hover{
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs.quicktabs-style-arrows li.active a,
+.page-node    #quicktabs-ciclo_model_catalogue ul.quicktabs_tabs.quicktabs-style-arrows li a:hover{
     background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
     /*       background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px #ED751D;*/
 }
 
-#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a,
-#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a{
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a,
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li a{
     background: #999;
     border: medium none;
     border-radius: 0 0 0 0;
@@ -8407,59 +8360,59 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     text-decoration: none;
     text-transform: uppercase;
 }
-#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs ,
-#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs{
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs ,
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs{
     margin-left: -1px;
 }
 /**slideshowfgc**/
-#pid-node-717-catalog   #quicktabs_tabpage_ciclo_model_catalogue_2,
-#pid-node-972-catalog  #quicktabs_tabpage_ciclo_model_catalogue_2{
+.page-node      #quicktabs_tabpage_ciclo_model_catalogue_2,
+.page-node     #quicktabs_tabpage_ciclo_model_catalogue_2{
     height: 400px;
     margin-top: 25px;
 }
 
 
-#pid-node-717-catalog   #quicktabs_tabpage_ciclo_model_catalogue_3,
-#pid-node-972-catalog   #quicktabs_tabpage_ciclo_model_catalogue_3{
+.page-node      #quicktabs_tabpage_ciclo_model_catalogue_3,
+.page-node      #quicktabs_tabpage_ciclo_model_catalogue_3{
     height: 400px;
     margin-top: 25px;
 }
-#pid-node-717-catalog .views_slideshow_slide .views-field-field-ciclo-alias-value,
-#pid-node-972-catalog .views_slideshow_slide .views-field-field-ciclo-alias-value{
+.page-node    .views_slideshow_slide .views-field-field-ciclo-alias-value,
+.page-node    .views_slideshow_slide .views-field-field-ciclo-alias-value{
     display: none;
 }
-#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
-#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
-#pid-node-972-catalog .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1,
-#pid-node-717-catalog .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
+.page-node    .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1,
+.page-node    .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1
 {
     margin: 0 auto;
     width: 318px;
 }
-#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
-#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
-#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1,
-#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1{
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1,
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1{
     width: 426px;
     margin: 0 auto;
 }
-#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img,
-#pid-node-972-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img{
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img,
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid img{
     border: 1px solid #E1E1E1;
     /*   display: none;*/
 }
-#pid-node-717-catalog .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid-1 img,
-#pid-node-972-catalog .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1 img{
+.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid-1 img,
+.page-node    .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1 img{
     border: 1px solid #E1E1E1;display: none;
 
 }
-#pid-node-717-catalog .views_slideshow_singleframe_main  .views-field-field-ciclo-install-model-nid,
-#pid-node-972-catalog .views_slideshow_singleframe_main  .views-field-field-ciclo-install-model-nid{
+.page-node    .views_slideshow_singleframe_main  .views-field-field-ciclo-install-model-nid,
+.page-node    .views_slideshow_singleframe_main  .views-field-field-ciclo-install-model-nid{
     display: none;
 }
 /**controll**/
-#pid-node-717-catalog .views-slideshow-controls-bottom,
-#pid-node-972-catalog .views-slideshow-controls-bottom{
+.page-node    .views-slideshow-controls-bottom,
+.page-node    .views-slideshow-controls-bottom{
     height: 45px;
     margin-left: -14px;
     position: absolute;
@@ -8467,8 +8420,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     width: 669px;
     z-index: 99999;
 }
-#pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_previous,
-#pid-node-972-catalog .views-slideshow-controls-bottom .views_slideshow_previous{
+.page-node    .views-slideshow-controls-bottom .views_slideshow_previous,
+.page-node    .views-slideshow-controls-bottom .views_slideshow_previous{
     background: url("../images/tab_sprite.png") no-repeat scroll right -192px transparent;
     display: block;
     float: left;
@@ -8476,8 +8429,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     text-indent: -999px;
     width: 51px;
 }
-#pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_next,
-#pid-node-972-catalog .views-slideshow-controls-bottom .views_slideshow_next{
+.page-node    .views-slideshow-controls-bottom .views_slideshow_next,
+.page-node    .views-slideshow-controls-bottom .views_slideshow_next{
     background: url("../images/tab_sprite.png") repeat scroll right -254px transparent;
     display: block;
     float: right;
@@ -8485,12 +8438,12 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     text-indent: -9999px;
     width: 52px;
 }
-#pid-node-717-catalog .views-slideshow-controls-bottom .views_slideshow_pause,
-#pid-node-972-catalog .views-slideshow-controls-bottom .views_slideshow_pause{
+.page-node    .views-slideshow-controls-bottom .views_slideshow_pause,
+.page-node    .views-slideshow-controls-bottom .views_slideshow_pause{
     display: none;
 }
-#pid-node-717-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active,
-#pid-node-972-catalog #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active{
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active,
+.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs li.active  a.active{
     background: url("../images/tab_sprite.png") repeat scroll -3px -141px transparent;
     padding-bottom: 10px;
     position: relative;
@@ -8500,17 +8453,16 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
 
 }
 
-#pid-node-972-catalog .quicktabs_wrapper ul.quicktabs_tabs li,
-#pid-node-717-catalog .quicktabs_wrapper ul.quicktabs_tabs li{
+.page-node    .quicktabs_wrapper ul.quicktabs_tabs li{
     margin: 0;
 }
-#pid-node-717-catalog table.views-table thead th.active,
-#pid-node-972-catalog table.views-table thead th.active{
+
+.page-node    table.views-table thead th.active{
     background-color: #000000;
 }
 
-#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active a.active,
-#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active a.active{
+
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active a.active{
     background: url("../images/tab_sprite.png") repeat scroll -3px -99px transparent;
     border: medium none;
     color: #FFFFFF;
@@ -8519,14 +8471,18 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     width: 66px;
 
 } 
-#pid-node-717-catalog #content-content,
-#pid-node-972-catalog #content-content{
+.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail   ul.quicktabs_tabs li,
+body.node-type-ciclo-model-machine #quicktabs-ciclo_model_detail   ul.quicktabs_tabs li,
+body.node-type-ciclo-installation #quicktabs-ciclo_installation_detail ul.quicktabs_tabs li{
+     margin: 0 8px;
+}
+.page-node    #content-content{
     left: 0;
     position: relative;
     top: 0;
 }
-#pid-node-717-catalog #content-content a.edit-link,
-#pid-node-972-catalog #content-content a.edit-link{
+.page-node    #content-content a.edit-link,
+.page-node    #content-content a.edit-link{
     background: none repeat scroll 0 0 #B01D8F;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
@@ -8538,23 +8494,23 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     text-transform: uppercase;
     top: 12px;
 }
-#pid-node-717-catalog.grid-width-16 .grid16-12,#pid-node-972-catalog.grid-width-16 .grid16-12
+.page-node   .grid-width-16 .grid16-12,.page-node   .grid-width-16 .grid16-12
 {
     width: 692px;
 
 }
-#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
-#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active {
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs  li.active ,
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li.active {
     background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
 }
-#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs,
-#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs {
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs,
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs {
     background: none repeat scroll 0 0 #F3F3F3;
     margin: 0;
     padding: 17px 10px 10px !important;
 }
-#pid-node-717-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li  a,
-#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li  a{
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li  a,
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_tabs li  a{
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #E1E1E1 ;
     border-radius: 5px 5px 5px 5px ;
@@ -8563,8 +8519,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     padding: 0 20px;
     margin-right: 15px;
 } 
-#pid-node-717-catalog  #quicktabs-ciclo_catalog_tabs .quicktabs_main,
-#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs .quicktabs_main{
+.page-node     #quicktabs-ciclo_catalog_tabs .quicktabs_main,
+.page-node    #quicktabs-ciclo_catalog_tabs .quicktabs_main{
     background: none repeat scroll 0 0 #F3F3F3;
     border: medium none;
     border-radius: 0 0 0 0;  
@@ -8572,8 +8528,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     overflow: visible;
 
 }
-#pid-node-717-catalog  #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components,
-#pid-node-972-catalog  #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components{
+.page-node     #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components,
+.page-node     #quicktabs-ciclo_catalog_tabs .view-ciclo-catalog-components form input#edit-submit-ciclo-catalog-components{
     background: url("../images/search_icon.png") no-repeat scroll right top transparent;
     border-radius: 0 0 0 0;
     display: block;
@@ -8582,8 +8538,8 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     text-indent: -9999px;
     width: 97px;
 }
-#pid-node-717-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset.views-exposed-form ,
-#pid-node-972-catalog #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset.views-exposed-form {
+
+.page-node    #block-quicktabs-ciclo_catalog_tabs .view-filters fieldset.views-exposed-form {
     background: none;
     position: absolute;
     right: 0;
@@ -8591,45 +8547,49 @@ body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     width: 212px;
     z-index: 99999;
 }
-#pid-node-717-catalog .quicktabs_wrapper .quicktabs_main,
-#pid-node-972-catalog .quicktabs_wrapper .quicktabs_main
+
+.page-node    .quicktabs_wrapper .quicktabs_main
 {
     border-radius: 0 0 0 0;
     margin-top: -10px;
     padding: 0;
 }
-#pid-node-972-catalog #quicktabs-ciclo_catalog_tabs  .quicktabs_main{
+.page-node    #quicktabs-ciclo_catalog_tabs  .quicktabs_main{
     border: medium none;
 }
-#pid-node-717-catalog  #main-group,
-#pid-node-972-catalog #main-group{
+
+.page-node    #main-group{
    border-left: 2px solid #E1E1E1;
 }
-#pid-node-717-catalog  #content-group-inner,
-#pid-node-972-catalog  #content-group-inner{
+.node-type-ciclo-customer #main-group,
+body.node-type-ciclo-model-machine #main-group,
+body.node-type-ciclo-installation #main-group {
+  border-left: medium none;
+}
+.page-node     #content-group-inner{
 
 }
-#pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title,
-#pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title{
+
+.page-node     #block-quicktabs-ciclo_catalog_tabs .view-filters input#edit-title{
     height: 24px;
 }
-#pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-widgets,
-#pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-widgets{
+
+.page-node     #block-quicktabs-ciclo_catalog_tabs .view-filters .views-exposed-widgets{
     width: 180px;
 }
-#pid-node-717-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters  .views-exposed-form .fieldset-wrapper,
-#pid-node-972-catalog  #block-quicktabs-ciclo_catalog_tabs .view-filters  .views-exposed-form .fieldset-wrapper
+
+.page-node     #block-quicktabs-ciclo_catalog_tabs .view-filters  .views-exposed-form .fieldset-wrapper
 {
     padding-top: 0;
 }
-#pid-node-972-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a,
-#pid-node-717-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a{
+
+.page-node    .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a{
     background: url("../images/tab_sprite.png") no-repeat scroll left -229px transparent !important;
     font-size: 0;
     padding: 14px 30px;
 }
-#pid-node-972-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view ,
-#pid-node-717-catalog .view-id-ciclo_catalog_components .view-content span.node-edit-in-view {
+
+.page-node    .view-id-ciclo_catalog_components .view-content span.node-edit-in-view {
     float: right;
 }
 #main #sidebar-last-wrapper .view-most-active-users-gerencia .views-field-field-number-posts-vname { margin-top: 0; }
@@ -9013,40 +8973,23 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 }
 /*Trong Thang*/
 /*content*/
-.node-type-ciclo-model-machine #content-top,
-#pid-catalog-model-agitador-brinmix-1000 #content-top{
-    background: #fff;
-    overflow: hidden;
+
+.node-type-ciclo-model-machine #content-top #content-top-inner{
 }
-.node-type-ciclo-model-machine #content-top #content-top-inner,
-#pid-catalog-model-agitador-brinmix-1000 #content-top #content-top-inner{
-}
-.node-type-ciclo-model-machine .breadcrumbs-wrapper,
-#pid-catalog-model-agitador-brinmix-1000 .breadcrumbs-wrapper{
+.node-type-ciclo-model-machine .breadcrumbs-wrapper
+{
     width: 97%;
 }
-.node-type-ciclo-model-machine #content-content,
-#pid-catalog-model-agitador-brinmix-1000 #content-content{}
 
-.node-type-ciclo-model-machine .buildmode-full,
-#pid-catalog-model-agitador-brinmix-1000 .buildmode-full{
+.node-type-ciclo-model-machine .buildmode-full{
     padding: 0 20px;    
 
 }
 .node-type-ciclo_model_machine .nd-region-footer{
     position: relative;
 }
-/*.node-type-ciclo-model-machine .field-ciclo-alias .field-items .field-item,
-#pid-catalog-model-agitador-brinmix-1000 .field-ciclo-alias .field-items .field-item{
-    background: url("../images/circle_sprite.png") no-repeat scroll 626px -469px transparent;
-    color: #000000;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 0;
-     cursor: pointer;
-}*/
-.node-type-ciclo-model-machine  .nd-region-header,
-#pid-catalog-model-agitador-brinmix-1000 .nd-region-header
+
+.node-type-ciclo-model-machine  .nd-region-header
 {
     /*    background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll 625px -470px transparent;*/
     background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -470px;
@@ -9057,37 +9000,30 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     margin-bottom: 15px;
     padding: 10px 0 7px;
 }
-.node-type-ciclo-model-machine  .nd-region-header .field-ciclo-alias .field-items .field-item,
-#pid-catalog-model-agitador-brinmix-1000 .nd-region-header .field-ciclo-alias .field-items .field-item{
+.node-type-ciclo-model-machine  .nd-region-header .field-ciclo-alias .field-items .field-item{
     font-size: 20px;
 }
-.node-type-ciclo-model-machine .nd-region-header.clear-block,
-#pid-catalog-model-agitador-brinmix-1000 .nd-region-header.clear-block{
+.node-type-ciclo-model-machine .nd-region-header.clear-block{
     width: 100%;
 }
-.node-type-ciclo-model-machine .edit-content-link,
-#pid-catalog-model-agitador-brinmix-1000 .edit-content-link{
+.node-type-ciclo-model-machine .edit-content-link{
     right: 50px;
     top: 9px;
 }
-.node-type-ciclo-model-machine .edit-content-link:hover,
-#pid-catalog-model-agitador-brinmix-1000 .edit-content-link:hover{
+.node-type-ciclo-model-machine .edit-content-link:hover{
     background-color: #8A0D65;
 }
-.node-type-ciclo-model-machine .nd-region-left,
-#pid-catalog-model-agitador-brinmix-1000 .nd-region-left{
+.node-type-ciclo-model-machine .nd-region-left{
     padding-right: 0;
     padding-top: 15px;
 }
-.node-type-ciclo-model-machine .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left,
-#pid-catalog-model-agitador-brinmix-1000 .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
+.node-type-ciclo-model-machine .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
     float: right;
     margin: 0;
     width: 50%;
 }
 /*tab*/
-.node-type-ciclo-model-machine .buildmode-full .nd-region-middle,
-#pid-catalog-model-agitador-brinmix-1000 .buildmode-full .nd-region-middle{
+.node-type-ciclo-model-machine .buildmode-full .nd-region-middle{
     margin: 0;
     min-height: 305px;
 }
@@ -9153,9 +9089,7 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 quicktabs-ciclo_model_detail .inner{
     position: relative;
 }
-quicktabs-ciclo_model_detail .inner{
-    position: relative;
-}
+
 #quicktabs-ciclo_model_detail .quicktabs_tabs,
 #quicktabs-ciclo_installation_detail .quicktabs_tabs,
 #quicktabs-ciclo_customer_detail .quicktabs_tabs,
@@ -9194,11 +9128,13 @@ quicktabs-ciclo_model_detail .inner{
     background: url("../images/tab_sprite.png") no-repeat scroll -5px -3px transparent;
 }
 #quicktabs_container_ciclo_installation_detail,
-#quicktabs_container_ciclo_model_detail{
+#quicktabs_container_ciclo_model_detail
+{
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 8px 8px 8px 8px;
     margin-top: 41px;
+    padding: 10px;
 }
 .views-exposed-form.collapsed .collapse-processed a{
     background: url("../images/circle_sprite.png") no-repeat scroll 39px -57px transparent !important;
@@ -9252,23 +9188,22 @@ body.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail .view-ciclo-cust
 .node-type-ciclo-customer #content-content .buildmode-full .node-type-ciclo_customer,
 .node-type-ciclo-customer #content-tabs-inner{
     padding: 0 10px;
+     position: relative;
 }
 
 .node-type-ciclo-customer  #content-inner-inner h1.title,
 .node-type-ciclo_installation .nd-region-header  .field-title h1{
-
+margin: 0;
     border-left: 2px solid #E1E1E1;
     border-right: 2px solid #E1E1E2;
     padding-left: 15px;
     padding-bottom: 5px;
     cursor: pointer;
+     font-size: 23px;
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -538px #FFFFFF;
 
 }
-#pid-content-el-pozo #content-inner-inner h1.title{
-    padding-left: 25px;
-    padding-bottom: 15px;
-}
+
 .node-type-ciclo_installation .nd-region-header  .field-title h1{
     border: medium none;
     color: #000000;
@@ -9282,7 +9217,7 @@ body.node-type-ciclo-customer .breadcrumb{
     padding: 0;
 }
 body.node-type-ciclo-customer #breadcrumbs-inner{
-    padding: 0 14px;
+    padding: 0 6px;
 }
 body.node-type-ciclo-customer #content-inner-inner h1.close{
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -369px;  
@@ -9326,7 +9261,7 @@ body.node-type-ciclo-installation #content-content .buildmode-full  .field-ciclo
 }
 /*customer*/
 
-#pid-catalog-customers  #content-group #content-top,
+
 body.page-catalog   #content-group #content-top{
     display: none;
     padding: 0;
@@ -9355,36 +9290,36 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
     padding: 10px;
     text-align: center;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-filters{
+.page-catalog  .view-ciclo-customers .view-filters{
     margin: 15px 0;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-filters .views-exposed-form .collapse-processed{
+.page-catalog  .view-ciclo-customers .view-filters .views-exposed-form .collapse-processed{
     background: none;
     margin: 0;
     padding: 0;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-filters .views-exposed-form  .fieldset-wrapper{
+.page-catalog  .view-ciclo-customers .view-filters .views-exposed-form  .fieldset-wrapper{
     padding: 10px 0 0 10px;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row .nd-region-left,
+.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-left,
 #pid-catalog .view-ciclo-machines .view-content li.views-row .nd-region-left{
 
     float: none;
     width: auto;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row .nd-region-left p{
+.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-left p{
     margin: 0;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row .nd-region-left ul li{
+.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-left ul li{
     background: none;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row .nd-region-middle-wrapper,
+.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-middle-wrapper,
 #pid-catalog .view-ciclo-machines .view-content li.views-row .nd-region-middle-wrapper{
     float: left;
     margin: 7px 20px 20px 0 !important;
     width: 43%;
 }
-#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row .nd-region-middle-wrapper img,
+.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-middle-wrapper img,
 #pid-catalog .view-ciclo-machines .view-content li.views-row .nd-region-middle-wrapper img{
     width: 140px; height: auto;
 }
@@ -9429,7 +9364,12 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
     top: 30px;
 }
 #quicktabs_container_ciclo_customer_detail{
+     border-radius: 10px 10px 10px 10px;
     margin-top: 40px;
+    padding: 10px;
+}
+#quicktabs_container_ciclo_customer_detail .quicktabs_tabs {
+    margin-left: 0;
 }
 #quicktabs_container_ciclo_customer_detail .quicktabs_tabs.quicktabs-style-nostyle{
     top: -42px;
@@ -9457,14 +9397,7 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
 #pid-catalog #content-group .view-ciclo-machines .view-content .item-list li .nd-region-left .field-ciclo-model-image-fid img{
     border: none;
 }
-/*#pid-users-oscarmayer #content-group{
-       background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px solid #E1E1E1;
-    border-radius: 10px 10px 10px 10px;
-}
-#pid-users-oscarmayer #content-group #content-group-inner{
-     padding: 0 20px;
-}*/
+
 .page-user-1 .view-user-ciclokm  .view-content .views-row .views-field-picture {
     background: none repeat scroll 0 0 #FFFFFF;
     float: left;
@@ -9532,11 +9465,3 @@ body.node-type-ciclo-type-machine #content-region .field-type-machine-models .co
 body.node-type-ciclo-type-machine #content-region .view-ciclo-machines .view-content {
     padding-top: 40px;
 }
-
-/*.page-user-1 #main-content #content-region{
-       background: none repeat scroll 0 0 #FFFFFF;
-    border-color: #E1E1E1;
-    border-radius: 0 0 10px 10px;
-    border-style: solid;
-    border-width: 0 2px 2px;
-}*/
