@@ -1473,8 +1473,8 @@ body.node-type-ciclo-customer .nd-region-header .field-title h1{
     .node-type-ciclo-customer .nd-region-header {*/
     display: none;
 }
-.node-type-faq-question .content-tabs,
-.node-type-manual  .content-tabs
+.node-type-faq-question .content-tabs/*,
+.node-type-manual  .content-tabs*/
 {
     display: block !important;
     margin-top: 20px !important
