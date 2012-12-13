@@ -1860,7 +1860,7 @@ form input.form-submit,
         color-stop(rgb(238,125,33)),
         color-stop(rgb(234,100,17))
         );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee7d22', endColorstr='#ea6311');
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee7d22', endColorstr='#ea6311');*/
     margin-left:1em;
     background-color:transparent;
 }
