@@ -8138,7 +8138,9 @@ body.page-groups #content-group {
     margin-left: 25px;
 }
 
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2) a{
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2) a,
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(4) a
+{
     color: #FFFFFF!important;
     font-size: 13px;
     font-weight: normal;
@@ -8200,7 +8202,17 @@ body.page-groups #content-group {
     z-index: 3;
     padding: 0 10px 0 15px;
 }
-
+.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(4)
+{
+    background:url('../images/tree_sprite.png') no-repeat scroll right -126px;
+    /* background:#B01D8F  url("../images/tree_sprite.png") no-repeat scroll right -127px;*/
+    height: 25px;
+    display: block;
+    margin-left: -20px;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px 0 15px;
+}
 .page-node     #sidebar-last-wrapper #sidebar-last-inner,
 body.page-groups #sidebar-last-wrapper #sidebar-last-inner,
 body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
