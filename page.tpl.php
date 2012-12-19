@@ -131,7 +131,7 @@
 
                                 <div id="content-inner" class="content-inner block">
                                     <div id="content-inner-inner" class="content-inner-inner inner">
-                                    <?php if ($title && !$is_front): ?>
+                                    <?php if ($title/*&& !$is_front*/): ?>
                                         <h1 class="title"><?php print $title; ?></h1>
                                     <?php endif; ?>
                                     
