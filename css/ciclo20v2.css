@@ -6478,7 +6478,47 @@ position: relative;
     font-weight: bold;
     text-transform: uppercase;
 }
+#nivaria-navigation-tree a .icon {    
+    background-image: url("../images/icons/document-node.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
 
+#nivaria-navigation-tree a .container-icons {
+    display: none;   
+}
+
+#nivaria-navigation-tree a .icon-3dvia {    
+    background-image: url("../images/icons/wiki-node.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
+#nivaria-navigation-tree a .icon-svg {    
+    background-image: url("../images/icons/blog-node.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
+#nivaria-navigation-tree a .icon-image {    
+    background-image: url("../images/icons/forum-node.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
+#nivaria-navigation-tree a .icon-doc {    
+    background-image: url("../images/icons/document-node.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
+#nivaria-navigation-tree a .icon-video {    
+    background-image: url("../images/icons/event-node.png") !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
 
 /*
  * Secciones colapsables
