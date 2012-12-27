@@ -165,17 +165,13 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-re
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle .field-body{
     float: left;
-    width:54%;
+    width:52%;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle .field-body > p{
     margin-top: 0px;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle .field-qr-block{
     float: right
-}
-body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle .field-qr-block img{
-    width: 135px;
-    height: 110px;
 }
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle .field-ciclo-model-image img{
     width: 135px;
