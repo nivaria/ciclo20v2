@@ -63,6 +63,20 @@ settings[sidebar_layout] = sidebars-split
 settings[sidebar_first_width] = 4
 settings[sidebar_last_width] = 4
 
+skinr[ciclo20v2_blocks][title] = Bloques Ciclo
+skinr[ciclo20v2_blocks][description] = Bloques Ciclo
+skinr[ciclo20v2_blocks][type] = checkboxes
+skinr[ciclo20v2_blocks][options][1][label] = Bloque por defecto
+skinr[ciclo20v2_blocks][options][1][class] = ciclo20v2_default
+skinr[ciclo20v2_blocks][options][2][label] = Bloque destacado
+skinr[ciclo20v2_blocks][options][2][class] = ciclo20v2_highlight
+skinr[ciclo20v2_blocks][options][3][label] = Bloque colapsable
+skinr[ciclo20v2_blocks][options][3][class] = ciclo20v2_collapsible
+skinr[ciclo20v2_blocks][options][4][label] = Icono gear
+skinr[ciclo20v2_blocks][options][4][class] = ciclo20v2_gear_icon
+skinr[ciclo20v2_blocks][options][5][label] = Bloque título gris
+skinr[ciclo20v2_blocks][options][5][class] = ciclo20v2_grey_title
+
 ; Information added by drupal.org packaging script on 2012-01-18
 version = "6.x-2.4"
 core = "6.x"
