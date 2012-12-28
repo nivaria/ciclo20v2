@@ -6087,16 +6087,13 @@ body.page-node    #content-inner-inner{
     color: #000000;
     font-size: 15px;
     font-weight: bold;
-    padding-left: 35px;
+    padding-left: 5px;
     position: relative;
 }
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper .option  input#edit-installation,
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper .option input#edit-update-existing-components,
 #pid-admin-settings-ciclo-bmecat-import .form-checkboxes .option .form-checkbox
 {
-    left: 0;
-    opacity: 0;
-    position: absolute;
     width: 25px;
     height: 25px;
     z-index: 10;
@@ -6114,7 +6111,6 @@ body.page-node    #content-inner-inner{
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option span,
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option span,
 #pid-admin-settings-ciclo-bmecat-import .form-checkboxes  span{
-    background: url("../images/check_prite.png") no-repeat scroll -5px 0 transparent;
     height: 25px;
     left: 0;
     position: absolute;
