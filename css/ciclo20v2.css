@@ -268,6 +268,10 @@ body {
     margin-right: 0!important;
 }
 .content-content .view-header{
+    margin-bottom:12px;
+    overflow:hidden;
+}
+/*.content-content .view-header{
     position: absolute;
     right: 0;
     top: -33px;
@@ -275,7 +279,7 @@ body {
 }
 .view-id-ciclo_installations_og .view-header{
     top: -52px;
-}
+}*/
 .content-content .view-header a{
     background: #EA6311;
     border-radius: 8px;
@@ -283,6 +287,8 @@ body {
     font-weight: bold;
     padding: 6px 10px;
     text-transform: uppercase;
+    display:block;
+    float:right;
 }
 
 
@@ -6696,19 +6702,18 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     margin: 0 3px;
     float: left;
     width: 140px;
+    clear:both;
 }
 
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget label {
+#precontent .views-exposed-form label {
     color: #000000;
     float: left;
     font-size: 14px;
     font-weight: bold;
     padding-left: 10px;
-    position: absolute;
-    top: -13px;
 }
 
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .selected-value {
+#precontent .views-exposed-form .selected-value {
     background-image: url("../images/arrow_sprite.png");
     background-position: 115px -46px;
     background-repeat: no-repeat;
@@ -6721,9 +6726,10 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     margin-right: 8px;
     padding: 0 16px 0 6px;
     display: block;
+    cursor:pointer;
 }
 
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .select-as-links-with-search-container {
+#precontent .views-exposed-form .select-as-links-with-search-container {
     display: none;
     /*border: 1px solid #DBDBDB;*/
     border-radius: 0 5px 5px 5px;
@@ -6733,12 +6739,13 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     background-color: #FFF;
     display: none;
     position: absolute;
-    top: 31px;
+    top: 43px;
     width: 520px;
     padding: 5px;
+    z-index:100;
 }
 
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget fieldset {
+#precontent .views-exposed-form .views-widget fieldset {
     margin: 0;
 }
 
@@ -6756,10 +6763,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     display: block
 }
 
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget #edit-field-ciclo-install-customer-nidautocomplete-element-wrapper,
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget #edit-field-ciclo-type-machine-nidautocomplete-element-wrapper,
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget #edit-Modeloautocomplete-element-wrapper,
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget #edit-field-ciclo-alias-valueautocomplete-element-wrapper {
+#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .select-as-links-with-search-container .form-item{
     border-bottom: 1px solid #FFF;
     background-color: #F3F3F3;
     padding: 3px;
@@ -6780,19 +6784,13 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     -moz-border-radius: 0 5px 5px 0;
     -webkit-border-radius: 0 5px 5px 0;
 }
-
 #precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .bef-select-as-links-special {
     background-color: #F7F7F7;
     padding: 5px 10px;
 }
-
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget #edit-field-ciclo-type-machine-nidautocomplete-element-wrapper,
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget #edit-Modeloautocomplete-element-wrapper,
-#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget #edit-field-ciclo-alias-valueautocomplete-element-wrapper {
-    background-color: #F3F3F3;
-    border-bottom: 1px solid #FFF;
+#precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .bef-select-as-links-special .form-item{
+    background-color: transparent;
 }
-
 #precontent .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .bef-select-container .form-item ul {
     padding: 10px 0;
 }
@@ -7090,23 +7088,18 @@ body.page-catalog .node-type-ciclo_model_machine .nd-region-header {
 body.node-type-ciclo-installation .block-quicktabs{
     margin-top: 80px;
 }
-.node-type-ciclo-model-machine #bt-catalog,
-.node-type-ciclo_installation #bt-catalog {
+#bt-catalog{
     background: url("../images/bg_detail.png") no-repeat scroll center center transparent;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: bold;
     line-height: 27px;
-    padding: 13px 15px 11px 75px;
-    position: absolute;
-    right: -27px;
     text-transform: uppercase;
-    top: 35px;
     white-space: normal;
-    width: 225px;
-}
-.node-type-ciclo_installation #bt-catalog {
-    top: 55px;
+    width:301px;
+    height:82px;
+    float:right;
+    text-indent:-9999px;
 }
 .node-type-ciclo-model-machine .field-field-ciclo-model-catalog,
 .node-type-ciclo_installation .field-field-ciclo-model-catalog{
@@ -7115,18 +7108,13 @@ body.node-type-ciclo-installation .block-quicktabs{
 .node-type-ciclo_installation .field-field-ciclo-model-catalog{
     width: 100% !important;
 }
-
-body.page-catalog .node-type-ciclo_model_machine #bt-catalog,
-body.page-catalog .node-type-ciclo_installation #bt-catalog {
-    right: 238px;
-    top: 5px;
-}
-
 #content-group #content-content .node ul {
     padding: 0;
     list-style: none;
 }
-
+body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-plant {
+    clear:both;
+}
 #content-group #content-content .node ul li {
     background-image: url(../images/bullet_2.png);
     background-position: left 6px;
@@ -7331,7 +7319,11 @@ fieldset fieldset {
 
 /*#precontent fieldset .fieldset-wrapper { padding: 0 !important; }*/
 
-#precontent .views-exposed-form .views-exposed-widget { min-height: none !important; width: auto }
+#precontent .views-exposed-form .views-exposed-widget {
+    min-height: none !important;
+    width: auto;
+    position:relative;
+}
 
 #continue-shopping-button { margin-right: 0; }
 
@@ -8314,10 +8306,6 @@ body.node-type-ciclo-installation #main-group {
 .views-exposed-wrapper .views-exposed-widget label{
     font-weight: normal;
 }
-.view-ciclo-customers .view-header a.add-content-link{
-    position: relative;
-    top: -20px;
-}
 .page-catalog #sidebar-last-wrapper{
     padding: 74px 0 10px 20px
 }
@@ -8496,13 +8484,6 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 }
 body.page-catalog #content-group .view-ciclo-installations-og .nd-region-footer a {
     color: #E76C1E;
-}
-
-
-body.page-catalog #content-group #view-id-ciclo_installations_og-page .view-content {
-    overflow: hidden;
-    width: 100%;
-    padding-top: 20px;
 }
 body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-footer {
     padding:0;
@@ -8869,9 +8850,6 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
 .field.status span.user-Yes{
     background: none repeat scroll 0 0 #00CC66;
     color: #FFFFFF;    
-}
-#bt-catalog{
-    top: 30px;
 }
 #quicktabs_container_ciclo_customer_detail{
      border-radius: 10px 10px 10px 10px;
