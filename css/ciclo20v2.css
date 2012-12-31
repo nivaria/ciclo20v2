@@ -142,7 +142,6 @@ body.not-front #content-group .block h2.block-title,
     padding:12px;
     background-color: #FFFFFF;
     border-radius: 0 0 12px 12px;
-    overflow:hidden;
 }
 .section .block-quicktabs .content{
     box-shadow:none;
@@ -305,17 +304,7 @@ blockquote p:last-child { margin-bottom: 0px;}
 }
 .content-content .view-header{
     margin-bottom:12px;
-    overflow:hidden;
 }
-/*.content-content .view-header{
-    position: absolute;
-    right: 0;
-    top: -33px;
-
-}
-.view-id-ciclo_installations_og .view-header{
-    top: -52px;
-}*/
 .content-content .view-header a{
     background: #EA6311;
     border-radius: 8px;
@@ -325,9 +314,9 @@ blockquote p:last-child { margin-bottom: 0px;}
     text-transform: uppercase;
     display:block;
     float:right;
+    
+    margin-top:-88px;
 }
-
-
 .front #main-content .nd-region-middle-wrapper .nd-region-middle,
 .page-catalog-installations #main-content .nd-region-middle-wrapper .nd-region-middle{
     margin-left: 10px;}
@@ -800,6 +789,9 @@ Works well with inline login or inline menu block style */
     font-size: 12px;
     line-height: 18px;
 }
+#breadcrumbs-inner{
+    padding:0;
+}
 #ciclo-catalog-breadcrumb {
     line-height: 25px;
     height: 25px;
@@ -1063,51 +1055,33 @@ form#search-theme-form input.form-submit {
     color: #228bc8;
     font-size: 1em;
 }
-
-
-
-/* Page titles/-------------------------------------------------------------- */
-
-/* Page and full node titles */
-
 h1.title {
     color: #333;
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2em;
-    margin: 0 0 10px 0;
+    margin: 0;
     padding:0;
     font-family:calibri,arial;
+    margin-bottom:1em;
+    padding-bottom:1em;
 }
-
-/* Default node styles/-------------------------------------------------------------- */
-
-/* Change unpublished and preview colors for dark background themes */
-
 .node-unpublished {
     background-color: #fff4f4;
 }
-
 .preview .node {
     background-color: #ffffea;
 }
-
-/* node admin styles*/
-
 .node-form #tagging-widget-container .description {
     line-height: 1.2em;
     padding: .6em;
     float: left;
 }
-
-/* images within node content */
-
 .node .content img { padding: 10px;}
 .node .content .filefield-file img,
 .node .content .openlayers-container img {
     padding: 0;
 }
-
 .meta .terms-inline { display: block; margin-top: 5px;}
 .meta .terms-inline h4 { display: inline-block; font-weight:normal;}
 .node-type-group .terms h4 { display: inline-block; font-weight:normal;}
@@ -1960,30 +1934,21 @@ tr td.views-field-subscribe{
     background: none;
     border: none !important;
 }
-
-/* Fieldset wrapper around groups of form elements -- add border here */
-
-fieldset {
-    /*  overflow: hidden;
-      background-color: transparent;
-      border: 0 none;
-      padding: 0;*/
-}
 #ciclo-bmecat-import fieldset legend,
 fieldset legend{
     color: #666666;
     float: left;
+    display:block;
     font-weight: bold;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
     width: 100%;
     font-family: calibri,arial;
     font-weight: bold;
     font-size: 19px;
     color: #666;
-    background-image: url(../images/line_sep.png);
+    /*background-image: url(../images/line_sep.png);
     background-position: left bottom;
-    background-repeat: repeat-x;
-
+    background-repeat: repeat-x;*/
 }
 #ciclo-bmecat-import .model{
     font-weight: normal;
@@ -2007,58 +1972,18 @@ html.js fieldset.collapsed {
     background-color: transparent;
     padding: 10px;
 }
-
-/* Typography and spacing for legend of fieldsets */
-
-fieldset legend {
-
-}
-
-/* Link style for legend of fieldsets */
-
-fieldset legend,
-legend.collapse-processed,
-legend.collapse-processed a:link,
-legend.collapse-processed a:visited {
-
-}
-
-/* Custom icons on (open) collapsible fieldsets */
-
-html.js fieldset.collapsible legend a:link,
-html.js fieldset.collapsible legend a:visited {
-
-}
-
-/* Custom icons on (closed) collapsible fieldsets */
-
-html.js fieldset.collapsed legend a:link,
-html.js fieldset.collapsed legend a:visited {
-
-}
-
-/* Tables-------------------------------------------------------------- */
-
-/* Body of tables */
 thead + tbody
 tbody {
     border: 0 none;
 }
-
-/* Header of tables */
-
 thead th,
 th {
     border: none;
     color: #333;
 }
-
 tbody th {
     border-bottom: 1px solid purple;
 }
-
-/* Alternating row background styles */
-
 .block.block-views .view-content .item-list ul li.views-row-odd,
 #sidebar-last-wrapper .block.block-views .view-content .item-list ul li.views-row-even{
     background-color:#f7f7f7;
@@ -5013,14 +4938,6 @@ body.page-node   .node-type-group #content-group{
     padding:0;
     width: 692px;
 }
-
-body h1.title,
-body.page-node    h1.title{
-    padding: 0 0 10px;
-}
-body .page-group h1.title{
-    padding-top:0;
-}
 .content-inner-inner h1.title,
 .view-user-ciclokm  .field-content h2.title,
 .view-user-ciclokm  .view-content .views-field-badge{
@@ -7175,12 +7092,34 @@ body.openlayers-full #main {
 .view-ciclo-search h2 {
     margin-bottom: 0;
 }
-.view-ciclo-search .views-row {
-    padding: 10px;
-    margin: 10px 0;
+.view-ciclo-search .view-content{
+    margin-top:1em;
 }
-.view-ciclo-search .views-row-even {
-    background-color: #F9F9F9;
+.view-ciclo-search .views-row {
+    background-color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 182px;
+    margin: 0 1em 1em 0;
+    padding: 12px;
+    width: 136px;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px 6px 6px 6px;
+}
+.view-ciclo-search .views-row-4,
+.view-ciclo-search .views-row-8,
+.view-ciclo-search .views-row-12,
+.view-ciclo-search .views-row-16{
+    margin:0;
+}
+.view-ciclo-search .views-row .field-ciclo-model-image-fid a{
+    display:block;
+    text-align:center;
+}
+.view-ciclo-search .views-row .field.title a{
+    line-height:24px;
+    display:block;
+    padding-bottom:6px;
 }
 .view-ciclo-search .nd-region-header {
     margin-bottom: 10px;
@@ -8285,7 +8224,7 @@ body.node-type-ciclo-installation #main-group {
 }
 .views-exposed-form .collapse-processed a
 {
-    background: url("../images/circle_sprite.png") no-repeat scroll 37px -729px transparent !important;
+    background: url("../images/circle_sprite.png") no-repeat scroll 52px -729px transparent !important;
     color: #333333;
     font-size: 17px;
     font-weight: normal;
@@ -8333,16 +8272,6 @@ body.node-type-ciclo-installation #main-group {
     font-size: 12px;
     font-weight: normal;
 }
-/*#sidebar-last-wrapper  #block-og-0  .item-list  li,
-#ciclo-bmecat-import fieldset ul li,
-#pid-users #sidebar-last-wrapper #block-ciclokm_core-user_statistics .content ul li,
-#pid-users #sidebar-last-wrapper .block-user .content ul li,
-#pid-admin-settings-ciclo-bmecat-import  #sidebar-last-wrapper .block-ciclo_bmecat .content ul li{
-    background: url("../images/circle_sprite.png") no-repeat scroll 0 -632px transparent;
-    padding: 2px 0 4px 20px;
-    list-style: none;
-    margin:0.5em 0;
-}*/
 #pid-content-nueva .buildmode-full{
     padding: 0 20px 10px!important;
 }
@@ -8352,8 +8281,6 @@ body.node-type-ciclo-installation #main-group {
 #pid-content-instalaci-n-agitadora-test #main-wrapper #content-group-inner #content-inner #content-content .field-edit-content-link-widget a{
     top: 7px;
 }
-
-
 body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
     padding-left: 10px;
 }
@@ -8898,4 +8825,16 @@ body.node-type-ciclo-type-machine #content-region .view-ciclo-machines .view-con
 }
 body.not-front #main-content .container-inline-date .form-item div.form-item input.form-text{
     width:auto;
+}
+#views-exposed-form-ciclo-search-page-1 .views-exposed-form .views-exposed-widget{
+    width:156px;
+}
+body.not-front #main-content form#views-exposed-form-ciclo-search-page-1  input.form-text {
+    width: 146px;
+}
+#pid-catalog-ciclo-search #content-region{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: 684px;
 }
