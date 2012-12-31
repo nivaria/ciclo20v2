@@ -45,13 +45,12 @@ body.node-type-ciclo-customer #content-inner-inner h1.title{
 #quicktabs_container_ciclo_model_detail li.views-row, #quicktabs_container_ciclo_customer_detail li.views-row {
     padding: 15px 0 0;
 }
-body.node-type-ciclo-installation #content-group .buildmode-full, 
+/*body.node-type-ciclo-installation #content-group .buildmode-full, 
 .node-type-ciclo-customer #content-content .buildmode-full,
 .node-type-ciclo-model-machine .buildmode-full,
-#pid-catalog-model-agitador-brinmix-1000 .buildmode-full
-/*.page-user-1 #block-views-user_ciclokm-block_2 {*/
-   { padding: 10px 20px 20px;
-}
+#pid-catalog-model-agitador-brinmix-1000 .buildmode-full{
+    padding: 10px 20px 20px;
+}*/
 select.form-select{
     padding: 3px;
 }

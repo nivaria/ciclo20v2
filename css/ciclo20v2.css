@@ -43,17 +43,25 @@ html.js input.form-autocomplete {
 html.js input.throbbing {
   background-position: 100% -14px;
 }
-
-body.not-front #content-group{
+.quicktabs_tabpage,
+body.not-front #content-region{
     box-shadow: 2px 4px 4px #D6D6D6;
     padding : 20px;
     border-radius:12px;
     background-color:#fff;
 }
-body.not-front #content-group .block .content{
+.quicktabs_tabpage{
+    overflow:hidden;
+    clear:both;
+    margin-top:-8px;
+}
+body.not-front #content-region{
+    margin-bottom:2em;
+}
+body.not-front #content-region .block .content{
     box-shadow:none;
 }
-body.layout-main-last #content-group{
+body.layout-main-last #content-region{
     width:652px;
 }
 body.not-front #main-content form label{
@@ -136,6 +144,12 @@ body.not-front #content-group .block h2.block-title,
     border-radius: 0 0 12px 12px;
     overflow:hidden;
 }
+.section .block-quicktabs .content{
+    box-shadow:none;
+    padding:0;
+    background-color:transparent;
+    border-radius:0;
+}
 .section .block.block-views .content{
     padding:0;
 }
@@ -196,29 +210,21 @@ blockquote p:last-child { margin-bottom: 0px;}
     list-style-image: none;
     list-style: none;
     margin: 0;
-    padding: 0 0 0 10px;
     text-indent: 0;
+    background: url("../images/circle_sprite.png") no-repeat scroll 0 -632px transparent;
+    /*padding: 2px 0 4px 20px;*/
+    padding:1px 0 0 20px;
+    list-style: none;
+    margin:0.5em 0;
 }
-
 .node .inner .links ul li > a {
     color: #669acc;
 }
-
-/* HTML Elements-------------------------------------------------------------- */
-
-body {
-
-}
-
-/*force the front page to be 960px wide*/
 .front .grid16-16 {
     width: 985px;
     max-width: 985px !important;
     margin: 0 auto;
 }
-
-/* Site Info-------------------------------------------------------------- */
-
 #header-site-info{
     float: left;
     width: 660px;
@@ -780,17 +786,11 @@ Works well with inline login or inline menu block style */
 .secondary-menu-inner ul.links li a:visited {
     padding: 3px;
 }
-
-.secondary-menu-inner ul.links li a:hover,
-.secondary-menu-inner ul.links li a:focus,
-.secondary-menu-inner ul.links li a.active {
-
+.breadcrumbs-wrapper {
+    float:none;
+    width: 100%;
+    padding:0;
 }
-
-/* Breadcrumbs-------------------------------------------------------------- */
-
-.breadcrumbs-wrapper { float:left; width: 100%; padding: 10px 0 0; }
-
 .breadcrumbs,
 #ciclo-catalog-breadcrumb {
     color: #333;
@@ -822,10 +822,7 @@ Works well with inline login or inline menu block style */
 
 .breadcrumbs a,
 .breadcrumbs a:link,
-.breadcrumbs a:visited
-/*#ciclo-catalog-breadcrumb a,
-#ciclo-catalog-breadcrumb a:link,
-#ciclo-catalog-breadcrumb a:visited {*/{
+.breadcrumbs a:visited{
     font-size: 1em;
     line-height: 1.4em;
     margin: 0;
@@ -6601,85 +6598,77 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 /*
  * Tabs
 */
-
-.quicktabs_wrapper {
-
-}
-
 .quicktabs_wrapper ul.quicktabs_tabs {
-    margin: 15px 0 0 -8px;
+    margin: 0 0 4px;
     border: 0;
     position: relative;
     z-index: 5;
+    overflow:hidden;
 }
-
 .quicktabs_wrapper ul.quicktabs_tabs li {
     background: none;
     padding: 0;
-    margin: 0 8px;
+    margin: 0;
+    display:block;
+    float:left;
+    padding-bottom:9px;
 }
-
 .quicktabs_wrapper ul.quicktabs_tabs li a {
     background: none;
     background-color: #FFF;
     border-color: #F3F3F3;
-    border-radius: 8px 8px 0 0;
-    -moz-border-radius: 8px 8px 0 0;
-    -webkit-border-radius: 8px 8px 0 0;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
     border-style: solid solid none;
     border-width: 2px 2px 0;
     color: #666666;
-    display: inline-block;
-    font-family: calibri,arial;
+    display: block;
+    float:left;
     font-size: 14px;
     font-weight: bold;
-    height: 24px;
-    line-height: 24px;
+    min-height:24px;
+    line-height:24px;
     padding: 0 6px;
     text-transform:uppercase;
     text-decoration: none;
+    
+    border: medium none;
+    height: auto;
+    padding-top: 3px;
+    text-align: center;
+    color: #fff;
+    background-color:#999;
+    margin-right:1em;
 }
-
-
-.quicktabs_wrapper .quicktabs_main
-{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px solid #e1e1e1;
-    border-radius: 10px 10px 10px 10px;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    margin-top: -5px;
+.quicktabs_wrapper ul.quicktabs_tabs li a:hover,
+.quicktabs_wrapper ul.quicktabs_tabs li.active a{
+    background-color:#ec6410;
 }
-
+.quicktabs_wrapper ul.quicktabs_tabs li.active{
+    background-image:url('../images/tab-arrow.png');
+    background-repeat:no-repeat;
+    background-position: center bottom;
+}
 .quicktabs_wrapper .views-exposed-form {
     border: 0;
 }
-
 .quicktabs_wrapper .quicktabs_tabpage .block {
     margin: 0 !important;
 }
-
 #om-maximenu-ciclo .block-ciclo_solr_search {
     padding: 3px;
     width: 554px;
 }
-
 #om-maximenu-ciclo .block-ciclo_solr_search #edit-search-wrapper,
 #om-maximenu-ciclo .block-ciclo_solr_search .form-submit {
     float: left;
     margin: 0;
 }
-
-#om-maximenu-ciclo .block-ciclo_solr_search .form-submit {
-
-}
-
 #om-maximenu-ciclo .block-ciclo_solr_search .form-text {
     background-image: none;
     width: 225px;
 }
-
 #om-maximenu-ciclo .block-views-id-ciclo_flag_bookmarks-block_1 {
     border-left: 2px solid #FFFFFF;
     box-shadow: 8px 0 8px 0 #F3F3F3 inset;
@@ -7004,12 +6993,6 @@ body.page-catalog .view-content li.views-row img.imagecache{
 .view-filters .fieldset-wrapper .views-exposed-widget input{
     width: 160px;
 }
-.node-type-ciclo-model-machine #content-group,
-.node-type-ciclo-installation #content-group {
-    overflow: hidden;
-    position: relative;
-}
-
 .node-type-ciclo-model-machine .nd-region-middle,
 .node-type-ciclo_model_machine .nd-region-middle,
 .node-type-ciclo-installation .nd-region-middle,
@@ -7943,10 +7926,6 @@ body.node-type-ciclo-installation #content-inner-inner{
     margin: 0 8px;
     padding-left: 0;
 }
-.page-node     .breadcrumbs-wrapper,
-.page-node     .breadcrumbs-wrapper{
-    padding: 20px 0 0;
-}
 .page-node     #content-group-inner  h1,
 .page-node       #content-group-inner h1{
     background-image: url("../images/line_sep.png");
@@ -8105,13 +8084,7 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     text-align: center;
     width: 56px;
     z-index: 999;
-
 }
-
-.page-node    .quicktabs_wrapper ul.quicktabs_tabs li{
-    margin: 0;
-}
-
 .page-node    table.views-table thead th.active{
     background-color: #000000;
 }
@@ -8125,11 +8098,6 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     text-align: center;
     width: 66px;
 
-} 
-.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail   ul.quicktabs_tabs li,
-body.node-type-ciclo-model-machine #quicktabs-ciclo_model_detail   ul.quicktabs_tabs li,
-body.node-type-ciclo-installation #quicktabs-ciclo_installation_detail ul.quicktabs_tabs li{
-     margin: 0 8px;
 }
 .page-node    #content-content a.edit-link,
 .page-node    #content-content a.edit-link{
@@ -8197,17 +8165,9 @@ body.node-type-ciclo-installation #quicktabs-ciclo_installation_detail ul.quickt
     width: 212px;
     z-index: 99999;
 }
-
-.page-node    .quicktabs_wrapper .quicktabs_main
-{
-    border-radius: 0 0 0 0;
-    margin-top: -10px;
-    padding: 0;
-}
 .page-node    #quicktabs-ciclo_catalog_tabs  .quicktabs_main{
     border: medium none;
 }
-
 .page-node    #main-group{
    border-left: 2px solid #E1E1E1;
 }
@@ -8373,7 +8333,7 @@ body.node-type-ciclo-installation #main-group {
     font-size: 12px;
     font-weight: normal;
 }
-#sidebar-last-wrapper  #block-og-0  .item-list  li,
+/*#sidebar-last-wrapper  #block-og-0  .item-list  li,
 #ciclo-bmecat-import fieldset ul li,
 #pid-users #sidebar-last-wrapper #block-ciclokm_core-user_statistics .content ul li,
 #pid-users #sidebar-last-wrapper .block-user .content ul li,
@@ -8382,7 +8342,7 @@ body.node-type-ciclo-installation #main-group {
     padding: 2px 0 4px 20px;
     list-style: none;
     margin:0.5em 0;
-}
+}*/
 #pid-content-nueva .buildmode-full{
     padding: 0 20px 10px!important;
 }
@@ -8525,9 +8485,6 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     padding:0;
     background-image:none;
 }
-.node-type-ciclo-model-machine .breadcrumbs-wrapper{
-    width: 97%;
-}
 .node-type-ciclo-model-machine .buildmode-full{
     padding: 0 20px;
 }
@@ -8539,7 +8496,6 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     border-radius:12px;
 }
 .node-type-ciclo-model-machine  .nd-region-header{
-    /*    background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll 625px -470px transparent;*/
     background: url("../images/line_sep.png") repeat-x scroll left bottom, url("../images/circle_sprite.png") no-repeat scroll right -470px;
     color: #000000;
     font-weight: bold;
@@ -8626,53 +8582,6 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 quicktabs-ciclo_model_detail .inner{
     position: relative;
 }
-
-#quicktabs-ciclo_model_detail .quicktabs_tabs,
-#quicktabs-ciclo_installation_detail .quicktabs_tabs,
-#quicktabs-ciclo_customer_detail .quicktabs_tabs,
-#quicktabs-ciclo_user_detai .quicktabs_tabs{
-    position: absolute;
-    top: -47px;
-    z-index: 9999;
-}
-#quicktabs-ciclo_model_detail .quicktabs_tabs li a,
-#quicktabs-ciclo_installation_detail .quicktabs_tabs li a,
-#quicktabs-ciclo_customer_detail .quicktabs_tabs li a,
-#quicktabs-ciclo_user_detail .quicktabs_tabs li a{
-    border: medium none;
-    height: 35px;
-    padding-top: 3px;
-    text-align: center;
-    width: 128px;
-    color: #fff;
-}
-#quicktabs-ciclo_model_detail .quicktabs_tabs li.active a,
-#quicktabs-ciclo_installation_detail .quicktabs_tabs li.active a,
-#quicktabs-ciclo_customer_detail .quicktabs_tabs li.active a,
-#quicktabs-ciclo_user_detail .quicktabs_tabs li.active a{
-    background: url("../images/tab_sprite.png") no-repeat scroll -5px -3px transparent;
-}
-#quicktabs-ciclo_model_detail .quicktabs_tabs li a,
-#quicktabs-ciclo_installation_detail .quicktabs_tabs li a,
-#quicktabs-ciclo_customer_detail .quicktabs_tabs li a,
-#quicktabs-ciclo_user_detail  .quicktabs_tabs li a{
-    background: url("../images/tab_sprite.png") no-repeat scroll -5px -50px transparent;
-}
-#quicktabs-ciclo_model_detail .quicktabs_tabs li a:hover,
-#quicktabs-ciclo_installation_detail .quicktabs_tabs li a:hover,
-#quicktabs-ciclo_customer_detail .quicktabs_tabs li a:hover
-{
-    background: url("../images/tab_sprite.png") no-repeat scroll -5px -3px transparent;
-}
-#quicktabs_container_ciclo_installation_detail,
-#quicktabs_container_ciclo_model_detail
-{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 8px 8px 8px 8px;
-    margin-top: 41px;
-    padding: 10px;
-}
 .views-exposed-form.collapsed .collapse-processed a{
     background: url("../images/circle_sprite.png") no-repeat scroll 39px -57px transparent !important;
 }
@@ -8687,26 +8596,21 @@ quicktabs-ciclo_model_detail .inner{
 #quicktabs_container_ciclo_installation_detail{
     margin-top: 40px;
 }
-/*pid-content-el-pozo*/
 .node-type-ciclo-customer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper,
 .node-type-ciclo-installation    #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper{
-
     float: right;
     margin: 0;
     width: 75%;
 }
 .node-type-ciclo-customer  #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle,
-.node-type-ciclo-installation   #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle
-{
+.node-type-ciclo-installation   #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle{
     margin-left: 5px;
 }
 .node-type-ciclo-customer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle ul,
-.node-type-ciclo-installation   #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle ul
-{
+.node-type-ciclo-installation   #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper .ud-region-middle ul{
     margin-left: 0!important;
 }
-.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle ul li
-{
+.node-type-ciclo-customer  #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper .ud-region-middle ul li{
     background: none repeat scroll 0 0 transparent;
     color: #999999;
     font-size: 11px;

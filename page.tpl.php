@@ -115,9 +115,6 @@
                         <?php if ($content_top || $help || $messages || $breadcrumb): ?>
                         <div id="content-top" class="content-top row nested">
                           <div id="content-top-inner" class="content-top-inner inner">
-                            <div class="breadcrumbs-wrapper">
-                              <?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>  
-                            </div>
                             <?php print theme('grid_block', $help, 'content-help'); ?>
                             <?php print theme('grid_block', $messages, 'content-messages'); ?>
                             <?php print $content_top; ?>
@@ -126,6 +123,9 @@
                         <?php endif; ?>
 
                         <div id="content-region" class="content-region row nested">
+			                              <div class="breadcrumbs-wrapper">
+                              <?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>  
+                            </div>
 							<div id="content-region-inner" class="content-region-inner inner">
                             <a name="main-content-area" id="main-content-area"></a>
 
