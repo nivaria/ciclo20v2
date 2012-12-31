@@ -5372,7 +5372,8 @@ body.page-node    .node-edit #content-tabs{
 }
 body.page-node    .edit-content-link{
     position: absolute;
-
+    top:4px;
+    right:0;
 }
 .node-type-ciclo_customer .field-edit-content-link-widget .edit-content-link{
     position: absolute;
@@ -6558,14 +6559,27 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     background-color:#999;
     margin-right:1em;
 }
+#quicktabs-ciclo_component_detail.quicktabs_wrapper ul.quicktabs_tabs li a {
+    background-color:#fff;
+    color:#696969;
+    border:1px solid #d2d2d2;
+}
 .quicktabs_wrapper ul.quicktabs_tabs li a:hover,
 .quicktabs_wrapper ul.quicktabs_tabs li.active a{
     background-color:#ec6410;
+}
+#quicktabs-ciclo_component_detail.quicktabs_wrapper ul.quicktabs_tabs li a:hover,
+#quicktabs-ciclo_component_detail.quicktabs_wrapper ul.quicktabs_tabs li.active a{
+    background-color:#0099ff;
+    color:#fff;
 }
 .quicktabs_wrapper ul.quicktabs_tabs li.active{
     background-image:url('../images/tab-arrow.png');
     background-repeat:no-repeat;
     background-position: center bottom;
+}
+#quicktabs-ciclo_component_detail.quicktabs_wrapper ul.quicktabs_tabs li.active{
+    background-image:url('../images/tab-arrow-blue.png');
 }
 .quicktabs_wrapper .views-exposed-form {
     border: 0;
@@ -7811,29 +7825,11 @@ body.node-type-ciclo-installation #sidebar-last-wrapper #sidebar-last-inner{
     border: none;
     padding-top: 10px;
 }
-
-.page-node     #main
-{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px solid #E1E1E1;
-    border-radius: 10px 10px 10px 10px;
-}
-.node-type-ciclo-customer #main,
-body.node-type-ciclo-model-machine #main,
-body.node-type-ciclo-installation #main{
-        background: none repeat scroll 0 0 transparent;
-    border: medium none;
-}
 .page-node     .block-quicktabs h2.title.block-title{
     background: none repeat scroll 0 0 transparent;
     display: none;
     height: auto;
 }
-/*
-
-.page-node   
-*/
-
 .page-node    .view-navigation-quicktabs .views-field-field-ciclo-install-model-nid .field-content a,
 .page-node    .view-navigation-quicktabs .views-field-field-ciclo-alias-value .field-content a{
     color: #000000;
