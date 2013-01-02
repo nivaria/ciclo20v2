@@ -1843,10 +1843,6 @@ td.views-field.views-field-groups a{
     margin: 0;
     text-transform: capitalize;
 }
-.block-locale,
-.block-masquerade{
-    display:none;
-}
 .views-tabs form input.form-submit,
 .views-tabs .views-exposed-form .views-exposed-widget input.form-submit {
     float:none;
