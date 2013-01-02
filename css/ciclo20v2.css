@@ -3500,6 +3500,7 @@ table.views-view-grid td {
     margin: 0px;
     padding: 0px;
 }
+.view-ciclo-modification-installation .view-content,
 .view-ciclo-users-og .view-content,
 fieldset.views-exposed-form {
     background: #fff;
@@ -3509,6 +3510,7 @@ fieldset.views-exposed-form {
     overflow: visible;
     padding: 10px 10px 5px;
 }
+.view-ciclo-modification-installation .view-content,
 .view-ciclo-users-og .view-content{
        margin-top: 2em;
     padding-top: 4em;
@@ -3540,7 +3542,7 @@ html.js fieldset.views-exposed-form.collapsed {
 .views-exposed-form .views-exposed-widget {
     display: block;
     float: left;
-    margin: 0 4% 10px 0;
+    margin: 0 1em 10px 0;
     padding: 0;
     width: 34%;
 }
@@ -8182,7 +8184,12 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     text-decoration: none;
 }
 .views-exposed-form .fieldset-wrapper .views-exposed-widgets{
-    width: 510px;
+    width:100%;
+    float:none;
+}
+.views-exposed-form .fieldset-wrapper .views-exposed-widgets .views-exposed-widget{
+    float:left;
+    width:auto;
 }
 .views-exposed-wrapper .views-exposed-widget label{
     font-weight: normal;
@@ -8210,6 +8217,22 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     font-size: 12px;
     font-weight: normal;
 }
+body#pid-catalog-gurantee-cost .container-inline-date{
+    clear:none;
+    float:left;
+    margin-right:1em;
+}
+body#pid-catalog-gurantee-cost .container-inline-date .form-item label{
+    width:auto;
+    padding-top:0;
+}
+body#pid-catalog-gurantee-cost .views-exposed-widgets{
+    float:left;
+    width:80%;
+}
+body#pid-catalog-gurantee-cost .views-exposed-submit{
+    float:left;
+ }
 #pid-content-nueva .buildmode-full{
     padding: 0 20px 10px!important;
 }
@@ -8826,6 +8849,7 @@ body.not-front #main-content form#views-exposed-form-ciclo-search-page-1  input.
 .block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.tid a{
     color: #EA6F24;
 }
+body#pid-catalog-gurantee-cost #content-region,
 body#pid-users-og #content-region{
         background-color: transparent;
     box-shadow: none;
