@@ -235,6 +235,11 @@ blockquote p:last-child { margin-bottom: 0px;}
     max-width: 985px !important;
     margin: 0 auto;
 }
+#page #views-ajax-pad label{
+        display: block;
+    float: none;
+    width: 100%;
+}
 #header-site-info{
     float: left;
     width: 660px;
