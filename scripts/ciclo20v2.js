@@ -133,7 +133,7 @@ $(document).ready(function(){
     //        // alert(lightbox_img);
     //        $(".field-ciclo-model-image .field-items .field-item ").html("<a href="+lightbox_img+"><img src="+lightbox_img+"/> <span class='zoom-out'></span></a>");
     //         $('.field-ciclo-model-image .field-items .field-item a').lightBox();
-    $("#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row").each(function(i){
+    /*$("#pid-catalog-customers  .view-ciclo-customers .view-content li.views-row").each(function(i){
    
         var content=$(this).find(".nd-region-middle-wrapper").html();
 
@@ -141,9 +141,9 @@ $(document).ready(function(){
 
         $(this).find(".nd-region-middle-wrapper").html(images);
         $(this).find(".nd-region-left").html(content); 
-    })
+    })*/
     //change content model list
-     $(".page-catalog  .view-ciclo-machines .view-content li.views-row").each(function(i){
+    /*$(".page-catalog  .view-ciclo-machines .view-content li.views-row").each(function(i){
    
         var content=$(this).find(".nd-region-middle-wrapper").html();
 
@@ -151,7 +151,7 @@ $(document).ready(function(){
 
         $(this).find(".nd-region-middle-wrapper").html(images);
         $(this).find(".nd-region-left").html(content); 
-    })
+    })*/
     
     /**checkbox**/
    $("#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset ul").each(function(i){

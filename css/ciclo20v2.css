@@ -300,7 +300,7 @@ blockquote p:last-child { margin-bottom: 0px;}
     padding: 0;
 }
 .nd-region-middle-wrapper{
-    margin-right: 0!important;
+    margin-right: 0;
 }
 .content-content .view-header{
     margin-bottom:12px;
@@ -6807,16 +6807,18 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     background-repeat: repeat-x;
     margin-top: 2px;
     border: 0;
-    padding: 10px 0 5px;
     
     bottom: 0;
     min-height: 18px;
     left: 0;
-    padding: 10px 12px 5px;
+    padding: 0;
     position: absolute;
     width: 100%;
 }
-
+.grid-type-1 .view-content .item-list li.views-row .nd-region-footer .field{
+    padding: 10px 12px 5px;
+    text-align:right;
+}
 .grid-type-1 .view-content .item-list li.views-row .nd-region-footer a {
     /*  color: #E86D1E;*/
     color: #0099FF;
@@ -8596,26 +8598,11 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
 .page-catalog  .view-ciclo-customers .view-filters .views-exposed-form  .fieldset-wrapper{
     padding: 10px 0 0 10px;
 }
-.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-left,
-#pid-catalog .view-ciclo-machines .view-content li.views-row .nd-region-left{
-    float: none;
-    width: auto;
-}
 .page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-left p{
     margin: 0;
 }
 .page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-left ul li{
     background: none;
-}
-.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-middle-wrapper,
-#pid-catalog .view-ciclo-machines .view-content li.views-row .nd-region-middle-wrapper{
-    float: left;
-    margin: 7px 20px 20px 0 !important;
-    width: 43%;
-}
-.page-catalog  .view-ciclo-customers .view-content li.views-row .nd-region-middle-wrapper img,
-#pid-catalog .view-ciclo-machines .view-content li.views-row .nd-region-middle-wrapper img{
-    width: 140px; height: auto;
 }
 .field.picture a{
     display: inherit;
@@ -8838,4 +8825,25 @@ body.not-front #main-content form#views-exposed-form-ciclo-search-page-1  input.
 .block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.tid,
 .block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.tid a{
     color: #EA6F24;
+}
+body#pid-catalog-customers #content-region{
+        background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: 684px;
+}
+.grid-type-1 li.views-row .nd-region-middle-wrapper{
+        margin-right: 18px;
+    overflow: hidden;
+    width: 54px;
+}
+.grid-type-1 li.views-row .nd-region-left{
+        float: left;
+    width: 234px;
+}
+.grid-type-1 li.views-row .nd-region-right{
+    clear: both;
+    display: block;
+    float: none;
+    width: 100%;
 }
