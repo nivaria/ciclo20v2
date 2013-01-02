@@ -10,7 +10,7 @@
     position: relative;
     margin: 0;
 }
-#edit-upload-wrapper label{
+#main-content #edit-upload-wrapper label{
     background: url("../images/bgupload.png") no-repeat scroll 0 0 transparent;
     height: 62px;
     text-indent: -999px;
