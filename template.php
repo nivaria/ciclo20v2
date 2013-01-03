@@ -638,3 +638,51 @@ function ciclo20v2_image($path, $alt = '', $title = '', $attributes = NULL, $get
     return '<img src="'. check_url($url) .'" alt="'. check_plain($alt) .'" title="'. check_plain($title) .'" '. (isset($image_attributes) ? $image_attributes : '') . $attributes .' />';
   }
 }
+
+function ciclo20v2_quicktabs_tabs($quicktabs, $active_tab = 'none') {
+  $output = '';
+  $tabs_count = count($quicktabs['tabs']);
+  if ($tabs_count <= 0) {
+    return $output;
+  }
+
+  $index = 1;
+  $output .= '<ul class="quicktabs_tabs quicktabs-style-'. drupal_strtolower($quicktabs['style']) .'">';
+  foreach ($quicktabs['tabs'] as $tabkey => $tab) {
+    if(!empty($tab)) {
+      $class = 'qtab-'. $tabkey;
+      // Add first, last and active classes to the list of tabs to help out themers.
+      $class .= ($tabkey == $active_tab ? ' active' : '');
+      $class .= ($index == 1 ? ' first' : '');
+      $class .= ($index == $tabs_count ? ' last': '');
+      $attributes_li = drupal_attributes(array('class' => $class));
+      $options = _quicktabs_construct_link_options($quicktabs, $tabkey);
+      // Support for translatable tab titles with i18nstrings.module.
+      if (module_exists('i18nstrings')) {
+        $tab['title'] = tt("quicktabs:tab:{$quicktabs['machine_name']}--$tabkey:title", $tab['title']);
+      }
+      $output .= '<li'. $attributes_li .'>'. l($tab['title'], $_GET['q'], $options) .'</li>';
+      $index++;
+    }
+  }
+  $output .= '</ul>';
+  
+  return $output;
+}
+
+function ciclo20v2_quicktabs($quicktabs) {
+  $output = quicktabs_render($quicktabs);  
+  $output = substr($output, 0, strlen($output)-6);
+  //Adding additional div for show/hide quicktabs area
+  $output .= '<div class="quicktabs-switcher" style="display:none;">'.l(t('hide'),'',array(
+      'attributes' => array(
+          'title' => t('hide'),
+          'class' => 'quicktabs-switcher-link',
+      ),
+      'fragment' => ' ',
+      'external' => TRUE,
+  )).'</div></div>';
+  
+  
+  return $output;
+}
