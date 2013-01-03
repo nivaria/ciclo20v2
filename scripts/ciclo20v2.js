@@ -23,6 +23,27 @@ $(document).ready(function(){
         var lastSize = $("#sidebar-last").width();
     };
     
+     $("#sidebar-first-wrapper .btn-expand").click(function() {
+       if ($(this).hasClass("open")) {
+           $(this).addClass("close");
+           $(this).removeClass("open");
+           $("#main-group").toggle("slow", function (){
+               $("#sidebar-first").width(firstSize);
+               $("#sidebar-first-wrapper").width(firstSize);
+               $("#block-nivaria_navigation-0").width(firstSize);
+           });
+        } else {
+            $(this).addClass("open");
+            $(this).removeClass("close");
+            $("#main-group").toggle("slow", function() {
+                $("#sidebar-first").width("100%");
+                $("#sidebar-first-wrapper").width("100%");
+                $("#block-nivaria_navigation-0").width("100%");
+            });
+            
+        };
+    });
+    
     $("#sidebar-first-wrapper .btn-collapse").click(function() {
         if ($(this).hasClass("open")) {
             $(this).removeClass("open");

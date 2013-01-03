@@ -96,6 +96,7 @@
             <?php if ($sidebar_first): ?>
               <div id="sidebar-first-wrapper" class="section-collapsable">
                 <div class="btn-collapse open"><span class="open"><?php print t('ocultar'); ?></span><span class="close"><?php print t('mostrar'); ?></span></div>
+                <div class="btn-expand close"><span class="open"><?php print t('expand'); ?></span><span class="close"><?php print t('reduce'); ?></span></div>
                 <?php print theme('grid_row', $sidebar_first, 'sidebar-first', 'nested', 'section', $sidebar_first_width); ?>
               </div>
             <?php endif; ?>

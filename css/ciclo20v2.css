@@ -8899,3 +8899,11 @@ body#pid-catalog-customers .grid-type-1 li.views-row .nd-region-right{
     height:154px;
     overflow:hidden;
 }
+
+.btn-expand {
+    display: none;
+}
+
+.catalog-navigation .btn-expand {
+    display: block;
+}
