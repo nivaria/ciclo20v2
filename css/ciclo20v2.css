@@ -106,13 +106,12 @@ body.not-front #main-content form select.form-select{
     background-color: #CFCFCF;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#CFCFCF');
 }
-/*#ciclo-close_intallation h2.block-title,*/
-body.not-front #content-group .block h2.block-title{
+/*body.not-front #content-group .block h2.block-title{
         font-size: 16px;
     font-weight: bold;
     padding-left: 0;
     padding-right: 0;
-}
+}*/
 body.not-front #content-group .block h2.block-title,
 .section.sidebar-last .block h2.block-title {
     background-image: url(../images/line_sep.png);
@@ -6292,22 +6291,18 @@ position: relative;
 #precontent {
     margin: 10px auto;
     min-height: 22px;
-    overflow:hidden;
+    overflow:visible;
 }
-
 #content-group.clean-left #content-group-inner {
     border-left: 0 !important;
 }
-
 #content-group.clean-right {
     box-shadow: none !important;
 }
-
 #search-nivaria-navigation-tree {
     border: 2px solid #F3F3F3;
     margin-top: 0;
 }
-
 #input-search-nivaria-navigation-tree,
 #om-maximenu-ciclo .block-ciclo_solr_search .form-text {
     background-color: #FFF;
@@ -6347,14 +6342,12 @@ position: relative;
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
       
 }
-
 #content-group {
     margin-bottom: 0;
 }
 .page-user-1 .breadcrumbs-inner{
     padding: 0 20px;
 }
-
 .breadcrumbs-inner{
     padding: 0 20px;
 }
@@ -6384,9 +6377,8 @@ table thead th.active a,
 table thead th.active a.active {
     color: #FFF;
 }
-
 table tbody tr.odd {
-    background-color: #e9e9e9;
+    background-color: #f7f7f7;
 }
 .og-user.Yes{
     color: #39B03A;
@@ -6405,32 +6397,27 @@ table tbody tr.odd {
     white-space: nowrap; 
 }
 table tbody tr.even {
-    background-color: #F7F7F7;
+    background-color: #ffffff;
 }
 table tbody tr.odd td,
 table tbody tr.even td {
     background-color: transparent;
 }
-
 table tbody tr td p {
     margin: 2px 0;
 }
-
 table tbody tr:hover,
 table tbody tr.selected {
     background-color: #CCEBFF;
 }
-
 table tbody tr:hover td.active,
 table tbody tr.selected td.active {
     background-color: #C2DFF2;
 }
-
 .calendar-calendar table tbody tr:hover,
 .calendar-calendar table tbody tr.selected {
     background: transparent;
 }
-
 .ciclo-catalog-navigation-table-element-summary {
     background-color: #FFFFFF;
     border: 2px solid #FF9D5B;
@@ -6459,14 +6446,12 @@ table tbody tr.selected td.active {
     background-position: left bottom;
     background-repeat: repeat-x;
 }
-
 .ciclo-catalog-navigation-table-element-summary h2 a{
     color: #666666;
     font-size: 15px;
     font-weight: bold;
     text-transform: none;
 }
-
 .ciclo-catalog-navigation-table-element-summary-icon:hover .ciclo-catalog-navigation-table-element-summary {
     display: block;
 }
@@ -6491,7 +6476,6 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     top: 0;
     height: 20px;
 }
-
 .ciclo-catalog-navigation-table-element-summary-icon span {
     background-image: url("../images/tab_sprite.png");
     background-position: -5px -267px;
@@ -6506,7 +6490,6 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 .ciclo-catalog-navigation-table-element-summary-icon span.date-display-single{
     display: none;
 }
-
 /*
  * Tabs
 */
