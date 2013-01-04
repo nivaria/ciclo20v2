@@ -6520,7 +6520,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     font-weight: bold;
     min-height:24px;
     line-height:24px;
-    padding: 0 6px;
+    padding: 0 22px;
     text-transform:uppercase;
     text-decoration: none;
     
@@ -7060,7 +7060,14 @@ body.node-type-ciclo-installation .block-quicktabs{
     width:301px;
     height:82px;
     float:right;
-    text-indent:-9999px;
+    text-indent:-0;
+    
+ 
+    margin-right: -90px;
+    margin-top: -22px;
+    padding-left: 128px;
+    padding-top: 22px;
+    cursor:pointer;
 }
 .node-type-ciclo-model-machine .field-field-ciclo-model-catalog,
 .node-type-ciclo_installation .field-field-ciclo-model-catalog{
@@ -8371,7 +8378,7 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 .grid-type-1 .view-content .item-list li.views-row .nd-region-footer .field-ciclo-install-customer-nid{
     float: left;
     padding-left: 12px;
-    padding-top: 10px
+    padding-top: 22px
 }
 body.page-catalog #content-group .view-ciclo-installations-og .nd-region-footer a {
     color: #E76C1E;
@@ -8875,9 +8882,11 @@ body#pid-catalog-customers #content-region{
 body#pid-catalog .grid-type-1 li.views-row{
     padding-bottom:42px;
 }
+body#pid-catalog-installations .grid-type-1 li.views-row .nd-region-right,
 body#pid-catalog .grid-type-1 li.views-row .nd-region-right{
     width:128px;
 }
+body#pid-catalog-installations .grid-type-1 li.views-row .nd-region-left,
 body#pid-catalog .grid-type-1 li.views-row .nd-region-left{
     width:146px;
     margin-right:18px;
@@ -8906,4 +8915,10 @@ ul.quicktabs_tabs.quicktabs-style-arrows li.active a, ul.quicktabs_tabs.quicktab
 #main-wrapper{
   position:relative;
   z-index:9999;
+}
+body#pid-catalog-installations #content-region{
+        background-color: transparent;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    padding: 0;
 }
