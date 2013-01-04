@@ -1,6 +1,6 @@
 /* IE8 */
 
-#edit-search-theme-form-1-wrapper input {
+/*#edit-search-theme-form-1-wrapper input {
 	display: block;
 	padding-top: 6px;
 	height: 21px;
@@ -51,4 +51,28 @@
 .calendar-calendar { margin-bottom: 20px; }
 #block-views-user_meta-block_1, #block-user-0 { height: 99px; }
 .sidebar-last .block h2.block-title {
-    background: none repeat scroll 0 0 #F08A2A;}
+    background: none repeat scroll 0 0 #F08A2A;}*/
+.page-node    .block-ciclo_catalog_breadcrumb ul li{
+    background-image:url('../images/tree_sprite.png');
+    background-repeat:no-repeat;
+    background-position: right -91px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 4;
+}
+.page-node  .block-ciclo_catalog_breadcrumb li a{
+    background: none repeat scroll 0 0 #E9E9E9;
+    font-size: 13px;
+    color: #333;
+    font-weight: normal;
+    line-height: 25px;
+    margin-right: 17px;
+    display: block;
+    height: 25px;
+    padding: 0 5px 0 15px;
+    text-shadow: 1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, 1px 0 #FFFFFF, 0 0 #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+       text-transform: uppercase;
+}
