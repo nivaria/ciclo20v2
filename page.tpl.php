@@ -18,7 +18,7 @@
   <?php print $ie6_styles; ?>
   <![endif]-->
   <?php print $local_styles; ?>
-  <?php print $scripts; ?>
+  
 <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'/>
 <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic|Archivo+Narrow' rel='stylesheet' type='text/css'/>
   
@@ -199,6 +199,7 @@
 
     </div><!-- /page-inner -->
   </div><!-- /page -->
+  <?php print $scripts; ?>
   <?php print $closure; ?>
 </body>
 </html>
