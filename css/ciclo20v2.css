@@ -25,14 +25,18 @@ a:active{
     color:#0099ff;
 }
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
+    background-image: url("../images/line_sep.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 30px;
     font-weight: normal;
-    line-height: 1.1em;
-    margin: .5em 0;
+    line-height: 100%;
+    margin-bottom: 16px;
+    margin-top: 0;
+    padding-bottom: 12px;
 }
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2em;
     margin: 18px 0;
@@ -72,15 +76,8 @@ body.not-front #main-content form label{
     padding-top: 4px;
     width:80px;
 }
-/*body.not-front #main-content form input.form-text{
-    width:430px;
-}
-body.not-front #main-content form select.form-select{
-    width:440px;
-}*/
 /* begin blocks */
 .section.nested .block{
-    /*border: 2px solid #E1E1E1;*/
     margin: 0 0 20px 0;
     width: 100%;
 }
@@ -108,12 +105,6 @@ body.not-front #main-content form select.form-select{
     background-color: #CFCFCF;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFEFEF', endColorstr='#CFCFCF');
 }
-/*body.not-front #content-group .block h2.block-title{
-        font-size: 16px;
-    font-weight: bold;
-    padding-left: 0;
-    padding-right: 0;
-}*/
 body.not-front #content-group .block h2.block-title,
 .section.sidebar-last .block h2.block-title {
     background-image: url(../images/line_sep.png);
@@ -121,9 +112,10 @@ body.not-front #content-group .block h2.block-title,
     background-repeat: repeat-x;
     background-color:#fff;
     filter:none;
+    padding-left:0;
+    padding-right:0;
 }
 .section .block.ciclo20v2_highlight h2.block-title{
-
     color: #666;
     margin: 0;
     background-image: linear-gradient(bottom, rgb(216,52,7) 23%, rgb(240,138,42) 62%);
@@ -1792,19 +1784,16 @@ form input.form-submit,
 .views-exposed-form .views-exposed-widget input.form-submit,
 .og-buttons a {
     border: 0 none;
-    border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: bold;
-    height: 26px;
-    line-height: 26px;
     margin: 0;
-    padding: 0 12px;
+    padding: 6px 24px;
     white-space: nowrap;
     float:right;
-    font-family:calibri,arial;
     background-image: linear-gradient(top, rgb(238,125,33), rgb(234,100,17) );
     background-image: -o-linear-gradient(top, rgb(238,125,33) , rgb(234,100,17) );
     background-image: -moz-linear-gradient(top, rgb(238,125,33) , rgb(234,100,17) );
@@ -1819,6 +1808,7 @@ form input.form-submit,
         );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee7d22', endColorstr='#ea6311');
     margin-left:1em;
+    height:auto;
 }
 .og_users.edit{
         float: left;
@@ -1837,12 +1827,13 @@ form input.form-submit,
     display:block;
 }
 .og_users.edit a:hover,
+.og_users.edit a:focus,
 form input.form-submit:hover,
-form input.form-submit.hover,
+form input.form-submit:focus,
 .views-exposed-form .views-exposed-widget input.form-submit:hover,
-.views-exposed-form .views-exposed-widget input.form-submit.hover,
+.views-exposed-form .views-exposed-widget input.form-submit:focus,
 .og-buttons a:hover,
-.og-buttons a.hover {
+.og-buttons a:focus{
     background-color: #f86c00;
     background-image: none;	
 }
@@ -1858,6 +1849,9 @@ td.views-field.views-field-groups a{
     float: left;
     margin: 0;
     text-transform: capitalize;
+    border-radius: 4px 4px 4px 4px;
+    height: auto;
+    padding: 6px 24px;
 }
 .views-tabs form input.form-submit,
 .views-tabs .views-exposed-form .views-exposed-widget input.form-submit {
@@ -1865,29 +1859,24 @@ td.views-field.views-field-groups a{
     min-height:26px;
     height:auto;
 }
-
 #edit-node-type-wrapper.form-item{
     width: 84%;
 }
 form .facebook-status-form input.form-submit {
     height: auto;
 }
-
 form .fbsmp-icon-list input.form-submit {
     color: #1F1F1F;
 }
-
 .views-exposed-form .views-exposed-widget input.form-submit {
     margin-top: 18px;
 }
-
 .views-field-subscribe,
 .views-field-leave-group,
 .views-field-managelink {
     background: none;
     border:0 none;
     color: #fff;
-    font-family:Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: bold;
     line-height: 22px;
@@ -1897,7 +1886,6 @@ form .fbsmp-icon-list input.form-submit {
     display:block;
     float:right;
 }
-
 .views-field-subscribe a:hover{
     background-color:#fff;
 }
@@ -1923,13 +1911,6 @@ tr td.views-field-subscribe{
     margin-right: 12px;
     width: 52px;
 }
-/*.sidebar-last .block-views .views-field-field-group-image-fid ~ *,
-.sidebar-last .block-views .views-field-picture ~ *,
-.sidebar-last .block-views .views-field-field-date-value ~ * {
-    font-size: 12px;
-    line-height: 120%;
-    margin: 0;
-}*/
 .views-field-badge{
     color:#666;
 }
@@ -1949,20 +1930,9 @@ tr td.views-field-subscribe{
     text-transform: lowercase;
     white-space: nowrap;
 }
-
-.views-field-leave-group a { color:#fff;}
-
-/* Hover style for form buttons */
-
-
-
-
-.form-item select {
-
+.views-field-leave-group a {
+    color:#fff;
 }
-
-/* Remove backgrounds and border on radios and checkboxes */
-
 .form-item .form-radio,
 .form-item .form-checkbox {
     background: none;
@@ -1974,15 +1944,11 @@ fieldset legend{
     float: left;
     display:block;
     font-weight: bold;
-    /*padding-bottom: 10px;*/
     width: 100%;
     font-family: calibri,arial;
     font-weight: bold;
     font-size: 19px;
     color: #666;
-    /*background-image: url(../images/line_sep.png);
-    background-position: left bottom;
-    background-repeat: repeat-x;*/
 }
 #ciclo-bmecat-import .model{
     font-weight: normal;
@@ -1994,7 +1960,6 @@ fieldset legend{
 fieldset.collapsed legend {
     background-image: none;
 }
-
 .shoutbox-add-form fieldset {
     overflow: hidden;
     background-color: #EEEEEE;
@@ -5304,16 +5269,6 @@ body.page-node    .relations th{
     font-size: 18px;
     margin: 0 0 10px;
     padding: 0 0 10px;
-}
-h1,
-body.page-node    h1{
-    font-size:30px;
-    font-family:calibri,arial;
-    font-weight:bold;
-    margin: 0;
-}
-body.page-node    h1 a{
-    color:#333;
 }
 body.page-node    .node-edit #content-tabs{
     display:block;
@@ -8929,4 +8884,26 @@ body#pid-catalog-installations #content-region{
 }
 .view-ciclo-installations-og .field.title-1{
 	clear:both;
+}
+/* confirm installation */
+body.node-type-ciclo-installation #image{
+    float:left;
+    margin-right:1em;
+    margin-bottom:1em;
+}
+body.node-type-ciclo-installation #content-left{
+    margin-top:0.5em;
+}
+body.node-type-ciclo-installation #ciclo-close-installation-close-form{
+    clear:both;
+}
+body.node-type-ciclo-installation #edit-field-ciclo-plant-nid-nid-wrapper{
+    margin-top:0;
+}
+body.node-type-ciclo-installation #edit-field-ciclo-install-customer-0-nid-nid{
+    width:244px;
+}
+body.node-type-ciclo-installation #edit-field-ciclo-plant-nid-nid,
+body.node-type-ciclo-installation #edit-field-ciclo-line-nid-nid{
+    width:254px;
 }
