@@ -3455,6 +3455,7 @@ html.js fieldset.views-exposed-form.collapsed {
     background-color: transparent;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
+    border:0 none;
 }
 .views-exposed-widgets {
     float: left;
@@ -6926,12 +6927,6 @@ body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-in
 .not-front .main .main-inner, .front .main .main-inner {
     padding: 0;
 }
-#content-inner,
-#breadcrumbs {
-    background-color: transparent;
-    border: 0 none;
-    margin: 0;
-}
 .date-views-filter-wrapper {
     min-width: 90px;
 }
@@ -6952,8 +6947,10 @@ body.openlayers-full #precontent {
 body.openlayers-full #main {
     overflow: visible !important;
 }
+/* view: grid-ciclo-search */
 .grid-ciclo-search h2 {
     margin-bottom: 0;
+    font-size:18px;
 }
 .grid-ciclo-search .view-content{
     margin-top:1em;
@@ -8007,16 +8004,13 @@ body.catalog-navigation .quicktabs_tabpage{
     width: auto!important;
     height: auto!important;
 }
-/*page-catalog*/
 .front #content-group{
-    /*    padding: 0 !important;*/
     padding: 40px 0 0 !important;
 }
-.views-exposed-form .collapse-processed a
-{
-    background: url("../images/circle_sprite.png") no-repeat scroll 52px -729px transparent !important;
+#page .views-exposed-form .collapse-processed a{
+    background: url("../images/circle_sprite.png") no-repeat scroll 52px -729px transparent;
     color: #333333;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: normal;
     padding-left: 0 !important;
     height: 20px;
@@ -8271,8 +8265,7 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     margin-left: -26px;
 }
 #quicktabs_container_ciclo_model_detail li .nd-region-middle-wrapper,
-#quicktabs_container_ciclo_customer_detail li .nd-region-middle-wrapper
-{
+#quicktabs_container_ciclo_customer_detail li .nd-region-middle-wrapper{
     width: 72% !important;
     float: right;
 }
@@ -8302,8 +8295,8 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 quicktabs-ciclo_model_detail .inner{
     position: relative;
 }
-.views-exposed-form.collapsed .collapse-processed a{
-    background: url("../images/circle_sprite.png") no-repeat scroll 39px -57px transparent !important;
+#page .views-exposed-form.collapsed .collapse-processed a{
+    background: url("../images/circle_sprite.png") no-repeat scroll 52px -57px transparent;
 }
 #quicktabs_container_ciclo_installation_detail{
     margin-top: 40px;
@@ -8587,12 +8580,6 @@ body.node-type-ciclo-type-machine #content-region .view-ciclo-machines .view-con
 }
 body.not-front #main-content .container-inline-date .form-item div.form-item input.form-text{
     width:auto;
-}
-#views-exposed-form-ciclo-search-page-1 .views-exposed-form .views-exposed-widget{
-    width:156px;
-}
-body.not-front #main-content form#views-exposed-form-ciclo-search-page-1  input.form-text {
-    width: 146px;
 }
 #pid-catalog-ciclo-search #content-region{
     background-color: transparent;
