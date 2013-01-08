@@ -38,6 +38,11 @@ a:active{
     padding-left:0;
     margin-left:0;
 }
+#page .messages.error,
+#page .messages.warning{
+    background-color: #FDEFE7;
+    border: 1px solid #EA6412;
+}
 h3 {
     font-weight: bold;
     font-size: 1.2em;
@@ -56,6 +61,9 @@ body.not-front #content-region{
     border-radius:12px;
     background-color:#fff;
 }
+body.not-front #content-region{
+    width:652px;
+}
 .quicktabs_tabpage{
     overflow:hidden;
     clear:both;
@@ -68,9 +76,6 @@ body.not-front #content-region .block .content{
     box-shadow:none;
     padding:0;
     background-color:transparent;
-}
-body.layout-main-last #content-region{
-    width:652px;
 }
 body.not-front #main-content form label{
        float: left;
@@ -251,34 +256,23 @@ blockquote p:last-child { margin-bottom: 0px;}
     width: 660px;
 }
 #header-site-info .inner { margin-left:0px;}
-
-/* Wrapper around logo, site name, and slogan */
-
 .header-site-info span {
     display: block;
 }
-
-/* Add float here to put logo and site name side by side, also add margins as  needed */
-
 #logo {
     float: none;
     margin: 0 12px 0 0;
     vertical-align: middle;
     width: auto;
-    padding: 27px 0 0;
-    height: 111px;
+    padding: 0 0 11px 0;
 }
 #logo  img{
     padding-left: 20px;
-    width: 270px;
 }
 #logo a {
     display: block;
     margin-top: 20px;
 }
-
-/* Link and hover styles for site name */
-
 #site-name {
     font-size: 35px;
     line-height: 150%;
@@ -349,16 +343,19 @@ blockquote p:last-child { margin-bottom: 0px;}
     width: 100%;
 }
 #header-group-wrapper{
-    background:  #FFFFFF; padding-bottom: 2px;
-
-}
+    background:  #FFFFFF;
+    height:130px;
+}/*
 .header-group-wrapper { 
     background: url(../images/header_bkgd.png) repeat-x;
     height:173px;
+}*/
+.header-group {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    background:transparent url(../images/header_region_bkgd.gif) no-repeat top right;
 }
-
-.header-group {	position: relative;	z-index: 10; overflow: hidden; background:transparent url(../images/header_region_bkgd.gif) no-repeat top right;}
-
 #block-views-user_meta-block_1,
 #block-user-0 {
     margin-bottom:0px;
@@ -413,14 +410,6 @@ Works well with inline login or inline menu block style */
     margin: -30px 0 0 !important;
     width: 280px !important;
 }
-#preface-top-wrapper #search-box {
-
-    top: -98px;
-
-}
-/*user login form if it is in the Header region */
-
-/*Note: This next line seems to be commons-specific, and doesn't leverage the CSS that follows for user login form. It's a temporary fix until we sort this out.*/
 #header-region-inner #block-commons_core-header_login { margin-top: 20px;}
 
 .header-region-inner .block-user form,
@@ -514,10 +503,6 @@ Works well with inline login or inline menu block style */
     width:670px;
     margin-top:3px;
 }
-
-
-/* Primary Menu   TODO: add default colours/-------------------------------------------------------------- */
-
 .primary-menu {
     float: left;
     width:670px;
@@ -526,17 +511,11 @@ Works well with inline login or inline menu block style */
     position: relative;
     z-index: 20;
 }
-
 #primary-menu-inner {
     margin-left: 0;
     float: left;
     width:670px;
 }
-
-/* styles for Superfish primary menu */
-
-.primary-menu-inner ul.sf-menu {}
-
 .primary-menu-inner ul.sf-menu li {
     margin-left: 3px;
     background-color:transparent;
@@ -545,8 +524,6 @@ Works well with inline login or inline menu block style */
 .primary-menu-inner ul.sf-menu li:first-child{
     margin-left: 0px;
 }
-/* Link style for top level menu items, add padding here */
-
 .primary-menu-inner ul.sf-menu a,
 .primary-menu-inner ul.sf-menu a:visited,
 .om-maximenu ul.om-menu .om-link {
@@ -560,8 +537,8 @@ Works well with inline login or inline menu block style */
     color: #666666;
     display: inline-block;
     font-family: calibri,arial;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: normal;
     height: 35px;
     line-height: 35px;
     padding: 0 14px;
@@ -3940,9 +3917,6 @@ div#block-og_views-0 h2.title {
 a.feed-icon img {
     margin: 5px;
 }
-
-/* User Meta - logout/account links in header w/ profile pic */
-
 .view-user-meta {
     float: none;
     width: 100%;
@@ -3957,22 +3931,18 @@ a.feed-icon img {
     text-align: right;
     font-weight:bold;
 }
-
 .view-user-meta .views-field-name span.username a {
     color: #228bc8;
     font-weight: bold;
 }
-
 .view-user-meta .views-field-name span.full-name {
     font-size: .9em;
     font-style: normal;
 }
-
 .view-user-meta .views-field-picture {
     float: right;
     margin: 0 0 2px 12px;
 }
-
 .view-user-meta .views-field-nothing,
 .view-user-meta .views-field-nothing-1 {
     float: none;
@@ -3980,18 +3950,15 @@ a.feed-icon img {
     margin-top: 2px;
     padding: 0;
 }
-
 .view-user-meta .views-field-nothing a,
 .view-user-meta .views-field-nothing-1 a {
     color: #FFFFFF;
     display: block;
-    font-family: calibri,arial;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: normal;
     padding-top: 10px;
     text-transform: uppercase;
 }
-
 .view-user-meta .views-field-nothing {
     background-color: #666666;
     background-image: url("../images/bullet-white.png");
@@ -4043,20 +4010,19 @@ a.feed-icon img {
     width: auto;
 }
 .view-user-meta .views-field-name span.welcome-text {
-    color: #666;
-    font-size: 24px;
+    color: #3;
+    font-size: 22px;
     font-weight: normal;
-    left: 84px;
+    left: 66px;
     position: absolute;
     top: 41px;
-    font-family:calibri,arial;
 }
 .view-user-meta .views-field-name span.username a{
     color: #000000;
     font-weight: normal;
-    left: 84px;
+    left: 66px;
     position: absolute;
-    top: 74px;
+    top: 64px;
     font-size:12px;
 }
 #header-group .block .view .view-content .views-row .views-field-picture {
@@ -4726,17 +4692,10 @@ td.views-field-last-updated{
 td.views-field.select{
     border-right:1px solid #ececec;
 }
-
 .views-bulk-operations-form thead{
     display:none;
-
 }
-#views-bulk-operations-submit input.form-submit{
 
-}
-#edit-objects-selector-wrapper{
-
-}
 table .mini-day-on a {
     text-decoration: none;
 }
@@ -4762,13 +4721,7 @@ table .mini-day-on a {
     margin-left: 64px;
 }
 #slogan {
-    color: #E9E9E9;
-    font-family: calibri,arial;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: bold;
-    height: 27px;
-    line-height: 27px;
+    display:none;
 }
 div.view-empty p{
     text-align:center;
@@ -5571,16 +5524,6 @@ a.user-is-member:hover{
 }
 #main .view-most-active-users-gerencia .views-field-field-number-posts-vname{
     margin-top:-22px;
-}
-body.node-type-faq-question .main,
-.node-type-blog .main,
-.node-type-manual .main,
-#pid-admin-settings-ciclo-bmecat-import #content-group 
-{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px solid #E1E1E1;
-    border-radius: 10px 10px 10px 10px;
-    width: 686px;
 }
 #pid-admin-settings-ciclo-bmecat-import .content-inner-inner{
     padding: 15px;
@@ -8109,9 +8052,7 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 #sidebar-last-wrapper #block-views-ciclo_customer_models-block_2 li.views-row-even{
     background:#f7f7f7;
 }
-#sidebar-last-wrapper .view-ciclo-customer-models .nd-region-middle-wrapper
-
-{
+#sidebar-last-wrapper .view-ciclo-customer-models .nd-region-middle-wrapper{
     width: 170px;
     float: right;
 }
@@ -8137,6 +8078,7 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 }
 #sidebar-last-wrapper #block-views-ciclo_customer_last-block_1  .view-content li{
     border-top: 1px dashed #E9E9E9;
+    padding-bottom:18px;
 }
 
 #sidebar-last-wrapper #block-views-ciclo_customer_last-block_1  .view-content li .nd-region-middle-wrapper {   
@@ -8208,7 +8150,6 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 }
 .node-type-ciclo_model_machine .nd-region-footer{
     position: relative;
-    height:144px;
 }
 #block-block-1 .content{
     border-radius:12px;
@@ -8581,6 +8522,7 @@ body.node-type-ciclo-type-machine #content-region .view-ciclo-machines .view-con
 body.not-front #main-content .container-inline-date .form-item div.form-item input.form-text{
     width:auto;
 }
+body#pid-catalog-installations-pending #content-region,
 #pid-catalog-ciclo-search #content-region{
     background-color: transparent;
     box-shadow: none;
@@ -8597,7 +8539,7 @@ body.not-front #main-content .container-inline-date .form-item div.form-item inp
 }
 .view-ciclo-search.view-display-id-block_1 .view-content{
     float:left;
-    width:600px;
+    width:420px;
 }
 .view-ciclo-search.view-display-id-block_1 .view-ciclo-search.view-display-id-block_2 .view-content{
     float:none;
@@ -8663,6 +8605,7 @@ body#pid-users-og #content-region{
         background-color: transparent;
     box-shadow: none;
     padding: 0;
+    width:684px;
 }
 body#pid-catalog-customers #content-region{
         background-color: transparent;
@@ -8716,6 +8659,7 @@ body#pid-catalog-installations #content-region{
     border-radius: 0 0 0 0;
     box-shadow: none;
     padding: 0;
+    width:684px;
 }
 
 /* views */
