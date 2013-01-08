@@ -24,7 +24,7 @@ a:focus,
 a:active{
     color:#0099ff;
 }
-h1 {
+#page h1 {
     background-image: url("../images/line_sep.png");
     background-position: left bottom;
     background-repeat: repeat-x;
@@ -35,6 +35,8 @@ h1 {
     margin-bottom: 16px;
     margin-top: 0;
     padding-bottom: 12px;
+    padding-left:0;
+    margin-left:0;
 }
 h3 {
     font-weight: bold;
@@ -83,7 +85,7 @@ body.not-front #main-content form label{
 }
 .section .block h2.block-title,
 .section .block.ciclo20v2_grey_title h2.block-title{
-    font-family: calibri,arial;
+    font-size:18px;
     font-weight: normal;
     color: #666;
     margin: 0;
@@ -112,6 +114,8 @@ body.not-front #content-group .block h2.block-title,
     background-repeat: repeat-x;
     background-color:#fff;
     filter:none;
+}
+body.not-front #content-group .block h2.block-title{
     padding-left:0;
     padding-right:0;
 }
@@ -999,17 +1003,12 @@ form#search-theme-form input.form-submit {
 .preface-top-inner {}
 .preface-bottom {}
 .preface-bottom-inner {}
-
-/*  Main Area (content + sidebars + preface bottom + postscript top)-------------------------------------------------------------- */
-
 .main-wrapper {	margin-top: 0px;}
-
 .main {
     overflow: hidden;
     margin-bottom: 10px;
     background:none;
 }
-
 .not-front .main .main-inner,
 .front .content-content { padding: 0px;}
 
@@ -1046,15 +1045,12 @@ form#search-theme-form input.form-submit {
     text-align: left;
     font-size: 1em;
 }
-
 #acquia-footer-message a img { display: block; float: left;}
-
 #acquia-footer-message span {
     display: block;
     float: left;
     margin: 10px 10px 0;
 }
-
 #fusion-footer-message {
     float: right;
     clear: none;
@@ -1063,22 +1059,10 @@ form#search-theme-form input.form-submit {
     text-align: right;
     width: 49%;
 }
-
 #acquia-footer-message a,
 #fusion-footer-message a {
     color: #228bc8;
     font-size: 1em;
-}
-h1.title {
-    color: #333;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.2em;
-    margin: 0;
-    padding:0;
-    font-family:calibri,arial;
-    margin-bottom:1em;
-    padding-bottom:1em;
 }
 .node-unpublished {
     background-color: #fff4f4;
@@ -1107,19 +1091,16 @@ h1.title {
     font-size: 85%;
     padding: 0 3px;
 }
-
 .submitted span a {
     font-weight: bold;
 }
-
 .submitted .submitted-on {
     font-weight: bold;
     font-size: 90%;
 }
-
-/* Links for nodes (taxonomy, commenting, read more, etc) */
-.node .groups { margin-bottom:20px;}
-
+.node .groups {
+    margin-bottom:20px;
+}
 .node .groups,
 .node ul.links,
 .node .meta {
@@ -1779,6 +1760,7 @@ body.page-search .item-list ul.pager li.pager-number:first-child {
 .form-radios label.option{
     white-space:nowrap;
 }
+#content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a,
 .og_users.edit a,
 form input.form-submit,
 .views-exposed-form .views-exposed-widget input.form-submit,
@@ -1826,6 +1808,8 @@ form input.form-submit,
 .og_users.jobtitle{
     display:block;
 }
+#content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a:hover,
+#content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a:focus,
 .og_users.edit a:hover,
 .og_users.edit a:focus,
 form input.form-submit:hover,
@@ -1993,6 +1977,10 @@ tbody th {
     background-color: #fff;
     padding:18px 16px;
 }
+.block.block-views .view-content .item-list ul li.views-row-last,
+#sidebar-last-wrapper .block.block-views .view-content .item-list ul li.views-row-last{
+    padding-bottom:0;
+}
 tr td,
 tr.views-row-first.views-row-last,
 tr.views-row-first.views-row-last td,
@@ -2000,41 +1988,20 @@ tr.first.last,
 tr.first.last td {
     border:0 none;
 }
-
 table tr td.active {
     background-color: transparent;
 }
-
 tr.drag td,
 tr.drag-previous td {
     color: #323232;
 }
-
-/* Maintenance Page/-------------------------------------------------------------- */
-
-/* Maintenance page tpl file in Fusion Core has simplified layout, but you can  also add specific styles, such as a background, just for your offline page */
-
-.in-maintenance {
-
-}
-
-/*--------------------------------------------------------------*/
-
-/* Module styles/-------------------------------------------------------------- */
-
-/* Book/-------------------------------------------------------------- */
-
 .book-navigation .menu {
     border-top: 1px solid #ccc;
 }
-
 .book-navigation .page-links {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
 }
-
-/* Comments/-------------------------------------------------------------- */
-
 #comments h2.comments-header{
     display:none;
 }
@@ -4244,30 +4211,17 @@ a.feed-icon img {
 .sidebar-last .block-views .view-content .item-list ul li.views-row-even .views-field-picture img{
     border:solid 1px #e7e7e7;
 }
-
-.sidebar-last .block-views .view-content .item-list ul li .views-field-title {
-    font-weight: bold;
-}
 .sidebar-last .block-views .view-content .item-list ul li .views-field-title  .field-content a{
-    color: #000;
+    color: #666;
+    font-weight:normal;
 }
-/*****************************************/
-/*          Block text alignment         */
-/*****************************************/
-
 .view-groups-newest-groups .views-field-description .field-content p {margin:0;}
-
 .view-groups-my-groups-listing ul li { clear:left;}
 .view-groups-my-groups-listing .views-field-field-group-image-fid {float: left; margin-right:15px;}
 .view-groups-my-groups-listing .views-field-description {float: left; width: 60%;}
 .view-groups-my-groups-listing .views-field-leave-group {float:right;}
-
 .view-most-bookmarked  .views-field-name {float: right; width: 180px;}
-
-/* group feed listing */
-
 #main-group #content-content .feed-item { border-bottom:solid 1px #ccc; padding-bottom:10px;}
-
 #block-commons_profile-profile_image_links ul.links li { border:none; display:block; width:90%; background:transparent url(../images/doublearrow.gif) no-repeat 0px 6px; padding:0px 6px 0px 12px;}
 #block-commons_profile-profile_image_links ul.links li a { font-weight:bold;}
 #block-commons_profile-profile_image_links ul.links li.userpoints { border:none; display:block; width:90%; background:none; padding:6px 6px 0px 0px;}
@@ -4898,25 +4852,10 @@ body#pid-content-inyectoras-de-marinado #main
     -webkit-border-radius:0;
     padding:0;
 }
-
 body.page-node   .node-type-group #content-group{
     box-shadow:none;
     padding:0;
     width: 692px;
-}
-/*.content-inner-inner h1.title,*/
-.view-user-ciclokm  .field-content h1.title,
-.view-user-ciclokm  .view-content .views-field-badge{
-    background-image: url("../images/line_sep.png");
-    background-position: left bottom;
-    background-repeat: repeat-x;
-}
-.view-user-ciclokm .view-content .views-row .views-field-picture{
-    background-color: #FFFFFF;
-    height: auto;
-    margin-right: 0;
-    padding-right: 1em;
-    width: auto;
 }
 #tagging-widget-container .tagging-widget-input,
 input.tagging-widget-input,
@@ -5093,9 +5032,6 @@ thead + tbody {
 .filefield-file-info .filename{
     display:block;
 }
-/*.grouping-curtags-wrapper {
-    display: none;
-}*/
 .grouping-widget-input-wrapper{
     display:none;
 }
@@ -5107,12 +5043,6 @@ thead + tbody {
     white-space:nowrap;
     width:auto;
 }
-#content-group .view-user-ciclokm .field-content h1.title{
-    color: #000000;
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 30px;
-}
 #content-group .view-user-ciclokm  .view-content .views-field-badge{
     padding-bottom: 6px;
     margin-bottom:10px;
@@ -5123,12 +5053,8 @@ thead + tbody {
     line-height: 14px;
 }
 #content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode{
-    bottom: 10px;
     float: left;
-    left: 0;
-    margin-top: 7px;
-    position: absolute;
-    width: 60%;
+    clear:both;
 }
 #content-group .view-user-ciclokm .view-content .views-row-first{
     position: relative;
@@ -5151,7 +5077,7 @@ thead + tbody {
     float: right;
 }
 #content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a{
-    background: none repeat scroll 0 0 #EB6714;
+    margin:0;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     font-weight: bold;
@@ -5335,7 +5261,7 @@ body.page-ogdetails .edit-content-link:hover,
     background-image:none;
 }
 body.not-front .sidebar-last .block h2.block-title a,
-body.page-node    .sidebar-last .block h2.block-title a{
+body.page-node .sidebar-last .block h2.block-title a{
     color: #666666;
     font-family: calibri,arial;
     font-size: 18px;
@@ -5345,24 +5271,12 @@ body.not-front .sidebar-last .block .view-content .item-list ul li.views-row-eve
 body.not-front .sidebar-last .block .view-content .item-list ul li.views-row-odd,
 body.page-node    .sidebar-last .block .view-content .item-list ul li.views-row-even,
 body.page-node    .sidebar-last .block .view-content .item-list ul li.views-row-odd {
-
     padding-left: 0;
     padding-right: 0;
-}
-#block-views-5abc350d93d5014995dc4d9214f57453 li a{
-    font-weight:normal;
 }
 #block-views-5abc350d93d5014995dc4d9214f57453 .content{
     padding-bottom:12px;
 }
-body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a,
-body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a {
-    color: #000;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 16px;
-}
-
 .field-file{
     border-bottom: 1px dashed #CCCCCC;
     margin-bottom: 30px;
@@ -6403,9 +6317,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 .ciclo-catalog-navigation-table-element-summary-icon span.date-display-single{
     display: none;
 }
-/*
- * Tabs
-*/
+/* Tabs */
 .quicktabs_wrapper ul.quicktabs_tabs {
     margin: 0 0 4px;
     border: 0;
@@ -6426,9 +6338,9 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     background: none;
     background-color: #FFF;
     border-color: #F3F3F3;
-    border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
     border-style: solid solid none;
     border-width: 2px 2px 0;
     color: #666666;
@@ -6436,9 +6348,9 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     float:left;
     font-size: 14px;
     font-weight: bold;
-    min-height:24px;
-    line-height:24px;
-    padding: 0 22px;
+    min-height:27px;
+    line-height:27px;
+    padding: 0 28px;
     text-transform:uppercase;
     text-decoration: none;
     
@@ -8906,4 +8818,31 @@ body.node-type-ciclo-installation #edit-field-ciclo-install-customer-0-nid-nid{
 body.node-type-ciclo-installation #edit-field-ciclo-plant-nid-nid,
 body.node-type-ciclo-installation #edit-field-ciclo-line-nid-nid{
     width:254px;
+}
+/* user page */
+body.page-user-1 #page h1{
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+}
+.view-user-ciclokm  .view-content .views-field-badge{
+    background-image: url("../images/line_sep.png");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+.view-user-ciclokm  .view-content .views-field-badge img{
+    vertical-align:middle;
+}
+.view-user-ciclokm .view-content .views-row .views-field-picture{
+    background-color: #FFFFFF;
+    height: auto;
+    margin-right: 0;
+    padding-right: 1.4em;
+    width: auto;
+}
+.block-views .view-groups-my-groups-ciclokm .view-content .item-list ul li .views-field-title .field-content a {
+    display: block;
+    padding-top: 0.5em;
+}
+#block-views-groups_my_groups-block_2 .content{
+    padding-bottom:12px;
 }
