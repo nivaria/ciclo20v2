@@ -3718,12 +3718,6 @@ div#block-og_views-0 h2.title {
 .view-ciclo-installations-og .view-content .nd-region-left{
     width: 45%;
 }
-#sidebar-last-wrapper .view-id-ciclo_installations_og .view-content li.views-row img.imagecache {
-    width: auto;
-}
-.view-id-ciclo_installations_og .view-content li.views-row img.imagecache {
-    width: 130px;
-}
 .view-homepage-group-showcase .views-row .views-field-field-group-image-fid { float: left; width: 20%; margin-right: 2%; border:solid 1px #c5c5c5; line-height:0px;}
 .view-homepage-group-showcase .views-row .views-field-field-group-image-fid img { width: 100%; height: auto;}
 .view-homepage-group-showcase .views-row .view-homepage-group-showcase.view-display-id-block_2 { float: left; width: 77%}
@@ -5349,7 +5343,7 @@ body.page-ogdetails .edit-content-link,
 .view-user-ciclokm .views-field-edit-node span a{    
     border-radius: 8px 8px 8px 8px;
     color: #FFFFFF;
-    display: block;
+    display: block !important;
     font-family: calibri,arial;
     font-size: 13px;
     height: 27px;
@@ -6532,6 +6526,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 }
 .quicktabs_wrapper .views-exposed-form {
     border: 0;
+	padding:0;
 }
 .quicktabs_wrapper .quicktabs_tabpage .block {
     margin: 0 !important;
@@ -7782,9 +7777,6 @@ body.node-type-ciclo-installation #sidebar-last-wrapper #sidebar-last-inner{
 .view-ciclo-catalog-components table tbody tr.odd td, .view-ciclo-catalog-components table tbody tr.even td{
     border: 1px solid #FFFFFF;
 }
-.page-node     .views-exposed-form .views-exposed-widget{
-    width: 182px;
-}
 .page-node      #sidebar-first #block-nivaria_navigation-0{
     width: 280px;
     border: none;
@@ -8168,6 +8160,9 @@ body.catalog-navigation .quicktabs_tabpage{
 .views-exposed-form .fieldset-wrapper .views-exposed-widgets{
 	width:88%;
 	float:left;
+}
+.views-exposed-form .fieldset-wrapper .views-exposed-widgets select{
+	max-width:238px;
 }
 .views-exposed-form .fieldset-wrapper .views-exposed-widgets .views-exposed-widget{
     float:left;
@@ -8798,14 +8793,15 @@ body.not-front #main-content form#views-exposed-form-ciclo-search-page-1  input.
        width: auto;
     float:left;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.title a{
+.block.block-views .component-models .view-content .item-list ul li.views-row .field.title a,
+.block.block-views .component-models .view-content .item-list ul li.views-row .field-ciclo-alias-value a{
     color: #141414;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.phpcode{
+.block.block-views .component-models .view-content .item-list ul li.views-row .field.phpcode{
      color: #7D7D7D;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.tid,
-.block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right .field.tid a{
+.block.block-views .component-models .view-content .item-list ul li.views-row .field.tid,
+.block.block-views .component-models .view-content .item-list ul li.views-row .field.tid a{
     color: #EA6F24;
 }
 body#pid-catalog-gurantee-cost #content-region,
@@ -8918,4 +8914,19 @@ body#pid-catalog-installations #content-region{
 .view div.more-link, .view .view-footer, .heartbeat-more-messages-wrapper {
 	background-image:none;
 	padding:0;
+}
+.view-ciclo-installations-og .field-ciclo-customer-logo-fid{
+	float:left;
+	margin-right:1em;
+}
+.view-ciclo-installations-og .field.title{
+	height:32px;
+	line-height:32px;
+}
+.view-ciclo-installations-og .field.title a{
+	   color: #0099FF;
+    font-weight: normal;
+}
+.view-ciclo-installations-og .field.title-1{
+	clear:both;
 }
