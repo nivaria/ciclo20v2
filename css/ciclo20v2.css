@@ -154,6 +154,9 @@ body.not-front #content-group .block h2.block-title,
 .section .block.block-views .content{
     padding:0;
 }
+.section .block.block-views .content .tagadelic_views{
+    padding:0 12px;
+}
 .section .block.ciclo20v2_collapsible h2.block-title{
     background: url("../images/circle_sprite.png") no-repeat scroll 226px -470px, url("../images/line_sep.png") repeat-x scroll left bottom #ffffff;
     cursor: pointer;
@@ -829,12 +832,9 @@ Works well with inline login or inline menu block style */
     color: #999;
     padding-bottom: 0;
 }
-.page-user-1 .breadcrumb {
-
-    padding: 0px 0px 15px 0px;
+.breadcrumbs.block .breadcrumbs-inner {
+    margin: 0;
 }
-.breadcrumbs.block .breadcrumbs-inner {	margin: 0;}
-
 .breadcrumbs a,
 .breadcrumbs a:link,
 .breadcrumbs a:visited{
@@ -844,7 +844,6 @@ Works well with inline login or inline menu block style */
     padding: 0 2px;
     color:#999;
 }
-
 .breadcrumbs a:last-child,
 #ciclo-catalog-breadcrumb a:last-child {
     font-weight:bold;
@@ -1910,7 +1909,7 @@ tr td.views-field-subscribe{
 }
 .view .view-content .views-row .views-field-picture{
     height: 93px;
-    margin-right: 14px;
+    margin-right: 1em;
     overflow: hidden;
     width: 93px;
 }
@@ -4310,11 +4309,6 @@ a.feed-icon img {
 
 #main-group #content-content .feed-item { border-bottom:solid 1px #ccc; padding-bottom:10px;}
 
-/* profile page */
-
-body.page-user #main-inner #sidebar-first #sidebar-first-inner,
-body.page-user-1 #main-inner #sidebar-first #sidebar-first-inner{ width:90%}
-
 #block-commons_profile-profile_image_links ul.links li { border:none; display:block; width:90%; background:transparent url(../images/doublearrow.gif) no-repeat 0px 6px; padding:0px 6px 0px 12px;}
 #block-commons_profile-profile_image_links ul.links li a { font-weight:bold;}
 #block-commons_profile-profile_image_links ul.links li.userpoints { border:none; display:block; width:90%; background:none; padding:6px 6px 0px 0px;}
@@ -4952,13 +4946,19 @@ body.page-node   .node-type-group #content-group{
     width: 692px;
 }
 /*.content-inner-inner h1.title,*/
-.view-user-ciclokm  .field-content h2.title,
+.view-user-ciclokm  .field-content h1.title,
 .view-user-ciclokm  .view-content .views-field-badge{
     background-image: url("../images/line_sep.png");
     background-position: left bottom;
     background-repeat: repeat-x;
 }
-
+.view-user-ciclokm .view-content .views-row .views-field-picture{
+    background-color: #FFFFFF;
+    height: auto;
+    margin-right: 0;
+    padding-right: 1em;
+    width: auto;
+}
 #tagging-widget-container .tagging-widget-input,
 input.tagging-widget-input,
 .form-item input {
@@ -5148,62 +5148,22 @@ thead + tbody {
     white-space:nowrap;
     width:auto;
 }
-/*fieldset.collapsible{
-  display:none;
-}*/
-/**user**/
-#pid-users-metalquimia #content-content #block-views-user_ciclokm-block_1 .views-field-edit-node a{
-    top: -62px;
-}
-#pid-users-metalquimia #content-group{
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 2px solid #E1E1E1;
-    border-radius: 10px 10px 10px 10px
-}
-#pid-users-metalquimia  #content-content{
-    padding: 10px;
-}
-#pid-users #content-region{
-    padding: 0!important;
-}
-#pid-users #sidebar-last-wrapper .block-ciclokm_core-user_statistics .content ul li{
-
-}
-.page-user-1 #content-content{
-    padding-bottom: 75px;
-}
-.page-user-1 #block-views-user_ciclokm-block_2{
-    padding: 0
-}
-.page-user-1 #block-views-user_ciclokm-block_2 .inner{
-    padding: 0 20px 5px;
-}
-.page-user-1 .buildmode-full{
-    display: none;
-}
-.page-user-1 #content-top {
-    width: 100%
-}
-.view-user-ciclokm.view-display-id-block_1 .field-content h2.title{
+#content-group .view-user-ciclokm .field-content h1.title{
     color: #000000;
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 30px;
 }
-.view-user-ciclokm.view-display-id-block_1  .view-content .views-field-badge{
+#content-group .view-user-ciclokm  .view-content .views-field-badge{
     padding-bottom: 6px;
     margin-bottom:10px;
     width: 280px;
 }
-.view-user-ciclokm.view-display-id-block_1  .view-content .views-field-value-5{
-       border-right: 1px solid #666666;
-    display: block;
-    float: left;
+#content-group .view-user-ciclokm .view-content .profile_job_title{
+    display: inline;
     line-height: 14px;
-    margin-right: 1em;
-    padding-right: 1em; 
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first .views-field-phpcode{
+#content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode{
     bottom: 10px;
     float: left;
     left: 0;
@@ -5211,12 +5171,12 @@ thead + tbody {
     position: absolute;
     width: 60%;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first{
+#content-group .view-user-ciclokm .view-content .views-row-first{
     position: relative;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first .views-field-value-3 a,
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first .views-field-value-4 a,
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first .views-field-value-5 a{
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_twitter a,
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_facebook a,
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_linkedin a{
     /*        background: none repeat scroll 0 0 #E6681C;*/
     background-image: url(../images/social_sprite.png);
     background-repeat: no-repeat;
@@ -5228,8 +5188,10 @@ thead + tbody {
     padding: 8px;
     text-indent: -999999px;
     width: 20px;
+    clear: both;
+    float: right;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first .views-field-phpcode a{
+#content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a{
     background: none repeat scroll 0 0 #EB6714;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
@@ -5237,31 +5199,31 @@ thead + tbody {
     padding: 6px 32px;
     text-transform: uppercase;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first  .views-field-value-6{
+#content-group .view-user-ciclokm .view-content .views-row-first  .views-field-value-6{
     left: 130px;
     position: absolute;
     top: 98px;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first  .views-field-rid{
+#content-group .view-user-ciclokm .view-content .views-row-first  .views-field-rid{
     left: 130px;
     position: absolute;
     top: 118px;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content .views-row-first  .views-field-rid .field-content{
+#content-group .view-user-ciclokm .view-content .views-row-first  .views-field-rid .field-content{
     color: #0099FF;
 }
-.view-user-ciclokm.view-display-id-block_1 .view-content{
+#content-group .view-user-ciclokm .view-content{
     left: 0;
     position: relative;
     top: 0;
 }
-.view-user-ciclokm .view-display-id-block_1  .view-content .views-row-first .views-field-value-3 a{
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_facebook a{
     background-position: -40px 0;
 }
-.view-user-ciclokm.view-display-id-block_1   .view-content .views-row-first .views-field-value-4 a{
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_linkedin a{
     background-position: -76px 0;
 }
-.view-user-ciclokm.view-display-id-block_1   .view-content .views-row-first .views-field-value-5 a{
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_twitter a{
     background-position: 0 0;
 }
 #quicktabs-ciclo_user_detail .nd-region-left,
@@ -5277,10 +5239,6 @@ thead + tbody {
 
     height: auto;
     width: 78px; 
-}
-.page-user-1 #quicktabs-ciclo_user_detail .nd-region-left .field-ciclo-model-image-fid img{
-    height: auto;
-    width: 80px;
 }
 #quicktabs-ciclo_user_detail .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_user_detail  .view-ciclo-customer-models .nd-region-middle-wrapper{
@@ -5352,7 +5310,7 @@ body.page-node    h1 a{
 body.page-node    .node-edit #content-tabs{
     display:block;
 }
-.view-user-ciclokm.view-display-id-block_1 .views-field-edit-node span a,
+#content-group .view-user-ciclokm .views-field-edit-node span a,
 body.page-node    .edit-content-link{
     position: absolute;
     top:4px;
@@ -6339,9 +6297,6 @@ position: relative;
 }
 #content-group {
     margin-bottom: 0;
-}
-.page-user-1 .breadcrumbs-inner{
-    padding: 0 20px;
 }
 .breadcrumbs-inner{
     padding: 0 20px;
@@ -8221,15 +8176,6 @@ body.catalog-navigation .quicktabs_tabpage{
     border-bottom: 0;
     width: 280px;
 }
-#sidebar-last-wrapper #block-og-0 h2.block-title a,
-.page-user-1 #sidebar-last-wrapper .block h2.block-title a{
-    color: #666!important;
-}
-.page-user-1 #sidebar-last-wrapper .view-groups-my-groups a{
-    color: #666666;
-    font-size: 12px;
-    font-weight: normal;
-}
 body#pid-catalog-gurantee-cost .container-inline-date{
     clear:none;
     float:left;
@@ -8454,10 +8400,6 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     width: 72% !important;
     float: right;
 }
-.page-user-1 #quicktabs_container_ciclo_customer_detail  .nd-region-middle{
-    margin: 0 0 0 5px;
-    min-height: 100px;
-}
 #quicktabs_container_ciclo_model_detail .nd-region-middle,
 #quicktabs_container_ciclo_customer_detail .nd-region-middle,
 #quicktabs_container_ciclo_user_detail .nd-region-middle{
@@ -8487,14 +8429,6 @@ quicktabs-ciclo_model_detail .inner{
 .views-exposed-form.collapsed .collapse-processed a{
     background: url("../images/circle_sprite.png") no-repeat scroll 39px -57px transparent !important;
 }
-.view .view-content .views-row .views-field-picture {
-    height: 93px;
-    margin-right: 0;
-    overflow: hidden;
-    width: 80px;
-}
-
-
 #quicktabs_container_ciclo_installation_detail{
     margin-top: 40px;
 }
@@ -8699,7 +8633,7 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
 #pid-catalog #content-group .view-ciclo-machines .view-content .item-list li .nd-region-left .field-ciclo-model-image-fid img{
     border: none;
 }
-.page-user-1 .view-user-ciclokm  .view-content .views-row .views-field-picture {
+/*.page-user-1 .view-user-ciclokm  .view-content .views-row .views-field-picture {
     background: none repeat scroll 0 0 #FFFFFF;
     float: left;
     height: auto;
@@ -8740,7 +8674,7 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
     margin-left: 8px;
     padding: 0 !important;
     width: 45%;
-}
+}*/
 #block-views-5d4fa75561c1c46d562544af52ded23c .content{
      background-color: transparent;
     overflow: hidden;
@@ -8789,9 +8723,6 @@ body.not-front #main-content form#views-exposed-form-ciclo-search-page-1  input.
     box-shadow: none;
     padding: 0;
     width: 684px;
-}
-.view-ciclo-search.view-display-id-block_1{
-    
 }
 .view-ciclo-search.view-display-id-block_1 .view-header{
         border: 1px solid #E1E1E1;
@@ -8921,4 +8852,52 @@ body#pid-catalog-installations #content-region{
     border-radius: 0 0 0 0;
     box-shadow: none;
     padding: 0;
+}
+
+/* views */
+/* .striped-two-columns */
+.view.striped-two-columns .item-list li.views-row{
+        display: block;
+	width:44%;
+	margin:0;
+	overflow:hidden;
+	padding:0;
+	float:left;
+	height:38px;
+	line-height:38px;
+}
+.view.striped-two-columns .item-list li.views-row .views-field-title,
+.view.striped-two-columns .item-list li.views-row .views-field-field-ciclo-customer-logo-fid{
+	display:block;
+	float:left;
+}
+.view.striped-two-columns .item-list li.views-row .views-field-field-ciclo-customer-logo-fid{
+	padding-top:4px;
+	margin-right:1em;
+}
+.view.striped-two-columns .item-list li.views-row .views-field-title{
+}
+.view.striped-two-columns .item-list li.views-row .views-field-title a{
+	color:#000;
+	font-weight:bold;
+}
+.view.striped-two-columns .item-list li.views-row.views-row-odd{
+	margin-right:60px;
+	clear:both;
+}	
+.view.striped-two-columns .item-list li.views-row.views-row-1,
+.view.striped-two-columns .item-list li.views-row.views-row-2,
+.view.striped-two-columns .item-list li.views-row.views-row-5,
+.view.striped-two-columns .item-list li.views-row.views-row-6,
+.view.striped-two-columns .item-list li.views-row.views-row-9,
+.view.striped-two-columns .item-list li.views-row.views-row-10{
+	background-color:#fff;
+}
+.view.striped-two-columns .item-list li.views-row.views-row-3,
+.view.striped-two-columns .item-list li.views-row.views-row-4,
+.view.striped-two-columns .item-list li.views-row.views-row-7,
+.view.striped-two-columns .item-list li.views-row.views-row-8,
+.view.striped-two-columns .item-list li.views-row.views-row-11,
+.view.striped-two-columns .item-list li.views-row.views-row-12{
+	background-color:#f7f7f7;
 }
