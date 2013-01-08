@@ -8912,7 +8912,7 @@ body#pid-catalog-customers .grid-type-1 li.views-row .nd-region-right{
 ul.quicktabs_tabs.quicktabs-style-arrows li.active a, ul.quicktabs_tabs.quicktabs-style-arrows li a:hover {
     background-image:none;
 }
-#main-wrapper{
+body.ie-fullmode #main-wrapper{
   position:relative;
   z-index:9999;
 }

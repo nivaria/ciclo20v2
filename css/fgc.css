@@ -38,8 +38,9 @@ fieldset #edit-import{
     margin-bottom: 20px;
 }
 body.node-type-ciclo-customer #content-inner-inner h1.title{
-    background: url("../images/circle_sprite.png") no-repeat scroll right -543px #FFFFFF;
-      padding-bottom: 0;
+    /*background: url("../images/circle_sprite.png") no-repeat scroll right -543px #FFFFFF;
+      padding-bottom: 0;*/
+    padding-bottom:12px;
 }
 
 #quicktabs_container_ciclo_model_detail li.views-row, #quicktabs_container_ciclo_customer_detail li.views-row {
