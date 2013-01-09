@@ -8905,3 +8905,8 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
 #nivaria-navigation-tree li li ins{
     display:inline-block;
 }
+#quicktabs_container_ciclo_model_catalogue{
+    border: 1px solid #D1D1D1;
+    margin-top: -12px;
+    padding: 20px;
+}
