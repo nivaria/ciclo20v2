@@ -4559,6 +4559,10 @@ body.node-type-group .page-group .sidebar-last .block .content{
     padding:12px;
     border:0 none;
 }
+.grid-type-1 .view-content .item-list li.views-row{
+    border-radius:12px;
+    -webkit-border-radius:12px;    
+}
 .block .inner.content{
     border-radius: 0 0 0 0;
     box-shadow: none;
@@ -8051,10 +8055,12 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 .not-logged-in #main-content input.form-submit{
     float: none;
 }
+.item-list .title {
+    font-weight: normal;
+}
 .sidebar-last .views-row .title a{
     font-size:14px;
     color:#333;
-    font-weight:bold;
 }
 #footer-wrapper #footer{
     background:url(../images/logo.png) no-repeat left center;
