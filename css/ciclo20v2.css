@@ -5843,100 +5843,56 @@ body.no-sidebars #content-group-inner {
     z-index: 5
 }
 
-#nivaria-navigation-tree  li ul ul,
-#nivaria-navigation-tree  li ul{
+#nivaria-navigation-tree  li ul ul{
     margin-left: 20px;
 }
 #nivaria-navigation-tree  li a{
     height: 28px;
     line-height: 28px;
-    padding: 0 0 0 10px;
+    padding: 0;
     background: none;
     border: none;
+    font-weight:bold;
 }
-
-#nivaria-navigation-tree li.jstree-open a:hover {
-          background: url("../images/bg_tree_hover.png") no-repeat   left center!important;
-   margin: 0 0 0 -20px; 
-position: relative;
-    width: 275px;
-
-   padding: 0 0 0 30px;
-     border: none!important;
-     height: 28px;
-        color: #FFFFFF;
-}
-#nivaria-navigation-tree li.jstree-open  .jstree-open  a:hover {
-          background: url("../images/bg_tree_hover1a.png") no-repeat   left center!important;
-   margin: 0 0 0 -20px; 
-position: relative;
-    width: 275px;
-   padding: 0 0 0 30px;
-     border: none!important;
-     height: 28px;
-        color: #FFFFFF;
+#nivaria-navigation-tree  li li a{
+    padding: 0 0 0 10px;
+    font-weight:normal;
 }
 #nivaria-navigation-tree li.jstree-closed a:hover{
-      background: url("../images/bg_tree_hover1.png") no-repeat   left center!important;
-   margin: 0 0 0 -20px; 
- position: relative;
-    width: 275px;
-   padding: 0 0 0 30px;
-     border: none!important;
-     height: 28px;
-        color: #FFFFFF;
+    margin: 0 0 0 -20px; 
+    position: relative;
+    padding: 0 0 0 30px;
+    border: none!important;
+    height: 28px;
+    color: #FFFFFF;
 }
 #nivaria-navigation-tree li.jstree-open a:hover{
  margin-left: -20px;
 }
-
-#nivaria-navigation-tree  li.jstree-leaf a:hover
-
-{
-    background: url("../images/bg_tree_hover1.png") no-repeat   left center!important;
-    border: medium none;
-    color: #FFFFFF;
-    height: 28px;
-    margin: 0 0 0 -20px;
-    padding: 0 0 0 30px;
-    width: 293px;
-}
-
-
-
-#nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked ,
-#nivaria-navigation-tree  li.jstree-open  .jstree-open a.jstree-hovered,
-#nivaria-navigation-tree  li.jstree-open   a.jstree-hovered,
-#nivaria-navigation-tree li.jstree-open    .jstree-clicked
-
-{
-    background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;
-    height: 28px;
+#nivaria-navigation-tree li.jstree-open a.jstree-hovered,
+#nivaria-navigation-tree li.jstree-open .jstree-clicked{
+    background-image: url("../images/tree-selected-line.png");
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-color:#b01d8f;
+    height: 26px;
     margin-left: -20px;
-    padding: 0 0 0 30px;
-    width: 293px;
+    padding: 0 20px 0 30px;
     color: #FFFFFF;
     border: none;
     position: relative;
-    
-}
-#nivaria-navigation-tree li.jstree-open    .jstree-clicked{
-        background: url("../images/bg_tree_hover11.png") no-repeat scroll left center transparent;
-
-    z-index: 9;
-}
-#nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
-       background: url("../images/bg_tree_click.png") no-repeat scroll left center transparent;  
-}
-#nivaria-navigation-tree  li.jstree-open  .jstree-open  a.jstree-hovered{
-   background: url("../images/bg_tree_hover1a.png") no-repeat scroll left center transparent;  
-}
-#nivaria-navigation-tree li.jstree-open  .jstree-open   .jstree-clicked{
-    position: relative;
     z-index: 9;   
 }
-#nivaria-navigation-tree  li.jstree-leaf:hover >ins
- {
+#nivaria-navigation-tree li.jstree-open a.jstree-hovered .jstree-icon,
+#nivaria-navigation-tree li.jstree-open .jstree-clicked .jstree-icon{
+    background-color:#fff;
+    display:block;
+    position:absolute;
+    top:8px;
+    left:10px;
+    margin:0;
+}
+#nivaria-navigation-tree  li.jstree-leaf:hover >ins {
     background: #fff;
 }
 #nivaria-navigation-tree  li.jstree-open >ins{
@@ -5952,22 +5908,15 @@ position: relative;
 #nivaria-navigation-tree a .jstree-icon {
     display: none;
 }
-#nivaria-navigation-tree  li.jstree-open >a,
-#nivaria-navigation-tree  li.jstree-closed >a {
-    font-weight: bold;
-    text-transform: uppercase;
-}
 #nivaria-navigation-tree a .icon {    
     background-image: url("../images/icons/document-node.png") !important;
     background-repeat: no-repeat;
     background-position: center center;
     padding: 10px;
 }
-
 #nivaria-navigation-tree a .container-icons {
     display: none;   
 }
-
 #nivaria-navigation-tree a .icon-3dvia {    
     background-image: url("../images/icons/wiki-node.png") !important;
     background-repeat: no-repeat;
@@ -6095,7 +6044,7 @@ position: relative;
 #search-nivaria-navigation-tree {
     background: none repeat scroll 0 0 #F3F3F3;
     margin-left: -10px;
-    padding: 5px 11px;
+    padding: 5px 8px;
     width: 254px;
 }
 #bt-search-nivaria-navigation-tree,
@@ -8892,11 +8841,32 @@ body.catalog-navigation #page #content-content a.edit-link{
 }
 body.catalog-navigation #page #sidebar-first-wrapper .btn-collapse{
     top:8px;
+    display:none;
 }
-body.catalog-navigation .btn-expand{
-       position: absolute;
-    right: 0;
-    top: 4px;
+body.catalog-navigation .btn-expand .open,
+body.catalog-navigation .btn-expand .close{
+    background-repeat: no-repeat;
+    cursor: pointer;
+    line-height: 17px;
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+    background-image: url("../images/circle_sprite.png");
+    height: 20px;
+    padding: 5px 0 0 25px;
+}
+body.catalog-navigation .btn-expand .close{
+    background-position:-6px -76px;
+    left:12px;
+}
+body.catalog-navigation .btn-expand .open{
+    right:12px;
+    background-position: 38px -52px;
+    padding-left: 0;
+    padding-right: 24px;
+}
+body.catalog-navigation .btn-expand.open .open,
+body.catalog-navigation .btn-expand.close .close{
     display:none;
 }
 body.catalog-navigation #content-group #content-region{
@@ -8925,4 +8895,11 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     padding-top:40px;
     border-radius:12px;
     border:2px solid #DDDDDD;
+}
+/* tree menu navegacion */
+#nivaria-navigation-tree li ins{
+    display:none;
+}
+#nivaria-navigation-tree li li ins{
+    display:inline-block;
 }
