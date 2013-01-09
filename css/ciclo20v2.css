@@ -7443,7 +7443,7 @@ body.page-groups #content-group {
     margin-left: 25px;
 }
 
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2) a,
+/*.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2) a,
 .page-node    .block-ciclo_catalog_breadcrumb li:nth-child(4) a
 {
     color: #FFFFFF!important;
@@ -7459,7 +7459,8 @@ body.page-groups #content-group {
 } 
 .page-node  .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
 .page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3) a
-{
+{*/
+body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li a{
     background: none repeat scroll 0 0 #E9E9E9;
     font-size: 13px;
     color: #333;
@@ -7473,9 +7474,9 @@ body.page-groups #content-group {
     font-family: 'Cabin', sans-serif;
        text-transform: uppercase;
 
-} 
-
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(1){
+}
+/*.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(1){*/
+body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li{
     background:url("../images/tree_sprite.png") no-repeat scroll right -91px;
     height: 25px;
     padding: 0;
@@ -7483,7 +7484,7 @@ body.page-groups #content-group {
     position: relative;
     z-index: 4;
 }
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3){
+/*.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3){
     background: url("../images/tree_sprite.png") no-repeat scroll right -91px;
     height: 25px;
     margin-left: -23px;
@@ -7495,7 +7496,6 @@ body.page-groups #content-group {
 }
 .page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2){
     background:url('../images/tree_sprite.png') no-repeat scroll right -126px;
-    /* background:#B01D8F  url("../images/tree_sprite.png") no-repeat scroll right -127px;*/
     height: 25px;
     display: block;
     margin-left: -20px;
@@ -7505,14 +7505,13 @@ body.page-groups #content-group {
 }
 .page-node    .block-ciclo_catalog_breadcrumb li:nth-child(4){
     background:url('../images/tree_sprite.png') no-repeat scroll right -126px;
-    /* background:#B01D8F  url("../images/tree_sprite.png") no-repeat scroll right -127px;*/
     height: 25px;
     display: block;
     margin-left: -20px;
     position: relative;
     z-index: 1;
     padding: 0 10px 0 15px;
-}
+}*/
 .page-node     #sidebar-last-wrapper #sidebar-last-inner,
 body.page-groups #sidebar-last-wrapper #sidebar-last-inner,
 body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
