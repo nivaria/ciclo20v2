@@ -7828,8 +7828,6 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     text-decoration: none;
     z-index: 9999;
 }
-
-
 .om-maximenu-content .block-views-id-my_image-block_1{
     float: left;
     width: 110px!important;
@@ -7838,22 +7836,18 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     width: 100px; height: 100px;
 }
 .om-maximenu-content .block-views-id-my_image-block_1 h3.title{
-    display: none;/*an title c?a img*/
+    display: none;
 }
 .om-maximenu-content  .block-menu-id-menu-ciclo-metalquimia{
     float: left;
     width: 360px!important;
 }
-#nav-group #om-menu-ciclo .om-maximenu-content h3.title,
-#nav-group #om-menu-ciclo .om-maximenu-content  h3.title,
 #nav-group #om-menu-ciclo .om-maximenu-content  h3.title{
     font-size: 19px;
     margin: 0;
     padding-bottom: 8px;
     text-transform: none;
 }
-#nav-group #om-menu-ciclo .om-maximenu-content ul,
-#nav-group #om-menu-ciclo .om-maximenu-content  ul,
 #nav-group #om-menu-ciclo .om-maximenu-content  ul{
     margin: 0;
 }
@@ -7866,12 +7860,21 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     float: left;
     width: 100%;
 }
+#nav-group #om-menu-ciclo .om-maximenu-content .block-menu-id-menu-cliente,
 #nav-group #om-menu-ciclo .om-maximenu-content .block-menu-id-menu-catalogue {
-    clear: both;
+    clear: none;
     display: block;
-    margin-left: 131px!important;
-    margin-right: 204px!important;
-    width: 367px!important;
+    float:left;
+    width:33%;
+}
+#nav-group #om-menu-ciclo .om-maximenu-content .block-menu-id-menu-cliente h3.title,
+#nav-group #om-menu-ciclo .om-maximenu-content .block-menu-id-menu-catalogue h3.title{
+    display:none;
+}
+#nav-group #om-menu-ciclo .om-maximenu-content .block-menu-id-menu-cliente li,
+#nav-group #om-menu-ciclo .om-maximenu-content .block-menu-id-menu-catalogue li{
+    float:none;
+    width:auto;
 }
 #header-group .block .view .view-content .views-row .views-field-picture {
     width: auto!important;
