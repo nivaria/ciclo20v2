@@ -1865,7 +1865,7 @@ tr td.views-field-subscribe{
 }
 #sidebar-last-wrapper .view-content .views-row .views-field-picture {
     margin-right: 15px;
-    width: 60px;
+    width: auto;
     height: auto;
 }
 .view-stream-recent-content .view-content .views-row .views-field-picture{
@@ -4143,13 +4143,10 @@ a.feed-icon img {
 #block-views-groups_featured_groups-block_2 .content .views-row .views-field-field-group-image-fid{ float:left; width:140px; margin-right:10px;}
 #block-views-groups_featured_groups-block_1 .content .views-row .views-field-field-group-image-fid img,
 #block-views-groups_featured_groups-block_2 .content .views-row .views-field-field-group-image-fid img { width:136px; height:136px; border:solid 2px #fff;}
-
 #block-views-groups_featured_groups-block_1 .content .views-row .views-field-description,
 #block-views-groups_featured_groups-block_2 .content .views-row .views-field-description{ float:right; width:410px;}
 #block-views-groups_featured_groups-block_1 .content .views-row .title,
 #block-views-groups_featured_groups-block_2 .content .views-row .title{ font-weight:bold;}
-#block-views-groups_featured_groups-block_1 .content .views-row .views-field-subscribe,
-#block-views-groups_featured_groups-block_2 .content .views-row .views-field-subscribe{  }
 #block-views-groups_featured_groups-block_1 .content .views-row .views-field-subscribe .field-content,
 #block-views-groups_featured_groups-block_2 .content .views-row .views-field-subscribe .field-content{ float:right;}
 #block-views-groups_featured_groups-block_1 .content .views-row .views-field-subscribe div.joinnow-button a,
@@ -4182,6 +4179,18 @@ a.feed-icon img {
 .sidebar-last .block-views .view-content .item-list ul li .views-field-title  .field-content a{
     color: #666;
     font-weight:normal;
+}
+#page .view-public-group-content .views-field-title a{
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:Calibri;
+}
+#page .view-public-group-content .views-field-name{
+    padding-left:56px;
+}
+#block-views-public_group_content-block_2 .content{
+    padding-bottom:12px;
 }
 .view-groups-newest-groups .views-field-description .field-content p {margin:0;}
 .view-groups-my-groups-listing ul li { clear:left;}
