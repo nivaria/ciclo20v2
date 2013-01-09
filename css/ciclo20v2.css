@@ -1167,7 +1167,7 @@ ul.links li.comment_add a,
     background-repeat: no-repeat;
     height: 16px;
     right: 1px;
-    top: 1px;
+    top: 1px;28px
     width: 10px;
 }
 
@@ -5016,9 +5016,8 @@ thead + tbody {
 }
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_twitter a,
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_facebook a,
-#content-group .view-user-ciclokm .view-content .views-row-first .profile_linkedin a{
-    /*        background: none repeat scroll 0 0 #E6681C;*/
-    background-image: url(../images/social_sprite.png);
+#content-group .view-user-ciclokm .view-content .views-row-first .profile_linkedin a{    
+    background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
 
     border-radius: 5px 5px 5px 5px;
@@ -7760,25 +7759,6 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
 .page-node    .views-slideshow-controls-bottom .views_slideshow_pause{
     display: none;
 }
-body.catalog-navigation  ul.quicktabs_tabs li a{
-    /*background: url("../images/tab_sprite.png") repeat scroll -3px -141px transparent;
-    padding-bottom: 10px;
-    position: relative;
-    text-align: center;*/
-    min-width: 56px;
-    z-index: 999;
-    border-radius:0;
-}
-body.catalog-navigation  .quicktabs_wrapper {
-    background-color: #FFFFFF;
-    position: relative;
-    z-index:999;
-}
-body.catalog-navigation .quicktabs_tabpage{
-    border-radius: 0 0 0 0;
-    box-shadow: none;
-    padding: 0;
-}
 .page-node    table.views-table thead th.active{
     background-color: #000000;
 }
@@ -8855,4 +8835,94 @@ body.node-type-ciclo-plant .full-node .nd-region-right{
 /* page line */
 body.node-type-ciclo-line .full-node .nd-sidebar-left .nd-region-middle{
     margin:0;
+}
+/* page navegacion */
+body.catalog-navigation  ul.quicktabs_tabs li a{
+    min-width: 56px;
+    z-index: 999;
+    border-radius:0;
+    padding: 3px 24px 0;
+}
+body.catalog-navigation  .quicktabs_wrapper {
+    background-color: #FFFFFF;
+    position: relative;
+    z-index:999;
+}
+body.catalog-navigation .quicktabs_tabpage{
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    padding: 0;
+}
+body.catalog-navigation #content-content{
+    position:relative;
+}
+body.catalog-navigation #ciclo-catalog .field-ciclo-type-machine{
+       float: left;
+    margin-right: 1em;
+}
+body.catalog-navigation #ciclo-catalog .field-ciclo-model-guarantee{
+        float: left;
+    margin-right: 1em;
+}
+body.catalog-navigation #ciclo-catalog .ciclo-catalog-back{
+       clear: both;
+    float: right;
+    padding-top:2em;
+}
+body.catalog-navigation #ciclo-catalog .ciclo-catalog-back a{
+    background: url("../images/arrow_sprite.png") no-repeat scroll 0 -228px transparent;
+    padding-left:12px;
+}
+body.catalog-navigation #fullscreen a{
+     position: absolute;
+    right: 0;
+    top: 54px;
+    background-repeat:no-repeat;
+    background-image:url('../images/sprite.png');
+    background-position:0 -37px;
+    width:30px;
+    height:30px;
+    text-indent:-9999px;
+}
+body.catalog-navigation #block-quicktabs-ciclo_model_catalogue{
+    margin-top:1em;
+}
+body.catalog-navigation #page #content-content a.edit-link{
+    top:0;
+}
+body.catalog-navigation #page #sidebar-first-wrapper .btn-collapse{
+    top:8px;
+}
+body.catalog-navigation .btn-expand{
+       position: absolute;
+    right: 0;
+    top: 4px;
+    display:none;
+}
+body.catalog-navigation #content-group #content-region{
+    width:auto;
+    padding-top:40px;
+}
+body.catalog-navigation #page .ui-resizable-handle{
+    display:none !important;
+}
+body.catalog-navigation #main-wrapper{
+    padding-top:1em;
+}
+body.catalog-navigation #sidebar-first-inner{
+    padding:0;
+}
+body.catalog-navigation #page #main-group #content-group-inner{
+    padding:0;
+}
+body.catalog-navigation #sidebar-first-inner #block-nivaria_navigation-0{
+    padding:0;
+}
+body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .block-title{
+    display:none;
+}
+body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .content{
+    padding-top:40px;
+    border-radius:12px;
+    border:2px solid #DDDDDD;
 }
