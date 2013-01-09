@@ -990,7 +990,8 @@ form#search-theme-form input.form-submit {
 .front .content-content { padding: 0px;}
 
 .content-content {
-    min-height: 250px;
+    /*min-height: 250px;*/
+    min-height:auto;
     padding-left:0px;
 }
 .page-admin .content-inner-inner {
@@ -8566,7 +8567,7 @@ body#pid-catalog-installations-pending #content-region,
     border:0 none;
 }
 /* component models */
-.block.block-views .component-models .view-content .item-list ul li.views-row{
+#page .component-models .view-content .item-list ul li.views-row{
     float:left;
    background-color: #FFFFFF;
     border-bottom: 1px dashed #EAEAEA;
@@ -8574,30 +8575,30 @@ body#pid-catalog-installations-pending #content-region,
     padding: 0 0 16px;
     width:46%;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row-odd{
+#page .component-models .view-content .item-list ul li.views-row-odd{
     clear:both;
     margin-right:30px;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-left{
+#page .component-models .view-content .item-list ul li.views-row .nd-region-left{
        border: 1px solid #D2D2D2;
     height: 54px;
     margin-right: 20px;
     overflow: hidden;
     width: 54px;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .nd-region-right{
+#page .component-models .view-content .item-list ul li.views-row .nd-region-right{
        width: auto;
     float:left;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .field.title a,
-.block.block-views .component-models .view-content .item-list ul li.views-row .field-ciclo-alias-value a{
+#page .component-models .view-content .item-list ul li.views-row .field.title a,
+#page .component-models .view-content .item-list ul li.views-row .field-ciclo-alias-value a{
     color: #141414;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .field.phpcode{
+#page .component-models .view-content .item-list ul li.views-row .field.phpcode{
      color: #7D7D7D;
 }
-.block.block-views .component-models .view-content .item-list ul li.views-row .field.tid,
-.block.block-views .component-models .view-content .item-list ul li.views-row .field.tid a{
+#page .component-models .view-content .item-list ul li.views-row .field.tid,
+#page .component-models .view-content .item-list ul li.views-row .field.tid a{
     color: #EA6F24;
 }
 body#pid-catalog-gurantee-cost #content-region,
@@ -8776,4 +8777,82 @@ body.page-user-1 #page h1{
 }
 #block-views-groups_my_groups-block_2 .content{
     padding-bottom:12px;
+}
+/* planta */
+body.node-type-ciclo-plant .field.field-ciclo-address{
+    background-repeat:no-repeat;
+    background-image:url('../images/address.png');
+    min-height: 60px;
+    padding-left: 80px;
+}
+body.node-type-ciclo-plant .full-node .nd-region-right{
+    margin-right: 2em;
+    width: 34%;
+}
+.plant-lines .views-row{
+    border-bottom: 1px dashed #E9E9E9;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    float:left;
+    width:44%;
+}
+.plant-lines .views-row-odd{
+    clear:both;
+}
+.plant-lines .views-row-even{
+    float:right;
+}
+.plant-lines .views-row .views-field-title a{
+    color:#000;
+    font-weight:bold;
+    font-size:13px;
+}
+.plant-lines .views-row label{
+    font-weight:bold;
+}
+/* it doesn't fit with real data, can't be inline */
+/*.plant-lines .field.field-ciclo-plant-nid{
+    float:left;
+}
+.plant-lines .field.field-ciclo-line-nid{
+       border-left: 1px solid #CCCCCC;
+    float: left;
+    margin-left: 6px;
+    padding-left: 6px;
+}
+.plant-lines .field.field-ciclo-address-value{
+    clear: both;
+}*/
+#page .component-models.plant-lines .view-content .item-list ul li.views-row .nd-region-left {
+    height: auto;
+    width: auto;
+}
+#page .component-models.plant-lines .view-content .item-list ul li.views-row .nd-region-right {
+    width:170px;
+}
+#page .view-ciclo-customer-users li.views-row{
+    border-bottom: 1px dashed #E9E9E9;
+    float: left;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    width: 44%;
+}
+#page .view-ciclo-customer-users li.views-row-odd{
+    clear:both;
+}
+#page .view-ciclo-customer-users li.views-row .ud-region-left{
+    width:auto;
+}
+#page .view-ciclo-customer-users li.views-row .ud-region-right{
+    float: left;
+    width: 170px;
+}
+#page .view-ciclo-customer-users li.views-row li{
+       background-image: none;
+    margin: 0;
+    padding: 0;
+}
+/* page line */
+body.node-type-ciclo-line .full-node .nd-sidebar-left .nd-region-middle{
+    margin:0;
 }
