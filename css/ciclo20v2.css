@@ -8579,8 +8579,8 @@ body#pid-catalog .grid-type-1 li.views-row .nd-region-left{
 body#pid-catalog-customers .grid-type-1 li.views-row .nd-region-left{
     margin-right: 18px;
     overflow: hidden;
-    width: 54px;
-    height:54px;
+    width: auto;
+    height:auto;
 }
 body#pid-catalog-customers .grid-type-1 li.views-row .nd-region-right{
     width:234px;
