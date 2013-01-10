@@ -6855,6 +6855,11 @@ body.openlayers-full #precontent {
 body.openlayers-full #main {
     overflow: visible !important;
 }
+#page .component-models .view-content .item-list ul li.views-row .field.field-ciclo-alias-value a{
+    color: #333333;
+    font-family: "Calibri Bold";
+    font-size: 14px;
+}
 /* view: grid-ciclo-search */
 .grid-ciclo-search h2 {
     margin-bottom: 0;
