@@ -1933,6 +1933,9 @@ html.js fieldset.collapsed {
     background-color: transparent;
     padding: 10px;
 }
+html.js .quicktabs_tabpage fieldset.collapsed{
+    padding:0;
+}
 thead + tbody
 tbody {
     border: 0 none;
