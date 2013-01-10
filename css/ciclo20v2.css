@@ -6255,8 +6255,8 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     color: #666666;
     display: block;
     float:left;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: normal;
     min-height:27px;
     line-height:27px;
     padding: 0 28px;
@@ -7532,12 +7532,22 @@ body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li{
     position: relative;
     z-index: 1;
     padding: 0 10px 0 15px;
-}*/
+}
 .page-node     #sidebar-last-wrapper #sidebar-last-inner,
 body.page-groups #sidebar-last-wrapper #sidebar-last-inner,
 body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
     margin-left: 20px;
     margin-right: 0;
+}*/
+.counter{
+       background-color: #999999;
+    border-radius: 20px;
+    color: #D8D8D8;
+    display: inline-block;
+    font-size: 11px;
+    padding: 0 5px;
+    min-width:8px;
+    text-align:center;
 }
 .node-type-ciclo-customer #sidebar-last-wrapper #sidebar-last-inner,
 body.node-type-ciclo-model-machine  #sidebar-last-wrapper #sidebar-last-inner,
