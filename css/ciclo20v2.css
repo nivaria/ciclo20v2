@@ -5863,23 +5863,25 @@ body.no-sidebars #content-group-inner {
     margin-left: 20px;
 }
 #nivaria-navigation-tree  li a{
-    height: 28px;
-    line-height: 28px;
+    height: 26px;
+    line-height: 26px;
     padding: 0;
     background: none;
     border: none;
     font-weight:bold;
 }
 #nivaria-navigation-tree  li li a{
-    padding: 0 0 0 10px;
+    padding: 0 36px 0 10px;
     font-weight:normal;
+    
+    position:relative;
 }
 #nivaria-navigation-tree li.jstree-closed a:hover{
     margin: 0 0 0 -20px; 
     position: relative;
     padding: 0 0 0 30px;
     border: none!important;
-    height: 28px;
+    height: 26px;
     color: #FFFFFF;
 }
 #nivaria-navigation-tree li.jstree-open a:hover{
@@ -5893,7 +5895,7 @@ body.no-sidebars #content-group-inner {
     background-color:#b01d8f;
     height: 26px;
     margin-left: -20px;
-    padding: 0 20px 0 30px;
+    padding: 0 36px 0 30px;
     color: #FFFFFF;
     border: none;
     position: relative;
@@ -5908,9 +5910,9 @@ body.no-sidebars #content-group-inner {
     left:10px;
     margin:0;
 }
-#nivaria-navigation-tree  li.jstree-leaf:hover >ins {
+/*#nivaria-navigation-tree  li.jstree-leaf:hover >ins {
     background: #fff;
-}
+}*/
 #nivaria-navigation-tree  li.jstree-open >ins{
     background-image: url("../images/tree_sprite.png");
     background-repeat: no-repeat;
@@ -5925,43 +5927,93 @@ body.no-sidebars #content-group-inner {
     display: none;
 }
 #nivaria-navigation-tree a .icon {    
-    background-image: url("../images/icons/document-node.png") !important;
+    background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 10px;
+    background-position: -39px -37px;
+    display:block;
+    width:14px;
+    height:14px;
+    
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    cursor:pointer;
 }
+/*#nivaria-navigation-tree li.jstree-open a.jstree-hovered .icon,
+#nivaria-navigation-tree li.jstree-open .jstree-clicked .icon{
+    right:12px;
+}*/
 #nivaria-navigation-tree a .container-icons {
-    display: none;   
+    display: none;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 -76px;
+    width:140px;
+    height:29px;
+    z-index:1;
+    position:relative;
+    position: absolute;
+    right: -7px;
+    top: -27px;
+}
+#nivaria-navigation-tree a .show_container_icons{
+    display:block;
 }
 #nivaria-navigation-tree a .icon-3dvia {    
-    background-image: url("../images/icons/wiki-node.png") !important;
+    background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 10px;
+    background-position: -39px -57px;    
+    width:12px;
+    height:8px;
+    display:block;
+    float:left;
+    margin-left:1em;
+    margin-top:0.5em;
 }
 #nivaria-navigation-tree a .icon-svg {    
-    background-image: url("../images/icons/blog-node.png") !important;
+    background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 10px;
+    background-position: -59px -57px;
+    display:block;
+    width:22px;
+    height:8px;
+    float:left;
+    margin-left:1em;
+    margin-top:0.5em;
 }
 #nivaria-navigation-tree a .icon-image {    
-    background-image: url("../images/icons/forum-node.png") !important;
+    background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 10px;
+    background-position: -89px -55px;
+    display:block;
+    width:12px;
+    height:12px;
+    float:left;
+    margin-left:1em;
+    margin-top:0.5em;
 }
 #nivaria-navigation-tree a .icon-doc {    
-    background-image: url("../images/icons/document-node.png") !important;
+    background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 10px;
+    background-position: -140px -55px;
+    display:block;
+    width:9px;
+    height:12px;
+    float:left;
+    margin-left:1em;
+    margin-top:0.5em;
 }
 #nivaria-navigation-tree a .icon-video {    
-    background-image: url("../images/icons/event-node.png") !important;
+    background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 10px;
+    background-position: -114px -57px;
+    display:block;
+    width:12px;
+    height:8px;
+    float:left;
+    margin-left:1em;
+    margin-top:0.5em;
 }
 
 /*
@@ -8864,8 +8916,8 @@ body.catalog-navigation #fullscreen a{
     background-repeat:no-repeat;
     background-image:url('../images/sprite.png');
     background-position:0 -37px;
-    width:30px;
-    height:30px;
+    width:32px;
+    height:32px;
     text-indent:-9999px;
 }
 body.catalog-navigation #block-quicktabs-ciclo_model_catalogue{
