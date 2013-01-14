@@ -791,10 +791,6 @@ Works well with inline login or inline menu block style */
 #breadcrumbs-inner{
     padding:0;
 }
-#ciclo-catalog-breadcrumb {
-    line-height: 25px;
-    height: 25px;
-}
 .crumbtitle {
     float:left;
     font-size:11px;
@@ -7496,101 +7492,68 @@ body.page-groups #content-group {
     float: left;
     width: 280px;
 }
-
 .page-node    .block-ciclo_catalog_breadcrumb{
     background: none repeat scroll 0 0 #000000;
     margin-bottom: 0;
     margin-left: -18px;
-    padding: 3px 0;
+    padding: 2px 0;
     width: 710px;
+    overflow:hidden;
+    height:26px;
 }
-
 .page-node     .view .item-list ul.pager{
     background: none repeat scroll 0 0 #F7F7F7;
     border: medium none;
     border-radius: 0 0 0 0;
     margin-bottom: 0;
 }
-
-.page-node    .block-ciclo_catalog_breadcrumb ul{
-    margin-left: 25px;
+#ciclo-catalog-breadcrumb {
+    line-height: 26px;
+    height: 26px;
+    overflow:hidden;
+    position:absolute;
+    width:2000px;
 }
-
-/*.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2) a,
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(4) a
-{
-    color: #FFFFFF!important;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 25px;    
-    text-transform: uppercase;
-    background:#B01D8F;
-    margin-right: 17px;
-     display: block;
-    height: 25px;
-    font-family: 'Cabin', sans-serif;
-} 
-.page-node  .block-ciclo_catalog_breadcrumb li:nth-child(1) a,
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3) a
-{*/
-body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li a{
-    background: none repeat scroll 0 0 #E9E9E9;
-    font-size: 13px;
-    color: #333;
-    font-weight: normal;
-    line-height: 25px;
-    margin-right: 17px;
-    display: block;
-    height: 25px;
-    padding: 0 5px 0 15px;
-    text-shadow: 1px 0 0 #FFFFFF, 1px 0 0 #FFFFFF, 1px 0 #FFFFFF, 0 0 #FFFFFF;
-    font-family: 'Cabin', sans-serif;
-       text-transform: uppercase;
-
-}
-/*.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(1){*/
 body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li{
-    background:url("../images/tree_sprite.png") no-repeat scroll right -91px;
-    height: 25px;
+    background-image:none;
+    height: 26px;
     padding: 0;
     margin: 0;
     position: relative;
     z-index: 4;
 }
-/*.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(3){
-    background: url("../images/tree_sprite.png") no-repeat scroll right -91px;
-    height: 25px;
-    margin-left: -23px;
-    padding: 0;
-    position: relative;
-    z-index: 2;
-        display: block;
-    height: 25px
-}
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(2){
-    background:url('../images/tree_sprite.png') no-repeat scroll right -126px;
-    height: 25px;
-    display: block;
-    margin-left: -20px;
-    position: relative;
-    z-index: 3;
-    padding: 0 10px 0 15px;
-}
-.page-node    .block-ciclo_catalog_breadcrumb li:nth-child(4){
-    background:url('../images/tree_sprite.png') no-repeat scroll right -126px;
-    height: 25px;
-    display: block;
-    margin-left: -20px;
-    position: relative;
-    z-index: 1;
-    padding: 0 10px 0 15px;
-}
-.page-node     #sidebar-last-wrapper #sidebar-last-inner,
-body.page-groups #sidebar-last-wrapper #sidebar-last-inner,
-body.node-type-group #sidebar-last-wrapper #sidebar-last-inner {
-    margin-left: 20px;
+body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li a{
+    background-position:right top;
+    background-color:#E9E9E9;
+    background-repeat:no-repeat;
+    background-image:url('../images/catalog-breadcrumbs-sep.png');
+    font-size: 13px;
+    color: #333;
+    font-weight: normal;
+    line-height: 26px;
     margin-right: 0;
-}*/
+    display: block;
+    height: 26px;
+    padding: 0 30px 0 15px;
+    font-family: arial;
+    text-transform: uppercase;
+}
+body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li:last-child a{
+    background-image:url('../images/catalog-breadcrumbs-last-sep.png');
+}
+body.catalog-navigation #page .block-ciclo_catalog_breadcrumb li:first-child a{
+    width:26px;
+    height:20px;
+    background-image:url('../images/sprite.png');
+    background-position:-59px -35px;
+    overflow:hidden;
+    text-indent:-9999px;
+    margin: 3px 10px 0 16px;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -9999px;
+    background-color:transparent;    
+}
 .counter{
        background-color: #999999;
     border-radius: 20px;
@@ -7633,7 +7596,6 @@ body.node-type-ciclo-installation #sidebar-last-wrapper #sidebar-last-inner{
     padding: 10px 5px;text-transform: uppercase;
 
 }
-
 .page-node    .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
 .page-node    .views-field-field-ciclo-model-docs-fid .sticky-header thead th,
 .page-node    .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
@@ -7649,22 +7611,6 @@ body.node-type-ciclo-model-machine  #content-inner-inner,
 body.node-type-ciclo-installation #content-inner-inner{
     padding-left: 0px;
 }
-
-/*.page-node     .sidebar-first .block h2.block-title{
-    font-size: 18px;
-    padding-bottom: 10px;
-    margin: 0 8px;
-    padding-left: 0;
-}*/
-/*.page-node #content-group-inner h1{
-    background-image: url("../images/line_sep.png");
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    color: #000000;
-    text-transform: uppercase;
-}*/
 .page-node    #breadcrumbs-inner{
     padding-left: 8px;
 }
@@ -7672,19 +7618,15 @@ body.node-type-ciclo-installation  #breadcrumbs-inner,
 body.node-type-ciclo-model-machine #breadcrumbs-inner{
    padding-left: 19px; 
 }
-
-
 .page-node     #ciclo-catalog .ciclo-catalog-left{
     float: left;
     width: 30%;
 }
-
 .page-node     #ciclo-catalog .ciclo-catalog-middle{
     float: left;
     margin-left: 60px;
     width: 30%;
 }
-
 .page-node     #ciclo-catalog .ciclo-catalog-right{
     float: right;
     font-weight: bold;
@@ -7696,9 +7638,6 @@ body.node-type-ciclo-model-machine #breadcrumbs-inner{
     background: url("../images/arrow_sprite.png") no-repeat scroll right -105px transparent;
     padding-right: 10px;;
 }
-
-
-
 /*.page-node    #quicktabs-ciclo_model_catalogue  ul.quicktabs_tabs.quicktabs-style-arrows li.active a,
 .page-node    #quicktabs-ciclo_model_catalogue ul.quicktabs_tabs.quicktabs-style-arrows li a:hover{
     background: url("../images/tree_sprite.png") no-repeat scroll -66px -44px;
