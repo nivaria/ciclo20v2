@@ -6301,7 +6301,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     border-left: 2px solid #FFFFFF;
     box-shadow: 8px 0 8px 0 #F3F3F3 inset;
     height: 100%;
-    position: absolute;
+    float:right;
     right: 5px;
     width: 148px;	
 }
@@ -6321,31 +6321,21 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     float: none;
     width: auto;
 }
-
-/*
- * Precontent filters
-*/
-
 #precontent .block .inner {
     margin: 0;
 }
-
 #precontent .views-exposed-form {
     background: none;
     border: 0;
     margin: 0;
     z-index: 5;
 }
-
 #precontent .views-exposed-form legend {
     display: none !important;
 }
-
 #precontent .views-exposed-form .views-exposed-widgets {
     margin: 0;
-    /*    width: 50%;*/
 }
-
 #precontent .views-exposed-form .views-exposed-widgets .views-widget {
     background-color: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -6357,7 +6347,6 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     width: 140px;
     clear:both;
 }
-
 #precontent .views-exposed-form label {
     color: #000000;
     float: left;
@@ -7525,16 +7514,12 @@ table td.views-field-field-ciclo-model-components-nid{
     display: block;
     font-weight: bold;
     padding: 10px 5px;text-transform: uppercase;
-
 }
-.page-node    .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
-.page-node    .views-field-field-ciclo-model-docs-fid .sticky-header thead th,
-.page-node    .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
-.page-node    .views-field-field-ciclo-model-docs-fid .sticky-header thead th{
+.page-node .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
+.page-node .views-field-field-ciclo-model-docs-fid .sticky-header thead th{
     width: 68%;
 }
-.page-node    #content-inner-inner
-{
+.page-node    #content-inner-inner{
     padding-left: 8px;
 }
 .node-type-ciclo-customer      #content-inner-inner,
@@ -7911,11 +7896,11 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 }
 /**user**/
 #pid-users .view-user-directory .view-content{
-
     background: none repeat scroll 0 0 #FFFFFF;
     border: 2px solid #E1E1E1;
     border-radius: 10px 10px 10px 10px;
     padding: 10px;
+    margin-top:20px;
 }
 #main-content #content-region .view-footer a.add-content-link{
     background: none repeat scroll 0 0 #EA6311;
