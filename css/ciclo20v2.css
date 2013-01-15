@@ -8453,7 +8453,7 @@ body#pid-catalog-type-machines #content-region{
     border-radius: 0 0 0 0;
     box-shadow: none;
     padding: 0;
-    width: auto;
+    width: 100%;
 }
 body#pid-catalog-type-machines .grid-type-1 .view-content .item-list li.views-row {
     padding-bottom: 36px;
