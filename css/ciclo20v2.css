@@ -6611,8 +6611,6 @@ body#pid-catalog-customers .grid-type-1 .view-content .item-list li.views-row .n
 }
 .field-ciclo-model-image img {
     border: 1px solid #999;
-    height: 260px;
-    width: 300px;
 }
 div.node{
     margin:0;
@@ -8408,10 +8406,10 @@ body#pid-catalog-installations-pending #content-region,
 }
 #page .component-models .view-content .item-list ul li.views-row .nd-region-left{
        border: 1px solid #D2D2D2;
-    height: 54px;
+    height: auto;
     margin-right: 20px;
     overflow: hidden;
-    width: 54px;
+    width: auto;
 }
 #page .component-models .view-content .item-list ul li.views-row .nd-region-right{
        width: auto;
