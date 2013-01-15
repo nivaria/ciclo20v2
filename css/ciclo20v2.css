@@ -8375,6 +8375,12 @@ body#pid-catalog-installations-pending #content-region,
 #page .component-models .view-content .item-list ul li.views-row .field.tid a{
     color: #EA6F24;
 }
+
+
+#sidebar-last-wrapper #block-views-ciclo_customer_models-block_2.block.block-views .view-content .item-list ul li.views-row-last {
+    padding-bottom: 18px;
+}
+
 body#pid-catalog-gurantee-cost #content-region,
 body#pid-users-og #content-region{
         background-color: transparent;
@@ -8388,7 +8394,6 @@ body#pid-catalog-customers #content-region{
     padding: 0;
     width: 684px;
 }
-body.node-type-ciclo-type-machine #content-region,
 body#pid-catalog-type-machines #content-region{
     background-color: transparent;
     border: 0 none;
