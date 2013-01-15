@@ -24,6 +24,10 @@ a:focus,
 a:active{
     color:#0099ff;
 }
+#main{
+    width:980px;
+    min-width:0;
+}
 #page h1 {
     background-image: url("../images/line_sep.png");
     background-position: left bottom;
@@ -68,12 +72,12 @@ body.not-front #content-region{
 body.not-front #content-region #content-region-inner{
     padding : 20px;
 }
-body.not-front #content-region{
+/*body.not-front #content-region{
     width:652px;
-}
+}*/
 body.not-front.fullpage #content-region,
 body.not-front .clean-right #content-region{
-    width:100%;
+    width:100% !important;
 }
 .quicktabs_tabpage{
     overflow:hidden;
@@ -1852,7 +1856,7 @@ fieldset legend a{
     font-size: 14px;
     font-weight: normal;
 }
-/*fieldset legend,*/
+fieldset.views-exposed-form legend,
 #ciclo-bmecat-import fieldset legend{
     color: #666666;
     float: left;
@@ -6028,6 +6032,7 @@ body.no-sidebars #content-group-inner {
 }
 #content-group.clean-right {
     box-shadow: none !important;
+    width:100% !important;
 }
 #search-nivaria-navigation-tree {
     border: 2px solid #F3F3F3;
@@ -6074,6 +6079,10 @@ body.no-sidebars #content-group-inner {
 }
 #content-group {
     margin-bottom: 0;
+    width:680px !important;
+}
+body.fullpage #content-group {
+    width:100% !important;
 }
 .breadcrumbs-inner{
     padding: 0 20px;
@@ -6286,6 +6295,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 #quicktabs-ciclo_component_detail.quicktabs_wrapper ul.quicktabs_tabs li.active a{
     background-color:#0099ff;
     color:#fff;
+    border-color:#0099ff;
 }
 .quicktabs_wrapper ul.quicktabs_tabs li.active{
     background-image:url('../images/tab-arrow.png');
@@ -6414,7 +6424,7 @@ body#pid-catalog-installations-pending .breadcrumbs-wrapper{
     box-shadow: 3px 3px 3px 0 #CFCFCF;
     background-color: #FFF;
     position: absolute;
-    top: 43px;
+    top: 20px;
     width: 520px;
     padding: 5px;
     z-index:100;
@@ -6660,7 +6670,7 @@ body.node-type-ciclo-model-machine #content-inner{
 body.node-type-ciclo-installation #content-bottom,
 body.node-type-ciclo-model-machine #content-bottom{
     max-width:none;
-    width:692px;
+    /*width:692px;*/
 }
 .node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item .zoom-out{
     background: url("../images/maximize.png") no-repeat scroll right bottom transparent;
@@ -6874,9 +6884,12 @@ body.openlayers-full #main {
     height: 182px;
     margin: 0 1em 1em 0;
     padding: 12px;
-    width: 136px;
+    width: 130px;
     border: 1px solid #E0E0E0;
     border-radius: 6px 6px 6px 6px;
+}
+body#pid-catalog-ciclo-search .grid-ciclo-search .views-row{
+    width:135px;
 }
 .grid-ciclo-search .views-row-4,
 .grid-ciclo-search .views-row-8,
@@ -6897,7 +6910,7 @@ body.openlayers-full #main {
     margin-right:0;
 }
 .clean-right .grid-ciclo-search .views-row {
-    width:124px;
+    width:124px !important;
 }
 .grid-ciclo-search .views-row .field-ciclo-model-image-fid a{
     display:block;
@@ -7610,14 +7623,6 @@ table td.views-field-field-ciclo-model-components-nid{
 .page-node    .views_slideshow_slide .views-field-field-ciclo-alias-value{
     display: none;
 }
-.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
-.page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-image-fid,
-.page-node    .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1,
-.page-node    .views_slideshow_singleframe_main   .views-field-field-ciclo-model-image-fid-1
-{
-    margin: 0 auto;
-    width: 318px;
-}
 .page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed,
 .page-node    .views_slideshow_singleframe_main .views-field-field-ciclo-model-video-embed-1{
     width: 426px;
@@ -7641,6 +7646,10 @@ table td.views-field-field-ciclo-model-components-nid{
     width: 66px;
     border-radius:0;
 }*/
+.imagecache.imagecache-model_detail_slideshow{
+    display:block;
+    margin:0 auto;
+}
 .page-node    #content-content a.edit-link,
 .page-node    #content-content a.edit-link{
     background: none repeat scroll 0 0 #B01D8F;
@@ -8033,7 +8042,10 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 .node-type-ciclo-model-machine .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
     float: right;
     margin: 0;
-    width: 330px;
+    width: 290px;
+}
+.node-type-ciclo-model-machine .clean-right .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
+    width: 618px;
 }
 /*tab*/
 .node-type-ciclo-model-machine .buildmode-full .nd-region-middle{
@@ -8856,9 +8868,17 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     min-height:200px;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main{
-       background-color: #999999;
+    background-color: #999999;
     border: 1px solid #DCDCDC;
-    min-height: 200px;
+    height: 300px;    
+}
+#quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main .views-field-title{
+        background-color: #E1E1E1;
+    padding: 18px 14px;
+}
+#quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main .views-field-title a{
+    color: #333333;
+    font-family: bold;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_previous{
     background-image:url('../images/sprite.png');
@@ -8884,6 +8904,13 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     top:40%;
     right:0;
 }
+.views_slideshow_singleframe_pager div a{
+    display:block;
+}
+.views_slideshow_singleframe_pager div a img {
+    height: 82px;
+    width: 82px;
+}
 #quicktabs-ciclo_model_catalogue .views_slideshow_previous:hover{
     background-position:-109px -156px;
     width:100px;
@@ -8893,7 +8920,7 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     width:100px;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails{
-    margin-top:20px;
+    margin-top:74px;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails .pager-item{
     background-color: #999999;
