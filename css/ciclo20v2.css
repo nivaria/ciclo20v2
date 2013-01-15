@@ -332,7 +332,7 @@ blockquote p:last-child { margin-bottom: 0px;}
     display:block;
     float:right;
     
-    margin-top:-88px;
+    margin-top:-57px;
 }
 .front #main-content .nd-region-middle-wrapper .nd-region-middle,
 .page-catalog-installations #main-content .nd-region-middle-wrapper .nd-region-middle{
@@ -3538,7 +3538,6 @@ div#block-og_views-0 h2.title {
 }
 #precontent .block-views{
     float: left;
-    padding-top: 20px;
     width: 700px;
 }
 .view-homepage-group-showcase .views-row:after,
@@ -6305,6 +6304,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 }
 #precontent .views-exposed-form .views-exposed-widgets {
     margin: 0;
+    width:100%;
 }
 #precontent .views-exposed-form .views-exposed-widgets .views-widget {
     background-color: #FFFFFF;
@@ -6315,7 +6315,10 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     margin: 0 3px;
     float: left;
     width: 140px;
-    clear:both;
+    /*clear:both;*/
+}
+body#pid-catalog-installations-pending .breadcrumbs-wrapper{
+    display:none;
 }
 #precontent .views-exposed-form label {
     color: #000000;
@@ -6323,6 +6326,11 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     font-size: 14px;
     font-weight: bold;
     padding-left: 10px;
+    
+    padding-left:0;
+    text-align:right;
+    width:70px;
+    font-weight:normal;
 }
 
 #precontent .views-exposed-form .selected-value {
