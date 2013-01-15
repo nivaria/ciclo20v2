@@ -6607,6 +6607,16 @@ div.node{
 p{
     margin:1em 0 0;
 }
+/* users */
+body.page-users #content-region{
+       background-color: transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    padding: 0;
+    width: auto;
+}
 /* detalle de modelo */
 body.node-type-ciclo-installation #content-region,
 body.node-type-ciclo-model-machine #content-region{
