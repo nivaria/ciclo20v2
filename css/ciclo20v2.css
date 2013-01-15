@@ -4946,11 +4946,15 @@ thead + tbody {
     line-height: 14px;
 }
 #content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode{
-    float: left;
-    clear:both;
+    left: 0;
+    position: absolute;
+    top: 200px;
 }
 #content-group .view-user-ciclokm .view-content .views-row-first{
     position: relative;
+}
+.views-field-contact{
+    margin-left:129px;
 }
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_twitter a,
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_facebook a,
@@ -4981,11 +4985,6 @@ thead + tbody {
     position: absolute;
     top: 98px;
 }
-#content-group .view-user-ciclokm .view-content .views-row-first  .views-field-rid{
-    left: 130px;
-    position: absolute;
-    top: 118px;
-}
 #content-group .view-user-ciclokm .view-content .views-row-first  .views-field-rid .field-content{
     color: #0099FF;
 }
@@ -5007,6 +5006,11 @@ thead + tbody {
 #quicktabs_container_ciclo_model_detail   .nd-region-left{
     float: left;
     width: 25%;
+}
+.profile_about_me{
+   display: block;
+    margin-left: 129px;
+    padding: 1em 0; 
 }
 #main  .view-ciclo-customer-models  .nd-region-left{
 	border:1px solid #ccc;
