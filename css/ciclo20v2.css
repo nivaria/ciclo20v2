@@ -5776,7 +5776,9 @@ body.no-sidebars #content-group-inner {
     width: 10px;
     position: relative;
     top: 2px;
-    z-index: 5
+    z-index: 5;
+    z-index:20;
+    top:4px;
 }
 
 #nivaria-navigation-tree  li ul ul{
@@ -7533,11 +7535,11 @@ table td.views-field-field-ciclo-component-code-value-1,
 table td.views-field-field-ciclo-model-components-nid{
     text-align:right;
 }
-.page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td a,
+/*.page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td a,
 .page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td{
     background-color:#b11b92;
     color:#fff;
-}
+}*/
 .page-node .view-ciclo-catalog-components table.views-table thead th.active{
     background-color:#a3a3a3;
     color:#fff;
@@ -8771,6 +8773,7 @@ body.catalog-navigation .btn-expand .close{
 }
 body.catalog-navigation .btn-expand .open{
     right:12px;
+    right:48px;
     background-position: 38px -52px;
     padding-left: 0;
     padding-right: 24px;
