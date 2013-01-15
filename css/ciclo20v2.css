@@ -8031,11 +8031,13 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     padding: 15px 0;
     width: 45%;
     margin-bottom: 5px;
+    
+    margin-left:0;
 }
-#quicktabs_container_ciclo_model_detail .item-list ul,
+/*#quicktabs_container_ciclo_model_detail .item-list ul,
 #quicktabs_container_ciclo_customer_detail .item-list ul{
     margin-left: -26px;
-}
+}*/
 #quicktabs_container_ciclo_model_detail li .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_customer_detail li .nd-region-middle-wrapper{
     width: 72% !important;
