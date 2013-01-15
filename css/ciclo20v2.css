@@ -8817,3 +8817,8 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
 #quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails .pager-item.activeSlide{
     border:4px solid #ec6600;
 }
+@media only screen and (max-width: 1024px){
+    #page{
+        width:100%;
+    }
+}
