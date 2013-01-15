@@ -967,7 +967,9 @@ form#search-theme-form input.form-submit {
     padding: .6em;
     float: left;
 }
-.node .content img { padding: 10px;}
+.node .content img{
+    padding: 0;
+}
 .node .content .filefield-file img,
 .node .content .openlayers-container img {
     padding: 0;
@@ -4442,8 +4444,8 @@ textarea, .form-item input, .form-item select, #content-region input.form-text {
     -moz-border-radius: 12px 12px 12px 12px;
     -webkit-border-radius: 12px 12px 12px 12px;
 }
-.grid-type-1 .view-content .item-list li.views-row .title,
-.grid-type-1 .view-content .item-list li.views-row .field-ciclo-alias-value,
+#page .grid-type-1 .view-content .item-list li.views-row .title,
+#page .grid-type-1 .view-content .item-list li.views-row .field-ciclo-alias-value,
 .gerenciall_default .block-title,
 body.node-type-group .page-group .sidebar-last .block .block-title{    
     background-image: linear-gradient(bottom, rgb(207,207,207) 20%, rgb(239,239,239) 93%);
@@ -4465,8 +4467,8 @@ body.node-type-group .page-group .sidebar-last .block .block-title{
     -webkit-border-radius: 12px 12px 0 0;
     padding: 12px;
 }
-.grid-type-1 .view-content .item-list li.views-row .title a,
-.grid-type-1 .view-content .item-list li.views-row .field-ciclo-alias-value a,
+#page .grid-type-1 .view-content .item-list li.views-row .title a,
+#page .grid-type-1 .view-content .item-list li.views-row .field-ciclo-alias-value a,
 .block .block-title a,
 .gerenciall_default .block-title a,
 body.node-type-group .page-group .sidebar-last .block .block-title a{
@@ -4475,7 +4477,7 @@ body.node-type-group .page-group .sidebar-last .block .block-title a{
     line-height: 100%;
     font-size:20px;
 }
-.grid-type-1 .view-content .item-list li.views-row,
+#page .grid-type-1 .view-content .item-list li.views-row,
 #main .gerenciall_calendar .content,
 .gerenciall_default .content, 
 body.node-type-group .page-group .sidebar-last .block .content{
@@ -4492,7 +4494,7 @@ body.node-type-group .page-group .sidebar-last .block .content{
     padding:12px;
     border:0 none;
 }
-.grid-type-1 .view-content .item-list li.views-row{
+#page .grid-type-1 .view-content .item-list li.views-row{
     border-radius:12px;
     -webkit-border-radius:12px;    
 }
@@ -4501,12 +4503,12 @@ body.node-type-group .page-group .sidebar-last .block .content{
     box-shadow: none;
     padding: 0;
 }
-.grid-type-1 .view-content .item-list li.views-row{
+#page .grid-type-1 .view-content .item-list li.views-row{
     padding-top:0;
     margin-bottom:20px;
     padding-bottom:64px;
 }
-.grid-type-1 .view-content .item-list li.views-row .nd-region-header{
+#page .grid-type-1 .view-content .item-list li.views-row .nd-region-header{
     background-color: #E9E9E9;
     margin-left: -12px;
     margin-right: -12px;
@@ -6753,12 +6755,12 @@ body.node-type-ciclo-installation #bt-catalog{
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-plant {
     clear:both;
 }
-#content-group #content-content .node ul li {
+/*#content-group #content-content .node ul li {
     background-image: url(../images/bullet_2.png);
     background-position: left 6px;
     background-repeat: no-repeat;
     padding-left: 10px;
-}
+}*/
 .nivaria {
     float: right;
 }
@@ -7497,14 +7499,6 @@ table td.views-field-field-ciclo-model-components-nid{
 .page-node .views-field-field-ciclo-model-docs-fid-1 .sticky-header thead th,
 .page-node .views-field-field-ciclo-model-docs-fid .sticky-header thead th{
     width: 68%;
-}
-.page-node    #content-inner-inner{
-    padding-left: 8px;
-}
-.node-type-ciclo-customer      #content-inner-inner,
-body.node-type-ciclo-model-machine  #content-inner-inner,
-body.node-type-ciclo-installation #content-inner-inner{
-    padding-left: 0px;
 }
 .page-node     #ciclo-catalog .ciclo-catalog-left{
     float: left;
@@ -8383,6 +8377,18 @@ body#pid-catalog-customers #content-region{
     box-shadow: none;
     padding: 0;
     width: 684px;
+}
+body.node-type-ciclo-type-machine #content-region,
+body#pid-catalog-type-machines #content-region{
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+}
+body#pid-catalog-type-machines .grid-type-1 .view-content .item-list li.views-row {
+    padding-bottom: 36px;
 }
 .grid-type-1 li.views-row .nd-region-left{
     float: left;
