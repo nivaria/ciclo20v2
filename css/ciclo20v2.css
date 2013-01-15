@@ -4956,6 +4956,11 @@ thead + tbody {
 .views-field-contact{
     margin-left:129px;
 }
+#quicktabs_container_ciclo_component_detail .quicktabs_tabpage{
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    padding: 0;
+}
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_twitter a,
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_facebook a,
 #content-group .view-user-ciclokm .view-content .views-row-first .profile_linkedin a{    
