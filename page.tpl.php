@@ -131,10 +131,11 @@
                         <?php endif; ?>
 
                         <div id="content-region" class="content-region row nested">
-			                              <div class="breadcrumbs-wrapper">
+
+							<div id="content-region-inner" class="content-region-inner inner">
+			                              <div class="b readcrumbs-wrapper">
                               <?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>  
                             </div>
-							<div id="content-region-inner" class="content-region-inner inner">
                             <a name="main-content-area" id="main-content-area"></a>
 
                                 <div id="content-inner" class="content-inner block">

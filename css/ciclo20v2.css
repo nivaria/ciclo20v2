@@ -54,12 +54,19 @@ html.js input.form-autocomplete {
 html.js input.throbbing {
   background-position: 100% -14px;
 }
-.quicktabs_tabpage,
-body.not-front #content-region{
+.quicktabs_tabpage{
     box-shadow: 2px 4px 4px #D6D6D6;
     padding : 20px;
     border-radius:12px;
+    background-color:#fff;    
+}
+body.not-front #content-region{
+    box-shadow: 2px 4px 4px #D6D6D6;    
+    border-radius:12px;
     background-color:#fff;
+}
+body.not-front #content-region #content-region-inner{
+    padding : 20px;
 }
 body.not-front #content-region{
     width:652px;
@@ -72,6 +79,16 @@ body.not-front .clean-right #content-region{
     overflow:hidden;
     clear:both;
     margin-top:-8px;
+}
+#content-group #block-views-ciclo_installations_og-block_1 h2.block-title{
+    padding-left:16px;
+    padding-right:16px;
+}
+#content-group #block-views-ciclo_installations_og-block_1 .content{
+    padding:1em;
+}
+#content-group #block-views-ciclo_installations_og-block_1 .content .view-filters{
+    margin-bottom:1em;
 }
 body.not-front #content-region{
     margin-bottom:2em;
@@ -5510,9 +5527,9 @@ body.node-type-faq-question .main .main-inner,
 {
     padding: 10px!important
 }
-body.node-type-faq-question .main .main-inner .content-region,
-.node-type-blog .main .main-inner .content-region,
-.node-type-manual .main .main-inner .content-region {
+body.node-type-faq-question .main .main-inner .content-region #content-region-inner,
+.node-type-blog .main .main-inner .content-region #content-region-inner,
+.node-type-manual .main .main-inner .content-region #content-region-inner {
     padding: 0 10px;
 }
 .node-type-blog  .main .main-inner .content-region .field-edit-content-link-widget a.edit-content-link{
@@ -6627,6 +6644,9 @@ body.page-users #content-region{
     -webkit-box-shadow:none;
     padding: 0;
     width: auto;
+}
+body.page-users #content-region #content-region-inner{
+    padding:0;
 }
 /* detalle de modelo */
 body.node-type-ciclo-installation #content-region,
@@ -8355,6 +8375,10 @@ body#pid-catalog-installations-pending #content-region,
     padding: 0;
     width: 100%;
 }
+body#pid-catalog-installations-pending #content-region #content-region-inner,
+#pid-catalog-ciclo-search #content-region #content-region-inner{
+    padding: 0;
+}
 .view-ciclo-search.view-display-id-block_1 .view-header{
         border: 1px solid #E1E1E1;
     float: left;
@@ -8439,11 +8463,18 @@ body#pid-users-og #content-region{
     padding: 0;
     width:684px;
 }
+body#pid-catalog-gurantee-cost #content-region #content-region-inner,
+body#pid-users-og #content-region #content-region-inner{
+    padding:0;
+}
 body#pid-catalog-customers #content-region{
         background-color: transparent;
     box-shadow: none;
     padding: 0;
     width: 684px;
+}
+body#pid-catalog-customers #content-region #content-region-inner{
+    padding:0;
 }
 body#pid-catalog-type-machines #content-region{
     background-color: transparent;
@@ -8452,6 +8483,9 @@ body#pid-catalog-type-machines #content-region{
     box-shadow: none;
     padding: 0;
     width: 100%;
+}
+body#pid-catalog-type-machines #content-region #content-region-inner{
+    padding:0;
 }
 body#pid-catalog-type-machines .grid-type-1 .view-content .item-list li.views-row {
     padding-bottom: 36px;
@@ -8500,7 +8534,9 @@ body#pid-catalog-installations #content-region{
     padding: 0;
     width:684px;
 }
-
+body#pid-catalog-installations #content-region #content-region-inner{
+    padding:0;
+}
 /* views */
 /* .striped-two-columns */
 .view.striped-two-columns .item-list li.views-row{
