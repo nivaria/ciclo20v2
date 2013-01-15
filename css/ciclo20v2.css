@@ -6269,7 +6269,6 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
 #quicktabs-ciclo_component_detail.quicktabs_wrapper ul.quicktabs_tabs li.active a{
     background-color:#0099ff;
     color:#fff;
-    border: 1px solid #0099FF;
 }
 .quicktabs_wrapper ul.quicktabs_tabs li.active{
     background-image:url('../images/tab-arrow.png');
