@@ -64,6 +64,7 @@ body.not-front #content-region{
 body.not-front #content-region{
     width:652px;
 }
+body.not-front.fullpage #content-region,
 body.not-front .clean-right #content-region{
     width:100%;
 }
@@ -85,6 +86,13 @@ body.not-front #main-content form label{
     padding-right: 1em;
     padding-top: 4px;
     width:80px;
+}
+body.not-front #main-content form .node-form label{
+    width:146px;
+}
+body.not-front #main-content form .node-form .form-item .description{
+    padding-left:160px;
+    padding-top:0.5em;
 }
 /* begin blocks */
 .section.nested .block{
@@ -1625,11 +1633,6 @@ body.page-search .item-list ul.pager li.pager-number:first-child {
 .gerenciall_highlight .view div.more-link{
     margin-bottom:0;
 }
-#edit-og-directory-wrapper,
-#edit-og-private-wrapper{
-    margin-left:72px;
-    margin-left:90px;
-}
 #edit-field-featured-group-value-wrapper label.option,
 #edit-og-register-wrapper label.option,
 #edit-og-directory-wrapper label.option,
@@ -1823,8 +1826,17 @@ tr td.views-field-subscribe{
     background: none;
     border: none !important;
 }
-#ciclo-bmecat-import fieldset legend,
-fieldset legend{
+fieldset{
+    background-color:transparent;
+}
+fieldset legend,
+fieldset legend a{
+    color: #0099FF;
+    font-size: 14px;
+    font-weight: normal;
+}
+/*fieldset legend,*/
+#ciclo-bmecat-import fieldset legend{
     color: #666666;
     float: left;
     display:block;
@@ -4278,10 +4290,21 @@ a.feed-icon img {
 .block{
     overflow:visible;
 }
-
-
+.resizable-textarea {
+    width:100%;
+}
+html.js .resizable-textarea textarea,
+.node-form textarea{
+    width:73%;
+}
+fieldset.collapsible .resizable-textarea .grippie {
+    width:73%;
+    margin:0 0 0 158px;
+}
 /* taxonomy page */
-
+.cke_skin_kama{
+    clear:both;
+}
 body.page-taxonomy #content-content { width:70%;}
 body.page-taxonomy #content-content .node { border-bottom:solid 1px #ccc; padding-bottom:20px; padding-top:20px;}
 body.page-taxonomy #content-content .node .meta .submitted {
@@ -4303,9 +4326,8 @@ body.page-taxonomy #content-content .node .meta .user_badges{ display:none;}
     white-space: normal;
 }
 .node-form .form-text {
-    width: 84%;
-
-    width:80%
+    width:80%;
+    width:72%;
 }
 
 textarea, .form-item input, .form-item select, #content-region input.form-text {
@@ -8217,7 +8239,7 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
     background: none repeat scroll 0 0 #00CC66;
     color: #FFFFFF;    
 }
-#quicktabs_container_ciclo_customer_detail{
+/*#quicktabs_container_ciclo_customer_detail{
      border-radius: 10px 10px 10px 10px;
     margin-top: 40px;
     padding: 10px;
@@ -8230,7 +8252,7 @@ body.page-catalog  #view-id-ciclo_installations_og-page .item-list ul.pager{
 }
 #block-quicktabs-ciclo_model_detail .content{
     position: relative;
-}
+}*/
 .block-quicktabs h2.title.block-title{
     display: none;
 }

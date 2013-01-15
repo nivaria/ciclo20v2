@@ -24,7 +24,14 @@
   
 </head>
 
-<body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
+<?php
+  $full="fullpage";
+  if ( $sidebar_first || $sidebar_last ){
+    $full="";
+  }
+?>
+
+<body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?> <? echo $full; ?>">
   <div id="page" class="page">
     <div id="page-inner" class="page-inner">
       <div id="skip">
