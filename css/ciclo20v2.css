@@ -6608,12 +6608,14 @@ p{
     margin:1em 0 0;
 }
 /* detalle de modelo */
+body.node-type-ciclo-installation #content-region,
 body.node-type-ciclo-model-machine #content-region{
     margin-bottom:120px;
 }
-body.node-type-ciclo-model-machine #conten-inner{
+body.node-type-ciclo-model-machine #content-inner{
     margin:0;
 }
+body.node-type-ciclo-installation #content-bottom,
 body.node-type-ciclo-model-machine #content-bottom{
     max-width:none;
     width:692px;
@@ -8036,9 +8038,6 @@ quicktabs-ciclo_model_detail .inner{
 }
 #page .views-exposed-form.collapsed .collapse-processed a{
     background: url("../images/circle_sprite.png") no-repeat scroll 52px -57px transparent;
-}
-#quicktabs_container_ciclo_installation_detail{
-    margin-top: 40px;
 }
 .node-type-ciclo-customer #quicktabs-ciclo_customer_detail .view-ciclo-customer-users .view-content .ud-region-middle-wrapper,
 .node-type-ciclo-installation    #quicktabs_container_ciclo_installation_detail .view-ciclo-customer-users .ud-region-middle-wrapper{
