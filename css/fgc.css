@@ -29,11 +29,6 @@
 fieldset #edit-import{
     display: none;
 }
- body.node-type-ciclo-customer .buildmode-full .full-node{
-    background: url("../images/line_sep.png") repeat-x scroll left top transparent;
-     margin-top: 6px;
-    padding-top: 15px !important;
-}
 .views-exposed-form.collapsible.collapsed{
     margin-bottom: 20px;
 }

@@ -64,6 +64,9 @@ body.not-front #content-region{
 body.not-front #content-region{
     width:652px;
 }
+body.not-front .clean-right #content-region{
+    width:100%;
+}
 .quicktabs_tabpage{
     overflow:hidden;
     clear:both;
@@ -1359,6 +1362,10 @@ body.node-type-ciclo-customer .nd-region-header .field-title h1{
     float: left;
     height: 105px;
     width: 20%;
+    white-space:nowrap;
+}
+.field-ciclo-customer-logo{
+    margin-bottom:1em;
 }
 .node-type-ciclo-customer .buildmode-full  .nd-region-right{
     float: right;
@@ -5109,7 +5116,7 @@ body.page-node    .edit-content-link{
 .node-type-ciclo_customer .field-edit-content-link-widget .edit-content-link{
     position: absolute;
     right: 42px;
-    top: -46px;
+    top: -54px;
 }
 body.page-ogdetails .edit-content-link {
     position: absolute;
@@ -8101,9 +8108,6 @@ margin: 0;
 
 body.node-type-ciclo-customer .breadcrumb{
     padding: 0;
-}
-body.node-type-ciclo-customer #breadcrumbs-inner{
-    padding: 0 6px;
 }
 body.node-type-ciclo-customer #content-inner-inner h1.close{
     background: url(../images/line_sep.png) repeat-x left bottom, url("../images/circle_sprite.png") no-repeat scroll right -369px;  
