@@ -6443,11 +6443,6 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     margin-bottom: 0;
     float: none;
 }
-
-.grid-type-1 img {
-    padding: 0 !important;
-}
-
 .grid-type-1 .view-content .item-list li.views-row-odd {
     float: left;
     clear: both;
@@ -8390,20 +8385,16 @@ body#pid-catalog-customers #content-region{
     width: 684px;
 }
 .grid-type-1 li.views-row .nd-region-left{
-        float: left;
-    width: 234px;
+    float: left;
+    width: auto;
+    margin-right:20px;
+}
+.grid-type-1 li.views-row .nd-region-right{
+    float: none;
+    width: auto;
 }
 body#pid-catalog .grid-type-1 li.views-row{
     padding-bottom:42px;
-}
-body#pid-catalog-installations .grid-type-1 li.views-row .nd-region-right,
-body#pid-catalog .grid-type-1 li.views-row .nd-region-right{
-    width:148px;
-}
-body#pid-catalog-installations .grid-type-1 li.views-row .nd-region-left,
-body#pid-catalog .grid-type-1 li.views-row .nd-region-left{
-    width:146px;
-    margin-right:1em;
 }
 body#pid-catalog-customers .grid-type-1 li.views-row .nd-region-left{
     margin-right: 18px;
