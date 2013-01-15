@@ -59,9 +59,6 @@ select.form-select{
     right: 50px;
     top: 18px;
 }
-.node-type-ciclo-model-machine #bt-catalog, .node-type-ciclo_installation #bt-catalog {
-    top: 55px;
-}
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-inner .nd-region-footer .field-ciclo-install-customer{
     width: 88%;
     

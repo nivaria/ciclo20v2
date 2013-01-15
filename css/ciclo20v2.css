@@ -545,7 +545,6 @@ Works well with inline login or inline menu block style */
     padding:0 30px!important;
     text-transform:uppercase;
 }
-
 .om-maximenu ul.om-menu li.active a.om-link {
     background-color: #E9E9E9;
     border-color: #E2E2E2;
@@ -553,15 +552,12 @@ Works well with inline login or inline menu block style */
     border-width: 2px 2px 0;
     color: #000000;
 }
-
 .om-maximenu ul.om-menu li.active .om-maximenu-content a.om-link {
     color: #B11E91;
 }
-
 .om-maximenu ul.om-menu li.om-leaf {
     margin-right: 4px;
 }
-
 .om-maximenu ul.om-menu li .om-maximenu-content {
     border: 1px solid #EAEAEA;
     left: 1px;;
@@ -577,78 +573,56 @@ Works well with inline login or inline menu block style */
     min-width: 550px;
     padding: 0;
 }
-
 .om-maximenu ul.om-menu li .om-maximenu-content .om-maximenu-open {
     display: none;
 }
-
 .om-maximenu ul.om-menu li:hover .om-link,
 .om-maximenu ul.om-menu li .om-link.open {
     height: 31px;
 }
-
 .om-maximenu ul.om-menu li .om-maximenu-content .om-maximenu-middle-right {
     padding: 5px;
     width: 730px;
 }
-
 .om-maximenu ul.om-menu li .om-maximenu-content .om-maximenu-middle-right .block {
     padding: 10px;
 }
-
 .om-maximenu ul.om-menu li.om-leaf .block-ciclo_solr_search {
     background-color: #F3F3F3;
 }
-
 .om-maximenu ul.om-menu li.om-leaf .block-ciclo_solr_search .edit-search-wrapper {
     float: left;
 }
-
-.om-maximenu ul.om-menu li.om-leaf .block-ciclo_solr_search .form-submit {
-
-}
-
 .om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block {
     width: 540px;
     padding: 10px;
 }
-
-.om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block.bookmarks-block {
-
-}
-
 .om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block .title {
     font-family: calibri,arial;
     font-size: 14px;
     color: #000333;
     text-transform: uppercase;
 }
-
 .om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block .content ul {
     margin: 10px 0 0;
 }
-
 .om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block .content li {
     float: left;
     width: 50%;  
 }
-
 .om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block .content li a {
     background-image: url(../images/bullet_1.png);
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 10px;
 }
-
 .om-maximenu ul.om-menu li.om-leaf .om-maximenu-content .block .content li a.active {
     color: #B11E91;
 }
-
 .primary-menu-inner ul.sf-menu a:hover {
     background-color:#fff;
     color:#ea6311;
 }
-
 .primary-menu-inner ul.sf-menu a:hover,
 .primary-menu-inner ul.sf-menu li.sfHover > a {
     background-color:#fff;
@@ -664,42 +638,16 @@ Works well with inline login or inline menu block style */
     font-size: 13px;
     font-weight: bold;
 }
-
-.primary-menu-inner ul.sf-menu li.last {}
-
 .sf-menu li:hover ul, .sf-menu li.sfHover ul {top:2.7em;}
-
-/* Style for container of dropdown, add background or border */
-
 .primary-menu-inner ul.sf-menu ul {
     background-color: #dcdcdc;
     z-index: 20;
 }
-
-/* Style for individual dropdown menu items, add border-bottom for separators */
-
 .primary-menu-inner ul.sf-menu li li {
     background-color: transparent;
     font-size:12px;
     margin-left:0;
 }
-
-.primary-menu-inner ul.sf-menu li li.last {
-
-}
-
-.primary-menu-inner ul.sf-menu li li li {
-
-}
-
-/* Style for hover of dropdown menu items (add background-color here) */
-
-.primary-menu-inner ul.sf-menu li ul li:hover,
-.primary-menu-inner ul.sf-menu li ul li.sfHover {
-
-}
-
-
 .primary-menu-inner ul.sf-menu ul li:first-child{
     display:block;
 }
@@ -733,43 +681,9 @@ Works well with inline login or inline menu block style */
     background-position:12px center;
     background-image:url('../images/submenu_bullet_hover.png');
 }
-
 .view-groups-main-listing thead{
     display:none;
 }
-
-/* Secondary menu-------------------------------------------------------------- */
-
-
-
-
-/* This menu usually appears in the header as a set of simple text links */
-
-.secondary-menu {
-
-}
-
-/* Set general style for menu here -- background, alignment, etc. */
-
-.secondary-menu-inner ul.links {
-
-}
-
-/* Add a border-right here for a separator */
-
-.secondary-menu-inner ul.links li {
-
-}
-
-/* Add border-right: 0;
- here to remove right separator on last menu item */
-
-.secondary-menu-inner ul.links li.last {
-
-}
-
-/* Styles for links */
-
 .secondary-menu-inner ul.links li a:link,
 .secondary-menu-inner ul.links li a:visited {
     padding: 3px;
@@ -787,6 +701,9 @@ Works well with inline login or inline menu block style */
     width: 100%;
     font-size: 12px;
     line-height: 18px;
+}
+#breadcrumbs{
+    margin-bottom:0;
 }
 #breadcrumbs-inner{
     padding:0;
@@ -4578,8 +4495,8 @@ body.node-type-group .page-group .sidebar-last .block .content{
 }
 .grid-type-1 .view-content .item-list li.views-row{
     padding-top:0;
-    height:282px;
     margin-bottom:20px;
+    padding-bottom:64px;
 }
 .grid-type-1 .view-content .item-list li.views-row .nd-region-header{
     background-color: #E9E9E9;
@@ -6695,6 +6612,23 @@ body#pid-catalog-customers .grid-type-1 .view-content .item-list li.views-row .n
     height: 260px;
     width: 300px;
 }
+div.node{
+    margin:0;
+}
+p{
+    margin:1em 0 0;
+}
+/* detalle de modelo */
+body.node-type-ciclo-model-machine #content-region{
+    margin-bottom:120px;
+}
+body.node-type-ciclo-model-machine #conten-inner{
+    margin:0;
+}
+body.node-type-ciclo-model-machine #content-bottom{
+    max-width:none;
+    width:692px;
+}
 .node-type-ciclo-model-machine .field-ciclo-model-image .field-items .field-item .zoom-out{
     background: url("../images/maximize.png") no-repeat scroll right bottom transparent;
     height: 38px;
@@ -6751,25 +6685,15 @@ body.page-catalog .view-content li.views-row img.imagecache{
     padding: 0 10px 0 0;
     width: 300px;
 }
-
 .node-type-ciclo-model-machine .nd-region-footer,
 .node-type-ciclo_model_machine .nd-region-footer,
 .node-type-ciclo-model-machine #comments,
 .node-type-ciclo-installation .nd-region-footer,
 .node-type-ciclo_installation .nd-region-footer,
-.node-type-ciclo-installation #comments {
-    /*    width: 724px !important;*/
+.node-type-ciclo-installation #comments {    
     margin-top: 20px;
     position: relative;
 }
-
-/*.node-type-ciclo-model-machine .nd-region-header,
-.node-type-ciclo_model_machine .nd-region-header,
-.node-type-ciclo-installation .nd-region-header,
-.node-type-ciclo_installation .nd-region-header {
-    width: 724px;
-}*/
-
 .node-type-ciclo_model_machine .field h2,
 .node-type-ciclo_installation .field h2 {
     font-family: calibri,arial;
@@ -6781,29 +6705,20 @@ body.page-catalog .view-content li.views-row img.imagecache{
     background-position: left bottom;
     background-repeat: repeat-x;
 }
-
 .node-type-ciclo_model_machine .nd-region-right .field h2,
 .node-type-ciclo_installation .nd-region-right .field h2 {
     margin: 10px 0;
 }
-
 .node-type-ciclo-model-machine #content-group .field-ciclo-model-description1 ul,
 .node-type-ciclo_model_machine .field-ciclo-model-description1 ul {
     padding: 0;
     list-style: none;
 }
-
 .node-type-ciclo-model-machine #content-group #content-content .field-ciclo-model-description1 ul li,
 .node-type-ciclo_model_machine #content-group #content-content .field-ciclo-model-description1 ul li {
-    /*    background-image: url(../images/check-icon.png);
-        background-position: left 3px;
-        background-repeat: no-repeat;
-        padding-left: 20px;
-        line-height: 20px;*/
     background: none;
     padding: 0
 }
-
 .node-type-ciclo-model-machine #content-group #content-content .nd-region-right ul li,
 #content-group #content-content .node-type-ciclo_model_machine .nd-region-right ul li,
 .node-type-ciclo-installation #content-group #content-content .nd-region-right ul li,
@@ -6811,29 +6726,14 @@ body.page-catalog .view-content li.views-row img.imagecache{
     background: none;
     padding-left: 0;
 }
-
 .node-type-ciclo_model_machine .field-terms-21 {
     font-weight: normal;
     padding: 3px 0 0;
 }
-
-/*.node-type-ciclo_model_machine .nd-region-header,
-.node-type-ciclo_installation .nd-region-header,
-.node-type-ciclo-customer .nd-region-header{*/
-/*{
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-    background-image: url(../images/line_sep.png);
-    background-position: left bottom;
-    background-repeat: repeat-x;
-}*/
 .view-ciclo-customer-installations .view-content .field-ciclo-alias-value a,
 .view-ciclo-model-installations .view-content .field-ciclo-alias-value a{
     color: #000;
     font-weight: bold;
-}
-.view-ciclo-customer-installations .view-footer{
-
 }
 .view-ciclo-customer-installations .view-content .field-ciclo-alias-value a:hover,
 .view-ciclo-model-installations .view-content .field-ciclo-alias-value a:hover{
@@ -6859,15 +6759,17 @@ body.node-type-ciclo-installation .block-quicktabs{
     white-space: normal;
     width:301px;
     height:82px;
-    float:right;
-    text-indent:-0;
+    float:none;
+    text-indent:0;
     
  
-    margin-right: -90px;
-    margin-top: -22px;
+    margin:0;
     padding-left: 128px;
     padding-top: 22px;
     cursor:pointer;
+    bottom:-132px;
+    right:-86px;
+    position:absolute;
 }
 .node-type-ciclo-model-machine .field-field-ciclo-model-catalog,
 .node-type-ciclo_installation .field-field-ciclo-model-catalog{
@@ -7640,13 +7542,6 @@ body.node-type-ciclo-model-machine  #content-inner-inner,
 body.node-type-ciclo-installation #content-inner-inner{
     padding-left: 0px;
 }
-.page-node    #breadcrumbs-inner{
-    padding-left: 8px;
-}
-body.node-type-ciclo-installation  #breadcrumbs-inner,
-body.node-type-ciclo-model-machine #breadcrumbs-inner{
-   padding-left: 19px; 
-}
 .page-node     #ciclo-catalog .ciclo-catalog-left{
     float: left;
     width: 30%;
@@ -8066,9 +7961,6 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     padding:0;
     background-image:none;
 }
-.node-type-ciclo-model-machine .buildmode-full{
-    padding: 0 20px;
-}
 .node-type-ciclo_model_machine .nd-region-footer{
     position: relative;
 }
@@ -8104,7 +7996,7 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 .node-type-ciclo-model-machine .buildmode-full .nd-region-middle-wrapper.nd-one-sidebar.nd-sidebar-left{
     float: right;
     margin: 0;
-    width: 50%;
+    width: 330px;
 }
 /*tab*/
 .node-type-ciclo-model-machine .buildmode-full .nd-region-middle{

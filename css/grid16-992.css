@@ -96,20 +96,19 @@ body.node-type-ciclo-installation #main-wrapper #main {
     background-color: none;
     border: none;
 }
-body.node-type-ciclo-installation #content-group #content-top .content-top-inner,
+/*body.node-type-ciclo-installation #content-group #content-top .content-top-inner,
 #pid-catalog-client-scar-mayer #content-top .content-top-inner,
 #pid-content-el-pozo #content-top .content-top-inner,
 #pid-content-montesano #content-top .content-top-inner,
 .node-type-ciclo-model-machine #content-top .content-top-inner,
-#pid-catalog-model-agitador-brinmix-1000 #content-top .content-top-inner
- {
+#pid-catalog-model-agitador-brinmix-1000 #content-top .content-top-inner{
        border-radius: 10px 10px 0 0;
     border-color: #E1E1E1;
     border-image: none;  
     border-style: solid solid none;
     border-width: 2px 2px 0;
     background: none repeat scroll 0 0 #FFFFFF;
-}
+}*/
 body.node-type-ciclo-installation #main-wrapper #content-group-inner #content-region .nd-region-middle{
     margin: 0px;
 }
