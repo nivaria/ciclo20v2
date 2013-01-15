@@ -322,8 +322,7 @@ blockquote p:last-child { margin-bottom: 0px;}
 .content-content .view-header{
     margin-bottom:12px;
 }
-.content-content .view-header a.add-content-link{
-    background: #EA6311;
+#page .content-content .view-header a.add-content-link{    
     border-radius: 8px;
     color: #FFFFFF;
     font-weight: bold;
@@ -1654,6 +1653,7 @@ body.page-search .item-list ul.pager li.pager-number:first-child {
 .form-radios label.option{
     white-space:nowrap;
 }
+.content-content .view-header a.add-content-link,
 #content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a,
 .og_users.edit a,
 form input.form-submit,
@@ -6204,6 +6204,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     color: #fff;
     background-color:#999;
     margin-right:0;
+    font-family:calibri,arial;
 }
 #block-quicktabs-ciclo_catalog_tabs .quicktabs_wrapper ul.quicktabs_tabs li a,
 #quicktabs-ciclo_component_detail .quicktabs_wrapper ul.quicktabs_tabs li a {
@@ -6797,7 +6798,8 @@ body.openlayers-full #main {
 }
 #page .component-models .view-content .item-list ul li.views-row .field.field-ciclo-alias-value a{
     color: #333333;
-    font-family: "Calibri Bold";
+    font-family:calibri;
+    font-weight:bold;
     font-size: 14px;
 }
 /* view: grid-ciclo-search */
