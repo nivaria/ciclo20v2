@@ -8818,7 +8818,7 @@ body.catalog-navigation .btn-expand .close{
 }
 body.catalog-navigation .btn-expand .open{
     right:12px;
-    right:48px;
+    /*right:48px;*/
     background-position: 38px -52px;
     padding-left: 0;
     padding-right: 24px;
@@ -8938,6 +8938,9 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails .pager-item.activeSlide{
     border:4px solid #ec6600;
+}
+body.catalog-navigation #sidebar-first-wrapper{
+    position:relative;
 }
 @media only screen and (max-width: 1024px){
     #page{
