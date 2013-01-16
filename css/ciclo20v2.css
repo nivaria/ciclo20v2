@@ -7907,6 +7907,7 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 #sidebar-last-wrapper #block-views-ciclo_installations_og-block_3 li .nd-region-middle-wrapper{
     float: right;
     margin: 0;
+    width:194px;
 }
 #sidebar-last-wrapper #block-views-ciclo_installations_og-block_3 li .nd-region-left{
     float: left;
@@ -7914,6 +7915,7 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
 }
 #sidebar-last-wrapper #block-views-ciclo_installations_og-block_3 li{
     border-top: 1px dashed #E9E9E9;
+    padding-bottom:18px;
 }
 #block-views-ciclo_installations_map-block_2{
     border: 0 none;
