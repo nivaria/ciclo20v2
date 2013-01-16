@@ -5842,7 +5842,9 @@ body.no-sidebars #content-group-inner {
     color: #FFFFFF;
     border: none;
     position: relative;
-    z-index: 9;   
+    z-index: 9;
+    
+    width:208px;
 }
 #nivaria-navigation-tree li.jstree-open a.jstree-hovered .jstree-icon,
 #nivaria-navigation-tree li.jstree-open .jstree-clicked .jstree-icon{
@@ -6182,8 +6184,12 @@ table tbody tr.selected td.active {
     background-position: left bottom;
     background-repeat: repeat-x;
 }
+.ciclo-catalog-navigation-table-element-summary,
+.ciclo-catalog-navigation-table-element-summary a{
+    color: #666666 !important;
+    background-color:#ffffff !important;
+}
 .ciclo-catalog-navigation-table-element-summary h2 a{
-    color: #666666;
     font-size: 15px;
     font-weight: bold;
     text-transform: none;
@@ -6213,14 +6219,14 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     height: 20px;
 }
 .ciclo-catalog-navigation-table-element-summary-icon span {
-    background-image: url("../images/tab_sprite.png");
-    background-position: -5px -267px;
+    background-image: url("../images/sprite.png");
+    background-position: -162px -112px;
     background-repeat: no-repeat;
     display: block;
     height: 20px;
-    padding: 0 5px;
+    padding: 0;
     text-indent: -9999em;
-    width: 21px;
+    width: 24px;
 }
 .ciclo-catalog-navigation-table-element-summary-icon span.node-edit-in-view,
 .ciclo-catalog-navigation-table-element-summary-icon span.date-display-single{
@@ -6241,7 +6247,7 @@ td.views-field-teaser  .ciclo-catalog-navigation-table-element-summary-icon:hove
     display:block;
     float:left;
     padding-bottom:9px;
-    margin-right:1em;
+    margin-right:10px;
 }
 .quicktabs_wrapper ul.quicktabs_tabs li a {
     background: none;
@@ -7565,11 +7571,11 @@ table td.views-field-field-ciclo-component-code-value-1,
 table td.views-field-field-ciclo-model-components-nid{
     text-align:right;
 }
-/*.page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td a,
+.page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td a,
 .page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td{
     background-color:#b11b92;
     color:#fff;
-}*/
+}
 .page-node .view-ciclo-catalog-components table.views-table thead th.active{
     background-color:#a3a3a3;
     color:#fff;
@@ -7731,9 +7737,12 @@ table td.views-field-field-ciclo-model-components-nid{
 }
 
 .page-node    .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a{
-    background: url("../images/tab_sprite.png") no-repeat scroll left -229px transparent !important;
+    background: url("../images/sprite.png") no-repeat scroll -120px -112px transparent !important;
+    display:block;
+    width:30px;
+    height:20px;
+    padding:0;
     font-size: 0;
-    padding: 14px 30px;
 }
 
 .page-node    .view-id-ciclo_catalog_components .view-content span.node-edit-in-view {
@@ -8789,6 +8798,9 @@ body.catalog-navigation #fullscreen a{
     width:32px;
     height:32px;
     text-indent:-9999px;
+    
+    top:127px;
+    z-index:1000;
 }
 body.catalog-navigation #block-quicktabs-ciclo_model_catalogue{
     margin-top:1em;
@@ -8826,10 +8838,6 @@ body.catalog-navigation .btn-expand .open{
 body.catalog-navigation .btn-expand.open .open,
 body.catalog-navigation .btn-expand.close .close{
     display:none;
-}
-body.catalog-navigation #content-group #content-region{
-    width:auto;
-    padding-top:40px;
 }
 body.catalog-navigation #page .ui-resizable-handle{
     display:none !important;
