@@ -5812,11 +5812,11 @@ body.no-sidebars #content-group-inner {
     background: none;
     border: none;
     font-weight:bold;
+    color:#000;
 }
 #nivaria-navigation-tree  li li a{
     padding: 0 36px 0 10px;
     font-weight:normal;
-    
     position:relative;
 }
 #nivaria-navigation-tree li.jstree-closed a:hover{
