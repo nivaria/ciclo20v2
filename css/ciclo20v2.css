@@ -7750,9 +7750,14 @@ table td.views-field-field-ciclo-model-components-nid{
 }
 #main #sidebar-last-wrapper .view-most-active-users-gerencia .views-field-field-number-posts-vname { margin-top: 0; }
 .ajax-cart-submit-form-button{
-    background: url("../images/tab_sprite.png") no-repeat scroll left -186px transparent !important;
-    text-indent: -99999px;
-    width: 82px;
+    background-image:url('../images/sprite.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:-120px -134px !important;
+    text-indent: -99999px !important;
+    background-color: transparent !important;
+    width: 56px !important;
+    height:20px !important;
+    filter:none !important;
 }
 .view-most-active-users-gerencia li.views-row-odd { background-color: #F7F7F7; }
 .view-most-active-users-gerencia li.views-row-even { background-color: #FFF; }
@@ -8880,10 +8885,20 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
 #quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main{
     background-color: #999999;
     border: 1px solid #DCDCDC;
-    height: 300px;    
+    height: 370px;    
+}
+#quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_slide,
+#quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_teaser_section{
+    height:370px !important;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main .views-field-title{
-        background-color: #E1E1E1;
+    background-color: #E1E1E1;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main .views-field-title .field-content{
+    display:block;
     padding: 18px 14px;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_singleframe_main .views-field-title a{
