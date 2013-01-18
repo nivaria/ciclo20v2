@@ -195,5 +195,7 @@ $(document).ready(function(){
     $("#edit-upload").change(function(){
         $("#ciclo-bmecat-import").submit();
     })
-    
+    $("#quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails .pager-item ").live("click",function(event) {
+	event.preventDefault();
+    });
 });
