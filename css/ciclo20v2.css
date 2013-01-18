@@ -936,7 +936,7 @@ form#search-theme-form input.form-submit {
 
 .content-content {
     /*min-height: 250px;*/
-    min-height:auto;
+    min-height:0;
     padding-left:0px;
 }
 .page-admin .content-inner-inner {
@@ -7348,7 +7348,7 @@ body.page-kmhome #main-content #content-group .block .view .views-field-title a 
 .node-type-blog #content-tabs { display: none; }
 
 .page-kmhome .content-content {
-    min-height: auto;
+    min-height: 0;
 }
 body.page-kmhome #sidebar-last-wrapper,
 body.page-groups #sidebar-last-wrapper,
