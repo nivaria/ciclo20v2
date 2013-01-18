@@ -1617,9 +1617,6 @@ body.page-search .item-list ul.pager li.pager-number:first-child {
     top: 7px;
     width: 21px;
 }
-
-.item-list ul.pager li.pager-previous a,
-.item-list ul.pager li.pager-next a,
 .item-list ul.pager li.pager-previous a,
 .item-list ul.pager li.pager-next a{
     background-color: #F4F4F4;
@@ -1974,9 +1971,6 @@ tr.drag-previous td {
     font-weight: normal;
     padding: 0;
 }
-
-/* Style for each individual comment */
-
 div.comment {
     border-top: 1px dashed #CCCCCC;
     margin-top: 18px;
@@ -1987,13 +1981,6 @@ div.comment:first-child {
     margin:0;
     padding:0;
 }
-
-/* Subject (title) of each comment */
-
-div.comment h3.title {}
-
-/* comment info */
-
 .comment .comment-info {
     background: none;
     float: left;
@@ -2008,26 +1995,19 @@ div.comment h3.title {}
     padding: 0;
     width: 64px;
 }
-
 .comment-info ul.links li {
     font-size: 10px;
     padding: 0 2px 0 0;
     display: block;
     border: none;
 }
-
 .comment-info ul.links li.comment_forbidden,
 .comment-info ul.links li.comment_forbidden span {
     white-space: normal;
 }
-
 .comment-info ul.links li.last {
     border: none;
 }
-
-/*.comment .comment-info span.new {
-  color: #ce1e1e;
-}*/
 .comment .comment-info span.new {
     background-color:#CE1E1E;
     border-top-left-radius: 5px;
@@ -2037,12 +2017,10 @@ div.comment h3.title {}
     font-weight:bold;
     margin-bottom:2px;
 }
-
 .comment .comment-info .submitted span {
     display: block;
     width: auto;
 }
-
 .comment .comment-content-wrapper {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -2053,7 +2031,6 @@ div.comment h3.title {}
     z-index: 1;
     overflow: auto;
 }
-
 .comment .comment-content {
     float: left;
 }
@@ -2072,67 +2049,27 @@ div.comment h3.title a{
     display:none;
 }
 .comment .comment-content .links ul.links { margin-bottom:0px;}
-
-/*fix for comment title being cut off */
-
 .comments > a[id] {
     position: absolute;
 }
-
 div.comments div.indented {
     margin-left: 40px;
 }
-
-/* Links (edit, reply, delete) for each comment */
-
-div.comment div.links a,
-div.comment ul.links a {
-
-}
-
-/* A special highlight style for a comment by the author of the node */
-
-.comments div.comment-by-author .comment-info img {
-    /*border: 2px solid #619ed4;*/
-}
-
-/* Comment signatures */
-
 .signature {
     border-top: 1px solid #d6ddb9;
 }
-
-/* User avatars in comments */
-
-.comment-wrapper .picture img {
-
-}
-
-/* Forum/-------------------------------------------------------------- */
-
-#forum .description {
-
-}
-
 .forum-topic-navigation {
     border-bottom: 1px solid #888;
     border-top: 1px solid #888;
 }
-
-/* Poll/-------------------------------------------------------------- */
-
 div.poll div.bar { background-color: #ddd;}
 div.poll div.bar div.foreground { background-color: #999;}
 div.poll .total { text-align:left;}
 .poll .vote-form { text-align:left;}
 .poll .vote-form .choices { margin:0px;}
-
 #block-views-og_recent_poll-block_1 .node h2 { font-size:1.2em; font-weight:bold; margin-bottom:0px;}
 #block-views-og_recent_poll-block_1 .node .meta { display:none;}
 #block-views-og_recent_poll-block_1 .node .content { padding:0px 15px 15px 15px;}
-
-/* Profiles/-------------------------------------------------------------- */
-
 .profile .picture {
     border-bottom: none;
     float: none;
@@ -2140,13 +2077,11 @@ div.poll .total { text-align:left;}
     padding: 10px 0 6px 0;
     text-align: center;
 }
-
 .profile .picture img {
     border: 1px solid #fff;
     height: auto;
     max-width: 90%;
 }
-
 .profile .column-left {
     float: left;
     margin: 0 2% 0 0;
@@ -2156,28 +2091,22 @@ div.poll .total { text-align:left;}
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-
 .profile .column-right {
     float: left;
     width: 68%;
 }
-
-/* User points styles */
-
 .profile .userpoints h3 {
     border: none;
     float: left;
     margin: 0px;
     width: auto;
 }
-
 .profile .userpoints {
     background-color: #727272;
     color: #fff;
     margin: 0px 5% 15px 5%;
     padding: 4px 8px;
 }
-
 .profile .userpoints dd {
     float: left;
     margin: 0;
@@ -2185,7 +2114,6 @@ div.poll .total { text-align:left;}
     width: auto;
     display: block;
 }
-
 .profile .userpoints:after {
     clear: both;
     content: ".";
@@ -2193,49 +2121,39 @@ div.poll .total { text-align:left;}
     height: 0;
     visibility: hidden;
 }
-
 .profile .userpoints .points {
     display: block;
     float: left;
     font-size: 1.2em;
     font-weight: bold;
     margin-left: 8px;
-    width: auto;
+   width: auto;
 }
-
 .profile .userpoints .edit-links {
     display: none;
 }
-
 .profile .userpoints:hover .edit-links {
     clear: both;
     display: block;
     margin-top: 1.6em;
     position: absolute;
 }
-
 .profile .userpoints .edit-links a {
     text-decoration: underline;
 }
-
-/* Styles for sub-headings on user profiles */
-
 .profile .column-right dt {
     width: auto;
     padding: 0;
 }
-
 .profile .column-right h3 {
     background-color: #eaeaea;
     border: 1px solid #d8d8d8;
     margin-top: 0;
     padding: 2px 6px;
 }
-
 .profile dd .item-list li {
     background-image: none;
 }
-
 .block.block-commons_profile .links .ur_action a {
     background: url("../images/button_bkgd.gif") repeat-x scroll left bottom #228BC8;
     border: 1px solid #228BC8;
@@ -2243,34 +2161,23 @@ div.poll .total { text-align:left;}
     font-size: 12px;
     margin: 10px 0;
 }
-
 .block.block-commons_profile .links .ur_action a:hover,
 .block.block-commons_profile .links .ur_action a:active {
     text-decoration: none;
 }
-
-/* @group Facebook */
-
 .facebook-status-item .links li {
     border: 0 none;
 }
-
-/* @group Comments */
-
 .facebook-status-comments.no-comments {
     border: 0 none;
 }
-
 .facebook-status-subitem {
     background-color: #eee;
     padding: 0.75em;
 }
-
 .facebook-status-subitem {
     border-top: 4px solid white;
 }
-
-
 .fbss-comments .facebook-status-subitem:first-child,
 .facebook-status-comments :first-child,
 .facebook-status-subitem.form-piece {
@@ -2288,20 +2195,11 @@ div.poll .total { text-align:left;}
 .facebook-status-subitem.form-piece {
     padding-top: 0;
 }
-
-/* @end */
-
-/* Block/Pane Styles */
-
-/*login block */
 #block-commons_core-3 .content {
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px 0 0;
     text-align:right;
 }
-
-/*Homepage blocks/panes */
-
 .front .panel-pane .inner,
 .front .panel-panel .block .inner {
     border: 1px solid #dfdfdf;
@@ -8481,12 +8379,11 @@ body#pid-catalog-installations-pending #content-region #content-region-inner,
 #page .component-models .view-content .item-list ul li.views-row .field.tid a{
     color: #EA6F24;
 }
-
-
+#sidebar-last-wrapper #block-views-ciclo_customer_models-block_1.block.block-views .view-content .item-list ul li.views-row-last,
+#sidebar-last-wrapper #block-views-public_group_content-block_2.block.block-views .view-content .item-list ul li.views-row-last,
 #sidebar-last-wrapper #block-views-ciclo_customer_models-block_2.block.block-views .view-content .item-list ul li.views-row-last {
     padding-bottom: 18px;
 }
-
 body#pid-catalog-gurantee-cost #content-region,
 body#pid-users-og #content-region{
         background-color: transparent;
