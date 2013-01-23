@@ -5777,6 +5777,9 @@ body.no-sidebars #content-group-inner {
     left:10px;
     margin:0;
 }
+.block-ciclo_catalog{
+ float:none !important;   
+}
 /*#nivaria-navigation-tree  li.jstree-leaf:hover >ins {
     background: #fff;
 }*/
