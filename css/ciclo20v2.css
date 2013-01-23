@@ -7988,7 +7988,7 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 
     border-bottom: 1px dashed #DEDEDE;
     float: left;
-    height: 115px;
+    min-height: 115px;
     margin-left: 32px;
     padding: 15px 0;
     width: 45%;
