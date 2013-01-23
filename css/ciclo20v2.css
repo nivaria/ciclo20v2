@@ -6044,6 +6044,9 @@ table tbody tr.odd {
     padding-right:2em;
     white-space: nowrap; 
 }
+td .og_users.username{
+    padding-left:60px;
+}
 table tbody tr.even {
     background-color: #ffffff;
 }
