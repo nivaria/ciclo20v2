@@ -6069,6 +6069,10 @@ table tbody tr.selected td.active {
 .calendar-calendar table tbody tr.selected {
     background: transparent;
 }
+#page #user-profile-form .form-checkboxes label{
+    width:auto;
+    float:none;
+}
 .ciclo-catalog-navigation-table-element-summary {
     background-color: #FFFFFF;
     border: 2px solid #FF9D5B;
