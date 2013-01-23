@@ -358,12 +358,23 @@ blockquote p:last-child { margin-bottom: 0px;}
     border-radius: 8px;
     color: #FFFFFF;
     font-weight: bold;
-    padding: 6px 10px;
+    /*padding: 6px 10px;*/
     text-transform: uppercase;
     display:block;
     float:right;
     
     margin-top:-57px;
+}
+#main-content #content-region .view-footer a.add-content-link{
+    background: none repeat scroll 0 0 #EA6311;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+
+    /*padding: 6px 15px;*/
+    text-transform: uppercase;
+    margin-bottom:1em;
 }
 .front #main-content .nd-region-middle-wrapper .nd-region-middle,
 .page-catalog-installations #main-content .nd-region-middle-wrapper .nd-region-middle{
@@ -1681,7 +1692,7 @@ body.page-search .item-list ul.pager li.pager-number:first-child {
 .form-radios label.option{
     white-space:nowrap;
 }
-.content-content .view-header a.add-content-link,
+#page a.add-content-link,
 #content-group .view-user-ciclokm .view-content .views-row-first .views-field-phpcode a,
 .og_users.edit a,
 form input.form-submit,
@@ -1698,6 +1709,7 @@ form input.form-submit,
     padding: 6px 24px;
     white-space: nowrap;
     float:right;
+    line-height:18px;
     background-image: linear-gradient(top, rgb(238,125,33), rgb(234,100,17) );
     background-image: -o-linear-gradient(top, rgb(238,125,33) , rgb(234,100,17) );
     background-image: -moz-linear-gradient(top, rgb(238,125,33) , rgb(234,100,17) );
@@ -7894,19 +7906,6 @@ body.node-type-ciclo-customer #sidebar-last-wrapper #block-og-0 .item-list ul {
     border-radius: 10px 10px 10px 10px;
     padding: 10px;
     margin-top:20px;
-}
-#main-content #content-region .view-footer a.add-content-link{
-    background: none repeat scroll 0 0 #EA6311;
-    border-radius: 8px 8px 8px 8px;
-    color: #FFFFFF;
-    display: block;
-    float: right;
-    font-size: 12px;
-    font-weight: bold;
-
-    padding: 6px 15px;
-    text-transform: uppercase;
-    margin-bottom:1em;
 }
 .not-logged-in #main-content input.form-submit{
     float: none;
