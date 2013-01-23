@@ -8838,6 +8838,7 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     position:absolute;
     top:40%;
     left:0;
+    z-index:200;
 }
 #quicktabs-ciclo_model_catalogue .views_slideshow_next{
     background-image:url('../images/sprite.png');
@@ -8850,6 +8851,7 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     position:absolute;
     top:40%;
     right:0;
+    z-index:200;
 }
 .view-navigation-quicktabs table thead th{
      background-color: #CCCCCC;
