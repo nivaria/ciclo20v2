@@ -5756,6 +5756,18 @@ body.no-sidebars #content-group-inner {
     
     width:208px;
 }
+#nivaria-navigation-tree li.jstree-open li li a.jstree-hovered,
+#nivaria-navigation-tree li.jstree-open li li .jstree-clicked{
+    width:188px;
+}
+#nivaria-navigation-tree li.jstree-open li li li a.jstree-hovered,
+#nivaria-navigation-tree li.jstree-open li li li .jstree-clicked{
+    width:168px;
+}
+#nivaria-navigation-tree li.jstree-open li li li li a.jstree-hovered,
+#nivaria-navigation-tree li.jstree-open li li li li .jstree-clicked{
+    width:148px;
+}
 #nivaria-navigation-tree li.jstree-open a.jstree-hovered .jstree-icon,
 #nivaria-navigation-tree li.jstree-open .jstree-clicked .jstree-icon{
     background-color:#fff;
