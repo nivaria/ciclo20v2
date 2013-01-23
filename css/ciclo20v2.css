@@ -8897,6 +8897,21 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
 body.catalog-navigation #sidebar-first-wrapper{
     position:relative;
 }
+#page #edit-preview-changes,
+#page #edit-preview{
+        background-color: #F4F4F4;
+    background-image: none;
+    border: 1px solid #DCDCDC;
+    border-radius: 8px 8px 8px 8px;
+    color: #666666;
+}
+#page #edit-delete{
+      background-color: transparent;
+    background-image: none;
+    color: #0099FF;
+    letter-spacing: 1px;
+    text-transform: capitalize;  
+}
 @media only screen and (max-width: 1024px){
     #page{
         width:100%;
