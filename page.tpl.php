@@ -35,6 +35,7 @@
   <div id="page" class="page">
     <div id="page-inner" class="page-inner">
       <div id="skip">
+		<?php print $language_switcher; ?>
         <a href="#main-content-area"><?php print t('Skip to Main Content Area'); ?></a>
       </div>
 

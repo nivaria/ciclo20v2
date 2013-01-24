@@ -69,6 +69,9 @@ function ciclo20v2_preprocess_page(&$vars)
           }
       }
   }
+  // Include language switcher
+  $block = module_invoke('locale', 'block', 'view', 0);
+  $vars['language_switcher'] = $block['content'];
   
 }
 /*function ciclo20v2_preprocess_page(&$variables) {
