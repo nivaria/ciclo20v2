@@ -8576,7 +8576,8 @@ body.node-type-ciclo-installation #image{
 body.node-type-ciclo-installation #content-left{
     margin-top:0.5em;
 }
-body.node-type-ciclo-installation #ciclo-close-installation-close-form{
+body.node-type-ciclo-installation #ciclo-close-installation-close-form,
+body.node-type-ciclo-installation #ciclo-close-installation-recalculate-guarantee-form{
     clear:both;
 }
 body.node-type-ciclo-installation #edit-field-ciclo-plant-nid-nid-wrapper{
