@@ -191,6 +191,7 @@ $(document).ready(function(){
     /*attach*/
     $("#edit-upload-wrapper label").click(function(){
         $("#edit-upload").click();
+		return false;
     })
     $("#edit-upload").change(function(){
         $("#ciclo-bmecat-import").submit();
