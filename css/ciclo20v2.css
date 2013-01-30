@@ -8948,7 +8948,7 @@ body.catalog-navigation #sidebar-first-wrapper{
 }
 #language_holder{
     margin-left: 1em;
-    margin-top: 4px;
+    margin-top: 7px;
 }
 #language_holder ul{
         margin: 0;
@@ -8961,8 +8961,8 @@ body.catalog-navigation #sidebar-first-wrapper{
 #language_holder ul li{
     display: block;
     float: left;
-    height: 18px;
-    line-height: 18px;
+    height: 12px;
+    line-height: 12px;
     border-left: 1px solid #E9E9E9;
     margin-left:1em;
     padding-left:1em;
