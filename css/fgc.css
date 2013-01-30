@@ -18,17 +18,12 @@
     cursor: pointer;
 }
 #edit-upload{
-    height: 75px;
-    opacity: 0;
     position: absolute;
-    top: 0;
-    width: 200px;
-    z-index: 9999999;
-    cursor:pointer;
+	left: -9999em;
 }
-/*fieldset #edit-import{
+fieldset #edit-import{
     display: none;
-}*/
+}
 .views-exposed-form.collapsible.collapsed{
     margin-bottom: 20px;
 }

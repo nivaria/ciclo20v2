@@ -189,13 +189,15 @@ $(document).ready(function(){
 //     $(' #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input').after("<span class='checked'></span>");
      $("#pid-admin-settings-ciclo-bmecat-import .form-checkboxes .form-checkbox,#pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-installation-wrapper label.option input, #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import #edit-update-existing-components-wrapper label.option input").after("<span class='checked'></span>");
     /*attach*/
-    $("#edit-upload-wrapper label").click(function(){
-        $("#edit-upload").click();
-		return false;
-    })
-    /*$("#edit-upload").change(function(){
+	if ($.browser.mozilla) {
+		$("#edit-upload-wrapper label").click(function(){
+			$("#edit-upload").click();
+			return false;
+		})
+	}	
+    $("#edit-upload").change(function(){
         $("#ciclo-bmecat-import").submit();
-    })*/
+    });
     $("#quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails .pager-item ").live("click",function(event) {
 	event.preventDefault();
     });
