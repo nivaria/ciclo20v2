@@ -8940,6 +8940,9 @@ body.catalog-navigation #sidebar-first-wrapper{
 #edit-groups-wrapper.form-item{
     overflow:visible;
 }
+#pid-admin-user-user-create #user-register fieldset{
+    overflow:visible;
+}
 #edit_groups_chzn{
     width:auto !important;
 }
