@@ -26,9 +26,9 @@
     z-index: 9999999;
     cursor:pointer;
 }
-fieldset #edit-import{
+/*fieldset #edit-import{
     display: none;
-}
+}*/
 .views-exposed-form.collapsible.collapsed{
     margin-bottom: 20px;
 }
