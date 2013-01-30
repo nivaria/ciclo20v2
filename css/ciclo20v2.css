@@ -8946,6 +8946,43 @@ body.catalog-navigation #sidebar-first-wrapper{
 #edit_groups_chzn ul{
     padding:0;
 }
+#language_holder{
+    margin-left: 1em;
+    margin-top: 4px;
+}
+#language_holder ul{
+        margin: 0;
+    padding: 0;
+}
+#language_holder ul{
+        margin: 0;
+    padding: 0;
+}
+#language_holder ul li{
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    border-left: 1px solid #E9E9E9;
+    margin-left:1em;
+    padding-left:1em;
+}
+#language_holder ul li:first-child{
+    margin: 0;
+    padding: 0;
+    border:0 none;
+}
+#language_holder ul li a,
+#language_holder ul li a:hover,
+#language_holder ul li a:focus,
+#language_holder ul li a:visited{
+    color: #E9E9E9;
+    height: auto;
+    position: static;
+    text-transform: uppercase;
+    width: auto;
+    background-color:transparent;
+}
 @media only screen and (max-width: 1280px){
     #page{
         width:100%;
