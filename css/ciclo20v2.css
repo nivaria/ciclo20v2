@@ -8937,6 +8937,15 @@ body.catalog-navigation #sidebar-first-wrapper{
     letter-spacing: 1px;
     text-transform: capitalize;  
 }
+#edit-groups-wrapper.form-item{
+    overflow:visible;
+}
+#edit_groups_chzn{
+    width:auto !important;
+}
+#edit_groups_chzn ul{
+    padding:0;
+}
 @media only screen and (max-width: 1280px){
     #page{
         width:100%;
