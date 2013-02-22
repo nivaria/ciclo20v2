@@ -5459,9 +5459,9 @@ body.page-node    #content-inner-inner{
     background: url("../images/step_cart.png") no-repeat scroll top center transparent;
     padding-top: 50px
 }
-#pid-admin-settings-ciclo-bmecat-import #content-top #content-top-inner{
+/*#pid-admin-settings-ciclo-bmecat-import #content-top #content-top-inner{
     display: none;
-}
+}*/
 #pid-admin-settings-ciclo-bmecat-import #ciclo-bmecat-import fieldset {
     background: none repeat scroll 0 0 transparent;
     border: medium none;
