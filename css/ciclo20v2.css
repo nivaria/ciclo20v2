@@ -8747,6 +8747,18 @@ body.catalog-navigation #fullscreen a{
     top:127px;
     z-index:1000;
 }
+#exitfullscreen a{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    background-repeat:no-repeat;
+    background-image:url('../images/sprite.png');
+    background-position:0 -37px;
+    width:32px;
+    height:32px;
+    text-indent:-9999px;        
+    z-index:1000;
+}
 body.catalog-navigation #block-quicktabs-ciclo_model_catalogue{
     margin-top:1em;
 }
