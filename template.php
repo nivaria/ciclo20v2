@@ -350,7 +350,7 @@ drupal_add_js(path_to_theme() . '/scripts/openlayers_popup_fix.js', 'theme'); //
  *
  * @ingroup themeable
  */
-function ciclo20v2_node_form($form) {
+/*function ciclo20v2_node_form($form) {
   $output = "\n<div class=\"node-form\">\n";
 
   // Admin form fields and submit buttons must be rendered first, because
@@ -393,7 +393,7 @@ function ciclo20v2_node_form($form) {
   $output .= "</div>\n";
 
   return $output;
-}
+}*/
 
 function ciclo20v2_preprocess_mimemail_message(&$variables) {
   global $base_url;
