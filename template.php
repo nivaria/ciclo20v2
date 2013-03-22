@@ -6,7 +6,28 @@
  */
 function ciclo20v2_breadcrumb($breadcrumb) {
   if (!empty($breadcrumb)) {
-    $html .= '<div class="breadcrumb">'. implode(' &gt; ', $breadcrumb) .'</div>';
+    $html = '';  
+  
+    if(preg_match('/^og\/users\/\d+\/invite$/', $_GET[q])==1){
+        $node = node_load(arg(2));
+        if(!empty($node)){
+            $links = array();
+            $links[] = l(t('Home'), '<front>');
+            $links[] = l(t('Groups'), 'og');
+            $links[] = l($node->title,'node/'.$node->nid);
+            $links[] = l(t('List'),'og/users/'.$node->nid);
+
+            // Set custom breadcrumbs
+            drupal_set_breadcrumb($links);
+
+            // Get custom breadcrumbs
+            $breadcrumb = drupal_get_breadcrumb();
+        }
+    }
+    
+    if (count($breadcrumb) > 1) {
+        $html .= '<div class="breadcrumb">'. implode(' &gt; ', $breadcrumb) .'</div>';
+    }
     return $html;
   }
 }
