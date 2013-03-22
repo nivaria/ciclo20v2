@@ -201,4 +201,15 @@ $(document).ready(function(){
     $("#quicktabs-ciclo_model_catalogue .views_slideshow_pagerThumbnails .pager-item ").live("click",function(event) {
 	event.preventDefault();
     });
+    
+    //In group details hide links except flags, because we have here subscriptions block
+    if($("body.node-type-group #block-notifications_ui-0").length){
+        $("body.node-type-group .node.full-node .links > li").each(function(){
+            var cname = $(this).attr("class");
+            var arr = cname.split("_");
+            if(arr[0]==="notifications"){
+                $(this).remove();
+            }
+        });
+    }
 });
