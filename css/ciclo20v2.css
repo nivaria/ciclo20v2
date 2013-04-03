@@ -8746,9 +8746,9 @@ body.catalog-navigation #fullscreen a{
     top: 0px;
     background-repeat:no-repeat;
     background-image:url('../images/sprite.png');
-    background-position:0 -37px;
-    width:32px;
-    height:32px;
+    background-position:-158px -76px;
+    width:28px;
+    height:28px;
     text-indent:-9999px;        
     z-index:1000;
 }
