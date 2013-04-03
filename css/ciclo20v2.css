@@ -1353,36 +1353,21 @@ h1 + #content-tabs {
 .node-type-ciclo-model-machine .content-tabs,
 #content-inner-inner .content-tabs,
 body.node-type-ciclo-customer .nd-region-header .field-title h1{
-    /*.node-type-ciclo_model_machine .nd-region-header .field-title h1, 
-    .node-type-ciclo_installation .nd-region-header .field-title h1, 
-    .node-type-ciclo-customer .nd-region-header {*/
     display: none;
 }
-.node-type-faq-question .content-tabs/*,
-.node-type-manual  .content-tabs*/
-{
+body.page-user-2 #content-inner-inner .content-tabs{
+    display:block;
+}
+body.page-user-2 #content-inner-inner .content-tabs .tabs.primary{
+    display:none;
+}
+body.page-user-2 #content-inner-inner .content-tabs .tabs.secondary{
+    display:block;
+}
+.node-type-faq-question .content-tabs{
     display: block !important;
     margin-top: 20px !important
 }
-/* .node-type-ciclo-customer .nd-region-middle-wrapper {
-        float: left;
-    width: 50%;
-}
- .node-type-ciclo-customer .nd-region-middle-wrapper .nd-region-middle{
-    margin: 0;
-}
- .node-type-ciclo-customer .nd-region-middle-wrapper .nd-region-middle li{
-    background: none!important;
-    list-style: none;
-}
-.node-type-ciclo-customer .nd-region-left{
-        float: left;
-    width: 20%;
-}
- .node-type-ciclo-customer .nd-region-right{
-  float: left;
-    width: 30% !important;
-}*/
 .node-type-ciclo-customer .buildmode-full .nd-region-middle-wrapper {
     border-bottom: 1px dashed #E9E9E9;
     float: right;
@@ -1947,6 +1932,14 @@ table tr td.active {
 tr.drag td,
 tr.drag-previous td {
     color: #323232;
+}
+.view td.view-footer{
+    border: 0 none;
+    display: table-cell;
+    font-size: 12px;
+    padding: 7px 5px;
+    text-align: left;
+    background-color: #F7F7F7;
 }
 .book-navigation .menu {
     border-top: 1px solid #ccc;
@@ -9004,7 +8997,6 @@ body.catalog-navigation #sidebar-first-wrapper{
         width:100%;
     }
 }
-
 .nicegroups-fieldset, .nicegroups-fieldset .form-item{
     overflow: visible;
 }
