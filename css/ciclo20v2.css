@@ -5083,7 +5083,7 @@ body.page-node    .edit-content-link{
 }
 body.page-ogdetails .edit-content-link {
     position: absolute;
-    top: 0;
+    top: -54px;
     right:0;
 }
 .views-exposed-wrapper .views-exposed-widget.views-exposed-submit .form-submit,
