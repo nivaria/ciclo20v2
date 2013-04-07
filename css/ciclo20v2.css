@@ -602,6 +602,15 @@ Works well with inline login or inline menu block style */
 .om-maximenu ul.om-menu li.om-leaf {
     margin-right: 4px;
 }
+.om-maximenu-middle{
+    position:relative;
+}
+#om-maximenu-ciclo .om-maximenu-middle .block-views-id-ciclo_flag_bookmarks-block_1 {
+    position:absolute;
+    right:0;
+    top:0;
+    margin:0;
+}
 .om-maximenu ul.om-menu li .om-maximenu-content {
     border: 1px solid #EAEAEA;
     left: 1px;;
