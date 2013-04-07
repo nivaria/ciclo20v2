@@ -84,6 +84,12 @@ body.not-front .clean-right #content-region{
     clear:both;
     margin-top:-8px;
 }
+.views-field-title a {
+    color: #333333;
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: bold;
+}
 #content-group #block-views-ciclo_installations_og-block_1 h2.block-title{
     padding-left:16px;
     padding-right:16px;
@@ -354,6 +360,7 @@ blockquote p:last-child { margin-bottom: 0px;}
 }
 .content-content .view-header{
     margin-bottom:12px;
+    overflow:hidden;
 }
 #page .content-content .view-header a.add-content-link{    
     border-radius: 8px;
@@ -1809,10 +1816,10 @@ tr td.views-field-subscribe{
     padding: 0;
 }
 .view .view-content .views-row .views-field-picture{
-    height: 93px;
+    /*height: 93px;*/
     margin-right: 1em;
     overflow: hidden;
-    width: 93px;
+    /*width: 93px;*/
 }
 #sidebar-last-wrapper .view-content .views-row .views-field-picture {
     margin-right: 15px;
