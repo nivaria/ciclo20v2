@@ -152,10 +152,11 @@ body.not-front #content-group .block h2.block-title,
     background-color:#fff;
     filter:none;
 }
+/* TODO what for was this style needed? It breaks kmhome titles
 body.not-front #content-group .block h2.block-title{
     padding-left:0;
     padding-right:0;
-}
+}*/
 .section .block.ciclo20v2_highlight h2.block-title{
     color: #666;
     margin: 0;
