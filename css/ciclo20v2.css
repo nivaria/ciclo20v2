@@ -9017,24 +9017,24 @@ body.catalog-navigation #sidebar-first-wrapper{
     overflow: visible;
 }
 /* BEGIN modificar instalacion */
-body#pid-node-add-ciclo-main-modification-972 #pre-content{
+body.ciclo-main-modification #pre-content{
     min-height:56px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region {
+body.ciclo-main-modification #content-region {
     background-color: transparent;
     border-radius: 0;
     border:0 none;
     box-shadow: none;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #content-region-inner {
+body.ciclo-main-modification #content-region #content-region-inner {
     padding: 0;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #edit-block,
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #info-block,
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #tree-block,
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #component-block,
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #component-items,
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #container-buttons{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons{
     background-color: #FFFFFF;
     border-radius: 12px 12px 12px 12px;
     box-shadow: 2px 4px 4px #D6D6D6;
@@ -9042,54 +9042,54 @@ body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modifi
     width:auto;
     margin-bottom:0;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #edit-block{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block{
     float:left;
     width:640px;
     
     height:340px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #edit-block label{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block label{
     width:100px;
     text-align:right;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #edit-block #edit-field-ciclo-number-0-value{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block #edit-field-ciclo-number-0-value{
     width:466px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #edit-block #edit-field-ciclo-description-0-value{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block #edit-field-ciclo-description-0-value{
     width:474px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #edit-block #edit-field-ciclo-description-0-value-wrapper .grippie{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block #edit-field-ciclo-description-0-value-wrapper .grippie{
     margin-left: 112px;
     margin-right: 0 !important;
     width: 474px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #info-block{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block{
     float:right;
     width:240px;
     
     height:340px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #tree-block{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block{
     float: left;
     margin-top: 1em;
     width: 320px;
     
     height:560px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #component-block{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block{
     float: right;
     margin-top: 1em;
     width: 560px;
     
     height:560px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #component-items{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items{
     border-radius: 12px 12px 0 0;
     box-shadow: none;
     margin-top: 1em;
     width: 932px;
 }
-body#pid-node-add-ciclo-main-modification-972 #content-region #ciclo-main-modification-installation #container-buttons{
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons{
     border-radius: 0 0 12px 12px;
     width: 932px;
 }
