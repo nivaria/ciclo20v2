@@ -5445,12 +5445,11 @@ a.user-is-member:hover{
 #pid-admin-settings-ciclo-bmecat-import .content-inner-inner{
     padding: 15px;
 }
-body.node-type-faq-question .main .main-inner,
+/*body.node-type-faq-question .main .main-inner,
 .node-type-blog .main .main-inner,
-.node-type-manual .main .main-inner
-{
+.node-type-manual .main .main-inner{
     padding: 10px!important
-}
+}*/
 body.node-type-faq-question .main .main-inner .content-region #content-region-inner,
 .node-type-blog .main .main-inner .content-region #content-region-inner,
 .node-type-manual .main .main-inner .content-region #content-region-inner {
