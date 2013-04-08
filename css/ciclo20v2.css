@@ -9101,3 +9101,7 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     width: 932px;
 }
 /* END modificar instalacion */
+
+.node-form #edit-field-category-value-wrapper{
+    display: none;
+}
