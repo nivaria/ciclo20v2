@@ -9142,12 +9142,46 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     
     height:560px;
 }
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block #search-nivaria-navigation-tree {
+    width: 252px;
+    margin-top:2em;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block #search-nivaria-navigation-tree .form-submit{
+    margin-left:0;
+}
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block{
     float: right;
     margin-top: 1em;
     width: 560px;
     
     height:560px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #node-title{
+    margin-top:1em;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block label{
+    width:auto;
+    display:block;
+    float:none;
+    padding-bottom:0.5em;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #type-form{
+    float:left;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #state-form{
+    float:right;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #type-form select,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #state-form select{
+    width:268px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #buttons{
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #buttons #edit-add{
+    float:none;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items{
     border-radius: 12px 12px 0 0;
