@@ -8951,7 +8951,8 @@ body.catalog-navigation #sidebar-first-wrapper{
     position:relative;
 }
 #page #edit-preview-changes,
-#page #edit-preview{
+#page #edit-preview,
+#page #edit-draft{
         background-color: #F4F4F4;
     background-image: none;
     border: 1px solid #DCDCDC;
@@ -9157,7 +9158,11 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     height:560px;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #node-title{
-    margin-top:1em;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1em;
+    padding-bottom: 0.5em;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block label{
     width:auto;
@@ -9189,9 +9194,64 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     margin-top: 1em;
     width: 932px;
 }
+
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table th {
+    background-color: #F0F0F0;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    border:0 none;
+    padding:7px 5px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table tr.odd td{
+    background-color:#fff;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table tr.even td{
+    background-color:#f7f7f7;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table tr.odd td:first-child,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table tr.even td:first-child{
+    background-color:#e9e9e9;
+    font-weight:bold;
+    font-size:14px;
+    color:#333;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table td a{
+    font-weight:bold;
+    color:#000;
+    font-size:13px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items table td .form-submit{
+    background-image:url('../images/sprite.png');
+    background-color: transparent;
+    background-position: -22px -214px;
+    background-repeat: no-repeat;
+    border: 0 none;
+    display: block;
+    float: none;
+    height: 16px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    text-indent: -9999px;
+    width: 16px;
+}
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons{
     border-radius: 0 0 12px 12px;
     width: 932px;
+    position:relative;
+    text-align:center;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons:before{
+    border-top: 1px dashed #CCCCCC;
+    content: " ";
+    height: 1px;
+    left: 166px;
+    position: absolute;
+    top: 0;
+    width: 594px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons .form-submit{
+    float:none;
 }
 /* END modificar instalacion */
 
