@@ -9049,10 +9049,19 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     width:auto;
     margin-bottom:0;
 }
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block h2,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block h2,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block h2,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block h2,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-items h2,
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons h2{
+    padding-left:0;
+    padding-top:0;
+    padding-right:0;
+}
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block{
     float:left;
-    width:640px;
-    
+    width:640px;    
     height:340px;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #edit-block label{
@@ -9075,6 +9084,56 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     width:240px;
     
     height:340px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block img{
+    float:left;
+    margin-right:1em;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block label{
+    font-weight:bold;
+    width:auto;
+    display:inline-block;
+    float:none;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-field-ciclo-address-value label{
+    display:block;
+    padding-bottom:0.5em;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-field-ciclo-address-value span{
+    display:block;
+    padding-bottom: 4px;
+    padding-left: 55px;
+    position:relative;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-field-ciclo-address-value span:before{
+    background-image:url('../images/sprite.png');
+    background-repeat:no-repeat;
+    content: ' ';
+    position:absolute;
+    left:0;
+    top:4px;
+    width:44px;
+    height:38px;
+    background-position:0 -243px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-phpcode a{
+    display: block;
+    padding-bottom: 1em;
+    padding-left: 55px;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-phpcode a:before{
+    content:' > ';
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-field-ciclo-install-guarantee-iso8601 label{
+    background-image:url('../images/list_bullet.png');
+    background-position: 0 13px;
+    background-repeat: no-repeat;
+    display: block;
+    padding-left: 21px;
+    padding-top: 1em;
+}
+body.ciclo-main-modification #content-region #ciclo-main-modification-installation #info-block .views-field-field-ciclo-install-guarantee-iso8601 .field-content{
+    padding-left: 21px;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block{
     float: left;
