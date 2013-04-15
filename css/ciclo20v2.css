@@ -7023,7 +7023,14 @@ fieldset fieldset {
     border: 0;
 }
 
-.player3dvia { z-index: -1; }
+.player3dvia { 
+	z-index: -1; 
+	height: 450px;
+}
+
+body.ie-fullmode .player3dvia{
+  height: 700px;
+}
 
 #precontent fieldset {
     background-color: transparent;
