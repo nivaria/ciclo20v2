@@ -1,4 +1,5 @@
 <?php
+
 // $Id: template.php 8021 2010-10-19 13:01:34Z sheena $
 
 /**
@@ -6,27 +7,27 @@
  */
 function ciclo20v2_breadcrumb($breadcrumb) {
   if (!empty($breadcrumb)) {
-    $html = '';  
-  
-    if(preg_match('/^og\/users\/\d+\/invite$/', $_GET[q])==1){
-        $node = node_load(arg(2));
-        if(!empty($node)){
-            $links = array();
-            $links[] = l(t('Home'), '<front>');
-            $links[] = l(t('Groups'), 'og');
-            $links[] = l($node->title,'node/'.$node->nid);
-            $links[] = l(t('List'),'og/users/'.$node->nid);
+    $html = '';
 
-            // Set custom breadcrumbs
-            drupal_set_breadcrumb($links);
+    if (preg_match('/^og\/users\/\d+\/invite$/', $_GET[q]) == 1) {
+      $node = node_load(arg(2));
+      if (!empty($node)) {
+        $links = array();
+        $links[] = l(t('Home'), '<front>');
+        $links[] = l(t('Groups'), 'og');
+        $links[] = l($node->title, 'node/' . $node->nid);
+        $links[] = l(t('List'), 'og/users/' . $node->nid);
 
-            // Get custom breadcrumbs
-            $breadcrumb = drupal_get_breadcrumb();
-        }
+        // Set custom breadcrumbs
+        drupal_set_breadcrumb($links);
+
+        // Get custom breadcrumbs
+        $breadcrumb = drupal_get_breadcrumb();
+      }
     }
-    
+
     if (count($breadcrumb) > 1) {
-        $html .= '<div class="breadcrumb">'. implode(' &gt; ', $breadcrumb) .'</div>';
+      $html .= '<div class="breadcrumb">' . implode(' &gt; ', $breadcrumb) . '</div>';
     }
     return $html;
   }
@@ -35,14 +36,13 @@ function ciclo20v2_breadcrumb($breadcrumb) {
 /**
  * Page preprocessing
  */
-function ciclo20v2_preprocess_page(&$vars)
-{
-    if (($_GET['q'] != 'user') && (strpos($_GET['q'], 'sites') !== 0) && (strpos($_GET['q'], 'JQUERY') !== 0)){
-        if (user_is_anonymous()) {
-            unset($_REQUEST['destination']);
-            drupal_goto('user');
-        }
+function ciclo20v2_preprocess_page(&$vars) {
+  if (($_GET['q'] != 'user') && (strpos($_GET['q'], 'sites') !== 0) && (strpos($_GET['q'], 'JQUERY') !== 0)) {
+    if (user_is_anonymous()) {
+      unset($_REQUEST['destination']);
+      drupal_goto('user');
     }
+  }
   // Format the footer message
   // We do this here instead of in page.tpl.php because 
   // we need a formatted message to pass along to the
@@ -57,63 +57,86 @@ function ciclo20v2_preprocess_page(&$vars)
     $markup .= '</div><!-- /footer-message -->';
     $vars['footer_message'] = $markup;
   }
-  if(isset($vars['node']) && $vars['node']->type==='group'){
-      $vars['tabs'] = '';
-      if($vars['body_id']==='pid-node-'.$vars['node']->nid.'-edit'){
-          $vars['is_edit'] = TRUE;
-      } else {
-          $vars['is_edit'] = FALSE;
-      }
+  if (isset($vars['node']) && $vars['node']->type === 'group') {
+    $vars['tabs'] = '';
+    if ($vars['body_id'] === 'pid-node-' . $vars['node']->nid . '-edit') {
+      $vars['is_edit'] = TRUE;
+    } else {
+      $vars['is_edit'] = FALSE;
+    }
   }
-  
-  
+
+
   if (isset($vars['node'])) {
-   // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
-   $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
-  }  
-  
-  if(isset($vars['template_files'])){
-      foreach($vars['template_files'] as $tpl){
-          if(strpos($tpl,'page-user-')!==FALSE){
-              $arr = explode('-', $tpl);
-              if(count($arr)>2 && is_numeric($arr[2])){
-                  $cuid = intval($arr[2]);
-                  $cuser = user_load($cuid);
-                  if(empty($cuser->profile_name) || empty($cuser->profile_last_name)){
-                     profile_load_profile($cuser);
-                  }  
-                  if(!empty($cuser->profile_name) && !empty($cuser->profile_last_name)){
-                      $vars['title'] = $cuser->profile_name.' '.$cuser->profile_last_name;
-                  }
-                  break;
-              }
+    // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
+    $vars['template_files'][] = 'page-' . str_replace('_', '-', $vars['node']->type);
+  }
+
+  if (isset($vars['template_files'])) {
+    foreach ($vars['template_files'] as $tpl) {
+      if (strpos($tpl, 'page-user-') !== FALSE) {
+        $arr = explode('-', $tpl);
+        if (count($arr) > 2 && is_numeric($arr[2])) {
+          $cuid = intval($arr[2]);
+          $cuser = user_load($cuid);
+          if (empty($cuser->profile_name) || empty($cuser->profile_last_name)) {
+            profile_load_profile($cuser);
           }
+          if (!empty($cuser->profile_name) && !empty($cuser->profile_last_name)) {
+            $vars['title'] = $cuser->profile_name . ' ' . $cuser->profile_last_name;
+          }
+          break;
+        }
       }
+    }
   }
   // Include language switcher
   $block = module_invoke('locale', 'block', 'view', 0);
   $vars['language_switcher'] = $block['content'];
-  
-}
-/*function ciclo20v2_preprocess_page(&$variables) {
-  if ($variables['node']->type != "") {
-    $variables['template_files'][] = "page-node-" . $variables['node']->type;
-  }
-}*/
-/*function ciclo20v2_preprocess_page(&$vars, $hook) {
-  if (isset($vars['node'])) {
-   // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
-   $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
-  }
-}*/
 
+
+  // Add a class of "CONTENT-TYPE-node-form" to the <body> tag of each node form.
+  // Identify the page as a node form.
+  if ((arg(0) == 'node' && arg(1) == 'add') ||
+          (arg(0) == 'node' && is_numeric(arg(1)) && arg(2) == 'edit')) {
+
+    // Retrieve the node type for...
+    // The node creation form
+    if (arg(0) == 'node' && arg(1) == 'add') {
+      $node_type = arg(2);
+      // The node edit form
+    } else {
+      $node_type = $vars['node']->type;
+    }
+
+    // Store the current body_classes in an array.
+    $body_classes = explode(' ', $vars['body_classes']);
+    // Add "content-type-node-form to the array.
+    $body_classes[] = $node_type . '-node-form';
+    $body_classes[] = 'node-edit';
+    // Turn the array back into a string and place it back in the correct key of the $vars array.
+    $vars['body_classes'] = implode(' ', $body_classes);
+  }
+}
+
+/* function ciclo20v2_preprocess_page(&$variables) {
+  if ($variables['node']->type != "") {
+  $variables['template_files'][] = "page-node-" . $variables['node']->type;
+  }
+  } */
+/* function ciclo20v2_preprocess_page(&$vars, $hook) {
+  if (isset($vars['node'])) {
+  // If the node type is "blog" the template suggestion will be "page-blog.tpl.php".
+  $vars['template_files'][] = 'page-'. str_replace('_', '-', $vars['node']->type);
+  }
+  } */
 
 /**
  * Profile preprocessing
  */
 function ciclo20v2_preprocess_user_profile_item(&$vars) {
   // Separate userpoints value from the edit links
-  if ($vars['title'] == 'Points') { 
+  if ($vars['title'] == 'Points') {
     $userpoints = explode(' - ', $vars['value']);
     $vars['value'] = '<span class="points">' . $userpoints[0] . '</span><span class="edit-links">' . $userpoints[1] . '</span>';
     unset($vars['title']);
@@ -123,19 +146,19 @@ function ciclo20v2_preprocess_user_profile_item(&$vars) {
 /**
  * Implementation of theme_shoutbox_post()
  */
-function ciclo20v2_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE) {
+function ciclo20v2_shoutbox_post($shout, $links = array(), $alter_row_color = TRUE) {
   global $user;
-  
+
   // Gather moderation links
   if ($links) {
     foreach ($links as $link) {
       $linkattributes = $link['linkattributes'];
-      $link_html = '<img src="'. $link['img'] .'"  width="'. $link['img_width'] .'" height="'. $link['img_height'] .'" alt="'. $link['title'] .'" class="shoutbox-imglink"/>';
-      $link_url = 'shout/'. $shout->shout_id .'/'. $link['action'];
+      $link_html = '<img src="' . $link['img'] . '"  width="' . $link['img_width'] . '" height="' . $link['img_height'] . '" alt="' . $link['title'] . '" class="shoutbox-imglink"/>';
+      $link_url = 'shout/' . $shout->shout_id . '/' . $link['action'];
       $img_links = l($link_html, $link_url, array('html' => TRUE, 'query' => array('destination' => drupal_get_path_alias($_GET['q'])))) . $img_links;
     }
   }
-  
+
   // Generate user name with link
   $user_name = shoutbox_get_user_link($shout);
 
@@ -151,32 +174,31 @@ function ciclo20v2_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE
     $shout_classes[] = 'shoutbox-unpublished';
     $approval_message = '&nbsp;(' . t('This shout is waiting for approval by a moderator.') . ')';
   }
-  
+
   // Check for specific user class
   $user_classes = array();
   $user_classes[] = 'shoutbox-user-name';
   if ($shout->uid == $user->uid) {
     $user_classes[] = 'shoutbox-current-user-name';
+  } else if ($shout->uid == 0) {
+    $user_classes[] = 'shoutbox-anonymous-user';
   }
-  else if ($shout->uid == 0) {
-    $user_classes[] = 'shoutbox-anonymous-user';  
-  }
-  
+
   // Load user image and format
-  $author_picture ='';
-  $shout_author =  user_load($shout->uid);
+  $author_picture = '';
+  $shout_author = user_load($shout->uid);
   if (!$shout_author->picture && variable_get('user_picture_default', '')) {
     $shout_author->picture = variable_get('user_picture_default', '');
   }
   if ($shout_author->picture) {
     $author_picture = theme_imagecache('user_picture_meta', $shout_author->picture, $shout_author->name, $shout_author->name);
   }
-  
+
   // Time format
   $format = variable_get('shoutbox_time_format', 'ago');
   switch ($format) {
     case 'ago';
-      $submitted =  t('!interval ago', array('!interval' => format_interval(time() - $shout->created)));
+      $submitted = t('!interval ago', array('!interval' => format_interval(time() - $shout->created)));
       break;
     case 'small':
     case 'medium':
@@ -184,13 +206,13 @@ function ciclo20v2_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE
       $submitted = format_date($shout->created, $format);
       break;
   }
-   
+
   // Build the post
   $post = '';
   $post .= '<div class="' . implode(' ', $shout_classes) . '" title="' . $title . '">';
   $post .= '<div class="shoutbox-admin-links">' . $img_links . '</div>';
   $post .= '<div class="shoutbox-post-info">' . $author_picture;
-  $post .= '<span class="shoutbox-user-name ' . implode(' ', $user_classes) . '">'. $user_name . '</span>';
+  $post .= '<span class="shoutbox-user-name ' . implode(' ', $user_classes) . '">' . $user_name . '</span>';
   $post .= '<span class="shoutbox-msg-time">' . $submitted . '</span>';
   $post .= '</div>';
   $post .= '<div class="shout-message">' . $shout->shout . $approval_message . '</div>';
@@ -202,64 +224,60 @@ function ciclo20v2_shoutbox_post($shout, $links = array(), $alter_row_color=TRUE
 function ciclo20v2_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
   $output = '<div class="item-list">';
   if (isset($title)) {
-    $output .= '<h3>'. $title .'</h3>';
+    $output .= '<h3>' . $title . '</h3>';
   }
 
   if (!empty($items)) {
-    $output .= "<$type". drupal_attributes($attributes) .'>';
+    $output .= "<$type" . drupal_attributes($attributes) . '>';
     $num_items = count($items);
     $c = $num_items;
     foreach ($items as $i => $item) {
-    $c--;
+      $c--;
       $attributes = array();
       $children = array();
       if (is_array($item)) {
         foreach ($item as $key => $value) {
           if ($key == 'data') {
             $data = $value;
-          }
-          elseif ($key == 'children') {
+          } elseif ($key == 'children') {
             $children = $value;
-          }
-          else {
+          } else {
             $attributes[$key] = $value;
           }
         }
+      } else {
+        $data = $item;
       }
-      else {
-         $data = $item;
-      }
-      
+
       if (!is_numeric($i)) {
         if (count($children) > 0) {
           $data .= theme_item_list($children, NULL, $type, $attributes); // Render nested list
         }
         if ($c == $num_items - 1) {
-          $attributes['class'] = empty($attributes['class']) ? 'first' : ($attributes['class'] .' first');
+          $attributes['class'] = empty($attributes['class']) ? 'first' : ($attributes['class'] . ' first');
         }
         if ($c == 0) {
-          $attributes['class'] = empty($attributes['class']) ? 'last' : ($attributes['class'] .' last');
+          $attributes['class'] = empty($attributes['class']) ? 'last' : ($attributes['class'] . ' last');
         }
-        
+
         $attributes['class'] .= ' ' . ($c % 2 ? 'even' : 'odd');
-        $output .= '<li'. drupal_attributes($attributes) .'>'. $data ."</li>\n";
-      } 
-      else {
+        $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
+      } else {
         if (count($children) > 0) {
           $data .= theme_item_list($children, NULL, $type, $attributes); // Render nested list
         }
         if ($i == 0) {
-          $attributes['class'] = empty($attributes['class']) ? 'first' : ($attributes['class'] .' first');
+          $attributes['class'] = empty($attributes['class']) ? 'first' : ($attributes['class'] . ' first');
         }
         if ($i == $num_items - 1) {
-          $attributes['class'] = empty($attributes['class']) ? 'last' : ($attributes['class'] .' last');
+          $attributes['class'] = empty($attributes['class']) ? 'last' : ($attributes['class'] . ' last');
         }
-        
+
         $attributes['class'] .= ' ' . ($i % 2 ? 'even' : 'odd');
-        $output .= '<li'. drupal_attributes($attributes) .'>'. $data ."</li>\n";
+        $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
       }
     }
-    
+
     $output .= "<$type>";
   }
   $output .= '</div>';
@@ -267,21 +285,21 @@ function ciclo20v2_item_list($items = array(), $title = NULL, $type = 'ul', $att
 }
 
 function ciclo20v2_preprocess_block($variables) {
-  $variables['template_files'][] = 'block-'.$variables['block']->region.'-'.$variables['block']->module;
-  $variables['template_files'][] = 'block-'.$variables['block']->region.'-'.$variables['block']->module.'-'.$variables['block']->delta;
+  $variables['template_files'][] = 'block-' . $variables['block']->region . '-' . $variables['block']->module;
+  $variables['template_files'][] = 'block-' . $variables['block']->region . '-' . $variables['block']->module . '-' . $variables['block']->delta;
 }
 
 function ciclo20v2_search_theme_form($form) {
-	$form['search_theme_form']['#value']= t('Search...');
-	$form['submit']['#type'] = 'image_button';
-	$form['submit']['#src'] = drupal_get_path('theme', 'ciclo20') . '/images/search_icon.png';
-	$form['submit']['#attributes']['class'] = 'btn';
-	return '<div id="search" class="container-inline">' . drupal_render($form) . '</div>';
+  $form['search_theme_form']['#value'] = t('Search...');
+  $form['submit']['#type'] = 'image_button';
+  $form['submit']['#src'] = drupal_get_path('theme', 'ciclo20') . '/images/search_icon.png';
+  $form['submit']['#attributes']['class'] = 'btn';
+  return '<div id="search" class="container-inline">' . drupal_render($form) . '</div>';
 }
 
 function ciclo20v2_commons_core_info_block() {
   $content = '';
-  
+
   $content .= '<div id="acquia-footer-message">';
 
   $content .= '<a href="http://acquia.com/drupalcommons" title="' . t('Commons social business software') . '">';
@@ -292,7 +310,7 @@ function ciclo20v2_commons_core_info_block() {
   $content .= l(t('Acquia'), 'http://acquia.com', array('attributes' => array('title' => t('Acquia'))));
   $content .= '</span>';
   $content .= '</div>';
-  
+
   $content .= '<div id="fusion-footer-message">';
   $content .= t('Theme by') . '&nbsp;';
   $content .= '<a href="http://www.brightlemon.com" title="' . t('Drupal Themes by BrightLemon') . '">' . t('BrightLemon') . '</a>';
@@ -307,7 +325,7 @@ function ciclo20v2_commons_core_info_block() {
 function ciclo20v2_taxonomy_term_page($tids, $result) {
   $str_tids = arg(2);
   $terms = taxonomy_terms_parse_string($str_tids);
-  $title_result = db_query(db_rewrite_sql('SELECT t.tid, t.name FROM {term_data} t WHERE t.tid IN ('. db_placeholders($terms['tids']) .')', 't', 'tid'), $terms['tids']);
+  $title_result = db_query(db_rewrite_sql('SELECT t.tid, t.name FROM {term_data} t WHERE t.tid IN (' . db_placeholders($terms['tids']) . ')', 't', 'tid'), $terms['tids']);
   $title_tids = array(); // we rebuild the $tids-array so it only contains terms the user has access to.
   $names = array();
   while ($term = db_fetch_object($title_result)) {
@@ -316,15 +334,15 @@ function ciclo20v2_taxonomy_term_page($tids, $result) {
   }
   $last_name = array_pop($names);
   if (count($names) == 0) {
-    $title = t("Pages containing '@tag'", array('@tag' => $last_name));    
+    $title = t("Pages containing '@tag'", array('@tag' => $last_name));
   } elseif ($terms['operator'] == "or") {
-      $title = t("Pages containing '@tags or @last_tag'", array('@tags' => implode(", ", $names), '@last_tag' => $last_name));
+    $title = t("Pages containing '@tags or @last_tag'", array('@tags' => implode(", ", $names), '@last_tag' => $last_name));
   } else {
-      $title = t("Pages containing '@tags and @last_tag'", array('@tags' => implode(", ", $names), '@last_tag' => $last_name));
+    $title = t("Pages containing '@tags and @last_tag'", array('@tags' => implode(", ", $names), '@last_tag' => $last_name));
   }
   drupal_set_title($title);
 
-  drupal_add_css(drupal_get_path('module', 'taxonomy') .'/taxonomy.css');
+  drupal_add_css(drupal_get_path('module', 'taxonomy') . '/taxonomy.css');
 
   $output = '';
 
@@ -355,9 +373,8 @@ function ciclo20v2_taxonomy_render_nodes($result) {
   }
   if ($has_rows) {
     $output .= theme('pager', NULL, variable_get('default_nodes_main', 10), 0);
-  }
-  else {
-    $output .= '<p>'. t('There are currently no posts in this category.') .'</p>';
+  } else {
+    $output .= '<p>' . t('There are currently no posts in this category.') . '</p>';
   }
   return $output;
 }
@@ -371,7 +388,7 @@ drupal_add_js(path_to_theme() . '/scripts/openlayers_popup_fix.js', 'theme'); //
  *
  * @ingroup themeable
  */
-/*function ciclo20v2_node_form($form) {
+/* function ciclo20v2_node_form($form) {
   $output = "\n<div class=\"node-form\">\n";
 
   // Admin form fields and submit buttons must be rendered first, because
@@ -379,66 +396,64 @@ drupal_add_js(path_to_theme() . '/scripts/openlayers_popup_fix.js', 'theme'); //
   // the catch-all call to drupal_render().
   $admin = '';
   if (isset($form['author'])) {
-    $admin .= "    <div class=\"authored\">\n";
-    $admin .= drupal_render($form['author']);
-    $admin .= "    </div>\n";
+  $admin .= "    <div class=\"authored\">\n";
+  $admin .= drupal_render($form['author']);
+  $admin .= "    </div>\n";
   }
   if (isset($form['options'])) {
-    $admin .= "    <div class=\"options\">\n";
-    $admin .= drupal_render($form['options']);
-    $admin .= "    </div>\n";
+  $admin .= "    <div class=\"options\">\n";
+  $admin .= drupal_render($form['options']);
+  $admin .= "    </div>\n";
   }
   $buttons = drupal_render($form['buttons']);
 
   // Everything else gets rendered here, and is displayed before the admin form
   // field and the submit buttons.
-  
+
   $form['group_relations']['#access'] = FALSE;
   $output .= "  <div class=\"standard\">\n";
   $output .= drupal_render($form);
   $output .= "  </div>\n";
 
-  
+
   $form['group_relations']['#access'] = TRUE;
   $output .= "  <div class=\"relations\">\n";
   $output .= drupal_render($form['group_relations']);
   $output .= "  </div>\n";
-  
-  
+
+
   if (!empty($admin)) {
-    $output .= "  <div class=\"admin\">\n";
-    $output .= $admin;
-    $output .= "  </div>\n";
+  $output .= "  <div class=\"admin\">\n";
+  $output .= $admin;
+  $output .= "  </div>\n";
   }
   $output .= $buttons;
   $output .= "</div>\n";
 
   return $output;
-}*/
+  } */
 
 function ciclo20v2_preprocess_mimemail_message(&$variables) {
   global $base_url;
   $variables['logo'] = $base_url . theme_get_setting('logo');
   $variables['front_page'] = url();
 }
+
 function ciclo20v2_username($user, $link = TRUE) {
   if ($user->uid && function_exists('profile_load_profile')) {
     profile_load_profile($user);
   }
   if (isset($user->profile_name)) {
     $name = $user->profile_name . ' ' . $user->profile_last_name;
-  }
-  else if (isset($user->name)) {
+  } else if (isset($user->name)) {
     $name = $user->name;
-  }
-  else {
+  } else {
     $name = variable_get('anonymous', 'Anonymous');
     $link = FALSE;
   }
   if ($link && user_access('access user profiles')) {
     return l($name, 'user/' . $user->uid, array('title' => t('View user profile.')));
-  }
-  else {
+  } else {
     return check_plain($name);
   }
 }
@@ -480,7 +495,6 @@ function ciclo20v2_pager($tags = array(), $limit = 10, $element = 0, $parameters
   // max is the maximum page number
   $pager_max = $pager_total[$element];
   // End of marker calculations.
-
   // Prepare for generation loop.
   $i = $pager_first;
   if ($pager_last > $pager_max) {
@@ -503,14 +517,14 @@ function ciclo20v2_pager($tags = array(), $limit = 10, $element = 0, $parameters
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
-        'class' => 'pager-first',
-        'data' => $li_first,
+          'class' => 'pager-first',
+          'data' => $li_first,
       );
     }
     if ($li_previous) {
       $items[] = array(
-        'class' => 'pager-previous',
-        'data' => $li_previous,
+          'class' => 'pager-previous',
+          'data' => $li_previous,
       );
     }
 
@@ -518,8 +532,8 @@ function ciclo20v2_pager($tags = array(), $limit = 10, $element = 0, $parameters
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => 'pager-ellipsis',
-          'data' => '…',
+            'class' => 'pager-ellipsis',
+            'data' => '…',
         );
       }
       $first = TRUE;
@@ -527,31 +541,31 @@ function ciclo20v2_pager($tags = array(), $limit = 10, $element = 0, $parameters
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
           $items[] = array(
-            'class' => 'pager-item pager-number',
-            'data' => theme('pager_previous', $i, $limit, $element, ($pager_current - $i), $parameters),
+              'class' => 'pager-item pager-number',
+              'data' => theme('pager_previous', $i, $limit, $element, ($pager_current - $i), $parameters),
           );
         }
         if ($i == $pager_current) {
           $items[] = array(
-            'class' => 'pager-current pager-number',
-            'data' => $i,
+              'class' => 'pager-current pager-number',
+              'data' => $i,
           );
         }
         if ($i > $pager_current) {
-          $items[] = array( 
-            'class' => 'pager-item pager-number',
-            'data' => theme('pager_next', $i, $limit, $element, ($i - $pager_current), $parameters),
+          $items[] = array(
+              'class' => 'pager-item pager-number',
+              'data' => theme('pager_next', $i, $limit, $element, ($i - $pager_current), $parameters),
           );
         }
         if ($first) {
           $items[sizeof($items) - 1]['class'] .= ' pager-number-first';
-	  $first = FALSE;
+          $first = FALSE;
         }
       }
       if ($i < $pager_max) {
         $items[] = array(
-          'class' => 'pager-ellipsis',
-          'data' => '…',
+            'class' => 'pager-ellipsis',
+            'data' => '…',
         );
       }
     }
@@ -559,14 +573,14 @@ function ciclo20v2_pager($tags = array(), $limit = 10, $element = 0, $parameters
     // End generation.
     if ($li_next) {
       $items[] = array(
-        'class' => 'pager-next',
-        'data' => $li_next,
+          'class' => 'pager-next',
+          'data' => $li_next,
       );
     }
     if ($li_last) {
       $items[] = array(
-        'class' => 'pager-last',
-        'data' => $li_last,
+          'class' => 'pager-last',
+          'data' => $li_last,
       );
     }
     return theme('item_list', $items, NULL, 'ul', array('class' => 'pager'));
@@ -604,8 +618,8 @@ function ciclo20v2_select_as_links($element) {
 
 
   $properties = array(
-    '#title' => $element['#title'],
-    '#description' => $element['#description'],
+      '#title' => $element['#title'],
+      '#description' => $element['#description'],
   );
 
   $inline_js = '$().ready(function() {
@@ -618,11 +632,11 @@ function ciclo20v2_select_as_links($element) {
   drupal_add_js($inline_js, 'inline');
   $output = '<ul>' . $output . '</ul>';
   return '<div class="bef-select-as-links-special">'
-      . '<div class="bef-select-container">'
-      . '<div class="filter-search"></div>'
-      . '<span class="link-list-title">' . $element['#filter_title'] . '</span>'
-      . theme('form_element', $properties, $output)
-      . '</div></div>';
+          . '<div class="bef-select-container">'
+          . '<div class="filter-search"></div>'
+          . '<span class="link-list-title">' . $element['#filter_title'] . '</span>'
+          . theme('form_element', $properties, $output)
+          . '</div></div>';
 }
 
 function ciclo20v2_preprocess_node(&$variables) {
@@ -654,12 +668,12 @@ function ciclo20v2_preprocess_node(&$variables) {
 function ciclo20v2_image($path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
   if (!$getsize || (is_file($path) && (list($width, $height, $type, $image_attributes) = @getimagesize($path)))) {
     $attributes = drupal_attributes($attributes);
-    if (variable_get('file_downloads', FILE_DOWNLOADS_PUBLIC) == FILE_DOWNLOADS_PRIVATE){
+    if (variable_get('file_downloads', FILE_DOWNLOADS_PUBLIC) == FILE_DOWNLOADS_PRIVATE) {
       $url = (url($path) == $path) ? $path : (file_create_url($path));
     } else {
       $url = (url($path) == $path) ? $path : (base_path() . $path);
     }
-    return '<img src="'. check_url($url) .'" alt="'. check_plain($alt) .'" title="'. check_plain($title) .'" '. (isset($image_attributes) ? $image_attributes : '') . $attributes .' />';
+    return '<img src="' . check_url($url) . '" alt="' . check_plain($alt) . '" title="' . check_plain($title) . '" ' . (isset($image_attributes) ? $image_attributes : '') . $attributes . ' />';
   }
 }
 
@@ -671,42 +685,42 @@ function ciclo20v2_quicktabs_tabs($quicktabs, $active_tab = 'none') {
   }
 
   $index = 1;
-  $output .= '<ul class="quicktabs_tabs quicktabs-style-'. drupal_strtolower($quicktabs['style']) .'">';
+  $output .= '<ul class="quicktabs_tabs quicktabs-style-' . drupal_strtolower($quicktabs['style']) . '">';
   foreach ($quicktabs['tabs'] as $tabkey => $tab) {
-    if(!empty($tab)) {
-      $class = 'qtab-'. $tabkey;
+    if (!empty($tab)) {
+      $class = 'qtab-' . $tabkey;
       // Add first, last and active classes to the list of tabs to help out themers.
       $class .= ($tabkey == $active_tab ? ' active' : '');
       $class .= ($index == 1 ? ' first' : '');
-      $class .= ($index == $tabs_count ? ' last': '');
+      $class .= ($index == $tabs_count ? ' last' : '');
       $attributes_li = drupal_attributes(array('class' => $class));
       $options = _quicktabs_construct_link_options($quicktabs, $tabkey);
       // Support for translatable tab titles with i18nstrings.module.
       if (module_exists('i18nstrings')) {
         $tab['title'] = tt("quicktabs:tab:{$quicktabs['machine_name']}--$tabkey:title", $tab['title']);
       }
-      $output .= '<li'. $attributes_li .'>'. l($tab['title'], $_GET['q'], $options) .'</li>';
+      $output .= '<li' . $attributes_li . '>' . l($tab['title'], $_GET['q'], $options) . '</li>';
       $index++;
     }
   }
   $output .= '</ul>';
-  
+
   return $output;
 }
 
 function ciclo20v2_quicktabs($quicktabs) {
-  $output = quicktabs_render($quicktabs);  
-  $output = substr($output, 0, strlen($output)-6);
+  $output = quicktabs_render($quicktabs);
+  $output = substr($output, 0, strlen($output) - 6);
   //Adding additional div for show/hide quicktabs area
-  $output .= '<div class="quicktabs-switcher" style="display:none;">'.l(t('hide'),'',array(
-      'attributes' => array(
-          'title' => t('hide'),
-          'class' => 'quicktabs-switcher-link',
-      ),
-      'fragment' => ' ',
-      'external' => TRUE,
-  )).'</div></div>';
-  
-  
+  $output .= '<div class="quicktabs-switcher" style="display:none;">' . l(t('hide'), '', array(
+              'attributes' => array(
+                  'title' => t('hide'),
+                  'class' => 'quicktabs-switcher-link',
+              ),
+              'fragment' => ' ',
+              'external' => TRUE,
+          )) . '</div></div>';
+
+
   return $output;
 }
