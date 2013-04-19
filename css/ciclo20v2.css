@@ -1383,10 +1383,10 @@ body.node-edit #content-inner-inner .content-tabs{
   display: block!important;
 }
 
-body.page-user-2 #content-inner-inner .content-tabs{
+body.page-user #content-inner-inner .content-tabs{
     display:block;
 }
-body.page-user-2 #content-inner-inner .content-tabs .tabs.primary{
+body.page-user #content-inner-inner .content-tabs .tabs.primary{
     display:none;
 }
 body.page-user-2 #content-inner-inner .content-tabs .tabs.secondary{
