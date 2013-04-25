@@ -9151,7 +9151,7 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     height:560px;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block #search-nivaria-navigation-tree {
-    width: 252px;
+    /*width: 252px;*/
     margin-top:2em;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block #search-nivaria-navigation-tree .form-submit{
