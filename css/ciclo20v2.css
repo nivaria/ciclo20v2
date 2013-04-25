@@ -9262,3 +9262,65 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
 .node-form #edit-field-category-value-wrapper{
     display: none;
 }
+/**
+ * li.last is the table view
+ * li.first is the page view
+ */
+.block div.view div.views-admin-links {
+    margin-right: 8em;
+}
+#page .viewsdisplaytabs-group-wrapper{
+    float: right;
+    margin: 0;
+}
+#page .viewsdisplaytabs-group-wrapper ul{
+    padding:0;
+    border: 0 none;
+    margin: 0;
+}
+#page .viewsdisplaytabs-tab-group li{
+    background-image: none;
+    border: 0 none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#page .viewsdisplaytabs-tab-group li span.views-throbbing{
+    display:none;
+}
+#page .viewsdisplaytabs-tab-group li a{
+    background-color: transparent;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+    border: 0 none;
+    display: block;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 18px;
+    margin-left:1em;
+    border-radius:0;
+}
+#page .viewsdisplaytabs-tab-group li.last a{
+    width:22px;
+    
+    background-position:-56px -241px;
+}
+#page .viewsdisplaytabs-tab-group li.first a{
+    background-position:-82px -215px;
+}
+#page .viewsdisplaytabs-tab-group li.last a:hover,
+#page .viewsdisplaytabs-tab-group li.last a.viewsdisplaytabs-active{
+    background-position:-56px -215px;    
+}
+#page .viewsdisplaytabs-tab-group li.first a:hover,
+#page .viewsdisplaytabs-tab-group li.first a.viewsdisplaytabs-active{
+    background-position:-82px -241px;
+}
+#page table.views-table .views-field-title a{
+    color:#0099FF;
+    font-weight:normal;
+    font-family:arial;
+    font-size:100%;
+}
