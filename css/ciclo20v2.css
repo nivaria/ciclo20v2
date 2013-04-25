@@ -217,6 +217,9 @@ body.not-front #content-group .block h2.block-title{
 #block-ciclo_manual-info_faqs .content{
     border-radius:12px;
 }
+#block-ciclo_task-0 {
+    display: none;
+}
 
 /* end blocks */
 #block-og-0 .content{
