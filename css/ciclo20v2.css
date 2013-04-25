@@ -9149,6 +9149,7 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     width: 320px;
     
     height:560px;
+    overflow:scroll;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #tree-block #search-nivaria-navigation-tree {
     /*width: 252px;*/
