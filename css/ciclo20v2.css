@@ -1372,10 +1372,14 @@ h1 + #content-tabs {
 body.node-type-ciclo-customer .nd-region-header .field-title h1{
     display: none;
 }
-body.page-user-2 #content-inner-inner .content-tabs{
+body.node-edit #content-inner-inner .content-tabs{
+  display: block!important;
+}
+
+body.page-user #content-inner-inner .content-tabs{
     display:block;
 }
-body.page-user-2 #content-inner-inner .content-tabs .tabs.primary{
+body.page-user #content-inner-inner .content-tabs .tabs.primary{
     display:none;
 }
 body.page-user-2 #content-inner-inner .content-tabs .tabs.secondary{
@@ -7016,7 +7020,14 @@ fieldset fieldset {
     border: 0;
 }
 
-.player3dvia { z-index: -1; }
+.player3dvia { 
+	z-index: -1; 
+	height: 450px;
+}
+
+body.ie-fullmode .player3dvia{
+  height: 700px;
+}
 
 #precontent fieldset {
     background-color: transparent;
