@@ -9305,18 +9305,18 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
 #page .viewsdisplaytabs-tab-group li.last a{
     width:22px;
     
-    background-position:-56px -241px;
+    background-position:-56px -215px;
 }
 #page .viewsdisplaytabs-tab-group li.first a{
-    background-position:-82px -215px;
+    background-position:-82px -241px;
 }
 #page .viewsdisplaytabs-tab-group li.last a:hover,
 #page .viewsdisplaytabs-tab-group li.last a.viewsdisplaytabs-active{
-    background-position:-56px -215px;    
+    background-position:-56px -241px;
 }
 #page .viewsdisplaytabs-tab-group li.first a:hover,
 #page .viewsdisplaytabs-tab-group li.first a.viewsdisplaytabs-active{
-    background-position:-82px -241px;
+    background-position:-82px -215px;
 }
 #page table.views-table .views-field-title a{
     color:#0099FF;
