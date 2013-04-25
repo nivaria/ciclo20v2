@@ -1288,13 +1288,6 @@ h1 + #content-tabs {
     border-style: none;
     display: inline;
     float: left;
-
-
-    /* 
-    
-    L
-    
-    TR */
     font-size: .9em;
     font-weight: normal;
     list-style: none;
