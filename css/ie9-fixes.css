@@ -7,3 +7,6 @@
 #sidebar-last-wrapper { float:right !important; }
 
 #sidebar-last { clear: none; }
+#sidebar-last .item-list ul.pager{
+    filter:none;
+}
