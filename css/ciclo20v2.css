@@ -9007,6 +9007,7 @@ body.catalog-navigation #sidebar-first-wrapper{
     border: 1px solid #DCDCDC;
     border-radius: 8px 8px 8px 8px;
     color: #666666;
+    filter:none;
 }
 #page #edit-delete{
       background-color: transparent;
@@ -9222,9 +9223,11 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #type-form{
     float:left;
+    width:48%;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #state-form{
     float:right;
+    width:48%;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #type-form select,
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #component-block #state-form select{
@@ -9284,6 +9287,7 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     padding: 0;
     text-indent: -9999px;
     width: 16px;
+    filter:none;
 }
 body.ciclo-main-modification #content-region #ciclo-main-modification-installation #container-buttons{
     border-radius: 0 0 12px 12px;
