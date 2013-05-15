@@ -76,6 +76,8 @@ skinr[ciclo20v2_blocks][options][4][label] = Icono gear
 skinr[ciclo20v2_blocks][options][4][class] = ciclo20v2_gear_icon
 skinr[ciclo20v2_blocks][options][5][label] = Bloque título gris
 skinr[ciclo20v2_blocks][options][5][class] = ciclo20v2_grey_title
+skinr[ciclo20v2_blocks][options][6][label] = Bloque notifications
+skinr[ciclo20v2_blocks][options][6][class] = ciclo20v2_notifications
 
 ; Information added by drupal.org packaging script on 2012-01-18
 version = "6.x-2.4"
