@@ -217,9 +217,7 @@ body.not-front #content-group .block h2.block-title{
 #block-ciclo_manual-info_faqs .content{
     border-radius:12px;
 }
-#block-ciclo_task-0 {
-    display: none;
-}
+
 
 /* end blocks */
 #block-og-0 .content{
@@ -7190,19 +7188,23 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
 .block-ciclo_notifications h2.block-title {
     display: none;
 }
-#precontent .block-ciclo_notifications{
+#block-ciclo_notifications-3{
+    /*margin-right: 178px !important;*/
+    margin-right: 84px !important;
+}
+.ciclo20v2_notifications{
     width: 100px;
     float: right;
-    margin-right: 178px !important;
 }
 .block-nivaria_ubercart {
     float: right;
     width: 100px;
     display: block;
     margin-bottom: 10px !important;
-    margin-right: -200px !important;
+    margin-right: -300px !important;
 }
-.block-ciclo_notifications .messages_block_number{
+.ciclo20v2_notifications .tasks_block_number,
+.ciclo20v2_notifications .messages_block_number{
     background-image: url("../images/message.png");
     background-position: right center;
     background-repeat: no-repeat;
@@ -7215,8 +7217,7 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
     padding-right: 17px;
     width: 47px;  
 }
-.block-nivaria_ubercart a,
-.block-ciclo_notifications a{
+.ciclo20v2_notifications a{
     background-color: #A7A7A7;
     border-radius: 4px 4px 4px 4px;
     color: #FFFFFF;
@@ -7238,21 +7239,22 @@ fieldset#cart-pane legend { margin-bottom: 10px; }
     background-repeat: no-repeat;
 
 }
-.block-nivaria_ubercart .cart_block_summary_text ,
-.block-ciclo_notifications  .messages_block_summary_text{
+.ciclo20v2_notifications .tasks_block_summary_text,
+.ciclo20v2_notifications .cart_block_summary_text ,
+.ciclo20v2_notifications .messages_block_summary_text{
     display: block;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 11px;
     clear: both;
 }
-.block-ciclo_notifications  .messages_block_summary_text{
+.ciclo20v2_notifications .tasks_block_summary_text,
+.ciclo20v2_notifications .messages_block_summary_text{
     margin-left: -4px;
     margin-top: 8px;
     width: 80px;
 }
-.block-nivaria_ubercart .cart-block-number
-{
+.block-nivaria_ubercart .cart-block-number{
     display: block;
     float: left;
     font-size: 22px;
@@ -8070,6 +8072,7 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     margin: 0;
     min-height: 305px;
 }
+.products-on-tabs li.views-row,
 #quicktabs_container_ciclo_model_detail li.views-row,
 #quicktabs_container_ciclo_customer_detail li.views-row{
 
@@ -8083,21 +8086,50 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
     
     margin-left:0;
 }
+.products-on-tabs li.views-row{
+    width:49%;
+}
+.products-on-tabs li.views-row.views-row-even{
+    float:right;
+}
 /*#quicktabs_container_ciclo_model_detail .item-list ul,
 #quicktabs_container_ciclo_customer_detail .item-list ul{
     margin-left: -26px;
 }*/
+.products-on-tabs li .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_model_detail li .nd-region-middle-wrapper,
 #quicktabs_container_ciclo_customer_detail li .nd-region-middle-wrapper{
     width: 72% !important;
     float: right;
 }
+.products-on-tabs li .nd-region-middle-wrapper{
+    width:70% !important;
+}
+.products-on-tabs .nd-region-middle,
 #quicktabs_container_ciclo_model_detail .nd-region-middle,
 #quicktabs_container_ciclo_customer_detail .nd-region-middle,
 #quicktabs_container_ciclo_user_detail .nd-region-middle{
     margin: 0 0 0 20px;
     min-height: 100px;
 }
+#block-views-562fe1582129537a06f7f8063643eec0 .view-ciclo-ubercart-comp-products,
+#quicktabs_tabpage_ciclo_installation_detail_2 .view-ciclo-ubercart-comp-products,
+#quicktabs_tabpage_ciclo_model_detail_3 .view-ciclo-ubercart-comp-products{
+    background-image:none;
+    border:0 none;
+    margin:0;
+    float:none;
+    padding:0;
+}
+#quicktabs_tabpage_ciclo_model_detail_3 .nd-region-middle{
+    margin-left:32px;
+}
+.products-on-tabs .nd-region-middle .field.title a,
+#quicktabs_tabpage_ciclo_model_detail_3 .nd-region-middle .field.title a{
+    color:#000;
+    font-weight:bold;
+}
+.products-on-tabs .nd-region-left,
 #quicktabs_container_ciclo_model_detail .nd-region-left,
 #quicktabs_container_ciclo_customer_detail .nd-region-left{
     width: 25%;
@@ -8117,6 +8149,33 @@ body.page-catalog #content-group  #view-id-ciclo_installations_og-page .view-foo
 }
 quicktabs-ciclo_model_detail .inner{
     position: relative;
+}
+
+#block-views-562fe1582129537a06f7f8063643eec0 .content{
+    padding:12px 0;
+    border-radius:12px;
+}
+#page #block-views-562fe1582129537a06f7f8063643eec0 .content li.views-row{
+    float:none;
+    width:auto;
+    background-color:#fff;
+    border-bottom:1px dashed #DBDBDB;
+}
+#page #block-views-562fe1582129537a06f7f8063643eec0 .content li.views-row .form-submit{
+    float:right;
+    margin-top:1em;
+}
+#page #block-views-562fe1582129537a06f7f8063643eec0 .content li.views-row.views-row-first{
+    padding-top:0;
+}
+#page #block-views-562fe1582129537a06f7f8063643eec0 .content li.views-row.views-row-last{
+    border:0 none;
+}
+#page #block-views-562fe1582129537a06f7f8063643eec0 .content li.views-row .nd-region-middle-wrapper .nd-region-middle{
+    margin-left:8px !important;
+}
+#page #block-views-562fe1582129537a06f7f8063643eec0 .content li.views-row .nd-region-middle-wrapper {
+    width: 58% !important;
 }
 #page .views-exposed-form.collapsed .collapse-processed a{
     background: url("../images/circle_sprite.png") no-repeat scroll 52px -57px transparent;
