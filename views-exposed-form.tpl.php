@@ -18,8 +18,8 @@
 <?php 
 //add collapsible fieldset js if it is not already included
 global $BASE_URL;
-drupal_add_js($BASE_URL.'misc/drupal.js');
-drupal_add_js($BASE_URL.'misc/collapse.js');
+drupal_add_js($BASE_URL.'misc/drupal.js', 'core');
+drupal_add_js($BASE_URL.'misc/collapse.js', 'core');
 ?>
 
 <?php if (!empty($q)): ?>
