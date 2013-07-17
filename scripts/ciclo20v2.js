@@ -213,4 +213,11 @@ $(document).ready(function(){
         });
     }
     $("body#pid-node-add-ciclo-main-modification-972 #edit-block").prepend( $("body#pid-node-add-ciclo-main-modification-972 .readcrumbs-wrapper"), $("body#pid-node-add-ciclo-main-modification-972 h1") );
+    jQuery("body.catalog-navigation #fullscreen a").bind("click", function(){
+	if ( jQuery("body").hasClass("fullscreen") ){
+	    jQuery("body").removeClass("fullscreen");
+	} else {
+	    jQuery("body").addClass("fullscreen");
+	}
+    });
 });
