@@ -7757,6 +7757,7 @@ table td.views-field-field-ciclo-model-components-nid{
     height:20px;
     padding:0;
     font-size: 0;
+    text-indent:-9999px;
 }
 .vertical-tabs-pane tr.odd .form-item,
 .vertical-tabs-pane tr.even .form-item {
