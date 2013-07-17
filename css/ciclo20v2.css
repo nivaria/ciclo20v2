@@ -9433,3 +9433,17 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     font-family:arial;
     font-size:100%;
 }
+
+/* mode fullscreen */
+body.fullscreen #sidebar-first-wrapper{
+	width:15%;
+}
+body.fullscreen #main-group{
+	width:85%;
+}
+body.fullscreen #content-group{
+	width: 100% !important;
+}
+body.fullscreen #fullscreen a{
+	display:none;
+}
