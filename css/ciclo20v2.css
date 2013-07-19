@@ -9436,11 +9436,15 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
 }
 
 /* mode fullscreen */
-body.fullscreen #sidebar-first-wrapper{
-	width:15%;
+body.fullscreen #page #sidebar-first-wrapper{
+	width:22%;
+}
+body.fullscreen #page #sidebar-first-wrapper #sidebar-first,
+body.fullscreen #page #sidebar-first-wrapper .block-nivaria_navigation{
+	width:100%;
 }
 body.fullscreen #main-group{
-	width:85%;
+	width:76%;
 }
 body.fullscreen #content-group{
 	width: 100% !important;
