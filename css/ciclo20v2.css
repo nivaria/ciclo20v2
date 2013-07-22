@@ -8871,6 +8871,13 @@ body.catalog-navigation #fullscreen a{
     
     top:127px;
     z-index:1000;
+    
+    
+    display:block;
+    top:38px;
+    position:relative;
+    clear:both;
+    float:right;
 }
 #exitfullscreen a{
     position: absolute;
