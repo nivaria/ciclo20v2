@@ -9459,3 +9459,9 @@ body.fullscreen #content-group{
 body.fullscreen #fullscreen a{
 	display:none;
 }
+body.fullscreen .readcrumbs-wrapper,
+body.fullscreen #page h1,
+body.fullscreen .edit-link,
+body.fullscreen #ciclo-catalog-main{
+	display:none;
+}
