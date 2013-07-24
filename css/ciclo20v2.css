@@ -9465,3 +9465,6 @@ body.fullscreen .edit-link,
 body.fullscreen #ciclo-catalog-main{
 	display:none;
 }
+body.fullscreen #main-inner{
+	overflow:scroll !important;
+}
