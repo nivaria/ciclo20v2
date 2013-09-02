@@ -1373,10 +1373,11 @@ h1 + #content-tabs {
 body.node-type-ciclo-customer .nd-region-header .field-title h1{
     display: none;
 }
+/*
 body.node-edit #content-inner-inner .content-tabs{
   display: block!important;
 }
-
+*/
 body.page-user #content-inner-inner .content-tabs{
     display:block;
 }
