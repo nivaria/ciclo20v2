@@ -9469,3 +9469,49 @@ body.fullscreen #ciclo-catalog-main{
 body.fullscreen #main-inner{
 	overflow:scroll !important;
 }
+
+/*** LAST CHANGES ***/
+
+.node-type-niv-task .content-region .node-type-niv_task .nd-sidebar-right{
+	width: 672px;
+}
+
+.node-type-niv-task .content-region .node-type-niv_task .nd-sidebar-right .nd-region-middle {
+	margin: 0px;
+}
+
+.node-type-niv-task .content-region .node-type-niv_task fieldset{
+	border: 0px;
+	border-top: 1px solid #ccc;
+	padding: 10px 2px;
+}
+
+.node-type-niv-task .content-region .node-type-niv_task fieldset legend,
+.node-type-niv-task .content-region .node-type-niv_task fieldset legend a{
+	padding-right: 7px;
+	margin-left: -3px;
+}
+
+.node-type-niv-task .content-region .node-type-niv_task fieldset .field .field-label-inline-first {
+	width: 90px;
+	display: inline-block;
+}
+
+.node-type-niv-task .content-region .node-type-niv_task fieldset.field-ds-group-dates-task .field{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.node-type-niv-task .content-region .node-type-niv_task fieldset.field-ds-group-dates-task .field .field-label-inline-first{
+	display: block;
+	font-weight: normal;
+	width: 100%;
+}
+
+.node-type-niv-task .content-bottom #quicktabs-ciclo_task_tabs #block-commentblock-niv_task fieldset:first-of-type{
+	display: none;
+}
+
+.node-type-niv-task .content-bottom #quicktabs-ciclo_task_tabs #block-commentblock-niv_task fieldset #edit-notifications-content-disable-wrapper label{
+	width: 100%;
+}
