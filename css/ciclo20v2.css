@@ -1411,6 +1411,12 @@ body.page-user-2 #content-inner-inner .content-tabs .tabs.secondary{
     height: 105px;
     width: 20%;
     white-space:nowrap;
+    clear:both;
+}
+.node-type-ciclo-customer .buildmode-full .nd-region-left .field-ciclo-customer-logo img{
+    position:absolute;
+    left:0;
+    top:0;
 }
 .field-ciclo-customer-logo{
     margin-bottom:1em;
@@ -7588,8 +7594,8 @@ table td.views-field-field-ciclo-model-components-nid{
     padding-left:16px;
     line-height:22px;
 }
-.page-node .view-ciclo-catalog-components table.views-table tbody tr.over td.views-field-title a,
-.page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td.views-field-title a{
+#page .page-node .view-ciclo-catalog-components table.views-table tbody tr.over td.views-field-title a,
+#page .page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td.views-field-title a{
     color:#fff;
 }
 .page-node .view-ciclo-catalog-components table.views-table thead th.active{
