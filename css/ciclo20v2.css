@@ -7594,8 +7594,8 @@ table td.views-field-field-ciclo-model-components-nid{
     padding-left:16px;
     line-height:22px;
 }
-#page .page-node .view-ciclo-catalog-components table.views-table tbody tr.over td.views-field-title a,
-#page .page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td.views-field-title a{
+.page-node #page .view-ciclo-catalog-components table.views-table tbody tr.over td.views-field-title a,
+.page-node #page .view-ciclo-catalog-components table.views-table tbody tr:hover td.views-field-title a{
     color:#fff;
 }
 .page-node .view-ciclo-catalog-components table.views-table thead th.active{
