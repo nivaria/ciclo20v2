@@ -1394,7 +1394,7 @@ body.page-user-2 #content-inner-inner .content-tabs .tabs.secondary{
 .node-type-ciclo-customer .buildmode-full .nd-region-middle-wrapper {
     border-bottom: 1px dashed #E9E9E9;
     float: right;
-    height: 105px;
+    height: auto;
     width: 80%;
 }
 .node-type-ciclo-customer .buildmode-full .nd-region-middle-wrapper .nd-region-middle{
@@ -1420,17 +1420,16 @@ body.page-user-2 #content-inner-inner .content-tabs .tabs.secondary{
     padding-top: 13px;
 
 }
-.node-type-ciclo-customer .buildmode-full  .nd-region-middle-wrapper .nd-region-middle li:nth-child(2){
+/*.node-type-ciclo-customer .buildmode-full  .nd-region-middle-wrapper .nd-region-middle li:nth-child(2){
     left: -120px;
     position: relative;
     top: 40px;
 }
-
 .node-type-ciclo-customer .buildmode-full .node-type-ciclo_customer  .nd-region-middle ul:nth-child(3){
     bottom: -78px;
     left: -127px;
     position: absolute;
-}
+}*/
 .node-type-ciclo-customer .buildmode-full .node-type-ciclo_customer  .nd-region-middle p{
     margin: 0;
 }
