@@ -7584,6 +7584,7 @@ table td.views-field-field-ciclo-model-components-nid{
 }
 .page-node .view-ciclo-catalog-components table.views-table tbody tr td.views-field-title{
     padding-left:16px;
+	line-height:22px;
 }
 .page-node .view-ciclo-catalog-components table.views-table tbody tr.over td.views-field-title,
 .page-node .view-ciclo-catalog-components table.views-table tbody tr:hover td.views-field-title{
@@ -7761,7 +7762,8 @@ table td.views-field-field-ciclo-model-components-nid{
 .page-node    .view-id-ciclo_catalog_components .view-content span.node-edit-in-view a{
     background: url("../images/sprite.png") no-repeat scroll -120px -112px transparent !important;
     display:block;
-    width:30px;
+    width:30px !important;
+	float:right !important;
     height:20px;
     padding:0;
     font-size: 0;
@@ -7772,7 +7774,7 @@ table td.views-field-field-ciclo-model-components-nid{
     white-space: normal;
 }
 .page-node    .view-id-ciclo_catalog_components .view-content span.node-edit-in-view {
-    float: right;
+    /*float: right;*/
 }
 #main #sidebar-last-wrapper .view-most-active-users-gerencia .views-field-field-number-posts-vname { margin-top: 0; }
 .ajax-cart-submit-form-button{
@@ -9448,6 +9450,9 @@ body.ciclo-main-modification #content-region #ciclo-main-modification-installati
     font-weight:normal;
     font-family:arial;
     font-size:100%;
+
+	float:left;
+	width:90%;
 }
 
 /* mode fullscreen */
