@@ -76,3 +76,7 @@
     font-family: 'Cabin', sans-serif;
        text-transform: uppercase;
 }
+
+#nivaria-navigation-tree ins{
+	top: 3px;
+}
