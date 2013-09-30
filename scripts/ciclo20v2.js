@@ -214,4 +214,29 @@ $(document).ready(function(){
     }
     $("body#pid-node-add-ciclo-main-modification-972 #edit-block").prepend( $("body#pid-node-add-ciclo-main-modification-972 .readcrumbs-wrapper"), $("body#pid-node-add-ciclo-main-modification-972 h1") );
 	
+	$(".quicktabs_wrapper .quicktabs-switcher a").each(function(){
+		var currText = $(this).html();
+        if (currText == Drupal.settings.ciclo_quicktabs.LANG_SHOW){
+			$(this).parents(".quicktabs_wrapper").addClass("opened-tabs");
+		}
+	});
+	
+	$(".quicktabs_wrapper .quicktabs-switcher a").bind( "click", function(evt){
+		evt.preventDefault();
+        var currText = $(this).html();
+        if (currText == Drupal.settings.ciclo_quicktabs.LANG_SHOW) {
+            currText = Drupal.settings.ciclo_quicktabs.LANG_HIDE;
+			$(this).parents(".quicktabs_wrapper").removeClass("closed-tabs");
+			$(this).parents(".quicktabs_wrapper").addClass("opened-tabs");
+        } else {
+            currText = Drupal.settings.ciclo_quicktabs.LANG_SHOW;
+			$(this).parents(".quicktabs_wrapper").removeClass("opened-tabs");
+			$(this).parents(".quicktabs_wrapper").addClass("closed-tabs");
+        }
+		//$(this).parents(".quicktabs_wrapper").find("ul.quicktabs_tabs").toggle("slow");
+        //$(this).parents(".quicktabs_wrapper").find("div.quicktabs_main").toggle("slow");
+        $(this).html(currText);
+		return false;
+	});
+
 });

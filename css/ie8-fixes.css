@@ -80,3 +80,16 @@
 #nivaria-navigation-tree ins{
 	top: 3px;
 }
+
+#bt-search-nivaria-navigation-tree{
+	margin-top: 2px;
+}
+
+form#search-theme-form input.form-submit {
+	margin-top: 3px;
+}
+
+.views-exposed-wrapper .views-exposed-widget.views-exposed-submit {
+    width: 37px !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}

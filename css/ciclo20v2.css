@@ -5788,11 +5788,13 @@ body.no-sidebars #content-group-inner {
     border: none;
     font-weight:bold;
     color:#000;
+	padding-left: 10px;
 }
 #nivaria-navigation-tree  li li a{
     padding: 0 36px 0 10px;
     font-weight:normal;
     position:relative;
+	font-size: 11px;
 }
 #nivaria-navigation-tree li.jstree-closed a:hover{
     margin: 0 0 0 -20px; 
@@ -5844,9 +5846,10 @@ body.no-sidebars #content-group-inner {
     margin:0;
 }
 
-#nivaria-navigation-tree li.jstree-open ul a.jstree-hovered .jstree-icon{
+#nivaria-navigation-tree li.jstree-open a.jstree-hovered .jstree-icon{
 	background: none;
 }
+
 .block-ciclo_catalog{
  float:none !important;   
 }
@@ -8897,16 +8900,19 @@ body.catalog-navigation #ciclo-catalog .ciclo-catalog-back a{
     background: url("../images/arrow_sprite.png") no-repeat scroll 0 -228px transparent;
     padding-left:12px;
 }
-
+body.catalog-navigation .ciclo-catalog-fullscreen{
+	clear: both;
+	width: 100%;
+}
 body.catalog-navigation #fullscreen{
 	width: 100%;
-	position: relative;
+	position: absolute;
 	display: block;
 }
 body.catalog-navigation #fullscreen a{
-    position: absolute;
+    position: relative;
     right: 0px;
-    top: 45px;
+    top: 10px;
     background-repeat:no-repeat;
     background-image:url('../images/sprite.png');
     background-position:0 -37px;
@@ -8914,20 +8920,20 @@ body.catalog-navigation #fullscreen a{
     height:32px;
     text-indent:-9999px;
     display:block;
-	
     z-index:1000;
+	float:right;
     
 	/*
     top:127px;    
     top:38px;
     position:relative;
     clear:both;
-    float:right;
+    
 	*/
 }
 #exitfullscreen a{
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: 0px;
     background-repeat:no-repeat;
     background-image:url('../images/sprite.png');
@@ -8998,9 +9004,11 @@ body.catalog-navigation #sidebar-first-inner .block.block-nivaria_navigation .co
     border:2px solid #DDDDDD;
 }
 /* tree menu navegacion */
+/*
 #nivaria-navigation-tree li ins{
     display:none;
 }
+*/
 #nivaria-navigation-tree li li ins{
     display:inline-block;
 }
@@ -9510,11 +9518,20 @@ body.fullscreen #fullscreen a{
 body.fullscreen .readcrumbs-wrapper,
 body.fullscreen #page h1,
 body.fullscreen .edit-link,
-body.fullscreen #ciclo-catalog-main{
+body.fullscreen #ciclo-catalog-main,
+body.fullscreen #ciclo-catalog-right{
 	display:none;
 }
 body.fullscreen #main-inner{
 	overflow:scroll !important;
+}
+
+body.fullscreen #block-quicktabs-ciclo_model_catalogue{
+    margin-top: 0em;
+}
+
+body.fullscreen #content-region-inner{
+	padding-top: 10px !important;
 }
 
 /*** LAST CHANGES ***/
@@ -9572,5 +9589,15 @@ body.fullscreen #main-inner{
 	padding-top: 8px;
 	clear: both;
 	
+}
+
+.catalog-navigation .closed-tabs ul.quicktabs_tabs,
+.catalog-navigation .closed-tabs div.quicktabs_main{
+	display: none !important;
+}
+
+.catalog-navigation .opened-tabs ul.quicktabs_tabs,
+.catalog-navigation .opened-tabs div.quicktabs_main{
+	display: block !important;
 }
 /**************************/
