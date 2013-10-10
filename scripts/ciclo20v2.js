@@ -238,5 +238,30 @@ $(document).ready(function(){
         $(this).html(currText);
 		return false;
 	});
-
+	
+	if ($.browser.msie) {
+		var width = $(window).width();
+		if (width < 1024) {
+			$("#page").css({'width': '100%'});
+		}
+	}
+	
+	$(".catalog-navigation #content-region").append('<div class="btn-expand-main-group open"><span class="open">expand</span><span class="close">reduce</span></div>');
+	
+	$(".catalog-navigation .btn-expand-main-group").live("click", function(){
+		$("#sidebar-first-wrapper").toggle("slow");
+		if ($(this).hasClass("open")) {
+			$(this).removeClass("open");
+			$(this).addClass("close");
+			$("#main-group").css("width", $("#main-group").width() + firstSize + "px");
+			var size = $("#content-group").width() + firstSize;
+            $("#content-group").attr('style', 'width: ' + $("#content-group").width() + firstSize +'px !important');
+			
+		} else {
+			$(this).removeClass("close");
+			$(this).addClass("open");
+			$("#main-group").width($("#main-group").width() - firstSize);
+            $("#content-group").width($("#content-group").width() + firstSize);
+		}
+	});
 });

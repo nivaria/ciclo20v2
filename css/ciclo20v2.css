@@ -1,3 +1,6 @@
+html{
+	overflow-x: hidden;
+}
 body {
     color: #666;
     font-family: Arial, Helvetica, sans-serif;
@@ -5774,7 +5777,7 @@ body.no-sidebars #content-group-inner {
     position: relative;
     z-index: 5;
     z-index:20;
-    top:0px;
+    top:3px;
 }
 
 #nivaria-navigation-tree  li ul ul{
@@ -7089,6 +7092,7 @@ fieldset fieldset {
 .player3dvia { 
 	z-index: -1; 
 	height: 450px;
+	margin-top: -20px;
 }
 
 body.ie-fullmode .player3dvia{
@@ -9599,5 +9603,46 @@ body.fullscreen #content-region-inner{
 .catalog-navigation .opened-tabs ul.quicktabs_tabs,
 .catalog-navigation .opened-tabs div.quicktabs_main{
 	display: block !important;
+}
+
+.catalog-navigation #content-region-inner{
+	padding-top: 40px !important;
+}
+
+.catalog-navigation .btn-expand-main-group{
+	display: block;
+	position: absolute;
+	top: 9px;
+	right: 20px;
+	width: 94%;
+}
+
+.catalog-navigation .btn-expand-main-group .open,
+.catalog-navigation .btn-expand-main-group .close{
+	background-repeat: no-repeat;
+	cursor: pointer;
+	line-height: 17px;
+	z-index: 2;
+	background-image: url("../images/circle_sprite.png");
+	height: 20px;
+	display: block;
+	padding-top: 4px;
+}
+
+.catalog-navigation .btn-expand-main-group .open{
+	background-position: -6px -76px;
+	padding-left: 24px;
+	float: left;
+}
+
+.catalog-navigation .btn-expand-main-group .close{
+	background-position: 35px -52px;
+	padding-right: 24px;
+	float: right;
+}
+
+.catalog-navigation .btn-expand-main-group.close .open,
+.catalog-navigation .btn-expand-main-group.open .close{
+	display: none;
 }
 /**************************/
